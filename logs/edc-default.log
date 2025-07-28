@@ -1,0 +1,399 @@
+INFO 2025-07-28T16:55:34.993303263 Booting EDC runtime
+WARNING 2025-07-28T16:55:35.019312122 Configuration file does not exist: dataspaceconnector-configuration.properties. Ignoring.
+DEBUG 2025-07-28T16:55:35.020537932 ConfigurationExtension Initialized: FS Configuration
+WARNING 2025-07-28T16:55:35.030635671 A configuration value for 'edc.runtime.id' was found. Explicitly configuring this is not supported anymore and may get removed in the future. A random value will be assigned.
+DEBUG 2025-07-28T16:55:35.223598134 Initialized Boot Services
+WARNING 2025-07-28T16:55:35.235231406 Using the InMemoryVault is not suitable for production scenarios and should be replaced with an actual Vault!
+DEBUG 2025-07-28T16:55:35.23925515 Storing secret did:web:localhost%3A7093-alias
+DEBUG 2025-07-28T16:55:35.239685959 Storing secret did:web:localhost%3A7093#key-1
+WARNING 2025-07-28T16:55:35.241317956 [DEMO] >>>>>> This extension hard-codes a keypair into the vault! <<<<<<
+DEBUG 2025-07-28T16:55:35.241847987 Initialized org.eclipse.edc.iam.identitytrust.core.SecretsExtension
+WARNING 2025-07-28T16:55:35.244640948 A service of the type java.time.Clock was already registered and has now been replaced with a SystemClock instance.
+DEBUG 2025-07-28T16:55:35.246950681 Config value: no setting found for 'edc.core.retry.retries.max', falling back to default value '5'
+DEBUG 2025-07-28T16:55:35.247446781 Config value: no setting found for 'edc.core.retry.backoff.min', falling back to default value '500'
+DEBUG 2025-07-28T16:55:35.247793552 Config value: no setting found for 'edc.core.retry.backoff.max', falling back to default value '10000'
+DEBUG 2025-07-28T16:55:35.248017151 Config value: no setting found for 'edc.core.retry.log.on.retry', falling back to default value 'false'
+DEBUG 2025-07-28T16:55:35.248228468 Config value: no setting found for 'edc.core.retry.log.on.retry.scheduled', falling back to default value 'false'
+DEBUG 2025-07-28T16:55:35.248404429 Config value: no setting found for 'edc.core.retry.log.on.retries.exceeded', falling back to default value 'false'
+DEBUG 2025-07-28T16:55:35.248587363 Config value: no setting found for 'edc.core.retry.log.on.failed.attempt', falling back to default value 'false'
+DEBUG 2025-07-28T16:55:35.248774808 Config value: no setting found for 'edc.core.retry.log.on.abort', falling back to default value 'false'
+DEBUG 2025-07-28T16:55:35.253046605 Config value: no setting found for 'edc.http.client.https.enforce', falling back to default value 'false'
+DEBUG 2025-07-28T16:55:35.25348592 Config value: no setting found for 'edc.http.client.timeout.connect', falling back to default value '30'
+DEBUG 2025-07-28T16:55:35.253791482 Config value: no setting found for 'edc.http.client.timeout.read', falling back to default value '30'
+DEBUG 2025-07-28T16:55:35.254083884 Config value: no setting found for 'edc.http.client.send.buffer.size', falling back to default value '0'
+DEBUG 2025-07-28T16:55:35.254380187 Config value: no setting found for 'edc.http.client.receive.buffer.size', falling back to default value '0'
+DEBUG 2025-07-28T16:55:35.25652168 Initialized Core Default Services
+INFO 2025-07-28T16:55:35.329793396 HTTPS enforcement it not enabled, please enable it in a production environment
+INFO 2025-07-28T16:55:35.586827254 HTTPS enforcement it not enabled, please enable it in a production environment
+WARNING 2025-07-28T16:55:35.589959001 Config value: no setting found for 'edc.hostname', falling back to default value 'localhost'
+DEBUG 2025-07-28T16:55:35.594752571 Initialized Core Services
+DEBUG 2025-07-28T16:55:36.125179509 Initialized org.eclipse.edc.connector.core.SecurityDefaultServicesExtension
+DEBUG 2025-07-28T16:55:36.723433794 Initialized org.eclipse.edc.token.TokenServicesExtension
+DEBUG 2025-07-28T16:55:36.73962218 Config value: no setting found for 'edc.iam.sts.token.expiration', falling back to default value '5'
+DEBUG 2025-07-28T16:55:36.749141433 Initialized org.eclipse.edc.iam.identitytrust.core.DcpDefaultServicesExtension
+DEBUG 2025-07-28T16:55:36.798590193 Initialized org.eclipse.edc.demo.dcp.core.DcpPatchExtension
+DEBUG 2025-07-28T16:55:36.813434443 Initialized org.eclipse.edc.demo.dcp.policy.PolicyEvaluationExtension
+DEBUG 2025-07-28T16:55:36.814785915 Config value: no setting found for 'edc.did.resolver.cache.expiry', falling back to default value '300000'
+DEBUG 2025-07-28T16:55:36.820696947 Initialized Identity Did Core
+DEBUG 2025-07-28T16:55:36.821675782 Initialized MVD Participant Resolver Extension
+DEBUG 2025-07-28T16:55:36.825846075 Config value: no setting found for 'edc.web.https.keystore.password', falling back to default value 'password'
+DEBUG 2025-07-28T16:55:36.82630076 Config value: no setting found for 'edc.web.https.keymanager.password', falling back to default value 'password'
+DEBUG 2025-07-28T16:55:36.832834515 Config value: no setting found for 'web.http.default.port', falling back to default value '8181'
+DEBUG 2025-07-28T16:55:36.836892069 Config value: no setting found for 'web.http.default.path', falling back to default value '/api'
+DEBUG 2025-07-28T16:55:36.842342965 Config value: no setting found for 'edc.web.https.keystore.type', falling back to default value 'PKCS12'
+DEBUG 2025-07-28T16:55:36.969596318 Initialized Jetty Service
+DEBUG 2025-07-28T16:55:36.985411911 Initialized Jersey Web Service
+DEBUG 2025-07-28T16:55:36.991184973 Initialized Sts remote client configuration extension
+DEBUG 2025-07-28T16:55:36.992052577 Initialized OAuth2 Client
+DEBUG 2025-07-28T16:55:36.995777157 Initialized Sts remote client configuration extension
+DEBUG 2025-07-28T16:55:36.997750963 Config value: no setting found for 'edc.jsonld.prefixes.check', falling back to default value 'true'
+DEBUG 2025-07-28T16:55:36.999989685 Config value: no setting found for 'edc.jsonld.http.enabled', falling back to default value 'false'
+DEBUG 2025-07-28T16:55:37.000672767 Config value: no setting found for 'edc.jsonld.https.enabled', falling back to default value 'false'
+DEBUG 2025-07-28T16:55:37.00114325 Config value: no setting found for 'edc.jsonld.vocab.disable', falling back to default value 'false'
+DEBUG 2025-07-28T16:55:37.05220296 Initialized JSON-LD Extension
+DEBUG 2025-07-28T16:55:37.392893617 Initialized Revocation Service Extension
+DEBUG 2025-07-28T16:55:37.400727594 Config value: no setting found for 'edc.iam.credential.revocation.cache.validity', falling back to default value '900000'
+DEBUG 2025-07-28T16:55:37.403915724 Config value: no setting found for 'edc.sql.store.jti.cleanup.period', falling back to default value '60'
+DEBUG 2025-07-28T16:55:37.406477178 Config value: no setting found for 'edc.dcp.v08.forced', falling back to default value 'false'
+DEBUG 2025-07-28T16:55:37.416059515 Initialized org.eclipse.edc.iam.identitytrust.core.IdentityAndTrustExtension
+DEBUG 2025-07-28T16:55:37.434014774 Initialized Control Plane Default Services
+DEBUG 2025-07-28T16:55:37.442476601 Initialized org.eclipse.edc.connector.controlplane.contract.ContractNegotiationDefaultServicesExtension
+DEBUG 2025-07-28T16:55:37.444776444 Config value: no setting found for 'edc.negotiation.provider.state-machine.batch-size', falling back to default value '20'
+DEBUG 2025-07-28T16:55:37.447609032 Config value: no setting found for 'edc.negotiation.consumer.send.retry.base-delay.ms', falling back to default value '1000'
+DEBUG 2025-07-28T16:55:37.448200016 Config value: no setting found for 'edc.negotiation.state-machine.iteration-wait-millis', falling back to default value '1000'
+DEBUG 2025-07-28T16:55:37.451809401 Config value: no setting found for 'edc.negotiation.consumer.state-machine.batch-size', falling back to default value '20'
+DEBUG 2025-07-28T16:55:37.452411708 Config value: no setting found for 'edc.negotiation.consumer.send.retry.limit', falling back to default value '7'
+DEBUG 2025-07-28T16:55:37.453184011 Config value: no setting found for 'edc.negotiation.provider.send.retry.limit', falling back to default value '7'
+DEBUG 2025-07-28T16:55:37.454294116 Config value: no setting found for 'edc.negotiation.provider.send.retry.base-delay.ms', falling back to default value '1000'
+DEBUG 2025-07-28T16:55:37.468567564 Initialized Contract Core
+DEBUG 2025-07-28T16:55:37.469567437 Initialized Transfer Process Default Services
+DEBUG 2025-07-28T16:55:37.48124335 Config value: no setting found for 'edc.transfer.send.retry.limit', falling back to default value '7'
+DEBUG 2025-07-28T16:55:37.482160679 Config value: no setting found for 'edc.transfer.state-machine.batch-size', falling back to default value '20'
+DEBUG 2025-07-28T16:55:37.485018299 Config value: no setting found for 'edc.transfer.send.retry.base-delay.ms', falling back to default value '1000'
+DEBUG 2025-07-28T16:55:37.48549864 Config value: no setting found for 'edc.transfer.state-machine.iteration-wait-millis', falling back to default value '1000'
+DEBUG 2025-07-28T16:55:37.515441023 Initialized Transfer Core
+DEBUG 2025-07-28T16:55:37.516094186 Initialized Catalog Default Services
+DEBUG 2025-07-28T16:55:37.52319956 Initialized Catalog Core
+WARNING 2025-07-28T16:55:37.529690106 No TransactionContext registered, a no-op implementation will be used, not suitable for production environments
+DEBUG 2025-07-28T16:55:37.538148266 Config value: no setting found for 'edc.policy.validation.enabled', falling back to default value 'false'
+DEBUG 2025-07-28T16:55:37.541900067 Initialized Control Plane Services
+DEBUG 2025-07-28T16:55:37.596308917 Initialized Management API: Secret
+DEBUG 2025-07-28T16:55:37.602864841 Initialized org.eclipse.edc.connector.core.LocalPublicKeyDefaultExtension
+DEBUG 2025-07-28T16:55:37.605688098 Initialized Data Plane Framework Default Services
+DEBUG 2025-07-28T16:55:37.613185463 Initialized Data Plane Default IAM Services
+DEBUG 2025-07-28T16:55:37.62522589 DataPlane Access Control: default implementation is used, will always return Result.success()
+DEBUG 2025-07-28T16:55:37.625877467 Initialized Data Plane IAM
+WARNING 2025-07-28T16:55:37.641680523 The `data-plane-public-api-v2` has been deprecated, please provide analternative implementation for Http Proxy if needed
+WARNING 2025-07-28T16:55:37.656358074 The public API endpoint was not explicitly configured, the default 'http://localhost:12002/api/public' will be used.
+DEBUG 2025-07-28T16:55:37.659621875 Initialized Data Plane Public API
+DEBUG 2025-07-28T16:55:37.660478469 Initialized DCP scope extractor extension
+DEBUG 2025-07-28T16:55:37.706362177 Initialized org.eclipse.edc.iam.identitytrust.core.IdentityTrustTransformExtension
+WARNING 2025-07-28T16:55:37.707146517 The list of trusted issuers is empty
+DEBUG 2025-07-28T16:55:37.707647094 Initialized org.eclipse.edc.iam.identitytrust.issuer.configuration.TrustedIssuerConfigurationExtension
+DEBUG 2025-07-28T16:55:37.717969428 Initialized Api Core Default Services
+DEBUG 2025-07-28T16:55:37.719534032 Config value: no setting found for 'edc.api.auth.dac.cache.validity', falling back to default value '300000'
+DEBUG 2025-07-28T16:55:37.720873695 Config value: no setting found for 'edc.api.auth.dac.validation.tolerance', falling back to default value '5000'
+WARNING 2025-07-28T16:55:37.7214871 [Delegated API Authentication] No audience configured for delegated authentication, defaulting to the participantId
+DEBUG 2025-07-28T16:55:37.72893312 Initialized Delegating Authentication Service Extension
+DEBUG 2025-07-28T16:55:37.729345784 Initialized Control Plane HTTP API client
+DEBUG 2025-07-28T16:55:37.739046849 Config value: no setting found for 'edc.dataplane.state-machine.iteration-wait-millis', falling back to default value '1000'
+DEBUG 2025-07-28T16:55:37.740132725 Config value: no setting found for 'edc.dataplane.state-machine.batch-size', falling back to default value '20'
+DEBUG 2025-07-28T16:55:37.745573616 Config value: no setting found for 'edc.dataplane.state-machine.flow.lease.time', falling back to default value '500'
+DEBUG 2025-07-28T16:55:37.747262595 Config value: no setting found for 'edc.dataplane.state-machine.flow.lease.factor', falling back to default value '5'
+DEBUG 2025-07-28T16:55:37.762718033 Config value: no setting found for 'edc.dataplane.send.retry.limit', falling back to default value '7'
+DEBUG 2025-07-28T16:55:37.775988877 Config value: no setting found for 'edc.dataplane.send.retry.base-delay.ms', falling back to default value '1000'
+DEBUG 2025-07-28T16:55:37.779651829 Config value: no setting found for 'edc.dataplane.transfer.threads', falling back to default value '20'
+DEBUG 2025-07-28T16:55:37.786302413 Initialized Data Plane Framework
+DEBUG 2025-07-28T16:55:37.790515071 Config value: no setting found for 'edc.dataplane.http.sink.partition.size', falling back to default value '5'
+DEBUG 2025-07-28T16:55:37.811027588 Initialized Data Plane HTTP
+DEBUG 2025-07-28T16:55:37.827967904 Initialized Data Plane HTTP OAuth2
+DEBUG 2025-07-28T16:55:37.839993455 Config value: no setting found for 'edc.catalog.cache.partition.num.crawlers', falling back to default value '2'
+DEBUG 2025-07-28T16:55:37.841620906 Initialized Federated Catalog Default Services
+DEBUG 2025-07-28T16:55:37.847753215 Config value: no setting found for 'edc.catalog.cache.partition.num.crawlers', falling back to default value '2'
+DEBUG 2025-07-28T16:55:37.849424973 Config value: no setting found for 'edc.catalog.cache.execution.enabled', falling back to default value 'true'
+DEBUG 2025-07-28T16:55:37.872316118 Initialized Federated Catalog Cache
+DEBUG 2025-07-28T16:55:37.894620587 Initialized API Core
+DEBUG 2025-07-28T16:55:37.90039568 Initialized DataPlane Signaling API extension
+DEBUG 2025-07-28T16:55:37.901990249 Config value: no setting found for 'edc.dsp.well-known-path.enabled', falling back to default value 'false'
+DEBUG 2025-07-28T16:55:37.902481709 Initialized Dataspace Protocol Core Extension
+WARNING 2025-07-28T16:55:37.904191425 No TokenDecorator was registered. The 'scope' field of outgoing protocol messages will be empty
+DEBUG 2025-07-28T16:55:37.919646572 Initialized Dataspace Protocol Catalog HTTP Dispatcher Extension
+DEBUG 2025-07-28T16:55:37.929366885 Initialized Dataspace Protocol Catalog Transform Extension
+DEBUG 2025-07-28T16:55:37.933322547 Config value: no setting found for 'edc.dsp.well-known-path.enabled', falling back to default value 'false'
+DEBUG 2025-07-28T16:55:37.947883845 Initialized Dataspace Protocol API Configuration Extension
+DEBUG 2025-07-28T16:55:37.948310501 Initialized Data Plane Signaling Client
+DEBUG 2025-07-28T16:55:37.948854416 Using embedded Data Plane client.
+DEBUG 2025-07-28T16:55:37.949333899 Initialized Data Plane Selector Default Services
+DEBUG 2025-07-28T16:55:37.949918321 Config value: no setting found for 'edc.data.plane.selector.state-machine.batch-size', falling back to default value '20'
+DEBUG 2025-07-28T16:55:37.951289969 Config value: no setting found for 'edc.data.plane.selector.state-machine.iteration-wait-millis', falling back to default value '1000'
+DEBUG 2025-07-28T16:55:37.952192243 Config value: no setting found for 'edc.data.plane.selector.state-machine.check.period', falling back to default value '60'
+DEBUG 2025-07-28T16:55:37.954790249 Initialized Data Plane Selector core
+DEBUG 2025-07-28T16:55:37.962765444 Initialized org.eclipse.edc.connector.dataplane.selector.DataPlaneSelectorApiExtension
+DEBUG 2025-07-28T16:55:37.967569362 Initialized Dataplane Selector Control API
+DEBUG 2025-07-28T16:55:38.128421773 Initialized Control API configuration
+DEBUG 2025-07-28T16:55:38.129142453 Config value: no setting found for 'edc.dataplane.client.selector.strategy', falling back to default value 'random'
+DEBUG 2025-07-28T16:55:38.13259268 Initialized org.eclipse.edc.connector.controlplane.transfer.dataplane.TransferDataPlaneSignalingExtension
+DEBUG 2025-07-28T16:55:38.135982886 Initialized Data Plane Signaling transform Client
+DEBUG 2025-07-28T16:55:38.149356153 Initialized Management API configuration
+DEBUG 2025-07-28T16:55:38.158149077 Initialized Dataspace Protocol Negotiation HTTP Dispatcher Extension
+DEBUG 2025-07-28T16:55:38.184007686 Initialized Dataspace Protocol Negotiation Transform Extension
+DEBUG 2025-07-28T16:55:38.188402167 Initialized Dataspace Protocol Transfer HTTP Dispatcher Extension
+DEBUG 2025-07-28T16:55:38.209585232 Initialized Dataspace Protocol Transfer Process Transform Extension
+DEBUG 2025-07-28T16:55:38.216927072 Initialized Cache Query API Extension
+DEBUG 2025-07-28T16:55:38.229924035 Initialized Management API: Asset
+DEBUG 2025-07-28T16:55:38.239709518 Initialized Management API: Catalog
+DEBUG 2025-07-28T16:55:38.241636547 Initialized Management API: Contract Agreement
+DEBUG 2025-07-28T16:55:38.251587716 Initialized Management API: Contract Definition
+DEBUG 2025-07-28T16:55:38.267667113 Initialized Management API: Contract Negotiation
+DEBUG 2025-07-28T16:55:38.269551873 Initialized Endpoint Data Reference Core Default Services Extension
+DEBUG 2025-07-28T16:55:38.271724401 Initialized org.eclipse.edc.edr.store.EndpointDataReferenceStoreExtension
+DEBUG 2025-07-28T16:55:38.274200994 Initialized Management API: EDR cache
+DEBUG 2025-07-28T16:55:38.359087875 Initialized Management API: Policy Definition
+DEBUG 2025-07-28T16:55:38.393962303 Initialized Management API: Transfer Process
+DEBUG 2025-07-28T16:55:38.396260706 Initialized Dataspace Protocol Version HTTP Dispatcher Extension
+DEBUG 2025-07-28T16:55:38.407690929 Initialized Dataspace Protocol Catalog Extension
+DEBUG 2025-07-28T16:55:38.425311189 Initialized Dataspace Protocol Negotiation Api
+DEBUG 2025-07-28T16:55:38.438656339 Initialized org.eclipse.edc.protocol.dsp.transferprocess.http.api.DspTransferProcessApiExtension
+DEBUG 2025-07-28T16:55:38.44773886 Initialized Dataspace Protocol Version Api
+DEBUG 2025-07-28T16:55:38.451789215 Initialized Management API: Protocol Version
+DEBUG 2025-07-28T16:55:38.456131655 Initialized PolicyMonitor Default Services
+DEBUG 2025-07-28T16:55:38.456480655 Config value: no setting found for 'edc.policy.monitor.state-machine.batch-size', falling back to default value '20'
+DEBUG 2025-07-28T16:55:38.456926925 Config value: no setting found for 'edc.policy.monitor.state-machine.iteration-wait-millis', falling back to default value '1000'
+DEBUG 2025-07-28T16:55:38.467153538 Initialized org.eclipse.edc.connector.policy.monitor.PolicyMonitorExtension
+DEBUG 2025-07-28T16:55:38.47053394 Initialized Management API: Version Information
+DEBUG 2025-07-28T16:55:38.471192085 Initialized Contract Negotiation command handlers
+DEBUG 2025-07-28T16:55:38.473526004 Initialized org.eclipse.edc.connector.controlplane.transfer.TransferProcessCommandExtension
+DEBUG 2025-07-28T16:55:38.47465883 Initialized Control Plane API
+DEBUG 2025-07-28T16:55:38.476201136 Initialized Callback dispatcher extension
+DEBUG 2025-07-28T16:55:38.477974012 Initialized Callback dispatcher http extension
+DEBUG 2025-07-28T16:55:38.47907285 Config value: no setting found for 'edc.edr.receiver.sync', falling back to default value 'false'
+DEBUG 2025-07-28T16:55:38.481738718 Initialized Endpoint Data Reference Store Receiver Extension
+DEBUG 2025-07-28T16:55:38.483450418 Initialized Web DID
+DEBUG 2025-07-28T16:55:38.486077757 Initialized Observability API
+DEBUG 2025-07-28T16:55:38.486577471 Config value: no setting found for 'edc.data.plane.self.unregistration', falling back to default value 'false'
+DEBUG 2025-07-28T16:55:38.486844535 Initialized Dataplane Self Registration
+DEBUG 2025-07-28T16:55:38.489150777 Initialized Static token API Authentication
+DEBUG 2025-07-28T16:55:38.495515097 Initialized Api Authentication Configuration Extension
+DEBUG 2025-07-28T16:55:38.495826541 Prepared Boot Services
+DEBUG 2025-07-28T16:55:38.496558515 Prepared org.eclipse.edc.iam.identitytrust.core.SecretsExtension
+DEBUG 2025-07-28T16:55:38.49667936 Prepared Core Default Services
+DEBUG 2025-07-28T16:55:38.498160935 Prepared Core Services
+DEBUG 2025-07-28T16:55:38.498341699 Prepared org.eclipse.edc.connector.core.SecurityDefaultServicesExtension
+DEBUG 2025-07-28T16:55:38.49846616 Prepared org.eclipse.edc.token.TokenServicesExtension
+DEBUG 2025-07-28T16:55:38.498554822 Prepared org.eclipse.edc.iam.identitytrust.core.DcpDefaultServicesExtension
+DEBUG 2025-07-28T16:55:38.499204198 Prepared org.eclipse.edc.demo.dcp.core.DcpPatchExtension
+DEBUG 2025-07-28T16:55:38.499317001 Prepared org.eclipse.edc.demo.dcp.policy.PolicyEvaluationExtension
+DEBUG 2025-07-28T16:55:38.499392419 Prepared Identity Did Core
+DEBUG 2025-07-28T16:55:38.499462782 Prepared MVD Participant Resolver Extension
+DEBUG 2025-07-28T16:55:38.499541029 Prepared Jetty Service
+DEBUG 2025-07-28T16:55:38.499609565 Prepared Jersey Web Service
+DEBUG 2025-07-28T16:55:38.499669412 Prepared Sts remote client configuration extension
+DEBUG 2025-07-28T16:55:38.500807417 Prepared OAuth2 Client
+DEBUG 2025-07-28T16:55:38.500934166 Prepared Sts remote client configuration extension
+DEBUG 2025-07-28T16:55:38.501027414 Prepared JSON-LD Extension
+DEBUG 2025-07-28T16:55:38.501100762 Prepared Revocation Service Extension
+DEBUG 2025-07-28T16:55:38.501201876 Prepared org.eclipse.edc.iam.identitytrust.core.IdentityAndTrustExtension
+DEBUG 2025-07-28T16:55:38.501275232 Prepared Control Plane Default Services
+DEBUG 2025-07-28T16:55:38.501349315 Prepared org.eclipse.edc.connector.controlplane.contract.ContractNegotiationDefaultServicesExtension
+DEBUG 2025-07-28T16:55:38.501420221 Prepared Contract Core
+DEBUG 2025-07-28T16:55:38.501488251 Prepared Transfer Process Default Services
+DEBUG 2025-07-28T16:55:38.501556491 Prepared Transfer Core
+DEBUG 2025-07-28T16:55:38.501625392 Prepared Catalog Default Services
+DEBUG 2025-07-28T16:55:38.501684988 Prepared Catalog Core
+DEBUG 2025-07-28T16:55:38.501760657 Prepared Control Plane Services
+DEBUG 2025-07-28T16:55:38.501822004 Prepared Management API: Secret
+DEBUG 2025-07-28T16:55:38.504852399 Prepared org.eclipse.edc.connector.core.LocalPublicKeyDefaultExtension
+DEBUG 2025-07-28T16:55:38.505099016 Prepared Data Plane Framework Default Services
+DEBUG 2025-07-28T16:55:38.505753999 Prepared Data Plane Default IAM Services
+DEBUG 2025-07-28T16:55:38.507625815 Prepared Data Plane IAM
+DEBUG 2025-07-28T16:55:38.508053901 Prepared Data Plane Public API
+DEBUG 2025-07-28T16:55:38.508266548 Prepared DCP scope extractor extension
+DEBUG 2025-07-28T16:55:38.508426246 Prepared org.eclipse.edc.iam.identitytrust.core.IdentityTrustTransformExtension
+DEBUG 2025-07-28T16:55:38.509066056 Prepared org.eclipse.edc.iam.identitytrust.issuer.configuration.TrustedIssuerConfigurationExtension
+DEBUG 2025-07-28T16:55:38.509273418 Prepared Api Core Default Services
+DEBUG 2025-07-28T16:55:38.509444958 Prepared Delegating Authentication Service Extension
+DEBUG 2025-07-28T16:55:38.509596732 Prepared Control Plane HTTP API client
+DEBUG 2025-07-28T16:55:38.509760501 Prepared Data Plane Framework
+DEBUG 2025-07-28T16:55:38.509899592 Prepared Data Plane HTTP
+DEBUG 2025-07-28T16:55:38.510104101 Prepared Data Plane HTTP OAuth2
+DEBUG 2025-07-28T16:55:38.510293126 Prepared Federated Catalog Default Services
+DEBUG 2025-07-28T16:55:38.510447812 Prepared Federated Catalog Cache
+DEBUG 2025-07-28T16:55:38.510593648 Prepared API Core
+DEBUG 2025-07-28T16:55:38.511178643 Prepared DataPlane Signaling API extension
+DEBUG 2025-07-28T16:55:38.511393753 Prepared Dataspace Protocol Core Extension
+DEBUG 2025-07-28T16:55:38.511565628 Prepared Dataspace Protocol Catalog HTTP Dispatcher Extension
+DEBUG 2025-07-28T16:55:38.511721821 Prepared Dataspace Protocol Catalog Transform Extension
+DEBUG 2025-07-28T16:55:38.511957986 Prepared Dataspace Protocol API Configuration Extension
+DEBUG 2025-07-28T16:55:38.512160407 Prepared Data Plane Signaling Client
+DEBUG 2025-07-28T16:55:38.512312181 Prepared Data Plane Selector Default Services
+DEBUG 2025-07-28T16:55:38.512440479 Prepared Data Plane Selector core
+DEBUG 2025-07-28T16:55:38.512873317 Prepared org.eclipse.edc.connector.dataplane.selector.DataPlaneSelectorApiExtension
+DEBUG 2025-07-28T16:55:38.513058318 Prepared Dataplane Selector Control API
+DEBUG 2025-07-28T16:55:38.513217165 Prepared Control API configuration
+DEBUG 2025-07-28T16:55:38.513368038 Prepared org.eclipse.edc.connector.controlplane.transfer.dataplane.TransferDataPlaneSignalingExtension
+DEBUG 2025-07-28T16:55:38.513900131 Prepared Data Plane Signaling transform Client
+DEBUG 2025-07-28T16:55:38.514068244 Prepared Management API configuration
+DEBUG 2025-07-28T16:55:38.514699858 Prepared Dataspace Protocol Negotiation HTTP Dispatcher Extension
+DEBUG 2025-07-28T16:55:38.514916068 Prepared Dataspace Protocol Negotiation Transform Extension
+DEBUG 2025-07-28T16:55:38.515729344 Prepared Dataspace Protocol Transfer HTTP Dispatcher Extension
+DEBUG 2025-07-28T16:55:38.515952585 Prepared Dataspace Protocol Transfer Process Transform Extension
+DEBUG 2025-07-28T16:55:38.517409305 Prepared Cache Query API Extension
+DEBUG 2025-07-28T16:55:38.517644942 Prepared Management API: Asset
+DEBUG 2025-07-28T16:55:38.518695932 Prepared Management API: Catalog
+DEBUG 2025-07-28T16:55:38.518877938 Prepared Management API: Contract Agreement
+DEBUG 2025-07-28T16:55:38.520281897 Prepared Management API: Contract Definition
+DEBUG 2025-07-28T16:55:38.52257903 Prepared Management API: Contract Negotiation
+DEBUG 2025-07-28T16:55:38.522830906 Prepared Endpoint Data Reference Core Default Services Extension
+DEBUG 2025-07-28T16:55:38.523003976 Prepared org.eclipse.edc.edr.store.EndpointDataReferenceStoreExtension
+DEBUG 2025-07-28T16:55:38.523169175 Prepared Management API: EDR cache
+DEBUG 2025-07-28T16:55:38.523317318 Prepared Management API: Policy Definition
+DEBUG 2025-07-28T16:55:38.523462186 Prepared Management API: Transfer Process
+DEBUG 2025-07-28T16:55:38.523596279 Prepared Dataspace Protocol Version HTTP Dispatcher Extension
+DEBUG 2025-07-28T16:55:38.525487905 Prepared Dataspace Protocol Catalog Extension
+DEBUG 2025-07-28T16:55:38.527768903 Prepared Dataspace Protocol Negotiation Api
+DEBUG 2025-07-28T16:55:38.52816261 Prepared org.eclipse.edc.protocol.dsp.transferprocess.http.api.DspTransferProcessApiExtension
+DEBUG 2025-07-28T16:55:38.528385555 Prepared Dataspace Protocol Version Api
+DEBUG 2025-07-28T16:55:38.52855272 Prepared Management API: Protocol Version
+DEBUG 2025-07-28T16:55:38.528729488 Prepared PolicyMonitor Default Services
+DEBUG 2025-07-28T16:55:38.52888181 Prepared org.eclipse.edc.connector.policy.monitor.PolicyMonitorExtension
+DEBUG 2025-07-28T16:55:38.530055654 Prepared Management API: Version Information
+DEBUG 2025-07-28T16:55:38.53031885 Prepared Contract Negotiation command handlers
+DEBUG 2025-07-28T16:55:38.530479303 Prepared org.eclipse.edc.connector.controlplane.transfer.TransferProcessCommandExtension
+DEBUG 2025-07-28T16:55:38.530622128 Prepared Control Plane API
+DEBUG 2025-07-28T16:55:38.531819366 Prepared Callback dispatcher extension
+DEBUG 2025-07-28T16:55:38.532343245 Prepared Callback dispatcher http extension
+DEBUG 2025-07-28T16:55:38.538575801 Prepared Endpoint Data Reference Store Receiver Extension
+DEBUG 2025-07-28T16:55:38.538913603 Prepared Web DID
+DEBUG 2025-07-28T16:55:38.539105773 Prepared Observability API
+DEBUG 2025-07-28T16:55:38.539275719 Prepared Dataplane Self Registration
+DEBUG 2025-07-28T16:55:38.539429235 Prepared Static token API Authentication
+DEBUG 2025-07-28T16:55:38.541528868 Configured tokenbased authentication for context management
+DEBUG 2025-07-28T16:55:38.545094732 Configured tokenbased authentication for context catalog
+DEBUG 2025-07-28T16:55:38.545389888 Prepared Api Authentication Configuration Extension
+DEBUG 2025-07-28T16:55:38.54563954 Started Boot Services
+DEBUG 2025-07-28T16:55:38.54581873 Started org.eclipse.edc.iam.identitytrust.core.SecretsExtension
+DEBUG 2025-07-28T16:55:38.545977804 Started Core Default Services
+DEBUG 2025-07-28T16:55:38.546125488 Started Core Services
+DEBUG 2025-07-28T16:55:38.546264173 Started org.eclipse.edc.connector.core.SecurityDefaultServicesExtension
+DEBUG 2025-07-28T16:55:38.546403172 Started org.eclipse.edc.token.TokenServicesExtension
+DEBUG 2025-07-28T16:55:38.546529792 Started org.eclipse.edc.iam.identitytrust.core.DcpDefaultServicesExtension
+DEBUG 2025-07-28T16:55:38.546662685 Started org.eclipse.edc.demo.dcp.core.DcpPatchExtension
+DEBUG 2025-07-28T16:55:38.54680796 Started org.eclipse.edc.demo.dcp.policy.PolicyEvaluationExtension
+DEBUG 2025-07-28T16:55:38.546950772 Started Identity Did Core
+DEBUG 2025-07-28T16:55:38.54708799 Started MVD Participant Resolver Extension
+DEBUG 2025-07-28T16:55:38.633260437 HTTP context 'default' listening on port 8290
+DEBUG 2025-07-28T16:55:38.641867976 HTTP context 'public' listening on port 12002
+DEBUG 2025-07-28T16:55:38.645172469 HTTP context 'management' listening on port 8291
+DEBUG 2025-07-28T16:55:38.645868897 HTTP context 'protocol' listening on port 8292
+DEBUG 2025-07-28T16:55:38.650334268 HTTP context 'control' listening on port 8293
+DEBUG 2025-07-28T16:55:38.650768845 HTTP context 'catalog' listening on port 8294
+DEBUG 2025-07-28T16:55:38.651145843 HTTP context 'version' listening on port 8295
+DEBUG 2025-07-28T16:55:38.993928236 Port mappings: PortMapping[name=default, port=8290, path=/api], PortMapping[name=public, port=12002, path=/api/public], PortMapping[name=management, port=8291, path=/api/management/], PortMapping[name=protocol, port=8292, path=/api/dsp], PortMapping[name=control, port=8293, path=/api/control], PortMapping[name=catalog, port=8294, path=/api/catalog], PortMapping[name=version, port=8295, path=/api/version]
+DEBUG 2025-07-28T16:55:38.994097409 Started Jetty Service
+DEBUG 2025-07-28T16:55:39.703996012 Registered Web API context alias: default
+DEBUG 2025-07-28T16:55:39.906307292 Registered Web API context alias: protocol
+DEBUG 2025-07-28T16:55:39.965255452 Registered Web API context alias: public
+DEBUG 2025-07-28T16:55:40.04052678 Registered Web API context alias: management
+DEBUG 2025-07-28T16:55:40.093931673 Registered Web API context alias: catalog
+DEBUG 2025-07-28T16:55:40.178871776 Registered Web API context alias: control
+DEBUG 2025-07-28T16:55:40.23042366 Registered Web API context alias: version
+DEBUG 2025-07-28T16:55:40.230679572 Started Jersey Web Service
+DEBUG 2025-07-28T16:55:40.230763229 Started Sts remote client configuration extension
+DEBUG 2025-07-28T16:55:40.230803737 Started OAuth2 Client
+DEBUG 2025-07-28T16:55:40.230835182 Started Sts remote client configuration extension
+DEBUG 2025-07-28T16:55:40.230867536 Started JSON-LD Extension
+DEBUG 2025-07-28T16:55:40.230903416 Started Revocation Service Extension
+DEBUG 2025-07-28T16:55:40.236456098 Started org.eclipse.edc.iam.identitytrust.core.IdentityAndTrustExtension
+DEBUG 2025-07-28T16:55:40.236638744 Started Control Plane Default Services
+DEBUG 2025-07-28T16:55:40.236824782 Started org.eclipse.edc.connector.controlplane.contract.ContractNegotiationDefaultServicesExtension
+DEBUG 2025-07-28T16:55:40.247769161 Started Contract Core
+DEBUG 2025-07-28T16:55:40.247945598 Started Transfer Process Default Services
+DEBUG 2025-07-28T16:55:40.255766071 Started Transfer Core
+DEBUG 2025-07-28T16:55:40.256700751 Started Catalog Default Services
+DEBUG 2025-07-28T16:55:40.256786843 Started Catalog Core
+DEBUG 2025-07-28T16:55:40.256820047 Started Control Plane Services
+DEBUG 2025-07-28T16:55:40.256848579 Started Management API: Secret
+DEBUG 2025-07-28T16:55:40.256884046 Started org.eclipse.edc.connector.core.LocalPublicKeyDefaultExtension
+DEBUG 2025-07-28T16:55:40.256919462 Started Data Plane Framework Default Services
+DEBUG 2025-07-28T16:55:40.256951475 Started Data Plane Default IAM Services
+DEBUG 2025-07-28T16:55:40.256984977 Started Data Plane IAM
+DEBUG 2025-07-28T16:55:40.257017528 Started Data Plane Public API
+DEBUG 2025-07-28T16:55:40.257051878 Started DCP scope extractor extension
+DEBUG 2025-07-28T16:55:40.257084077 Started org.eclipse.edc.iam.identitytrust.core.IdentityTrustTransformExtension
+DEBUG 2025-07-28T16:55:40.257116213 Started org.eclipse.edc.iam.identitytrust.issuer.configuration.TrustedIssuerConfigurationExtension
+DEBUG 2025-07-28T16:55:40.257147838 Started Api Core Default Services
+DEBUG 2025-07-28T16:55:40.257172865 Started Delegating Authentication Service Extension
+DEBUG 2025-07-28T16:55:40.257218734 Started Control Plane HTTP API client
+DEBUG 2025-07-28T16:55:40.260895788 Started Data Plane Framework
+DEBUG 2025-07-28T16:55:40.261032362 Started Data Plane HTTP
+DEBUG 2025-07-28T16:55:40.261082723 Started Data Plane HTTP OAuth2
+DEBUG 2025-07-28T16:55:40.261120583 Started Federated Catalog Default Services
+DEBUG 2025-07-28T16:55:40.263204044 Started Federated Catalog Cache
+DEBUG 2025-07-28T16:55:40.26335262 Started API Core
+DEBUG 2025-07-28T16:55:40.263405192 Started DataPlane Signaling API extension
+DEBUG 2025-07-28T16:55:40.263449092 Started Dataspace Protocol Core Extension
+DEBUG 2025-07-28T16:55:40.263478135 Started Dataspace Protocol Catalog HTTP Dispatcher Extension
+DEBUG 2025-07-28T16:55:40.263519069 Started Dataspace Protocol Catalog Transform Extension
+DEBUG 2025-07-28T16:55:40.263550469 Started Dataspace Protocol API Configuration Extension
+DEBUG 2025-07-28T16:55:40.263575779 Started Data Plane Signaling Client
+DEBUG 2025-07-28T16:55:40.26360376 Started Data Plane Selector Default Services
+DEBUG 2025-07-28T16:55:40.266653394 Started Data Plane Selector core
+DEBUG 2025-07-28T16:55:40.266828666 Started org.eclipse.edc.connector.dataplane.selector.DataPlaneSelectorApiExtension
+DEBUG 2025-07-28T16:55:40.266879578 Started Dataplane Selector Control API
+DEBUG 2025-07-28T16:55:40.266912021 Started Control API configuration
+DEBUG 2025-07-28T16:55:40.266938395 Started org.eclipse.edc.connector.controlplane.transfer.dataplane.TransferDataPlaneSignalingExtension
+DEBUG 2025-07-28T16:55:40.266976333 Started Data Plane Signaling transform Client
+DEBUG 2025-07-28T16:55:40.267011092 Started Management API configuration
+DEBUG 2025-07-28T16:55:40.267061161 Started Dataspace Protocol Negotiation HTTP Dispatcher Extension
+DEBUG 2025-07-28T16:55:40.267095614 Started Dataspace Protocol Negotiation Transform Extension
+DEBUG 2025-07-28T16:55:40.267136443 Started Dataspace Protocol Transfer HTTP Dispatcher Extension
+DEBUG 2025-07-28T16:55:40.267173004 Started Dataspace Protocol Transfer Process Transform Extension
+DEBUG 2025-07-28T16:55:40.26720594 Started Cache Query API Extension
+DEBUG 2025-07-28T16:55:40.267239779 Started Management API: Asset
+DEBUG 2025-07-28T16:55:40.26726941 Started Management API: Catalog
+DEBUG 2025-07-28T16:55:40.267302012 Started Management API: Contract Agreement
+DEBUG 2025-07-28T16:55:40.267325696 Started Management API: Contract Definition
+DEBUG 2025-07-28T16:55:40.267353583 Started Management API: Contract Negotiation
+DEBUG 2025-07-28T16:55:40.267376599 Started Endpoint Data Reference Core Default Services Extension
+DEBUG 2025-07-28T16:55:40.267397826 Started org.eclipse.edc.edr.store.EndpointDataReferenceStoreExtension
+DEBUG 2025-07-28T16:55:40.267418412 Started Management API: EDR cache
+DEBUG 2025-07-28T16:55:40.267438849 Started Management API: Policy Definition
+DEBUG 2025-07-28T16:55:40.267497565 Started Management API: Transfer Process
+DEBUG 2025-07-28T16:55:40.267527966 Started Dataspace Protocol Version HTTP Dispatcher Extension
+DEBUG 2025-07-28T16:55:40.267556688 Started Dataspace Protocol Catalog Extension
+DEBUG 2025-07-28T16:55:40.267581912 Started Dataspace Protocol Negotiation Api
+DEBUG 2025-07-28T16:55:40.267609607 Started org.eclipse.edc.protocol.dsp.transferprocess.http.api.DspTransferProcessApiExtension
+DEBUG 2025-07-28T16:55:40.26764809 Started Dataspace Protocol Version Api
+DEBUG 2025-07-28T16:55:40.267725931 Started Management API: Protocol Version
+DEBUG 2025-07-28T16:55:40.267771473 Started PolicyMonitor Default Services
+DEBUG 2025-07-28T16:55:40.270168976 Started org.eclipse.edc.connector.policy.monitor.PolicyMonitorExtension
+DEBUG 2025-07-28T16:55:40.270371087 Started Management API: Version Information
+DEBUG 2025-07-28T16:55:40.270430916 Started Contract Negotiation command handlers
+DEBUG 2025-07-28T16:55:40.270477552 Started org.eclipse.edc.connector.controlplane.transfer.TransferProcessCommandExtension
+DEBUG 2025-07-28T16:55:40.270509082 Started Control Plane API
+DEBUG 2025-07-28T16:55:40.270535811 Started Callback dispatcher extension
+DEBUG 2025-07-28T16:55:40.270569274 Started Callback dispatcher http extension
+DEBUG 2025-07-28T16:55:40.270596341 Started Endpoint Data Reference Store Receiver Extension
+DEBUG 2025-07-28T16:55:40.270639006 Started Web DID
+DEBUG 2025-07-28T16:55:40.27067024 Started Observability API
+DEBUG 2025-07-28T16:55:40.276458045 [DataPlaneHealthCheck] Initiate data plane registration.
+DEBUG 2025-07-28T16:55:40.278201665 [DataPlaneHealthCheck] data plane registered to control plane
+DEBUG 2025-07-28T16:55:40.278645274 Started Dataplane Self Registration
+DEBUG 2025-07-28T16:55:40.278765627 Started Static token API Authentication
+DEBUG 2025-07-28T16:55:40.278809431 Started Api Authentication Configuration Extension
+INFO 2025-07-28T16:55:40.280105254 94 service extensions started
+INFO 2025-07-28T16:55:40.281079749 Runtime provider-manufacturing-embedded-runtime ready
+DEBUG 2025-07-28T16:55:41.284810578 [DataPlaneSelectorManagerImpl] DataPlaneInstance provider-manufacturing-embedded-runtime is now in state AVAILABLE
+DEBUG 2025-07-28T16:55:45.261782278 [ExecutionManager] Run pre-execution task
+DEBUG 2025-07-28T16:55:46.44514095 Shutdown Api Authentication Configuration Extension
+DEBUG 2025-07-28T16:55:46.445323952 Shutdown Static token API Authentication
+DEBUG 2025-07-28T16:55:46.445388323 Shutdown Dataplane Self Registration
+DEBUG 2025-07-28T16:55:46.445423415 Shutdown Observability API
+DEBUG 2025-07-28T16:55:46.445453134 Shutdown Web DID
+DEBUG 2025-07-28T16:55:46.445484162 Shutdown Endpoint Data Reference Store Receiver Extension
+DEBUG 2025-07-28T16:55:46.44551322 Shutdown Callback dispatcher http extension
+DEBUG 2025-07-28T16:55:46.445541155 Shutdown Callback dispatcher extension
+DEBUG 2025-07-28T16:55:46.445582378 Shutdown Control Plane API
+DEBUG 2025-07-28T16:55:46.4456058 Shutdown org.eclipse.edc.connector.controlplane.transfer.TransferProcessCommandExtension
+DEBUG 2025-07-28T16:55:46.445641962 Shutdown Contract Negotiation command handlers
+DEBUG 2025-07-28T16:55:46.44566873 Shutdown Management API: Version Information
