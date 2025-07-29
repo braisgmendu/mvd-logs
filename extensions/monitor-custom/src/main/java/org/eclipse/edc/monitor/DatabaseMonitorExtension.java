@@ -13,7 +13,7 @@ import java.sql.SQLException;
  * Esta clase extiende la funcionalidad del sistema de monitoreo utilizando una base de datos.
  */
 public class DatabaseMonitorExtension implements ServiceExtension {
-    private DatabasMonitor newMonitor;
+    private DatabaseMonitor newMonitor;
 
     @Override
     public String name() {
@@ -35,7 +35,7 @@ public class DatabaseMonitorExtension implements ServiceExtension {
             Connection connection = DriverManager.getConnection(url, user, password);
             var runtimeId = context.getRuntimeId();
 
-            this.newMonitor = new DatabasMonitor(runtimeId, originalMonitor, connection);
+            this.newMonitor = new DatabaseMonitor(runtimeId, originalMonitor, connection);
             context.registerService(Monitor.class, newMonitor);
             originalMonitor.info("Database Monitor registered for runtime: " + runtimeId);
 

@@ -30,7 +30,7 @@ import java.util.function.Supplier;
  * Un Monitor que escribe tanto a la consola (usando ConsoleMonitor)
  * como a un fichero de log.
  */
-public class DatabasMonitor implements Monitor, AutoCloseable {
+public class DatabaseMonitor implements Monitor, AutoCloseable {
 
     private final Monitor consoleMonitor;
     private final Connection connection;
@@ -45,7 +45,7 @@ public class DatabasMonitor implements Monitor, AutoCloseable {
      * @param originalMonitor   el monitor original que se va a envolver o extender
      * @param connection        la conexión a la base de datos para registrar los eventos
      */
-    public DatabasMonitor(String runtimeId, Monitor originalMonitor, Connection connection) {
+    public DatabaseMonitor(String runtimeId, Monitor originalMonitor, Connection connection) {
         this.runtimeId = runtimeId;
         this.consoleMonitor = originalMonitor;
         this.connection = connection;
