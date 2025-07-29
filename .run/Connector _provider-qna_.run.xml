@@ -5,7 +5,7 @@
     <option name="envFilePaths">
       <option value="$PROJECT_DIR$/deployment/assets/env/provider_connector_qna.env" />
     </option>
-    <option name="MAIN_CLASS_NAME" value="org.eclipse.edc.monitor.runtime.CustomBaseRuntime" />
+    <option name="MAIN_CLASS_NAME" value="org.eclipse.edc.boot.system.runtime.BaseRuntime" />
     <module name="mvd.launchers.runtime-embedded.main" />
     <option name="PROGRAM_PARAMETERS" value="--log-level=debug" />
     <extension name="net.ashald.envfile">

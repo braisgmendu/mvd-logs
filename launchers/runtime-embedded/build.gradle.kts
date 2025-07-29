@@ -19,6 +19,7 @@ plugins {
 }
 
 dependencies {
+    runtimeOnly(project(":extensions:monitor-custom"))
 
     runtimeOnly(project(":launchers:controlplane")) {
         // this will remove the RemoteDataPlaneSelectorService
@@ -37,7 +38,7 @@ tasks.withType<com.github.jengelman.gradle.plugins.shadow.tasks.ShadowJar> {
 }
 
 application {
-    mainClass.set("org.eclipse.edc.monitor.runtime.CustomBaseRuntime")
+    mainClass.set("org.eclipse.edc.boot.system.runtime.BaseRuntime")
 }
 
 edcBuild {

@@ -40,11 +40,9 @@ tasks.withType<com.github.jengelman.gradle.plugins.shadow.tasks.ShadowJar> {
     mergeServiceFiles()
     archiveFileName.set("issuerservice.jar")
 }
-tasks.named<JavaExec>("run") {
-    args("--runtime-id=issuer-service") // Cambia "control-plane" por el ID que corresponda
-}
+
 application {
-    mainClass.set("org.eclipse.edc.monitor.runtime.CustomBaseRuntime")
+    mainClass.set("org.eclipse.edc.boot.system.runtime.BaseRuntime")
 }
 
 edcBuild {

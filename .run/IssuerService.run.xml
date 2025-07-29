@@ -5,7 +5,7 @@
     <option name="envFilePaths">
       <option value="$PROJECT_DIR$/deployment/assets/env/issuerservice.env" />
     </option>
-    <option name="MAIN_CLASS_NAME" value="org.eclipse.edc.monitor.runtime.CustomBaseRuntime" />
+    <option name="MAIN_CLASS_NAME" value="org.eclipse.edc.boot.system.runtime.BaseRuntime" />
     <module name="mvd.launchers.issuerservice.main" />
     <option name="PROGRAM_PARAMETERS" value="--log-level=DEBUG" />
     <extension name="net.ashald.envfile">

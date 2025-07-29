@@ -1,0 +1,564 @@
+[provider-qna]DEBUG 2025-07-29T10:28:17.304293197 DataPlane Access Control: default implementation is used, will always return Result.success()
+[provider-qna]WARNING 2025-07-29T10:28:17.310579842 The `data-plane-public-api-v2` has been deprecated, please provide analternative implementation for Http Proxy if needed
+[provider-qna]WARNING 2025-07-29T10:28:17.314323448 The public API endpoint was not explicitly configured, the default 'http://localhost:12001/api/public' will be used.
+[provider-qna]WARNING 2025-07-29T10:28:17.328517264 The list of trusted issuers is empty
+[provider-qna]DEBUG 2025-07-29T10:28:17.331601004 Config value: no setting found for 'edc.api.auth.dac.cache.validity', falling back to default value '300000'
+[provider-qna]DEBUG 2025-07-29T10:28:17.332514568 Config value: no setting found for 'edc.api.auth.dac.validation.tolerance', falling back to default value '5000'
+[provider-qna]WARNING 2025-07-29T10:28:17.332986972 [Delegated API Authentication] No audience configured for delegated authentication, defaulting to the participantId
+[provider-qna]DEBUG 2025-07-29T10:28:17.337371274 Config value: no setting found for 'edc.dataplane.state-machine.iteration-wait-millis', falling back to default value '1000'
+[provider-qna]DEBUG 2025-07-29T10:28:17.338037518 Config value: no setting found for 'edc.dataplane.state-machine.batch-size', falling back to default value '20'
+[provider-qna]DEBUG 2025-07-29T10:28:17.33868453 Config value: no setting found for 'edc.dataplane.state-machine.flow.lease.time', falling back to default value '500'
+[provider-qna]DEBUG 2025-07-29T10:28:17.339206277 Config value: no setting found for 'edc.dataplane.state-machine.flow.lease.factor', falling back to default value '5'
+[provider-qna]DEBUG 2025-07-29T10:28:17.341806069 Config value: no setting found for 'edc.dataplane.send.retry.limit', falling back to default value '7'
+[provider-qna]DEBUG 2025-07-29T10:28:17.344489529 Config value: no setting found for 'edc.dataplane.send.retry.base-delay.ms', falling back to default value '1000'
+[provider-qna]DEBUG 2025-07-29T10:28:17.346276291 Config value: no setting found for 'edc.dataplane.transfer.threads', falling back to default value '20'
+[provider-qna]DEBUG 2025-07-29T10:28:17.348845332 Config value: no setting found for 'edc.dataplane.http.sink.partition.size', falling back to default value '5'
+[provider-qna]DEBUG 2025-07-29T10:28:17.357176559 Config value: no setting found for 'edc.catalog.cache.partition.num.crawlers', falling back to default value '2'
+[provider-qna]DEBUG 2025-07-29T10:28:17.359014899 Config value: no setting found for 'edc.catalog.cache.partition.num.crawlers', falling back to default value '2'
+[provider-qna]DEBUG 2025-07-29T10:28:17.360068283 Config value: no setting found for 'edc.catalog.cache.execution.enabled', falling back to default value 'true'
+[provider-qna]DEBUG 2025-07-29T10:28:17.39497698 Config value: no setting found for 'edc.dsp.well-known-path.enabled', falling back to default value 'false'
+[provider-qna]WARNING 2025-07-29T10:28:17.397844439 No TokenDecorator was registered. The 'scope' field of outgoing protocol messages will be empty
+[provider-qna]DEBUG 2025-07-29T10:28:17.419724588 Config value: no setting found for 'edc.dsp.well-known-path.enabled', falling back to default value 'false'
+[provider-qna]DEBUG 2025-07-29T10:28:17.433269365 Using embedded Data Plane client.
+[provider-qna]DEBUG 2025-07-29T10:28:17.434118711 Config value: no setting found for 'edc.data.plane.selector.state-machine.batch-size', falling back to default value '20'
+[provider-qna]DEBUG 2025-07-29T10:28:17.435449553 Config value: no setting found for 'edc.data.plane.selector.state-machine.iteration-wait-millis', falling back to default value '1000'
+[provider-qna]DEBUG 2025-07-29T10:28:17.435892824 Config value: no setting found for 'edc.data.plane.selector.state-machine.check.period', falling back to default value '60'
+[provider-qna]DEBUG 2025-07-29T10:28:17.512502896 Config value: no setting found for 'edc.dataplane.client.selector.strategy', falling back to default value 'random'
+[provider-qna]DEBUG 2025-07-29T10:28:17.644182765 Config value: no setting found for 'edc.policy.monitor.state-machine.batch-size', falling back to default value '20'
+[provider-qna]DEBUG 2025-07-29T10:28:17.64479699 Config value: no setting found for 'edc.policy.monitor.state-machine.iteration-wait-millis', falling back to default value '1000'
+[provider-qna]DEBUG 2025-07-29T10:28:17.65891792 Config value: no setting found for 'edc.edr.receiver.sync', falling back to default value 'false'
+[provider-qna]DEBUG 2025-07-29T10:28:17.666027215 Config value: no setting found for 'edc.data.plane.self.unregistration', falling back to default value 'false'
+[provider-qna]DEBUG 2025-07-29T10:28:17.693708918 Configured tokenbased authentication for context management
+[provider-qna]DEBUG 2025-07-29T10:28:17.694023301 Configured tokenbased authentication for context catalog
+[provider-qna]DEBUG 2025-07-29T10:28:19.669390035 [DataPlaneHealthCheck] Initiate data plane registration.
+[provider-qna]DEBUG 2025-07-29T10:28:19.671293352 [DataPlaneHealthCheck] data plane registered to control plane
+[provider-qna]DEBUG 2025-07-29T10:28:20.686187073 [DataPlaneSelectorManagerImpl] DataPlaneInstance provider-qna is now in state AVAILABLE
+[provider-qna]DEBUG 2025-07-29T10:28:24.657262228 [ExecutionManager] Run pre-execution task
+[provider-qna]DEBUG 2025-07-29T10:28:26.766552528 [ExecutionManager] No WorkItems found, skipping execution
+[provider-qna]DEBUG 2025-07-29T10:28:34.656888263 [ExecutionManager] Run pre-execution task
+[provider-qna]DEBUG 2025-07-29T10:28:34.663046048 [ExecutionManager] No WorkItems found, skipping execution
+[provider-qna]DEBUG 2025-07-29T10:28:44.656885609 [ExecutionManager] Run pre-execution task
+[provider-qna]DEBUG 2025-07-29T10:28:44.663928802 [ExecutionManager] No WorkItems found, skipping execution
+[provider-qna]DEBUG 2025-07-29T10:28:54.657448634 [ExecutionManager] Run pre-execution task
+[provider-qna]DEBUG 2025-07-29T10:28:54.666549276 [ExecutionManager] No WorkItems found, skipping execution
+[provider-qna]DEBUG 2025-07-29T10:29:04.656924528 [ExecutionManager] Run pre-execution task
+[provider-qna]DEBUG 2025-07-29T10:29:04.663387389 [ExecutionManager] No WorkItems found, skipping execution
+[provider-qna]DEBUG 2025-07-29T10:29:14.656922417 [ExecutionManager] Run pre-execution task
+[provider-qna]DEBUG 2025-07-29T10:29:14.66270383 [ExecutionManager] No WorkItems found, skipping execution
+[provider-qna]DEBUG 2025-07-29T10:29:20.749210446 [DataPlaneSelectorManagerImpl] DataPlaneInstance provider-qna is now in state AVAILABLE
+[provider-qna]DEBUG 2025-07-29T10:29:24.657186659 [ExecutionManager] Run pre-execution task
+[provider-qna]DEBUG 2025-07-29T10:29:24.66700744 [ExecutionManager] No WorkItems found, skipping execution
+[provider-qna]DEBUG 2025-07-29T10:29:34.656862639 [ExecutionManager] Run pre-execution task
+[provider-qna]DEBUG 2025-07-29T10:29:34.662336002 [ExecutionManager] No WorkItems found, skipping execution
+[provider-qna]DEBUG 2025-07-29T10:29:44.657075285 [ExecutionManager] Run pre-execution task
+[provider-qna]DEBUG 2025-07-29T10:29:44.662747086 [ExecutionManager] No WorkItems found, skipping execution
+[provider-qna]DEBUG 2025-07-29T10:29:54.656812543 [ExecutionManager] Run pre-execution task
+[provider-qna]DEBUG 2025-07-29T10:29:54.66213374 [ExecutionManager] No WorkItems found, skipping execution
+[provider-qna]DEBUG 2025-07-29T10:30:04.656844604 [ExecutionManager] Run pre-execution task
+[provider-qna]DEBUG 2025-07-29T10:30:04.663573256 [ExecutionManager] No WorkItems found, skipping execution
+[provider-qna]DEBUG 2025-07-29T10:30:14.657253987 [ExecutionManager] Run pre-execution task
+[provider-qna]DEBUG 2025-07-29T10:30:14.677690057 [ExecutionManager] No WorkItems found, skipping execution
+[provider-qna]DEBUG 2025-07-29T10:30:20.7856655 [DataPlaneSelectorManagerImpl] DataPlaneInstance provider-qna is now in state AVAILABLE
+[provider-qna]DEBUG 2025-07-29T10:30:24.65685191 [ExecutionManager] Run pre-execution task
+[provider-qna]DEBUG 2025-07-29T10:30:24.662139034 [ExecutionManager] No WorkItems found, skipping execution
+[provider-qna]DEBUG 2025-07-29T10:30:34.656908456 [ExecutionManager] Run pre-execution task
+[provider-qna]DEBUG 2025-07-29T10:30:34.662323417 [ExecutionManager] No WorkItems found, skipping execution
+[provider-qna]DEBUG 2025-07-29T10:30:44.656907436 [ExecutionManager] Run pre-execution task
+[provider-qna]DEBUG 2025-07-29T10:30:44.662155872 [ExecutionManager] No WorkItems found, skipping execution
+[provider-qna]DEBUG 2025-07-29T10:30:54.656831077 [ExecutionManager] Run pre-execution task
+[provider-qna]DEBUG 2025-07-29T10:30:54.662953724 [ExecutionManager] No WorkItems found, skipping execution
+[provider-qna]DEBUG 2025-07-29T10:31:04.656793189 [ExecutionManager] Run pre-execution task
+[provider-qna]DEBUG 2025-07-29T10:31:04.66145538 [ExecutionManager] No WorkItems found, skipping execution
+[provider-qna]DEBUG 2025-07-29T10:42:45.080978167 Config value: no setting found for 'edc.core.retry.retries.max', falling back to default value '5'
+[provider-qna]DEBUG 2025-07-29T10:42:45.090223862 Config value: no setting found for 'edc.core.retry.backoff.min', falling back to default value '500'
+[provider-qna]DEBUG 2025-07-29T10:42:45.090728388 Config value: no setting found for 'edc.core.retry.backoff.max', falling back to default value '10000'
+[provider-qna]DEBUG 2025-07-29T10:42:45.091171206 Config value: no setting found for 'edc.core.retry.log.on.retry', falling back to default value 'false'
+[provider-qna]DEBUG 2025-07-29T10:42:45.09165563 Config value: no setting found for 'edc.core.retry.log.on.retry.scheduled', falling back to default value 'false'
+[provider-qna]DEBUG 2025-07-29T10:42:45.092094749 Config value: no setting found for 'edc.core.retry.log.on.retries.exceeded', falling back to default value 'false'
+[provider-qna]DEBUG 2025-07-29T10:42:45.092517329 Config value: no setting found for 'edc.core.retry.log.on.failed.attempt', falling back to default value 'false'
+[provider-qna]DEBUG 2025-07-29T10:42:45.09487418 Config value: no setting found for 'edc.core.retry.log.on.abort', falling back to default value 'false'
+[provider-qna]DEBUG 2025-07-29T10:42:45.10942578 Config value: no setting found for 'edc.http.client.https.enforce', falling back to default value 'false'
+[provider-qna]DEBUG 2025-07-29T10:42:45.109974563 Config value: no setting found for 'edc.http.client.timeout.connect', falling back to default value '30'
+[provider-qna]DEBUG 2025-07-29T10:42:45.110437681 Config value: no setting found for 'edc.http.client.timeout.read', falling back to default value '30'
+[provider-qna]DEBUG 2025-07-29T10:42:45.1108421 Config value: no setting found for 'edc.http.client.send.buffer.size', falling back to default value '0'
+[provider-qna]DEBUG 2025-07-29T10:42:45.111532349 Config value: no setting found for 'edc.http.client.receive.buffer.size', falling back to default value '0'
+[provider-qna]INFO 2025-07-29T10:42:45.274682153 HTTPS enforcement it not enabled, please enable it in a production environment
+[provider-qna]INFO 2025-07-29T10:42:45.577100329 HTTPS enforcement it not enabled, please enable it in a production environment
+[provider-qna]WARNING 2025-07-29T10:42:45.584297903 Config value: no setting found for 'edc.hostname', falling back to default value 'localhost'
+[provider-qna]WARNING 2025-07-29T10:42:45.889362964 Using the InMemoryVault is not suitable for production scenarios and should be replaced with an actual Vault!
+[provider-qna]DEBUG 2025-07-29T10:42:46.231378354 Storing secret did:web:localhost%3A7093-alias
+[provider-qna]DEBUG 2025-07-29T10:42:46.232441524 Storing secret did:web:localhost%3A7093#key-1
+[provider-qna]WARNING 2025-07-29T10:42:46.233848636 [DEMO] >>>>>> This extension hard-codes a keypair into the vault! <<<<<<
+[provider-qna]WARNING 2025-07-29T10:42:46.238048056 A service of the type java.time.Clock was already registered and has now been replaced with a SystemClock instance.
+[provider-qna]DEBUG 2025-07-29T10:42:46.242268017 Config value: no setting found for 'edc.iam.sts.token.expiration', falling back to default value '5'
+[provider-qna]DEBUG 2025-07-29T10:42:46.28703714 Config value: no setting found for 'edc.jsonld.prefixes.check', falling back to default value 'true'
+[provider-qna]DEBUG 2025-07-29T10:42:46.287660424 Config value: no setting found for 'edc.jsonld.vocab.disable', falling back to default value 'false'
+[provider-qna]DEBUG 2025-07-29T10:42:46.293438061 Config value: no setting found for 'edc.jsonld.https.enabled', falling back to default value 'false'
+[provider-qna]DEBUG 2025-07-29T10:42:46.298390633 Config value: no setting found for 'edc.jsonld.http.enabled', falling back to default value 'false'
+[provider-qna]DEBUG 2025-07-29T10:42:46.441345025 Config value: no setting found for 'edc.did.resolver.cache.expiry', falling back to default value '300000'
+[provider-qna]DEBUG 2025-07-29T10:42:46.447449032 Config value: no setting found for 'edc.dcp.v08.forced', falling back to default value 'false'
+[provider-qna]DEBUG 2025-07-29T10:42:46.448220972 Config value: no setting found for 'edc.iam.credential.revocation.cache.validity', falling back to default value '900000'
+[provider-qna]DEBUG 2025-07-29T10:42:46.449795055 Config value: no setting found for 'edc.sql.store.jti.cleanup.period', falling back to default value '60'
+[provider-qna]WARNING 2025-07-29T10:42:46.481834736 The list of trusted issuers is empty
+[provider-qna]DEBUG 2025-07-29T10:42:46.490180367 DataPlane Access Control: default implementation is used, will always return Result.success()
+[provider-qna]DEBUG 2025-07-29T10:42:46.49425143 Config value: no setting found for 'edc.api.auth.dac.cache.validity', falling back to default value '300000'
+[provider-qna]DEBUG 2025-07-29T10:42:46.495475186 Config value: no setting found for 'edc.api.auth.dac.validation.tolerance', falling back to default value '5000'
+[provider-qna]WARNING 2025-07-29T10:42:46.496182528 [Delegated API Authentication] No audience configured for delegated authentication, defaulting to the participantId
+[provider-qna]DEBUG 2025-07-29T10:42:46.501796977 Config value: no setting found for 'edc.dataplane.state-machine.iteration-wait-millis', falling back to default value '1000'
+[provider-qna]DEBUG 2025-07-29T10:42:46.502571618 Config value: no setting found for 'edc.dataplane.state-machine.batch-size', falling back to default value '20'
+[provider-qna]DEBUG 2025-07-29T10:42:46.504379553 Config value: no setting found for 'edc.dataplane.state-machine.flow.lease.time', falling back to default value '500'
+[provider-qna]DEBUG 2025-07-29T10:42:46.504757015 Config value: no setting found for 'edc.dataplane.state-machine.flow.lease.factor', falling back to default value '5'
+[provider-qna]DEBUG 2025-07-29T10:42:46.510204435 Config value: no setting found for 'edc.dataplane.send.retry.limit', falling back to default value '7'
+[provider-qna]DEBUG 2025-07-29T10:42:46.515689825 Config value: no setting found for 'edc.dataplane.send.retry.base-delay.ms', falling back to default value '1000'
+[provider-qna]DEBUG 2025-07-29T10:42:46.516168316 Config value: no setting found for 'edc.dataplane.transfer.threads', falling back to default value '20'
+[provider-qna]DEBUG 2025-07-29T10:42:46.521428284 Config value: no setting found for 'edc.dataplane.http.sink.partition.size', falling back to default value '5'
+[provider-qna]DEBUG 2025-07-29T10:42:46.528125901 Config value: no setting found for 'edc.web.https.keystore.password', falling back to default value 'password'
+[provider-qna]DEBUG 2025-07-29T10:42:46.528696695 Config value: no setting found for 'edc.web.https.keymanager.password', falling back to default value 'password'
+[provider-qna]DEBUG 2025-07-29T10:42:46.529736678 Config value: no setting found for 'web.http.default.port', falling back to default value '8181'
+[provider-qna]DEBUG 2025-07-29T10:42:46.530138197 Config value: no setting found for 'web.http.default.path', falling back to default value '/api'
+[provider-qna]DEBUG 2025-07-29T10:42:46.53254294 Config value: no setting found for 'edc.web.https.keystore.type', falling back to default value 'PKCS12'
+[provider-qna]DEBUG 2025-07-29T10:42:46.585404199 Config value: no setting found for 'edc.negotiation.provider.state-machine.batch-size', falling back to default value '20'
+[provider-qna]DEBUG 2025-07-29T10:42:46.585757956 Config value: no setting found for 'edc.negotiation.state-machine.iteration-wait-millis', falling back to default value '1000'
+[provider-qna]DEBUG 2025-07-29T10:42:46.5862525 Config value: no setting found for 'edc.negotiation.consumer.send.retry.limit', falling back to default value '7'
+[provider-qna]DEBUG 2025-07-29T10:42:46.586681942 Config value: no setting found for 'edc.negotiation.consumer.state-machine.batch-size', falling back to default value '20'
+[provider-qna]DEBUG 2025-07-29T10:42:46.587799675 Config value: no setting found for 'edc.negotiation.provider.send.retry.limit', falling back to default value '7'
+[provider-qna]DEBUG 2025-07-29T10:42:46.588908016 Config value: no setting found for 'edc.negotiation.consumer.send.retry.base-delay.ms', falling back to default value '1000'
+[provider-qna]DEBUG 2025-07-29T10:42:46.589319141 Config value: no setting found for 'edc.negotiation.provider.send.retry.base-delay.ms', falling back to default value '1000'
+[provider-qna]DEBUG 2025-07-29T10:42:46.599322884 Config value: no setting found for 'edc.transfer.send.retry.base-delay.ms', falling back to default value '1000'
+[provider-qna]DEBUG 2025-07-29T10:42:46.600064085 Config value: no setting found for 'edc.transfer.state-machine.batch-size', falling back to default value '20'
+[provider-qna]DEBUG 2025-07-29T10:42:46.600742397 Config value: no setting found for 'edc.transfer.send.retry.limit', falling back to default value '7'
+[provider-qna]DEBUG 2025-07-29T10:42:46.601927526 Config value: no setting found for 'edc.transfer.state-machine.iteration-wait-millis', falling back to default value '1000'
+[provider-qna]DEBUG 2025-07-29T10:42:46.616462588 Config value: no setting found for 'edc.policy.validation.enabled', falling back to default value 'false'
+[provider-qna]WARNING 2025-07-29T10:42:46.617256724 No TransactionContext registered, a no-op implementation will be used, not suitable for production environments
+[provider-qna]DEBUG 2025-07-29T10:42:46.638219346 Config value: no setting found for 'edc.catalog.cache.partition.num.crawlers', falling back to default value '2'
+[provider-qna]DEBUG 2025-07-29T10:42:46.640510863 Config value: no setting found for 'edc.catalog.cache.partition.num.crawlers', falling back to default value '2'
+[provider-qna]DEBUG 2025-07-29T10:42:46.641003597 Config value: no setting found for 'edc.catalog.cache.execution.enabled', falling back to default value 'true'
+[provider-qna]DEBUG 2025-07-29T10:42:46.661616314 Config value: no setting found for 'edc.dsp.well-known-path.enabled', falling back to default value 'false'
+[provider-qna]WARNING 2025-07-29T10:42:46.66425544 No TokenDecorator was registered. The 'scope' field of outgoing protocol messages will be empty
+[provider-qna]DEBUG 2025-07-29T10:42:46.677677876 Config value: no setting found for 'edc.dsp.well-known-path.enabled', falling back to default value 'false'
+[provider-qna]DEBUG 2025-07-29T10:42:46.688122912 Using embedded Data Plane client.
+[provider-qna]DEBUG 2025-07-29T10:42:46.688925587 Config value: no setting found for 'edc.data.plane.selector.state-machine.batch-size', falling back to default value '20'
+[provider-qna]DEBUG 2025-07-29T10:42:46.69008293 Config value: no setting found for 'edc.data.plane.selector.state-machine.iteration-wait-millis', falling back to default value '1000'
+[provider-qna]DEBUG 2025-07-29T10:42:46.690451379 Config value: no setting found for 'edc.data.plane.selector.state-machine.check.period', falling back to default value '60'
+[provider-qna]DEBUG 2025-07-29T10:42:46.761367847 Config value: no setting found for 'edc.dataplane.client.selector.strategy', falling back to default value 'random'
+[provider-qna]DEBUG 2025-07-29T10:42:46.905718625 Config value: no setting found for 'edc.policy.monitor.state-machine.iteration-wait-millis', falling back to default value '1000'
+[provider-qna]DEBUG 2025-07-29T10:42:46.907000548 Config value: no setting found for 'edc.policy.monitor.state-machine.batch-size', falling back to default value '20'
+[provider-qna]DEBUG 2025-07-29T10:42:46.914622047 Config value: no setting found for 'edc.edr.receiver.sync', falling back to default value 'false'
+[provider-qna]WARNING 2025-07-29T10:42:46.917888589 The `data-plane-public-api-v2` has been deprecated, please provide analternative implementation for Http Proxy if needed
+[provider-qna]WARNING 2025-07-29T10:42:46.920839984 The public API endpoint was not explicitly configured, the default 'http://localhost:12001/api/public' will be used.
+[provider-qna]DEBUG 2025-07-29T10:42:46.924571116 Config value: no setting found for 'edc.data.plane.self.unregistration', falling back to default value 'false'
+[provider-qna]DEBUG 2025-07-29T10:42:46.938393093 Configured tokenbased authentication for context management
+[provider-qna]DEBUG 2025-07-29T10:42:46.938747538 Configured tokenbased authentication for context catalog
+[provider-qna]DEBUG 2025-07-29T10:42:46.997223097 HTTP context 'protocol' listening on port 8192
+[provider-qna]DEBUG 2025-07-29T10:42:47.002427398 HTTP context 'control' listening on port 8193
+[provider-qna]DEBUG 2025-07-29T10:42:47.002917648 HTTP context 'public' listening on port 12001
+[provider-qna]DEBUG 2025-07-29T10:42:47.004463303 HTTP context 'catalog' listening on port 8194
+[provider-qna]DEBUG 2025-07-29T10:42:47.005034446 HTTP context 'version' listening on port 8195
+[provider-qna]DEBUG 2025-07-29T10:42:47.007350763 HTTP context 'default' listening on port 8190
+[provider-qna]DEBUG 2025-07-29T10:42:47.008088293 HTTP context 'management' listening on port 8191
+[provider-qna]DEBUG 2025-07-29T10:42:47.090083428 Port mappings: PortMapping[name=protocol, port=8192, path=/api/dsp], PortMapping[name=control, port=8193, path=/api/control], PortMapping[name=public, port=12001, path=/api/public], PortMapping[name=catalog, port=8194, path=/api/catalog], PortMapping[name=version, port=8195, path=/api/version], PortMapping[name=default, port=8190, path=/api], PortMapping[name=management, port=8191, path=/api/management/]
+[provider-qna]DEBUG 2025-07-29T10:42:47.614800485 Registered Web API context alias: default
+[provider-qna]DEBUG 2025-07-29T10:42:47.747094495 Registered Web API context alias: protocol
+[provider-qna]DEBUG 2025-07-29T10:42:47.792581875 Registered Web API context alias: public
+[provider-qna]DEBUG 2025-07-29T10:42:47.887333771 Registered Web API context alias: management
+[provider-qna]DEBUG 2025-07-29T10:42:47.918819281 Registered Web API context alias: catalog
+[provider-qna]DEBUG 2025-07-29T10:42:47.957654715 Registered Web API context alias: control
+[provider-qna]DEBUG 2025-07-29T10:42:47.996063579 Registered Web API context alias: version
+[provider-qna]DEBUG 2025-07-29T10:42:48.013418547 [DataPlaneHealthCheck] Initiate data plane registration.
+[provider-qna]DEBUG 2025-07-29T10:42:48.015100985 [DataPlaneHealthCheck] data plane registered to control plane
+[provider-qna]DEBUG 2025-07-29T10:42:49.014229534 [DataPlaneSelectorManagerImpl] DataPlaneInstance provider-qna is now in state AVAILABLE
+[provider-qna]DEBUG 2025-07-29T10:42:53.005846814 [ExecutionManager] Run pre-execution task
+[provider-qna]WARNING 2025-07-29T10:42:53.05787143 [DEMO] Error resolving DID: did:web:localhost%3A7083. HTTP Code was: 204
+[provider-qna]WARNING 2025-07-29T10:42:53.061706259 [DEMO] Error resolving DID: did:web:localhost%3A7093. HTTP Code was: 204
+[provider-qna]DEBUG 2025-07-29T10:42:53.062529573 [ExecutionManager] No WorkItems found, skipping execution
+[provider-qna]DEBUG 2025-07-29T10:43:03.005732575 [ExecutionManager] Run pre-execution task
+[provider-qna]WARNING 2025-07-29T10:43:03.252595131 [DEMO] Error resolving DID: did:web:localhost%3A7083. HTTP Code was: 204
+[provider-qna]WARNING 2025-07-29T10:43:03.256495668 [DEMO] Error resolving DID: did:web:localhost%3A7093. HTTP Code was: 204
+[provider-qna]DEBUG 2025-07-29T10:43:03.256716576 [ExecutionManager] No WorkItems found, skipping execution
+[provider-qna]DEBUG 2025-07-29T10:43:13.006027861 [ExecutionManager] Run pre-execution task
+[provider-qna]WARNING 2025-07-29T10:43:13.013912418 [DEMO] Error resolving DID: did:web:localhost%3A7083. HTTP Code was: 204
+[provider-qna]WARNING 2025-07-29T10:43:13.016311084 [DEMO] Error resolving DID: did:web:localhost%3A7093. HTTP Code was: 204
+[provider-qna]DEBUG 2025-07-29T10:43:13.016574846 [ExecutionManager] No WorkItems found, skipping execution
+[provider-qna]DEBUG 2025-07-29T10:43:23.006381142 [ExecutionManager] Run pre-execution task
+[provider-qna]WARNING 2025-07-29T10:43:23.014453985 [DEMO] Error resolving DID: did:web:localhost%3A7083. HTTP Code was: 204
+[provider-qna]WARNING 2025-07-29T10:43:23.021878463 [DEMO] Error resolving DID: did:web:localhost%3A7093. HTTP Code was: 204
+[provider-qna]DEBUG 2025-07-29T10:43:23.022143053 [ExecutionManager] No WorkItems found, skipping execution
+[provider-qna]DEBUG 2025-07-29T10:43:33.005729587 [ExecutionManager] Run pre-execution task
+[provider-qna]WARNING 2025-07-29T10:43:33.008952844 [DEMO] Error resolving DID: did:web:localhost%3A7083. HTTP Code was: 204
+[provider-qna]WARNING 2025-07-29T10:43:33.011187052 [DEMO] Error resolving DID: did:web:localhost%3A7093. HTTP Code was: 204
+[provider-qna]DEBUG 2025-07-29T10:43:33.011260428 [ExecutionManager] No WorkItems found, skipping execution
+[provider-qna]DEBUG 2025-07-29T10:43:43.005639813 [ExecutionManager] Run pre-execution task
+[provider-qna]WARNING 2025-07-29T10:43:43.008742198 [DEMO] Error resolving DID: did:web:localhost%3A7083. HTTP Code was: 204
+[provider-qna]WARNING 2025-07-29T10:43:43.011147284 [DEMO] Error resolving DID: did:web:localhost%3A7093. HTTP Code was: 204
+[provider-qna]DEBUG 2025-07-29T10:43:43.011248293 [ExecutionManager] No WorkItems found, skipping execution
+[provider-qna]DEBUG 2025-07-29T10:43:49.064259962 [DataPlaneSelectorManagerImpl] DataPlaneInstance provider-qna is now in state AVAILABLE
+[provider-qna]DEBUG 2025-07-29T10:43:53.005691366 [ExecutionManager] Run pre-execution task
+[provider-qna]WARNING 2025-07-29T10:43:53.008764619 [DEMO] Error resolving DID: did:web:localhost%3A7083. HTTP Code was: 204
+[provider-qna]WARNING 2025-07-29T10:43:53.010948069 [DEMO] Error resolving DID: did:web:localhost%3A7093. HTTP Code was: 204
+[provider-qna]DEBUG 2025-07-29T10:43:53.011050063 [ExecutionManager] No WorkItems found, skipping execution
+[provider-qna]DEBUG 2025-07-29T10:44:03.005899027 [ExecutionManager] Run pre-execution task
+[provider-qna]WARNING 2025-07-29T10:44:03.009719862 [DEMO] Error resolving DID: did:web:localhost%3A7083. HTTP Code was: 204
+[provider-qna]WARNING 2025-07-29T10:44:03.011797394 [DEMO] Error resolving DID: did:web:localhost%3A7093. HTTP Code was: 204
+[provider-qna]DEBUG 2025-07-29T10:44:03.01187788 [ExecutionManager] No WorkItems found, skipping execution
+[provider-qna]DEBUG 2025-07-29T10:44:13.005692955 [ExecutionManager] Run pre-execution task
+[provider-qna]WARNING 2025-07-29T10:44:13.008806633 [DEMO] Error resolving DID: did:web:localhost%3A7083. HTTP Code was: 204
+[provider-qna]WARNING 2025-07-29T10:44:13.010894803 [DEMO] Error resolving DID: did:web:localhost%3A7093. HTTP Code was: 204
+[provider-qna]DEBUG 2025-07-29T10:44:13.010987009 [ExecutionManager] No WorkItems found, skipping execution
+[provider-qna]DEBUG 2025-07-29T10:44:23.005638402 [ExecutionManager] Run pre-execution task
+[provider-qna]WARNING 2025-07-29T10:44:23.008569933 [DEMO] Error resolving DID: did:web:localhost%3A7083. HTTP Code was: 204
+[provider-qna]WARNING 2025-07-29T10:44:23.011154374 [DEMO] Error resolving DID: did:web:localhost%3A7093. HTTP Code was: 204
+[provider-qna]DEBUG 2025-07-29T10:44:23.011286713 [ExecutionManager] No WorkItems found, skipping execution
+[provider-qna]DEBUG 2025-07-29T10:44:33.005762724 [ExecutionManager] Run pre-execution task
+[provider-qna]WARNING 2025-07-29T10:44:33.009349023 [DEMO] Error resolving DID: did:web:localhost%3A7083. HTTP Code was: 204
+[provider-qna]WARNING 2025-07-29T10:44:33.011362742 [DEMO] Error resolving DID: did:web:localhost%3A7093. HTTP Code was: 204
+[provider-qna]DEBUG 2025-07-29T10:44:33.011452572 [ExecutionManager] No WorkItems found, skipping execution
+[provider-qna]DEBUG 2025-07-29T10:44:43.00574547 [ExecutionManager] Run pre-execution task
+[provider-qna]WARNING 2025-07-29T10:44:43.008957482 [DEMO] Error resolving DID: did:web:localhost%3A7083. HTTP Code was: 204
+[provider-qna]WARNING 2025-07-29T10:44:43.011184579 [DEMO] Error resolving DID: did:web:localhost%3A7093. HTTP Code was: 204
+[provider-qna]DEBUG 2025-07-29T10:44:43.011274282 [ExecutionManager] No WorkItems found, skipping execution
+[provider-qna]DEBUG 2025-07-29T10:44:49.095609247 [DataPlaneSelectorManagerImpl] DataPlaneInstance provider-qna is now in state AVAILABLE
+[provider-qna]DEBUG 2025-07-29T10:44:53.005617682 [ExecutionManager] Run pre-execution task
+[provider-qna]WARNING 2025-07-29T10:44:53.00822048 [DEMO] Error resolving DID: did:web:localhost%3A7083. HTTP Code was: 204
+[provider-qna]WARNING 2025-07-29T10:44:53.010722298 [DEMO] Error resolving DID: did:web:localhost%3A7093. HTTP Code was: 204
+[provider-qna]DEBUG 2025-07-29T10:44:53.010816265 [ExecutionManager] No WorkItems found, skipping execution
+[provider-qna]DEBUG 2025-07-29T10:45:03.005690257 [ExecutionManager] Run pre-execution task
+[provider-qna]WARNING 2025-07-29T10:45:03.008519543 [DEMO] Error resolving DID: did:web:localhost%3A7083. HTTP Code was: 204
+[provider-qna]WARNING 2025-07-29T10:45:03.01084274 [DEMO] Error resolving DID: did:web:localhost%3A7093. HTTP Code was: 204
+[provider-qna]DEBUG 2025-07-29T10:45:03.010943969 [ExecutionManager] No WorkItems found, skipping execution
+[provider-qna]DEBUG 2025-07-29T10:45:13.005717575 [ExecutionManager] Run pre-execution task
+[provider-qna]WARNING 2025-07-29T10:45:13.008670797 [DEMO] Error resolving DID: did:web:localhost%3A7083. HTTP Code was: 204
+[provider-qna]WARNING 2025-07-29T10:45:13.010704653 [DEMO] Error resolving DID: did:web:localhost%3A7093. HTTP Code was: 204
+[provider-qna]DEBUG 2025-07-29T10:45:13.010826641 [ExecutionManager] No WorkItems found, skipping execution
+[provider-qna]DEBUG 2025-07-29T10:45:23.005863007 [ExecutionManager] Run pre-execution task
+[provider-qna]WARNING 2025-07-29T10:45:23.013665418 [DEMO] Error resolving DID: did:web:localhost%3A7083. HTTP Code was: 204
+[provider-qna]WARNING 2025-07-29T10:45:23.01939039 [DEMO] Error resolving DID: did:web:localhost%3A7093. HTTP Code was: 204
+[provider-qna]DEBUG 2025-07-29T10:45:23.019723488 [ExecutionManager] No WorkItems found, skipping execution
+[provider-qna]DEBUG 2025-07-29T10:45:33.006035503 [ExecutionManager] Run pre-execution task
+[provider-qna]WARNING 2025-07-29T10:45:33.013828246 [DEMO] Error resolving DID: did:web:localhost%3A7083. HTTP Code was: 204
+[provider-qna]WARNING 2025-07-29T10:45:33.019092129 [DEMO] Error resolving DID: did:web:localhost%3A7093. HTTP Code was: 204
+[provider-qna]DEBUG 2025-07-29T10:45:33.01921902 [ExecutionManager] No WorkItems found, skipping execution
+[provider-qna]DEBUG 2025-07-29T10:45:43.005892012 [ExecutionManager] Run pre-execution task
+[provider-qna]WARNING 2025-07-29T10:45:43.01369972 [DEMO] Error resolving DID: did:web:localhost%3A7083. HTTP Code was: 204
+[provider-qna]WARNING 2025-07-29T10:45:43.017478976 [DEMO] Error resolving DID: did:web:localhost%3A7093. HTTP Code was: 204
+[provider-qna]DEBUG 2025-07-29T10:45:43.017542778 [ExecutionManager] No WorkItems found, skipping execution
+[provider-qna]DEBUG 2025-07-29T10:45:49.122826261 [DataPlaneSelectorManagerImpl] DataPlaneInstance provider-qna is now in state AVAILABLE
+[provider-qna]DEBUG 2025-07-29T10:45:53.006008943 [ExecutionManager] Run pre-execution task
+[provider-qna]WARNING 2025-07-29T10:45:53.013656961 [DEMO] Error resolving DID: did:web:localhost%3A7083. HTTP Code was: 204
+[provider-qna]WARNING 2025-07-29T10:45:53.019237125 [DEMO] Error resolving DID: did:web:localhost%3A7093. HTTP Code was: 204
+[provider-qna]DEBUG 2025-07-29T10:45:53.019472279 [ExecutionManager] No WorkItems found, skipping execution
+[provider-qna]DEBUG 2025-07-29T10:46:03.005826524 [ExecutionManager] Run pre-execution task
+[provider-qna]WARNING 2025-07-29T10:46:03.011885696 [DEMO] Error resolving DID: did:web:localhost%3A7083. HTTP Code was: 204
+[provider-qna]WARNING 2025-07-29T10:46:03.014231048 [DEMO] Error resolving DID: did:web:localhost%3A7093. HTTP Code was: 204
+[provider-qna]DEBUG 2025-07-29T10:46:03.014319699 [ExecutionManager] No WorkItems found, skipping execution
+[provider-qna]DEBUG 2025-07-29T10:46:13.005860913 [ExecutionManager] Run pre-execution task
+[provider-qna]WARNING 2025-07-29T10:46:13.013579317 [DEMO] Error resolving DID: did:web:localhost%3A7083. HTTP Code was: 204
+[provider-qna]WARNING 2025-07-29T10:46:13.019244295 [DEMO] Error resolving DID: did:web:localhost%3A7093. HTTP Code was: 204
+[provider-qna]DEBUG 2025-07-29T10:46:13.019557581 [ExecutionManager] No WorkItems found, skipping execution
+[provider-qna]DEBUG 2025-07-29T10:46:23.00582716 [ExecutionManager] Run pre-execution task
+[provider-qna]WARNING 2025-07-29T10:46:23.012676707 [DEMO] Error resolving DID: did:web:localhost%3A7083. HTTP Code was: 204
+[provider-qna]WARNING 2025-07-29T10:46:23.018999468 [DEMO] Error resolving DID: did:web:localhost%3A7093. HTTP Code was: 204
+[provider-qna]DEBUG 2025-07-29T10:46:23.019300696 [ExecutionManager] No WorkItems found, skipping execution
+[provider-qna]DEBUG 2025-07-29T10:46:33.005692471 [ExecutionManager] Run pre-execution task
+[provider-qna]WARNING 2025-07-29T10:46:33.008590628 [DEMO] Error resolving DID: did:web:localhost%3A7083. HTTP Code was: 204
+[provider-qna]WARNING 2025-07-29T10:46:33.010520414 [DEMO] Error resolving DID: did:web:localhost%3A7093. HTTP Code was: 204
+[provider-qna]DEBUG 2025-07-29T10:46:33.010601219 [ExecutionManager] No WorkItems found, skipping execution
+[provider-qna]DEBUG 2025-07-29T12:01:38.718528856 Config value: no setting found for 'edc.core.retry.retries.max', falling back to default value '5'
+[provider-qna]DEBUG 2025-07-29T12:01:38.722351794 Config value: no setting found for 'edc.core.retry.backoff.min', falling back to default value '500'
+[provider-qna]DEBUG 2025-07-29T12:01:38.722858394 Config value: no setting found for 'edc.core.retry.backoff.max', falling back to default value '10000'
+[provider-qna]DEBUG 2025-07-29T12:01:38.723312687 Config value: no setting found for 'edc.core.retry.log.on.retry', falling back to default value 'false'
+[provider-qna]DEBUG 2025-07-29T12:01:38.723812119 Config value: no setting found for 'edc.core.retry.log.on.retry.scheduled', falling back to default value 'false'
+[provider-qna]DEBUG 2025-07-29T12:01:38.724298365 Config value: no setting found for 'edc.core.retry.log.on.retries.exceeded', falling back to default value 'false'
+[provider-qna]DEBUG 2025-07-29T12:01:38.725212262 Config value: no setting found for 'edc.core.retry.log.on.failed.attempt', falling back to default value 'false'
+[provider-qna]DEBUG 2025-07-29T12:01:38.726078496 Config value: no setting found for 'edc.core.retry.log.on.abort', falling back to default value 'false'
+[provider-qna]DEBUG 2025-07-29T12:01:38.732093656 Config value: no setting found for 'edc.http.client.https.enforce', falling back to default value 'false'
+[provider-qna]DEBUG 2025-07-29T12:01:38.732554959 Config value: no setting found for 'edc.http.client.timeout.connect', falling back to default value '30'
+[provider-qna]DEBUG 2025-07-29T12:01:38.732940282 Config value: no setting found for 'edc.http.client.timeout.read', falling back to default value '30'
+[provider-qna]DEBUG 2025-07-29T12:01:38.733398012 Config value: no setting found for 'edc.http.client.send.buffer.size', falling back to default value '0'
+[provider-qna]DEBUG 2025-07-29T12:01:38.733759385 Config value: no setting found for 'edc.http.client.receive.buffer.size', falling back to default value '0'
+[provider-qna]INFO 2025-07-29T12:01:38.834279719 HTTPS enforcement it not enabled, please enable it in a production environment
+[provider-qna]INFO 2025-07-29T12:01:39.131401754 HTTPS enforcement it not enabled, please enable it in a production environment
+[provider-qna]WARNING 2025-07-29T12:01:39.134670064 Config value: no setting found for 'edc.hostname', falling back to default value 'localhost'
+[provider-qna]WARNING 2025-07-29T12:01:39.340318238 Using the InMemoryVault is not suitable for production scenarios and should be replaced with an actual Vault!
+[provider-qna]DEBUG 2025-07-29T12:01:39.534587523 Storing secret did:web:localhost%3A7093-alias
+[provider-qna]DEBUG 2025-07-29T12:01:39.534909033 Storing secret did:web:localhost%3A7093#key-1
+[provider-qna]WARNING 2025-07-29T12:01:39.535172789 [DEMO] >>>>>> This extension hard-codes a keypair into the vault! <<<<<<
+[provider-qna]WARNING 2025-07-29T12:01:39.53561885 A service of the type java.time.Clock was already registered and has now been replaced with a SystemClock instance.
+[provider-qna]DEBUG 2025-07-29T12:01:39.537205239 Config value: no setting found for 'edc.iam.sts.token.expiration', falling back to default value '5'
+[provider-qna]DEBUG 2025-07-29T12:01:39.555659373 Config value: no setting found for 'edc.jsonld.prefixes.check', falling back to default value 'true'
+[provider-qna]DEBUG 2025-07-29T12:01:39.556085279 Config value: no setting found for 'edc.jsonld.vocab.disable', falling back to default value 'false'
+[provider-qna]DEBUG 2025-07-29T12:01:39.556477773 Config value: no setting found for 'edc.jsonld.https.enabled', falling back to default value 'false'
+[provider-qna]DEBUG 2025-07-29T12:01:39.55687634 Config value: no setting found for 'edc.jsonld.http.enabled', falling back to default value 'false'
+[provider-qna]DEBUG 2025-07-29T12:01:39.642178876 Config value: no setting found for 'edc.did.resolver.cache.expiry', falling back to default value '300000'
+[provider-qna]DEBUG 2025-07-29T12:01:39.64564762 Config value: no setting found for 'edc.dcp.v08.forced', falling back to default value 'false'
+[provider-qna]DEBUG 2025-07-29T12:01:39.646315404 Config value: no setting found for 'edc.iam.credential.revocation.cache.validity', falling back to default value '900000'
+[provider-qna]DEBUG 2025-07-29T12:01:39.647454003 Config value: no setting found for 'edc.sql.store.jti.cleanup.period', falling back to default value '60'
+[provider-qna]WARNING 2025-07-29T12:01:39.670444543 The list of trusted issuers is empty
+[provider-qna]DEBUG 2025-07-29T12:01:39.67600629 DataPlane Access Control: default implementation is used, will always return Result.success()
+[provider-qna]DEBUG 2025-07-29T12:01:39.678133722 Config value: no setting found for 'edc.api.auth.dac.cache.validity', falling back to default value '300000'
+[provider-qna]DEBUG 2025-07-29T12:01:39.678608481 Config value: no setting found for 'edc.api.auth.dac.validation.tolerance', falling back to default value '5000'
+[provider-qna]WARNING 2025-07-29T12:01:39.678970721 [Delegated API Authentication] No audience configured for delegated authentication, defaulting to the participantId
+[provider-qna]DEBUG 2025-07-29T12:01:39.684798907 Config value: no setting found for 'edc.dataplane.state-machine.iteration-wait-millis', falling back to default value '1000'
+[provider-qna]DEBUG 2025-07-29T12:01:39.685538196 Config value: no setting found for 'edc.dataplane.state-machine.batch-size', falling back to default value '20'
+[provider-qna]DEBUG 2025-07-29T12:01:39.687840221 Config value: no setting found for 'edc.dataplane.state-machine.flow.lease.time', falling back to default value '500'
+[provider-qna]DEBUG 2025-07-29T12:01:39.688285327 Config value: no setting found for 'edc.dataplane.state-machine.flow.lease.factor', falling back to default value '5'
+[provider-qna]DEBUG 2025-07-29T12:01:39.694535507 Config value: no setting found for 'edc.dataplane.send.retry.limit', falling back to default value '7'
+[provider-qna]DEBUG 2025-07-29T12:01:39.703243395 Config value: no setting found for 'edc.dataplane.send.retry.base-delay.ms', falling back to default value '1000'
+[provider-qna]DEBUG 2025-07-29T12:01:39.703726119 Config value: no setting found for 'edc.dataplane.transfer.threads', falling back to default value '20'
+[provider-qna]DEBUG 2025-07-29T12:01:39.711221301 Config value: no setting found for 'edc.dataplane.http.sink.partition.size', falling back to default value '5'
+[provider-qna]DEBUG 2025-07-29T12:01:39.723609411 Config value: no setting found for 'edc.web.https.keystore.password', falling back to default value 'password'
+[provider-qna]DEBUG 2025-07-29T12:01:39.725696495 Config value: no setting found for 'edc.web.https.keymanager.password', falling back to default value 'password'
+[provider-qna]DEBUG 2025-07-29T12:01:39.72955046 Config value: no setting found for 'web.http.default.port', falling back to default value '8181'
+[provider-qna]DEBUG 2025-07-29T12:01:39.730236694 Config value: no setting found for 'web.http.default.path', falling back to default value '/api'
+[provider-qna]DEBUG 2025-07-29T12:01:39.733201648 Config value: no setting found for 'edc.web.https.keystore.type', falling back to default value 'PKCS12'
+[provider-qna]DEBUG 2025-07-29T12:01:39.792080436 Config value: no setting found for 'edc.negotiation.provider.state-machine.batch-size', falling back to default value '20'
+[provider-qna]DEBUG 2025-07-29T12:01:39.79254215 Config value: no setting found for 'edc.negotiation.state-machine.iteration-wait-millis', falling back to default value '1000'
+[provider-qna]DEBUG 2025-07-29T12:01:39.793097368 Config value: no setting found for 'edc.negotiation.consumer.send.retry.limit', falling back to default value '7'
+[provider-qna]DEBUG 2025-07-29T12:01:39.793639598 Config value: no setting found for 'edc.negotiation.consumer.state-machine.batch-size', falling back to default value '20'
+[provider-qna]DEBUG 2025-07-29T12:01:39.79458524 Config value: no setting found for 'edc.negotiation.provider.send.retry.limit', falling back to default value '7'
+[provider-qna]DEBUG 2025-07-29T12:01:39.795377721 Config value: no setting found for 'edc.negotiation.consumer.send.retry.base-delay.ms', falling back to default value '1000'
+[provider-qna]DEBUG 2025-07-29T12:01:39.796015589 Config value: no setting found for 'edc.negotiation.provider.send.retry.base-delay.ms', falling back to default value '1000'
+[provider-qna]DEBUG 2025-07-29T12:01:39.807603407 Config value: no setting found for 'edc.transfer.send.retry.base-delay.ms', falling back to default value '1000'
+[provider-qna]DEBUG 2025-07-29T12:01:39.808113261 Config value: no setting found for 'edc.transfer.state-machine.batch-size', falling back to default value '20'
+[provider-qna]DEBUG 2025-07-29T12:01:39.808872609 Config value: no setting found for 'edc.transfer.send.retry.limit', falling back to default value '7'
+[provider-qna]DEBUG 2025-07-29T12:01:39.810455185 Config value: no setting found for 'edc.transfer.state-machine.iteration-wait-millis', falling back to default value '1000'
+[provider-qna]DEBUG 2025-07-29T12:01:39.831507697 Config value: no setting found for 'edc.policy.validation.enabled', falling back to default value 'false'
+[provider-qna]WARNING 2025-07-29T12:01:39.833474143 No TransactionContext registered, a no-op implementation will be used, not suitable for production environments
+[provider-qna]DEBUG 2025-07-29T12:01:39.862194963 Config value: no setting found for 'edc.catalog.cache.partition.num.crawlers', falling back to default value '2'
+[provider-qna]DEBUG 2025-07-29T12:01:39.865013889 Config value: no setting found for 'edc.catalog.cache.partition.num.crawlers', falling back to default value '2'
+[provider-qna]DEBUG 2025-07-29T12:01:39.865764325 Config value: no setting found for 'edc.catalog.cache.execution.enabled', falling back to default value 'true'
+[provider-qna]DEBUG 2025-07-29T12:01:39.884364179 Config value: no setting found for 'edc.dsp.well-known-path.enabled', falling back to default value 'false'
+[provider-qna]WARNING 2025-07-29T12:01:39.886620637 No TokenDecorator was registered. The 'scope' field of outgoing protocol messages will be empty
+[provider-qna]DEBUG 2025-07-29T12:01:39.897626099 Config value: no setting found for 'edc.dsp.well-known-path.enabled', falling back to default value 'false'
+[provider-qna]DEBUG 2025-07-29T12:01:39.90947553 Using embedded Data Plane client.
+[provider-qna]DEBUG 2025-07-29T12:01:39.910532141 Config value: no setting found for 'edc.data.plane.selector.state-machine.batch-size', falling back to default value '20'
+[provider-qna]DEBUG 2025-07-29T12:01:39.912021146 Config value: no setting found for 'edc.data.plane.selector.state-machine.iteration-wait-millis', falling back to default value '1000'
+[provider-qna]DEBUG 2025-07-29T12:01:39.912465066 Config value: no setting found for 'edc.data.plane.selector.state-machine.check.period', falling back to default value '60'
+[provider-qna]DEBUG 2025-07-29T12:01:39.998022438 Config value: no setting found for 'edc.dataplane.client.selector.strategy', falling back to default value 'random'
+[provider-qna]DEBUG 2025-07-29T12:01:40.190719309 Config value: no setting found for 'edc.policy.monitor.state-machine.iteration-wait-millis', falling back to default value '1000'
+[provider-qna]DEBUG 2025-07-29T12:01:40.193445863 Config value: no setting found for 'edc.policy.monitor.state-machine.batch-size', falling back to default value '20'
+[provider-qna]DEBUG 2025-07-29T12:01:40.235470379 Config value: no setting found for 'edc.edr.receiver.sync', falling back to default value 'false'
+[provider-qna]WARNING 2025-07-29T12:01:40.253710955 The `data-plane-public-api-v2` has been deprecated, please provide analternative implementation for Http Proxy if needed
+[provider-qna]WARNING 2025-07-29T12:01:40.262476227 The public API endpoint was not explicitly configured, the default 'http://localhost:12001/api/public' will be used.
+[provider-qna]DEBUG 2025-07-29T12:01:40.274726653 Config value: no setting found for 'edc.data.plane.self.unregistration', falling back to default value 'false'
+[provider-qna]DEBUG 2025-07-29T12:01:40.318627042 Configured tokenbased authentication for context management
+[provider-qna]DEBUG 2025-07-29T12:01:40.321039886 Configured tokenbased authentication for context catalog
+[provider-qna]DEBUG 2025-07-29T12:01:40.442698267 HTTP context 'protocol' listening on port 8192
+[provider-qna]DEBUG 2025-07-29T12:01:40.461050891 HTTP context 'control' listening on port 8193
+[provider-qna]DEBUG 2025-07-29T12:01:40.464180326 HTTP context 'public' listening on port 12001
+[provider-qna]DEBUG 2025-07-29T12:01:40.46567713 HTTP context 'catalog' listening on port 8194
+[provider-qna]DEBUG 2025-07-29T12:01:40.466693703 HTTP context 'version' listening on port 8195
+[provider-qna]DEBUG 2025-07-29T12:01:40.469593989 HTTP context 'default' listening on port 8190
+[provider-qna]DEBUG 2025-07-29T12:01:40.47139151 HTTP context 'management' listening on port 8191
+[provider-qna]DEBUG 2025-07-29T12:01:40.660247898 Port mappings: PortMapping[name=protocol, port=8192, path=/api/dsp], PortMapping[name=control, port=8193, path=/api/control], PortMapping[name=public, port=12001, path=/api/public], PortMapping[name=catalog, port=8194, path=/api/catalog], PortMapping[name=version, port=8195, path=/api/version], PortMapping[name=default, port=8190, path=/api], PortMapping[name=management, port=8191, path=/api/management/]
+[provider-qna]DEBUG 2025-07-29T12:01:41.249034674 Registered Web API context alias: default
+[provider-qna]DEBUG 2025-07-29T12:01:41.498241701 Registered Web API context alias: protocol
+[provider-qna]DEBUG 2025-07-29T12:01:41.591912584 Registered Web API context alias: public
+[provider-qna]DEBUG 2025-07-29T12:01:41.764182518 Registered Web API context alias: management
+[provider-qna]DEBUG 2025-07-29T12:01:41.856077204 Registered Web API context alias: catalog
+[provider-qna]DEBUG 2025-07-29T12:01:41.94632943 Registered Web API context alias: control
+[provider-qna]DEBUG 2025-07-29T12:01:42.650183762 Registered Web API context alias: version
+[provider-qna]DEBUG 2025-07-29T12:01:42.693562778 [DataPlaneHealthCheck] Initiate data plane registration.
+[provider-qna]DEBUG 2025-07-29T12:01:42.699177603 [DataPlaneHealthCheck] data plane registered to control plane
+[provider-qna]DEBUG 2025-07-29T12:01:43.752163948 [DataPlaneSelectorManagerImpl] DataPlaneInstance provider-qna is now in state AVAILABLE
+[provider-qna]DEBUG 2025-07-29T12:01:47.684278978 [ExecutionManager] Run pre-execution task
+[provider-qna]WARNING 2025-07-29T12:01:47.873284308 [DEMO] Error resolving DID: did:web:localhost%3A7083. HTTP Code was: 204
+[provider-qna]WARNING 2025-07-29T12:01:47.962739954 [DEMO] Error resolving DID: did:web:localhost%3A7093. HTTP Code was: 204
+[provider-qna]DEBUG 2025-07-29T12:01:47.963721877 [ExecutionManager] No WorkItems found, skipping execution
+[provider-qna]DEBUG 2025-07-29T12:01:57.684086413 [ExecutionManager] Run pre-execution task
+[provider-qna]WARNING 2025-07-29T12:01:57.6877389 [DEMO] Error resolving DID: did:web:localhost%3A7083. HTTP Code was: 204
+[provider-qna]WARNING 2025-07-29T12:01:57.690644103 [DEMO] Error resolving DID: did:web:localhost%3A7093. HTTP Code was: 204
+[provider-qna]DEBUG 2025-07-29T12:01:57.690754841 [ExecutionManager] No WorkItems found, skipping execution
+[provider-qna]DEBUG 2025-07-29T12:02:07.684572751 [ExecutionManager] Run pre-execution task
+[provider-qna]WARNING 2025-07-29T12:02:07.692170359 [DEMO] Error resolving DID: did:web:localhost%3A7083. HTTP Code was: 204
+[provider-qna]WARNING 2025-07-29T12:02:07.699011816 [DEMO] Error resolving DID: did:web:localhost%3A7093. HTTP Code was: 204
+[provider-qna]DEBUG 2025-07-29T12:02:07.699743312 [ExecutionManager] No WorkItems found, skipping execution
+[provider-qna]DEBUG 2025-07-29T12:02:17.68401477 [ExecutionManager] Run pre-execution task
+[provider-qna]WARNING 2025-07-29T12:02:17.686966329 [DEMO] Error resolving DID: did:web:localhost%3A7083. HTTP Code was: 204
+[provider-qna]WARNING 2025-07-29T12:02:17.68962345 [DEMO] Error resolving DID: did:web:localhost%3A7093. HTTP Code was: 204
+[provider-qna]DEBUG 2025-07-29T12:02:17.689747362 [ExecutionManager] No WorkItems found, skipping execution
+[provider-qna]DEBUG 2025-07-29T12:02:27.684040505 [ExecutionManager] Run pre-execution task
+[provider-qna]WARNING 2025-07-29T12:02:27.687599007 [DEMO] Error resolving DID: did:web:localhost%3A7083. HTTP Code was: 204
+[provider-qna]WARNING 2025-07-29T12:02:27.690769021 [DEMO] Error resolving DID: did:web:localhost%3A7093. HTTP Code was: 204
+[provider-qna]DEBUG 2025-07-29T12:02:27.69089233 [ExecutionManager] No WorkItems found, skipping execution
+[provider-qna]DEBUG 2025-07-29T12:02:37.684060427 [ExecutionManager] Run pre-execution task
+[provider-qna]WARNING 2025-07-29T12:02:37.69048351 [DEMO] Error resolving DID: did:web:localhost%3A7083. HTTP Code was: 204
+[provider-qna]WARNING 2025-07-29T12:02:37.69799706 [DEMO] Error resolving DID: did:web:localhost%3A7093. HTTP Code was: 204
+[provider-qna]DEBUG 2025-07-29T12:02:37.699183046 [ExecutionManager] No WorkItems found, skipping execution
+[provider-qna]DEBUG 2025-07-29T12:02:43.806348688 [DataPlaneSelectorManagerImpl] DataPlaneInstance provider-qna is now in state AVAILABLE
+[provider-qna]DEBUG 2025-07-29T12:02:47.684471474 [ExecutionManager] Run pre-execution task
+[provider-qna]WARNING 2025-07-29T12:02:47.69813569 [DEMO] Error resolving DID: did:web:localhost%3A7083. HTTP Code was: 204
+[provider-qna]WARNING 2025-07-29T12:02:47.704645546 [DEMO] Error resolving DID: did:web:localhost%3A7093. HTTP Code was: 204
+[provider-qna]DEBUG 2025-07-29T12:02:47.704795731 [ExecutionManager] No WorkItems found, skipping execution
+[provider-qna]DEBUG 2025-07-29T12:02:57.684187164 [ExecutionManager] Run pre-execution task
+[provider-qna]WARNING 2025-07-29T12:02:57.687454489 [DEMO] Error resolving DID: did:web:localhost%3A7083. HTTP Code was: 204
+[provider-qna]WARNING 2025-07-29T12:02:57.690552811 [DEMO] Error resolving DID: did:web:localhost%3A7093. HTTP Code was: 204
+[provider-qna]DEBUG 2025-07-29T12:02:57.690674942 [ExecutionManager] No WorkItems found, skipping execution
+[provider-qna]DEBUG 2025-07-29T12:03:07.684259045 [ExecutionManager] Run pre-execution task
+[provider-qna]WARNING 2025-07-29T12:03:07.687806386 [DEMO] Error resolving DID: did:web:localhost%3A7083. HTTP Code was: 204
+[provider-qna]WARNING 2025-07-29T12:03:07.690041914 [DEMO] Error resolving DID: did:web:localhost%3A7093. HTTP Code was: 204
+[provider-qna]DEBUG 2025-07-29T12:03:07.690104486 [ExecutionManager] No WorkItems found, skipping execution
+[provider-qna]DEBUG 2025-07-29T12:03:17.684036864 [ExecutionManager] Run pre-execution task
+[provider-qna]WARNING 2025-07-29T12:03:17.686976279 [DEMO] Error resolving DID: did:web:localhost%3A7083. HTTP Code was: 204
+[provider-qna]WARNING 2025-07-29T12:03:17.689658332 [DEMO] Error resolving DID: did:web:localhost%3A7093. HTTP Code was: 204
+[provider-qna]DEBUG 2025-07-29T12:03:17.689788363 [ExecutionManager] No WorkItems found, skipping execution
+[provider-qna]DEBUG 2025-07-29T12:03:27.684015352 [ExecutionManager] Run pre-execution task
+[provider-qna]WARNING 2025-07-29T12:03:27.6874884 [DEMO] Error resolving DID: did:web:localhost%3A7083. HTTP Code was: 204
+[provider-qna]WARNING 2025-07-29T12:03:27.689778397 [DEMO] Error resolving DID: did:web:localhost%3A7093. HTTP Code was: 204
+[provider-qna]DEBUG 2025-07-29T12:03:27.689870704 [ExecutionManager] No WorkItems found, skipping execution
+[provider-qna]DEBUG 2025-07-29T12:03:37.684035547 [ExecutionManager] Run pre-execution task
+[provider-qna]WARNING 2025-07-29T12:03:37.694575126 [DEMO] Error resolving DID: did:web:localhost%3A7083. HTTP Code was: 204
+[provider-qna]WARNING 2025-07-29T12:03:37.697098824 [DEMO] Error resolving DID: did:web:localhost%3A7093. HTTP Code was: 204
+[provider-qna]DEBUG 2025-07-29T12:03:37.697236217 [ExecutionManager] No WorkItems found, skipping execution
+[provider-qna]DEBUG 2025-07-29T12:03:43.867056714 [DataPlaneSelectorManagerImpl] DataPlaneInstance provider-qna is now in state AVAILABLE
+[provider-qna]DEBUG 2025-07-29T12:03:47.684043439 [ExecutionManager] Run pre-execution task
+[provider-qna]WARNING 2025-07-29T12:03:47.687133282 [DEMO] Error resolving DID: did:web:localhost%3A7083. HTTP Code was: 204
+[provider-qna]WARNING 2025-07-29T12:03:47.689686867 [DEMO] Error resolving DID: did:web:localhost%3A7093. HTTP Code was: 204
+[provider-qna]DEBUG 2025-07-29T12:03:47.68980239 [ExecutionManager] No WorkItems found, skipping execution
+[provider-qna]DEBUG 2025-07-29T12:03:57.684271187 [ExecutionManager] Run pre-execution task
+[provider-qna]WARNING 2025-07-29T12:03:57.687842306 [DEMO] Error resolving DID: did:web:localhost%3A7083. HTTP Code was: 204
+[provider-qna]WARNING 2025-07-29T12:03:57.689831448 [DEMO] Error resolving DID: did:web:localhost%3A7093. HTTP Code was: 204
+[provider-qna]DEBUG 2025-07-29T12:03:57.68989988 [ExecutionManager] No WorkItems found, skipping execution
+[provider-qna]DEBUG 2025-07-29T12:04:07.684014552 [ExecutionManager] Run pre-execution task
+[provider-qna]WARNING 2025-07-29T12:04:07.687721403 [DEMO] Error resolving DID: did:web:localhost%3A7083. HTTP Code was: 204
+[provider-qna]WARNING 2025-07-29T12:04:07.690903417 [DEMO] Error resolving DID: did:web:localhost%3A7093. HTTP Code was: 204
+[provider-qna]DEBUG 2025-07-29T12:04:07.691056473 [ExecutionManager] No WorkItems found, skipping execution
+[provider-qna]DEBUG 2025-07-29T12:04:17.684027419 [ExecutionManager] Run pre-execution task
+[provider-qna]WARNING 2025-07-29T12:04:17.686717797 [DEMO] Error resolving DID: did:web:localhost%3A7083. HTTP Code was: 204
+[provider-qna]WARNING 2025-07-29T12:04:17.688807331 [DEMO] Error resolving DID: did:web:localhost%3A7093. HTTP Code was: 204
+[provider-qna]DEBUG 2025-07-29T12:04:17.688874005 [ExecutionManager] No WorkItems found, skipping execution
+[provider-qna]DEBUG 2025-07-29T12:04:27.684174135 [ExecutionManager] Run pre-execution task
+[provider-qna]WARNING 2025-07-29T12:04:27.687570398 [DEMO] Error resolving DID: did:web:localhost%3A7083. HTTP Code was: 204
+[provider-qna]WARNING 2025-07-29T12:04:27.68970272 [DEMO] Error resolving DID: did:web:localhost%3A7093. HTTP Code was: 204
+[provider-qna]DEBUG 2025-07-29T12:04:27.689803478 [ExecutionManager] No WorkItems found, skipping execution
+[provider-qna]WARNING 2025-07-29T12:04:33.45080182 No source DataAddress validator has been registered for type HttpData, please register one as it is strongly recommended.
+[provider-qna]WARNING 2025-07-29T12:04:33.53575355 No source DataAddress validator has been registered for type HttpData, please register one as it is strongly recommended.
+[provider-qna]DEBUG 2025-07-29T12:04:33.589747242 Policy Definition created require-membership
+[provider-qna]DEBUG 2025-07-29T12:04:33.632836165 Policy Definition created require-dataprocessor
+[provider-qna]DEBUG 2025-07-29T12:04:33.674229812 Policy Definition created require-sensitive
+[provider-qna]DEBUG 2025-07-29T12:04:36.811677397 Resolving secret did:web:localhost%3A7093-sts-client-secret
+[provider-qna]DEBUG 2025-07-29T12:04:36.812081562 Storing secret did:web:localhost%3A7093-sts-client-secret
+[provider-qna]DEBUG 2025-07-29T12:04:37.684102629 [ExecutionManager] Run pre-execution task
+[provider-qna]DEBUG 2025-07-29T12:04:37.731990412 [DEMO] Node filter: skipping node 'did:web:localhost%3A7093' for participant 'did:web:localhost%3A7093'
+[provider-qna]DEBUG 2025-07-29T12:04:37.732315075 [ExecutionManager] Loaded 1 work items from storage
+[provider-qna]DEBUG 2025-07-29T12:04:37.734082977 [ExecutionManager] Crawler parallelism is 1, based on config and number of work items
+[provider-qna]DEBUG 2025-07-29T12:04:37.735498678 [ExecutionManager] Crawler-7c6fbe13-cdb3-4056-b25c-25c3076ce3c2: WorkItem acquired
+[provider-qna]DEBUG 2025-07-29T12:04:37.746457391 Resolving secret did:web:localhost%3A7093-sts-client-secret
+[provider-qna]DEBUG 2025-07-29T12:04:39.121237016 [ExecutionManager] Crawler [Crawler-7c6fbe13-cdb3-4056-b25c-25c3076ce3c2] is done
+[provider-qna]DEBUG 2025-07-29T12:04:42.66868236 DSP: Incoming CatalogRequestMessage for class org.eclipse.edc.connector.controlplane.catalog.spi.Catalog process
+[provider-qna]DEBUG 2025-07-29T12:04:42.979800674 Resolving secret did:web:localhost%3A7093-sts-client-secret
+[provider-qna]DEBUG 2025-07-29T12:04:43.891475013 [DataPlaneSelectorManagerImpl] DataPlaneInstance provider-qna is now in state AVAILABLE
+[provider-qna]DEBUG 2025-07-29T12:04:47.684092247 [ExecutionManager] Run pre-execution task
+[provider-qna]DEBUG 2025-07-29T12:04:47.684874859 [DEMO] Node filter: skipping node 'did:web:localhost%3A7093' for participant 'did:web:localhost%3A7093'
+[provider-qna]DEBUG 2025-07-29T12:04:47.684960429 [ExecutionManager] Loaded 1 work items from storage
+[provider-qna]DEBUG 2025-07-29T12:04:47.68501158 [ExecutionManager] Crawler parallelism is 1, based on config and number of work items
+[provider-qna]DEBUG 2025-07-29T12:04:47.68511208 [ExecutionManager] Crawler-6812de2c-2b0a-4700-a175-9ebc26cd399a: WorkItem acquired
+[provider-qna]DEBUG 2025-07-29T12:04:47.686724791 Resolving secret did:web:localhost%3A7093-sts-client-secret
+[provider-qna]DEBUG 2025-07-29T12:04:47.728836631 [ExecutionManager] Crawler [Crawler-6812de2c-2b0a-4700-a175-9ebc26cd399a] is done
+[provider-qna]DEBUG 2025-07-29T12:04:51.94658989 DSP: Incoming CatalogRequestMessage for class org.eclipse.edc.connector.controlplane.catalog.spi.Catalog process
+[provider-qna]DEBUG 2025-07-29T12:04:51.951342339 Resolving secret did:web:localhost%3A7093-sts-client-secret
+[provider-qna]DEBUG 2025-07-29T12:04:57.683985431 [ExecutionManager] Run pre-execution task
+[provider-qna]DEBUG 2025-07-29T12:04:57.684539448 [DEMO] Node filter: skipping node 'did:web:localhost%3A7093' for participant 'did:web:localhost%3A7093'
+[provider-qna]DEBUG 2025-07-29T12:04:57.684617519 [ExecutionManager] Loaded 1 work items from storage
+[provider-qna]DEBUG 2025-07-29T12:04:57.684684263 [ExecutionManager] Crawler parallelism is 1, based on config and number of work items
+[provider-qna]DEBUG 2025-07-29T12:04:57.68481785 [ExecutionManager] Crawler-324c72ee-413c-4068-9e7c-f7d7c739c763: WorkItem acquired
+[provider-qna]DEBUG 2025-07-29T12:04:57.686538077 Resolving secret did:web:localhost%3A7093-sts-client-secret
+[provider-qna]DEBUG 2025-07-29T12:04:57.72459734 [ExecutionManager] Crawler [Crawler-324c72ee-413c-4068-9e7c-f7d7c739c763] is done
+[provider-qna]DEBUG 2025-07-29T12:05:01.946857517 DSP: Incoming CatalogRequestMessage for class org.eclipse.edc.connector.controlplane.catalog.spi.Catalog process
+[provider-qna]DEBUG 2025-07-29T12:05:01.948912341 Resolving secret did:web:localhost%3A7093-sts-client-secret
+[provider-qna]DEBUG 2025-07-29T12:05:06.950156599 DSP: Incoming ContractRequestMessage for class org.eclipse.edc.connector.controlplane.contract.spi.types.negotiation.ContractNegotiation process
+[provider-qna]DEBUG 2025-07-29T12:05:06.959261584 Failed to resolve offer: Contract definition with id membership-required-def not found
+[provider-qna]DEBUG 2025-07-29T12:05:06.960294129 DSP: Service call failed: Not found
+[provider-qna]DEBUG 2025-07-29T12:05:07.683957432 [ExecutionManager] Run pre-execution task
+[provider-qna]DEBUG 2025-07-29T12:05:07.684508975 [DEMO] Node filter: skipping node 'did:web:localhost%3A7093' for participant 'did:web:localhost%3A7093'
+[provider-qna]DEBUG 2025-07-29T12:05:07.684589045 [ExecutionManager] Loaded 1 work items from storage
+[provider-qna]DEBUG 2025-07-29T12:05:07.684657061 [ExecutionManager] Crawler parallelism is 1, based on config and number of work items
+[provider-qna]DEBUG 2025-07-29T12:05:07.68481898 [ExecutionManager] Crawler-dc96c916-7cd1-4cce-83f6-6b47dc1c9f9e: WorkItem acquired
+[provider-qna]DEBUG 2025-07-29T12:05:07.686196174 Resolving secret did:web:localhost%3A7093-sts-client-secret
+[provider-qna]DEBUG 2025-07-29T12:05:07.723026212 [ExecutionManager] Crawler [Crawler-dc96c916-7cd1-4cce-83f6-6b47dc1c9f9e] is done
+[provider-qna]DEBUG 2025-07-29T12:05:11.929222629 DSP: Incoming CatalogRequestMessage for class org.eclipse.edc.connector.controlplane.catalog.spi.Catalog process
+[provider-qna]DEBUG 2025-07-29T12:05:11.931057265 Resolving secret did:web:localhost%3A7093-sts-client-secret
+[provider-qna]DEBUG 2025-07-29T12:05:17.683952239 [ExecutionManager] Run pre-execution task
+[provider-qna]DEBUG 2025-07-29T12:05:17.684500616 [DEMO] Node filter: skipping node 'did:web:localhost%3A7093' for participant 'did:web:localhost%3A7093'
+[provider-qna]DEBUG 2025-07-29T12:05:17.684587113 [ExecutionManager] Loaded 1 work items from storage
+[provider-qna]DEBUG 2025-07-29T12:05:17.684715267 [ExecutionManager] Crawler parallelism is 1, based on config and number of work items
+[provider-qna]DEBUG 2025-07-29T12:05:17.684889258 [ExecutionManager] Crawler-afa290cd-e9a6-47a0-8155-522fa27e0d76: WorkItem acquired
+[provider-qna]DEBUG 2025-07-29T12:05:17.686328061 Resolving secret did:web:localhost%3A7093-sts-client-secret
+[provider-qna]DEBUG 2025-07-29T12:05:17.719974745 [ExecutionManager] Crawler [Crawler-afa290cd-e9a6-47a0-8155-522fa27e0d76] is done
+[provider-qna]DEBUG 2025-07-29T12:05:21.944387131 DSP: Incoming CatalogRequestMessage for class org.eclipse.edc.connector.controlplane.catalog.spi.Catalog process
+[provider-qna]DEBUG 2025-07-29T12:05:21.946124029 Resolving secret did:web:localhost%3A7093-sts-client-secret
+[provider-qna]DEBUG 2025-07-29T12:05:24.966513319 DSP: Incoming ContractRequestMessage for class org.eclipse.edc.connector.controlplane.contract.spi.types.negotiation.ContractNegotiation process
+[provider-qna]DEBUG 2025-07-29T12:05:24.966884696 Failed to resolve offer: Contract definition with id membership-required-def not found
+[provider-qna]DEBUG 2025-07-29T12:05:24.966956693 DSP: Service call failed: Not found
+[provider-qna]DEBUG 2025-07-29T12:05:27.683894185 [ExecutionManager] Run pre-execution task
+[provider-qna]DEBUG 2025-07-29T12:05:27.68438761 [DEMO] Node filter: skipping node 'did:web:localhost%3A7093' for participant 'did:web:localhost%3A7093'
+[provider-qna]DEBUG 2025-07-29T12:05:27.684462041 [ExecutionManager] Loaded 1 work items from storage
+[provider-qna]DEBUG 2025-07-29T12:05:27.684525373 [ExecutionManager] Crawler parallelism is 1, based on config and number of work items
+[provider-qna]DEBUG 2025-07-29T12:05:27.684724233 [ExecutionManager] Crawler-28047ac8-591a-4175-baab-664bb23ce1b9: WorkItem acquired
+[provider-qna]DEBUG 2025-07-29T12:05:27.686368107 Resolving secret did:web:localhost%3A7093-sts-client-secret
+[provider-qna]DEBUG 2025-07-29T12:05:27.732233983 [ExecutionManager] Crawler [Crawler-28047ac8-591a-4175-baab-664bb23ce1b9] is done
+[provider-qna]DEBUG 2025-07-29T12:05:31.927312491 DSP: Incoming CatalogRequestMessage for class org.eclipse.edc.connector.controlplane.catalog.spi.Catalog process
+[provider-qna]DEBUG 2025-07-29T12:05:31.929447499 Resolving secret did:web:localhost%3A7093-sts-client-secret
+[provider-qna]DEBUG 2025-07-29T12:05:37.683900305 [ExecutionManager] Run pre-execution task
+[provider-qna]DEBUG 2025-07-29T12:05:37.684466038 [DEMO] Node filter: skipping node 'did:web:localhost%3A7093' for participant 'did:web:localhost%3A7093'
+[provider-qna]DEBUG 2025-07-29T12:05:37.684589956 [ExecutionManager] Loaded 1 work items from storage
+[provider-qna]DEBUG 2025-07-29T12:05:37.68467369 [ExecutionManager] Crawler parallelism is 1, based on config and number of work items
+[provider-qna]DEBUG 2025-07-29T12:05:37.68487736 [ExecutionManager] Crawler-3563d39f-b799-40f8-9a3e-f69bc6f506d2: WorkItem acquired
+[provider-qna]DEBUG 2025-07-29T12:05:37.686447273 Resolving secret did:web:localhost%3A7093-sts-client-secret
+[provider-qna]DEBUG 2025-07-29T12:05:37.717428966 [ExecutionManager] Crawler [Crawler-3563d39f-b799-40f8-9a3e-f69bc6f506d2] is done
+[provider-qna]DEBUG 2025-07-29T12:05:41.92225024 DSP: Incoming CatalogRequestMessage for class org.eclipse.edc.connector.controlplane.catalog.spi.Catalog process
+[provider-qna]DEBUG 2025-07-29T12:05:41.924177357 Resolving secret did:web:localhost%3A7093-sts-client-secret
+[provider-qna]DEBUG 2025-07-29T12:05:43.914437694 [DataPlaneSelectorManagerImpl] DataPlaneInstance provider-qna is now in state AVAILABLE
+[provider-qna]DEBUG 2025-07-29T12:05:47.683943352 [ExecutionManager] Run pre-execution task
+[provider-qna]DEBUG 2025-07-29T12:05:47.68442419 [DEMO] Node filter: skipping node 'did:web:localhost%3A7093' for participant 'did:web:localhost%3A7093'
+[provider-qna]DEBUG 2025-07-29T12:05:47.684498014 [ExecutionManager] Loaded 1 work items from storage
+[provider-qna]DEBUG 2025-07-29T12:05:47.684540354 [ExecutionManager] Crawler parallelism is 1, based on config and number of work items
+[provider-qna]DEBUG 2025-07-29T12:05:47.684646447 [ExecutionManager] Crawler-52a8d5dc-c7d1-4bb9-b482-0d3feae668fd: WorkItem acquired
+[provider-qna]DEBUG 2025-07-29T12:05:47.685998477 Resolving secret did:web:localhost%3A7093-sts-client-secret
+[provider-qna]DEBUG 2025-07-29T12:05:47.71597336 [ExecutionManager] Crawler [Crawler-52a8d5dc-c7d1-4bb9-b482-0d3feae668fd] is done
+[provider-qna]DEBUG 2025-07-29T12:05:51.922272557 DSP: Incoming CatalogRequestMessage for class org.eclipse.edc.connector.controlplane.catalog.spi.Catalog process
+[provider-qna]DEBUG 2025-07-29T12:05:51.923867568 Resolving secret did:web:localhost%3A7093-sts-client-secret
+[provider-qna]DEBUG 2025-07-29T12:05:57.684050062 [ExecutionManager] Run pre-execution task
+[provider-qna]DEBUG 2025-07-29T12:05:57.684725675 [DEMO] Node filter: skipping node 'did:web:localhost%3A7093' for participant 'did:web:localhost%3A7093'
+[provider-qna]DEBUG 2025-07-29T12:05:57.684805284 [ExecutionManager] Loaded 1 work items from storage
+[provider-qna]DEBUG 2025-07-29T12:05:57.684882503 [ExecutionManager] Crawler parallelism is 1, based on config and number of work items
+[provider-qna]DEBUG 2025-07-29T12:05:57.685042335 [ExecutionManager] Crawler-6234bf71-1e56-41a2-aaaf-21dc413ec255: WorkItem acquired
+[provider-qna]DEBUG 2025-07-29T12:05:57.686579155 Resolving secret did:web:localhost%3A7093-sts-client-secret
+[provider-qna]DEBUG 2025-07-29T12:05:57.720497223 [ExecutionManager] Crawler [Crawler-6234bf71-1e56-41a2-aaaf-21dc413ec255] is done
+[provider-qna]DEBUG 2025-07-29T12:06:01.919102871 DSP: Incoming CatalogRequestMessage for class org.eclipse.edc.connector.controlplane.catalog.spi.Catalog process
+[provider-qna]DEBUG 2025-07-29T12:06:01.920581639 Resolving secret did:web:localhost%3A7093-sts-client-secret
+[provider-qna]DEBUG 2025-07-29T12:06:07.684019255 [ExecutionManager] Run pre-execution task
+[provider-qna]DEBUG 2025-07-29T12:06:07.684614216 [DEMO] Node filter: skipping node 'did:web:localhost%3A7093' for participant 'did:web:localhost%3A7093'
+[provider-qna]DEBUG 2025-07-29T12:06:07.684678116 [ExecutionManager] Loaded 1 work items from storage
+[provider-qna]DEBUG 2025-07-29T12:06:07.684732057 [ExecutionManager] Crawler parallelism is 1, based on config and number of work items
+[provider-qna]DEBUG 2025-07-29T12:06:07.684869846 [ExecutionManager] Crawler-7d3e54d7-392f-4aa0-bdbb-def0a77484a1: WorkItem acquired
+[provider-qna]DEBUG 2025-07-29T12:06:07.686181173 Resolving secret did:web:localhost%3A7093-sts-client-secret
+[provider-qna]DEBUG 2025-07-29T12:06:07.713286945 [ExecutionManager] Crawler [Crawler-7d3e54d7-392f-4aa0-bdbb-def0a77484a1] is done
+[provider-qna]DEBUG 2025-07-29T12:06:11.92101268 DSP: Incoming CatalogRequestMessage for class org.eclipse.edc.connector.controlplane.catalog.spi.Catalog process
+[provider-qna]DEBUG 2025-07-29T12:06:11.922597396 Resolving secret did:web:localhost%3A7093-sts-client-secret
+[provider-qna]DEBUG 2025-07-29T12:06:17.684049887 [ExecutionManager] Run pre-execution task
+[provider-qna]DEBUG 2025-07-29T12:06:17.684523842 [DEMO] Node filter: skipping node 'did:web:localhost%3A7093' for participant 'did:web:localhost%3A7093'
+[provider-qna]DEBUG 2025-07-29T12:06:17.68460327 [ExecutionManager] Loaded 1 work items from storage
+[provider-qna]DEBUG 2025-07-29T12:06:17.684652607 [ExecutionManager] Crawler parallelism is 1, based on config and number of work items
+[provider-qna]DEBUG 2025-07-29T12:06:17.684778504 [ExecutionManager] Crawler-6e76e9c4-1665-4176-82a4-3b4c28955a5c: WorkItem acquired
+[provider-qna]DEBUG 2025-07-29T12:06:17.686377797 Resolving secret did:web:localhost%3A7093-sts-client-secret
+[provider-qna]DEBUG 2025-07-29T12:06:17.723491619 [ExecutionManager] Crawler [Crawler-6e76e9c4-1665-4176-82a4-3b4c28955a5c] is done
+[provider-qna]DEBUG 2025-07-29T12:06:21.921954297 DSP: Incoming CatalogRequestMessage for class org.eclipse.edc.connector.controlplane.catalog.spi.Catalog process
+[provider-qna]DEBUG 2025-07-29T12:06:21.923401775 Resolving secret did:web:localhost%3A7093-sts-client-secret
+[provider-qna]DEBUG 2025-07-29T12:06:27.683981653 [ExecutionManager] Run pre-execution task
+[provider-qna]DEBUG 2025-07-29T12:06:27.684516386 [DEMO] Node filter: skipping node 'did:web:localhost%3A7093' for participant 'did:web:localhost%3A7093'
+[provider-qna]DEBUG 2025-07-29T12:06:27.684559275 [ExecutionManager] Loaded 1 work items from storage
+[provider-qna]DEBUG 2025-07-29T12:06:27.684599901 [ExecutionManager] Crawler parallelism is 1, based on config and number of work items
+[provider-qna]DEBUG 2025-07-29T12:06:27.684725373 [ExecutionManager] Crawler-b3bfb4fc-8dfa-486b-9360-4889fd0944b7: WorkItem acquired
+[provider-qna]DEBUG 2025-07-29T12:06:27.68587789 Resolving secret did:web:localhost%3A7093-sts-client-secret
+[provider-qna]DEBUG 2025-07-29T12:06:27.714631937 [ExecutionManager] Crawler [Crawler-b3bfb4fc-8dfa-486b-9360-4889fd0944b7] is done
+[provider-qna]DEBUG 2025-07-29T12:06:31.932339545 DSP: Incoming CatalogRequestMessage for class org.eclipse.edc.connector.controlplane.catalog.spi.Catalog process
+[provider-qna]DEBUG 2025-07-29T12:06:31.933849744 Resolving secret did:web:localhost%3A7093-sts-client-secret
+[provider-qna]DEBUG 2025-07-29T12:06:37.684143116 [ExecutionManager] Run pre-execution task
+[provider-qna]DEBUG 2025-07-29T12:06:37.685454753 [DEMO] Node filter: skipping node 'did:web:localhost%3A7093' for participant 'did:web:localhost%3A7093'
+[provider-qna]DEBUG 2025-07-29T12:06:37.685608455 [ExecutionManager] Loaded 1 work items from storage
+[provider-qna]DEBUG 2025-07-29T12:06:37.685759138 [ExecutionManager] Crawler parallelism is 1, based on config and number of work items
+[provider-qna]DEBUG 2025-07-29T12:06:37.686090784 [ExecutionManager] Crawler-c7ac6ac7-fe38-4dd8-85a5-84931cf7cc24: WorkItem acquired
+[provider-qna]DEBUG 2025-07-29T12:06:37.688634106 Resolving secret did:web:localhost%3A7093-sts-client-secret
+[provider-qna]DEBUG 2025-07-29T12:06:37.716438613 [ExecutionManager] Crawler [Crawler-c7ac6ac7-fe38-4dd8-85a5-84931cf7cc24] is done
+[provider-qna]DEBUG 2025-07-29T12:06:41.920277472 DSP: Incoming CatalogRequestMessage for class org.eclipse.edc.connector.controlplane.catalog.spi.Catalog process
+[provider-qna]DEBUG 2025-07-29T12:06:41.922274487 Resolving secret did:web:localhost%3A7093-sts-client-secret

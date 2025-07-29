@@ -1,0 +1,23 @@
+[catalogserver]DEBUG 2025-07-29T10:28:23.344516286 Config value: no setting found for 'edc.dsp.well-known-path.enabled', falling back to default value 'false'
+[catalogserver]WARNING 2025-07-29T10:28:23.351036063 No TokenDecorator was registered. The 'scope' field of outgoing protocol messages will be empty
+[catalogserver]DEBUG 2025-07-29T10:28:23.376566549 Config value: no setting found for 'edc.dsp.well-known-path.enabled', falling back to default value 'false'
+[catalogserver]DEBUG 2025-07-29T10:42:40.785671785 Config value: no setting found for 'edc.dsp.well-known-path.enabled', falling back to default value 'false'
+[catalogserver]WARNING 2025-07-29T10:42:40.789971918 No TokenDecorator was registered. The 'scope' field of outgoing protocol messages will be empty
+[catalogserver]DEBUG 2025-07-29T10:42:40.805921162 Config value: no setting found for 'edc.dsp.well-known-path.enabled', falling back to default value 'false'
+[catalogserver]DEBUG 2025-07-29T12:01:33.010179358 Config value: no setting found for 'edc.dsp.well-known-path.enabled', falling back to default value 'false'
+[catalogserver]WARNING 2025-07-29T12:01:33.016345971 No TokenDecorator was registered. The 'scope' field of outgoing protocol messages will be empty
+[catalogserver]DEBUG 2025-07-29T12:01:33.0337824 Config value: no setting found for 'edc.dsp.well-known-path.enabled', falling back to default value 'false'
+[catalogserver]DEBUG 2025-07-29T12:04:36.327198471 Policy Definition created require-membership
+[catalogserver]DEBUG 2025-07-29T12:04:41.918943499 DSP: Incoming CatalogRequestMessage for class org.eclipse.edc.connector.controlplane.catalog.spi.Catalog process
+[catalogserver]DEBUG 2025-07-29T12:04:51.890331219 DSP: Incoming CatalogRequestMessage for class org.eclipse.edc.connector.controlplane.catalog.spi.Catalog process
+[catalogserver]DEBUG 2025-07-29T12:05:01.897420691 DSP: Incoming CatalogRequestMessage for class org.eclipse.edc.connector.controlplane.catalog.spi.Catalog process
+[catalogserver]DEBUG 2025-07-29T12:05:11.887473229 DSP: Incoming CatalogRequestMessage for class org.eclipse.edc.connector.controlplane.catalog.spi.Catalog process
+[catalogserver]DEBUG 2025-07-29T12:05:21.897734539 DSP: Incoming CatalogRequestMessage for class org.eclipse.edc.connector.controlplane.catalog.spi.Catalog process
+[catalogserver]DEBUG 2025-07-29T12:05:31.887360931 DSP: Incoming CatalogRequestMessage for class org.eclipse.edc.connector.controlplane.catalog.spi.Catalog process
+[catalogserver]DEBUG 2025-07-29T12:05:41.886901575 DSP: Incoming CatalogRequestMessage for class org.eclipse.edc.connector.controlplane.catalog.spi.Catalog process
+[catalogserver]DEBUG 2025-07-29T12:05:51.886678655 DSP: Incoming CatalogRequestMessage for class org.eclipse.edc.connector.controlplane.catalog.spi.Catalog process
+[catalogserver]DEBUG 2025-07-29T12:06:01.886474651 DSP: Incoming CatalogRequestMessage for class org.eclipse.edc.connector.controlplane.catalog.spi.Catalog process
+[catalogserver]DEBUG 2025-07-29T12:06:11.886361436 DSP: Incoming CatalogRequestMessage for class org.eclipse.edc.connector.controlplane.catalog.spi.Catalog process
+[catalogserver]DEBUG 2025-07-29T12:06:21.887540378 DSP: Incoming CatalogRequestMessage for class org.eclipse.edc.connector.controlplane.catalog.spi.Catalog process
+[catalogserver]DEBUG 2025-07-29T12:06:31.900917468 DSP: Incoming CatalogRequestMessage for class org.eclipse.edc.connector.controlplane.catalog.spi.Catalog process
+[catalogserver]DEBUG 2025-07-29T12:06:41.886757759 DSP: Incoming CatalogRequestMessage for class org.eclipse.edc.connector.controlplane.catalog.spi.Catalog process

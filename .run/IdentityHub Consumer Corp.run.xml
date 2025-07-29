@@ -5,7 +5,7 @@
     <option name="envFilePaths">
       <option value="$PROJECT_DIR$/deployment/assets/env/consumer_identityhub.env" />
     </option>
-    <option name="MAIN_CLASS_NAME" value="org.eclipse.edc.monitor.runtime.CustomBaseRuntime" />
+    <option name="MAIN_CLASS_NAME" value="org.eclipse.edc.boot.system.runtime.BaseRuntime" />
     <module name="mvd.launchers.identity-hub.main" />
     <option name="PROGRAM_PARAMETERS" value="--log-level=DEBUG" />
     <extension name="net.ashald.envfile">

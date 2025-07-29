@@ -1,0 +1,771 @@
+[provider-manufacturing]DEBUG 2025-07-29T10:28:22.90976171 DataPlane Access Control: default implementation is used, will always return Result.success()
+[provider-manufacturing]WARNING 2025-07-29T10:28:22.922771209 The `data-plane-public-api-v2` has been deprecated, please provide analternative implementation for Http Proxy if needed
+[provider-manufacturing]WARNING 2025-07-29T10:28:22.936717367 The public API endpoint was not explicitly configured, the default 'http://localhost:12002/api/public' will be used.
+[provider-manufacturing]WARNING 2025-07-29T10:28:22.986132355 The list of trusted issuers is empty
+[provider-manufacturing]DEBUG 2025-07-29T10:28:23.000526151 Config value: no setting found for 'edc.api.auth.dac.cache.validity', falling back to default value '300000'
+[provider-manufacturing]DEBUG 2025-07-29T10:28:23.002999678 Config value: no setting found for 'edc.api.auth.dac.validation.tolerance', falling back to default value '5000'
+[provider-manufacturing]WARNING 2025-07-29T10:28:23.004083935 [Delegated API Authentication] No audience configured for delegated authentication, defaulting to the participantId
+[provider-manufacturing]DEBUG 2025-07-29T10:28:23.023899493 Config value: no setting found for 'edc.dataplane.state-machine.iteration-wait-millis', falling back to default value '1000'
+[provider-manufacturing]DEBUG 2025-07-29T10:28:23.024884035 Config value: no setting found for 'edc.dataplane.state-machine.batch-size', falling back to default value '20'
+[provider-manufacturing]DEBUG 2025-07-29T10:28:23.030187972 Config value: no setting found for 'edc.dataplane.state-machine.flow.lease.time', falling back to default value '500'
+[provider-manufacturing]DEBUG 2025-07-29T10:28:23.033120334 Config value: no setting found for 'edc.dataplane.state-machine.flow.lease.factor', falling back to default value '5'
+[provider-manufacturing]DEBUG 2025-07-29T10:28:23.043576776 Config value: no setting found for 'edc.dataplane.send.retry.limit', falling back to default value '7'
+[provider-manufacturing]DEBUG 2025-07-29T10:28:23.05177868 Config value: no setting found for 'edc.dataplane.send.retry.base-delay.ms', falling back to default value '1000'
+[provider-manufacturing]DEBUG 2025-07-29T10:28:23.053284011 Config value: no setting found for 'edc.dataplane.transfer.threads', falling back to default value '20'
+[provider-manufacturing]DEBUG 2025-07-29T10:28:23.071293363 Config value: no setting found for 'edc.dataplane.http.sink.partition.size', falling back to default value '5'
+[provider-manufacturing]DEBUG 2025-07-29T10:28:23.110389274 Config value: no setting found for 'edc.catalog.cache.partition.num.crawlers', falling back to default value '2'
+[provider-manufacturing]DEBUG 2025-07-29T10:28:23.123279374 Config value: no setting found for 'edc.catalog.cache.partition.num.crawlers', falling back to default value '2'
+[provider-manufacturing]DEBUG 2025-07-29T10:28:23.126796586 Config value: no setting found for 'edc.catalog.cache.execution.enabled', falling back to default value 'true'
+[provider-manufacturing]DEBUG 2025-07-29T10:28:23.32660676 Config value: no setting found for 'edc.dsp.well-known-path.enabled', falling back to default value 'false'
+[provider-manufacturing]WARNING 2025-07-29T10:28:23.330893097 No TokenDecorator was registered. The 'scope' field of outgoing protocol messages will be empty
+[provider-manufacturing]DEBUG 2025-07-29T10:28:23.358877101 Config value: no setting found for 'edc.dsp.well-known-path.enabled', falling back to default value 'false'
+[provider-manufacturing]DEBUG 2025-07-29T10:28:23.375500517 Using embedded Data Plane client.
+[provider-manufacturing]DEBUG 2025-07-29T10:28:23.377591712 Config value: no setting found for 'edc.data.plane.selector.state-machine.batch-size', falling back to default value '20'
+[provider-manufacturing]DEBUG 2025-07-29T10:28:23.380794183 Config value: no setting found for 'edc.data.plane.selector.state-machine.iteration-wait-millis', falling back to default value '1000'
+[provider-manufacturing]DEBUG 2025-07-29T10:28:23.381258106 Config value: no setting found for 'edc.data.plane.selector.state-machine.check.period', falling back to default value '60'
+[provider-manufacturing]DEBUG 2025-07-29T10:28:23.546637266 Config value: no setting found for 'edc.dataplane.client.selector.strategy', falling back to default value 'random'
+[provider-manufacturing]DEBUG 2025-07-29T10:28:23.763071489 Config value: no setting found for 'edc.policy.monitor.state-machine.batch-size', falling back to default value '20'
+[provider-manufacturing]DEBUG 2025-07-29T10:28:23.76610524 Config value: no setting found for 'edc.policy.monitor.state-machine.iteration-wait-millis', falling back to default value '1000'
+[provider-manufacturing]DEBUG 2025-07-29T10:28:23.788282021 Config value: no setting found for 'edc.edr.receiver.sync', falling back to default value 'false'
+[provider-manufacturing]DEBUG 2025-07-29T10:28:23.799259342 Config value: no setting found for 'edc.data.plane.self.unregistration', falling back to default value 'false'
+[provider-manufacturing]DEBUG 2025-07-29T10:28:23.82106289 Configured tokenbased authentication for context management
+[provider-manufacturing]DEBUG 2025-07-29T10:28:23.821856367 Configured tokenbased authentication for context catalog
+[provider-manufacturing]DEBUG 2025-07-29T10:28:27.143084859 [DataPlaneHealthCheck] Initiate data plane registration.
+[provider-manufacturing]DEBUG 2025-07-29T10:28:27.14988012 [DataPlaneHealthCheck] data plane registered to control plane
+[provider-manufacturing]DEBUG 2025-07-29T10:28:28.135216218 [DataPlaneSelectorManagerImpl] DataPlaneInstance provider-manufacturing is now in state AVAILABLE
+[provider-manufacturing]DEBUG 2025-07-29T10:28:32.121413011 [ExecutionManager] Run pre-execution task
+[provider-manufacturing]DEBUG 2025-07-29T10:28:32.210061683 [ExecutionManager] No WorkItems found, skipping execution
+[provider-manufacturing]DEBUG 2025-07-29T10:28:42.121662381 [ExecutionManager] Run pre-execution task
+[provider-manufacturing]DEBUG 2025-07-29T10:28:42.130221244 [ExecutionManager] No WorkItems found, skipping execution
+[provider-manufacturing]DEBUG 2025-07-29T10:28:52.121346179 [ExecutionManager] Run pre-execution task
+[provider-manufacturing]DEBUG 2025-07-29T10:28:52.127217604 [ExecutionManager] No WorkItems found, skipping execution
+[provider-manufacturing]DEBUG 2025-07-29T10:29:02.121327965 [ExecutionManager] Run pre-execution task
+[provider-manufacturing]DEBUG 2025-07-29T10:29:02.126941545 [ExecutionManager] No WorkItems found, skipping execution
+[provider-manufacturing]DEBUG 2025-07-29T10:29:12.121372003 [ExecutionManager] Run pre-execution task
+[provider-manufacturing]DEBUG 2025-07-29T10:29:12.138102234 [ExecutionManager] No WorkItems found, skipping execution
+[provider-manufacturing]DEBUG 2025-07-29T10:29:22.121328741 [ExecutionManager] Run pre-execution task
+[provider-manufacturing]DEBUG 2025-07-29T10:29:22.126723931 [ExecutionManager] No WorkItems found, skipping execution
+[provider-manufacturing]DEBUG 2025-07-29T10:29:28.171571874 [DataPlaneSelectorManagerImpl] DataPlaneInstance provider-manufacturing is now in state AVAILABLE
+[provider-manufacturing]DEBUG 2025-07-29T10:29:32.121443072 [ExecutionManager] Run pre-execution task
+[provider-manufacturing]DEBUG 2025-07-29T10:29:32.127330181 [ExecutionManager] No WorkItems found, skipping execution
+[provider-manufacturing]DEBUG 2025-07-29T10:29:42.121466911 [ExecutionManager] Run pre-execution task
+[provider-manufacturing]DEBUG 2025-07-29T10:29:42.130447559 [ExecutionManager] No WorkItems found, skipping execution
+[provider-manufacturing]DEBUG 2025-07-29T10:29:52.12138869 [ExecutionManager] Run pre-execution task
+[provider-manufacturing]DEBUG 2025-07-29T10:29:52.12684555 [ExecutionManager] No WorkItems found, skipping execution
+[provider-manufacturing]DEBUG 2025-07-29T10:30:02.121319907 [ExecutionManager] Run pre-execution task
+[provider-manufacturing]DEBUG 2025-07-29T10:30:02.126424231 [ExecutionManager] No WorkItems found, skipping execution
+[provider-manufacturing]DEBUG 2025-07-29T10:30:12.121579338 [ExecutionManager] Run pre-execution task
+[provider-manufacturing]DEBUG 2025-07-29T10:30:12.135483445 [ExecutionManager] No WorkItems found, skipping execution
+[provider-manufacturing]DEBUG 2025-07-29T10:30:22.121625126 [ExecutionManager] Run pre-execution task
+[provider-manufacturing]DEBUG 2025-07-29T10:30:22.135653536 [ExecutionManager] No WorkItems found, skipping execution
+[provider-manufacturing]DEBUG 2025-07-29T10:30:28.203119244 [DataPlaneSelectorManagerImpl] DataPlaneInstance provider-manufacturing is now in state AVAILABLE
+[provider-manufacturing]DEBUG 2025-07-29T10:30:32.121577947 [ExecutionManager] Run pre-execution task
+[provider-manufacturing]DEBUG 2025-07-29T10:30:32.128193189 [ExecutionManager] No WorkItems found, skipping execution
+[provider-manufacturing]DEBUG 2025-07-29T10:30:42.121672194 [ExecutionManager] Run pre-execution task
+[provider-manufacturing]DEBUG 2025-07-29T10:30:42.135715983 [ExecutionManager] No WorkItems found, skipping execution
+[provider-manufacturing]DEBUG 2025-07-29T10:30:52.121418749 [ExecutionManager] Run pre-execution task
+[provider-manufacturing]DEBUG 2025-07-29T10:30:52.126698173 [ExecutionManager] No WorkItems found, skipping execution
+[provider-manufacturing]DEBUG 2025-07-29T10:31:02.121361465 [ExecutionManager] Run pre-execution task
+[provider-manufacturing]DEBUG 2025-07-29T10:31:02.126644682 [ExecutionManager] No WorkItems found, skipping execution
+[provider-manufacturing]DEBUG 2025-07-29T10:31:12.121364327 [ExecutionManager] Run pre-execution task
+[provider-manufacturing]DEBUG 2025-07-29T10:31:12.126046367 [ExecutionManager] No WorkItems found, skipping execution
+[provider-manufacturing]DEBUG 2025-07-29T10:42:11.7382025 Config value: no setting found for 'edc.core.retry.retries.max', falling back to default value '5'
+[provider-manufacturing]DEBUG 2025-07-29T10:42:11.752098236 Config value: no setting found for 'edc.core.retry.backoff.min', falling back to default value '500'
+[provider-manufacturing]DEBUG 2025-07-29T10:42:11.755437411 Config value: no setting found for 'edc.core.retry.backoff.max', falling back to default value '10000'
+[provider-manufacturing]DEBUG 2025-07-29T10:42:11.756117892 Config value: no setting found for 'edc.core.retry.log.on.retry', falling back to default value 'false'
+[provider-manufacturing]DEBUG 2025-07-29T10:42:11.758425744 Config value: no setting found for 'edc.core.retry.log.on.retry.scheduled', falling back to default value 'false'
+[provider-manufacturing]DEBUG 2025-07-29T10:42:11.760204704 Config value: no setting found for 'edc.core.retry.log.on.retries.exceeded', falling back to default value 'false'
+[provider-manufacturing]DEBUG 2025-07-29T10:42:11.764773223 Config value: no setting found for 'edc.core.retry.log.on.failed.attempt', falling back to default value 'false'
+[provider-manufacturing]DEBUG 2025-07-29T10:42:11.765353567 Config value: no setting found for 'edc.core.retry.log.on.abort', falling back to default value 'false'
+[provider-manufacturing]DEBUG 2025-07-29T10:42:11.778437752 Config value: no setting found for 'edc.http.client.https.enforce', falling back to default value 'false'
+[provider-manufacturing]DEBUG 2025-07-29T10:42:11.779047488 Config value: no setting found for 'edc.http.client.timeout.connect', falling back to default value '30'
+[provider-manufacturing]DEBUG 2025-07-29T10:42:11.779721578 Config value: no setting found for 'edc.http.client.timeout.read', falling back to default value '30'
+[provider-manufacturing]DEBUG 2025-07-29T10:42:11.780463024 Config value: no setting found for 'edc.http.client.send.buffer.size', falling back to default value '0'
+[provider-manufacturing]DEBUG 2025-07-29T10:42:11.781304402 Config value: no setting found for 'edc.http.client.receive.buffer.size', falling back to default value '0'
+[provider-manufacturing]INFO 2025-07-29T10:42:11.874763646 HTTPS enforcement it not enabled, please enable it in a production environment
+[provider-manufacturing]INFO 2025-07-29T10:42:12.119523546 HTTPS enforcement it not enabled, please enable it in a production environment
+[provider-manufacturing]WARNING 2025-07-29T10:42:12.122977063 Config value: no setting found for 'edc.hostname', falling back to default value 'localhost'
+[provider-manufacturing]WARNING 2025-07-29T10:42:12.32890291 Using the InMemoryVault is not suitable for production scenarios and should be replaced with an actual Vault!
+[provider-manufacturing]DEBUG 2025-07-29T10:42:12.51721342 Storing secret did:web:localhost%3A7093-alias
+[provider-manufacturing]DEBUG 2025-07-29T10:42:12.518009796 Storing secret did:web:localhost%3A7093#key-1
+[provider-manufacturing]WARNING 2025-07-29T10:42:12.518855472 [DEMO] >>>>>> This extension hard-codes a keypair into the vault! <<<<<<
+[provider-manufacturing]WARNING 2025-07-29T10:42:12.520475282 A service of the type java.time.Clock was already registered and has now been replaced with a SystemClock instance.
+[provider-manufacturing]DEBUG 2025-07-29T10:42:12.527229179 Config value: no setting found for 'edc.iam.sts.token.expiration', falling back to default value '5'
+[provider-manufacturing]DEBUG 2025-07-29T10:42:12.582998367 Config value: no setting found for 'edc.jsonld.prefixes.check', falling back to default value 'true'
+[provider-manufacturing]DEBUG 2025-07-29T10:42:12.584569061 Config value: no setting found for 'edc.jsonld.vocab.disable', falling back to default value 'false'
+[provider-manufacturing]DEBUG 2025-07-29T10:42:12.585482816 Config value: no setting found for 'edc.jsonld.https.enabled', falling back to default value 'false'
+[provider-manufacturing]DEBUG 2025-07-29T10:42:12.585973983 Config value: no setting found for 'edc.jsonld.http.enabled', falling back to default value 'false'
+[provider-manufacturing]DEBUG 2025-07-29T10:42:12.817290926 Config value: no setting found for 'edc.did.resolver.cache.expiry', falling back to default value '300000'
+[provider-manufacturing]DEBUG 2025-07-29T10:42:12.829680545 Config value: no setting found for 'edc.dcp.v08.forced', falling back to default value 'false'
+[provider-manufacturing]DEBUG 2025-07-29T10:42:12.836276121 Config value: no setting found for 'edc.iam.credential.revocation.cache.validity', falling back to default value '900000'
+[provider-manufacturing]DEBUG 2025-07-29T10:42:12.841358455 Config value: no setting found for 'edc.sql.store.jti.cleanup.period', falling back to default value '60'
+[provider-manufacturing]WARNING 2025-07-29T10:42:12.922493596 The list of trusted issuers is empty
+[provider-manufacturing]DEBUG 2025-07-29T10:42:12.957680461 DataPlane Access Control: default implementation is used, will always return Result.success()
+[provider-manufacturing]DEBUG 2025-07-29T10:42:12.96250539 Config value: no setting found for 'edc.api.auth.dac.cache.validity', falling back to default value '300000'
+[provider-manufacturing]DEBUG 2025-07-29T10:42:12.96452254 Config value: no setting found for 'edc.api.auth.dac.validation.tolerance', falling back to default value '5000'
+[provider-manufacturing]WARNING 2025-07-29T10:42:12.96642774 [Delegated API Authentication] No audience configured for delegated authentication, defaulting to the participantId
+[provider-manufacturing]DEBUG 2025-07-29T10:42:12.974285399 Config value: no setting found for 'edc.dataplane.state-machine.iteration-wait-millis', falling back to default value '1000'
+[provider-manufacturing]DEBUG 2025-07-29T10:42:12.975821956 Config value: no setting found for 'edc.dataplane.state-machine.batch-size', falling back to default value '20'
+[provider-manufacturing]DEBUG 2025-07-29T10:42:12.97715071 Config value: no setting found for 'edc.dataplane.state-machine.flow.lease.time', falling back to default value '500'
+[provider-manufacturing]DEBUG 2025-07-29T10:42:12.977603891 Config value: no setting found for 'edc.dataplane.state-machine.flow.lease.factor', falling back to default value '5'
+[provider-manufacturing]DEBUG 2025-07-29T10:42:12.984148616 Config value: no setting found for 'edc.dataplane.send.retry.limit', falling back to default value '7'
+[provider-manufacturing]DEBUG 2025-07-29T10:42:12.990523313 Config value: no setting found for 'edc.dataplane.send.retry.base-delay.ms', falling back to default value '1000'
+[provider-manufacturing]DEBUG 2025-07-29T10:42:12.990896189 Config value: no setting found for 'edc.dataplane.transfer.threads', falling back to default value '20'
+[provider-manufacturing]DEBUG 2025-07-29T10:42:13.006899375 Config value: no setting found for 'edc.dataplane.http.sink.partition.size', falling back to default value '5'
+[provider-manufacturing]DEBUG 2025-07-29T10:42:13.029781787 Config value: no setting found for 'edc.web.https.keystore.password', falling back to default value 'password'
+[provider-manufacturing]DEBUG 2025-07-29T10:42:13.030050172 Config value: no setting found for 'edc.web.https.keymanager.password', falling back to default value 'password'
+[provider-manufacturing]DEBUG 2025-07-29T10:42:13.037283447 Config value: no setting found for 'web.http.default.port', falling back to default value '8181'
+[provider-manufacturing]DEBUG 2025-07-29T10:42:13.037781529 Config value: no setting found for 'web.http.default.path', falling back to default value '/api'
+[provider-manufacturing]DEBUG 2025-07-29T10:42:13.04616966 Config value: no setting found for 'edc.web.https.keystore.type', falling back to default value 'PKCS12'
+[provider-manufacturing]DEBUG 2025-07-29T10:42:13.180690514 Config value: no setting found for 'edc.negotiation.provider.state-machine.batch-size', falling back to default value '20'
+[provider-manufacturing]DEBUG 2025-07-29T10:42:13.181015819 Config value: no setting found for 'edc.negotiation.state-machine.iteration-wait-millis', falling back to default value '1000'
+[provider-manufacturing]DEBUG 2025-07-29T10:42:13.181347225 Config value: no setting found for 'edc.negotiation.consumer.send.retry.limit', falling back to default value '7'
+[provider-manufacturing]DEBUG 2025-07-29T10:42:13.181985746 Config value: no setting found for 'edc.negotiation.consumer.state-machine.batch-size', falling back to default value '20'
+[provider-manufacturing]DEBUG 2025-07-29T10:42:13.182847712 Config value: no setting found for 'edc.negotiation.provider.send.retry.limit', falling back to default value '7'
+[provider-manufacturing]DEBUG 2025-07-29T10:42:13.185661581 Config value: no setting found for 'edc.negotiation.consumer.send.retry.base-delay.ms', falling back to default value '1000'
+[provider-manufacturing]DEBUG 2025-07-29T10:42:13.186920954 Config value: no setting found for 'edc.negotiation.provider.send.retry.base-delay.ms', falling back to default value '1000'
+[provider-manufacturing]DEBUG 2025-07-29T10:42:13.221351603 Config value: no setting found for 'edc.transfer.send.retry.base-delay.ms', falling back to default value '1000'
+[provider-manufacturing]DEBUG 2025-07-29T10:42:13.221834047 Config value: no setting found for 'edc.transfer.state-machine.batch-size', falling back to default value '20'
+[provider-manufacturing]DEBUG 2025-07-29T10:42:13.223128931 Config value: no setting found for 'edc.transfer.send.retry.limit', falling back to default value '7'
+[provider-manufacturing]DEBUG 2025-07-29T10:42:13.226723529 Config value: no setting found for 'edc.transfer.state-machine.iteration-wait-millis', falling back to default value '1000'
+[provider-manufacturing]DEBUG 2025-07-29T10:42:13.245912882 Config value: no setting found for 'edc.policy.validation.enabled', falling back to default value 'false'
+[provider-manufacturing]WARNING 2025-07-29T10:42:13.248067703 No TransactionContext registered, a no-op implementation will be used, not suitable for production environments
+[provider-manufacturing]DEBUG 2025-07-29T10:42:13.298873542 Config value: no setting found for 'edc.catalog.cache.partition.num.crawlers', falling back to default value '2'
+[provider-manufacturing]DEBUG 2025-07-29T10:42:13.305358197 Config value: no setting found for 'edc.catalog.cache.partition.num.crawlers', falling back to default value '2'
+[provider-manufacturing]DEBUG 2025-07-29T10:42:13.305825966 Config value: no setting found for 'edc.catalog.cache.execution.enabled', falling back to default value 'true'
+[provider-manufacturing]DEBUG 2025-07-29T10:42:13.379518587 Config value: no setting found for 'edc.dsp.well-known-path.enabled', falling back to default value 'false'
+[provider-manufacturing]WARNING 2025-07-29T10:42:13.387142596 No TokenDecorator was registered. The 'scope' field of outgoing protocol messages will be empty
+[provider-manufacturing]DEBUG 2025-07-29T10:42:13.431947454 Config value: no setting found for 'edc.dsp.well-known-path.enabled', falling back to default value 'false'
+[provider-manufacturing]DEBUG 2025-07-29T10:42:13.461626695 Using embedded Data Plane client.
+[provider-manufacturing]DEBUG 2025-07-29T10:42:13.467708343 Config value: no setting found for 'edc.data.plane.selector.state-machine.batch-size', falling back to default value '20'
+[provider-manufacturing]DEBUG 2025-07-29T10:42:13.469043783 Config value: no setting found for 'edc.data.plane.selector.state-machine.iteration-wait-millis', falling back to default value '1000'
+[provider-manufacturing]DEBUG 2025-07-29T10:42:13.469416795 Config value: no setting found for 'edc.data.plane.selector.state-machine.check.period', falling back to default value '60'
+[provider-manufacturing]DEBUG 2025-07-29T10:42:13.647500365 Config value: no setting found for 'edc.dataplane.client.selector.strategy', falling back to default value 'random'
+[provider-manufacturing]DEBUG 2025-07-29T10:42:13.871279352 Config value: no setting found for 'edc.policy.monitor.state-machine.iteration-wait-millis', falling back to default value '1000'
+[provider-manufacturing]DEBUG 2025-07-29T10:42:13.874000756 Config value: no setting found for 'edc.policy.monitor.state-machine.batch-size', falling back to default value '20'
+[provider-manufacturing]DEBUG 2025-07-29T10:42:13.88386655 Config value: no setting found for 'edc.edr.receiver.sync', falling back to default value 'false'
+[provider-manufacturing]WARNING 2025-07-29T10:42:13.888291388 The `data-plane-public-api-v2` has been deprecated, please provide analternative implementation for Http Proxy if needed
+[provider-manufacturing]WARNING 2025-07-29T10:42:13.892625024 The public API endpoint was not explicitly configured, the default 'http://localhost:12002/api/public' will be used.
+[provider-manufacturing]DEBUG 2025-07-29T10:42:13.898868792 Config value: no setting found for 'edc.data.plane.self.unregistration', falling back to default value 'false'
+[provider-manufacturing]DEBUG 2025-07-29T10:42:13.934040273 Configured tokenbased authentication for context management
+[provider-manufacturing]DEBUG 2025-07-29T10:42:13.93503735 Configured tokenbased authentication for context catalog
+[provider-manufacturing]DEBUG 2025-07-29T10:42:14.018618386 HTTP context 'default' listening on port 8290
+[provider-manufacturing]DEBUG 2025-07-29T10:42:14.028458361 HTTP context 'public' listening on port 12002
+[provider-manufacturing]DEBUG 2025-07-29T10:42:14.028946213 HTTP context 'management' listening on port 8291
+[provider-manufacturing]DEBUG 2025-07-29T10:42:14.030219712 HTTP context 'protocol' listening on port 8292
+[provider-manufacturing]DEBUG 2025-07-29T10:42:14.0307802 HTTP context 'control' listening on port 8293
+[provider-manufacturing]DEBUG 2025-07-29T10:42:14.031365113 HTTP context 'catalog' listening on port 8294
+[provider-manufacturing]DEBUG 2025-07-29T10:42:14.034613037 HTTP context 'version' listening on port 8295
+[provider-manufacturing]DEBUG 2025-07-29T10:42:14.217029679 Port mappings: PortMapping[name=default, port=8290, path=/api], PortMapping[name=public, port=12002, path=/api/public], PortMapping[name=management, port=8291, path=/api/management/], PortMapping[name=protocol, port=8292, path=/api/dsp], PortMapping[name=control, port=8293, path=/api/control], PortMapping[name=catalog, port=8294, path=/api/catalog], PortMapping[name=version, port=8295, path=/api/version]
+[provider-manufacturing]DEBUG 2025-07-29T10:42:15.232311031 Registered Web API context alias: default
+[provider-manufacturing]DEBUG 2025-07-29T10:42:15.686777627 Registered Web API context alias: protocol
+[provider-manufacturing]DEBUG 2025-07-29T10:42:15.79682749 Registered Web API context alias: public
+[provider-manufacturing]DEBUG 2025-07-29T10:42:15.977693287 Registered Web API context alias: management
+[provider-manufacturing]DEBUG 2025-07-29T10:42:16.131761045 Registered Web API context alias: catalog
+[provider-manufacturing]DEBUG 2025-07-29T10:42:16.317789105 Registered Web API context alias: control
+[provider-manufacturing]DEBUG 2025-07-29T10:42:16.47059697 Registered Web API context alias: version
+[provider-manufacturing]DEBUG 2025-07-29T10:42:16.507657585 [DataPlaneHealthCheck] Initiate data plane registration.
+[provider-manufacturing]DEBUG 2025-07-29T10:42:16.509458841 [DataPlaneHealthCheck] data plane registered to control plane
+[provider-manufacturing]DEBUG 2025-07-29T10:42:17.497574207 [DataPlaneSelectorManagerImpl] DataPlaneInstance provider-manufacturing is now in state AVAILABLE
+[provider-manufacturing]DEBUG 2025-07-29T10:42:21.488962724 [ExecutionManager] Run pre-execution task
+[provider-manufacturing]SEVERE 2025-07-29T10:42:37.059437908 Error resolving DID: did:web:localhost%3A7083
+java.net.ConnectException: Failed to connect to localhost/127.0.0.1:7083
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.kt:297)
+	at okhttp3.internal.connection.RealConnection.connect(RealConnection.kt:207)
+	at okhttp3.internal.connection.ExchangeFinder.findConnection(ExchangeFinder.kt:226)
+	at okhttp3.internal.connection.ExchangeFinder.findHealthyConnection(ExchangeFinder.kt:106)
+	at okhttp3.internal.connection.ExchangeFinder.find(ExchangeFinder.kt:74)
+	at okhttp3.internal.connection.RealCall.initExchange$okhttp(RealCall.kt:255)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.kt:32)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.kt:95)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.kt:83)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.kt:76)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.connection.RealCall.getResponseWithInterceptorChain$okhttp(RealCall.kt:201)
+	at okhttp3.internal.connection.RealCall.execute(RealCall.kt:154)
+	at dev.failsafe.okhttp.FailsafeCall.lambda$execute$0(FailsafeCall.java:117)
+	at dev.failsafe.Functions.lambda$get$0(Functions.java:46)
+	at dev.failsafe.internal.RetryPolicyExecutor.lambda$apply$0(RetryPolicyExecutor.java:74)
+	at dev.failsafe.SyncExecutionImpl.executeSync(SyncExecutionImpl.java:187)
+	at dev.failsafe.CallImpl.execute(CallImpl.java:33)
+	at dev.failsafe.okhttp.FailsafeCall.execute(FailsafeCall.java:121)
+	at org.eclipse.edc.http.client.EdcHttpClientImpl.execute(EdcHttpClientImpl.java:59)
+	at org.eclipse.edc.http.client.EdcHttpClientImpl.execute(EdcHttpClientImpl.java:51)
+	at org.eclipse.edc.iam.did.web.resolution.WebDidResolver.resolve(WebDidResolver.java:68)
+	at org.eclipse.edc.iam.did.resolution.DidResolverRegistryImpl.resolveCachedDocument(DidResolverRegistryImpl.java:114)
+	at org.eclipse.edc.iam.did.resolution.DidResolverRegistryImpl.resolve(DidResolverRegistryImpl.java:78)
+	at org.eclipse.edc.demo.participants.resolver.LazyLoadNodeDirectory.createNode(LazyLoadNodeDirectory.java:77)
+	at org.eclipse.edc.demo.participants.resolver.LazyLoadNodeDirectory.lambda$getAll$0(LazyLoadNodeDirectory.java:62)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:212)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1939)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:556)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:546)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:622)
+	at java.base/java.util.stream.AbstractPipeline.evaluateToArrayNode(AbstractPipeline.java:291)
+	at java.base/java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:631)
+	at java.base/java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:637)
+	at java.base/java.util.stream.ReferencePipeline.toList(ReferencePipeline.java:642)
+	at org.eclipse.edc.demo.participants.resolver.LazyLoadNodeDirectory.getAll(LazyLoadNodeDirectory.java:64)
+	at org.eclipse.edc.catalog.cache.ExecutionManager.fetchWorkItems(ExecutionManager.java:171)
+	at org.eclipse.edc.catalog.cache.ExecutionManager.doWork(ExecutionManager.java:81)
+	at org.eclipse.edc.catalog.cache.ExecutionManager.lambda$executePlan$1(ExecutionManager.java:73)
+	at org.eclipse.edc.crawler.spi.model.RecurringExecutionPlan.lambda$catchExceptions$0(RecurringExecutionPlan.java:52)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+Caused by: java.net.ConnectException: Conexión rehusada
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:592)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:752)
+	at okhttp3.internal.platform.Platform.connectSocket(Platform.kt:128)
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.kt:295)
+	... 49 more
+[provider-manufacturing]WARNING 2025-07-29T10:42:37.062062655 [DEMO] Error resolving DID: Failed to connect to localhost/127.0.0.1:7083
+[provider-manufacturing]WARNING 2025-07-29T10:42:52.655358731 [DEMO] Error resolving DID: did:web:localhost%3A7093. HTTP Code was: 204
+[provider-manufacturing]DEBUG 2025-07-29T10:42:52.655958989 [ExecutionManager] No WorkItems found, skipping execution
+[provider-manufacturing]DEBUG 2025-07-29T10:42:52.65609742 [ExecutionManager] Run pre-execution task
+[provider-manufacturing]WARNING 2025-07-29T10:42:52.687395266 [DEMO] Error resolving DID: did:web:localhost%3A7083. HTTP Code was: 204
+[provider-manufacturing]WARNING 2025-07-29T10:42:52.690944733 [DEMO] Error resolving DID: did:web:localhost%3A7093. HTTP Code was: 204
+[provider-manufacturing]DEBUG 2025-07-29T10:42:52.691104955 [ExecutionManager] No WorkItems found, skipping execution
+[provider-manufacturing]DEBUG 2025-07-29T10:42:52.691207782 [ExecutionManager] Run pre-execution task
+[provider-manufacturing]WARNING 2025-07-29T10:42:52.694605756 [DEMO] Error resolving DID: did:web:localhost%3A7083. HTTP Code was: 204
+[provider-manufacturing]WARNING 2025-07-29T10:42:52.698339282 [DEMO] Error resolving DID: did:web:localhost%3A7093. HTTP Code was: 204
+[provider-manufacturing]DEBUG 2025-07-29T10:42:52.69851627 [ExecutionManager] No WorkItems found, skipping execution
+[provider-manufacturing]DEBUG 2025-07-29T10:42:52.698626638 [ExecutionManager] Run pre-execution task
+[provider-manufacturing]WARNING 2025-07-29T10:42:52.702529444 [DEMO] Error resolving DID: did:web:localhost%3A7083. HTTP Code was: 204
+[provider-manufacturing]WARNING 2025-07-29T10:42:52.705896577 [DEMO] Error resolving DID: did:web:localhost%3A7093. HTTP Code was: 204
+[provider-manufacturing]DEBUG 2025-07-29T10:42:52.706090353 [ExecutionManager] No WorkItems found, skipping execution
+[provider-manufacturing]DEBUG 2025-07-29T10:43:01.487929805 [ExecutionManager] Run pre-execution task
+[provider-manufacturing]WARNING 2025-07-29T10:43:01.495788994 [DEMO] Error resolving DID: did:web:localhost%3A7083. HTTP Code was: 204
+[provider-manufacturing]WARNING 2025-07-29T10:43:01.502312113 [DEMO] Error resolving DID: did:web:localhost%3A7093. HTTP Code was: 204
+[provider-manufacturing]DEBUG 2025-07-29T10:43:01.5025135 [ExecutionManager] No WorkItems found, skipping execution
+[provider-manufacturing]DEBUG 2025-07-29T10:43:11.488001512 [ExecutionManager] Run pre-execution task
+[provider-manufacturing]WARNING 2025-07-29T10:43:11.496926025 [DEMO] Error resolving DID: did:web:localhost%3A7083. HTTP Code was: 204
+[provider-manufacturing]WARNING 2025-07-29T10:43:11.503135665 [DEMO] Error resolving DID: did:web:localhost%3A7093. HTTP Code was: 204
+[provider-manufacturing]DEBUG 2025-07-29T10:43:11.503396389 [ExecutionManager] No WorkItems found, skipping execution
+[provider-manufacturing]DEBUG 2025-07-29T10:43:17.561255495 [DataPlaneSelectorManagerImpl] DataPlaneInstance provider-manufacturing is now in state AVAILABLE
+[provider-manufacturing]DEBUG 2025-07-29T10:43:21.488305112 [ExecutionManager] Run pre-execution task
+[provider-manufacturing]WARNING 2025-07-29T10:43:21.496241221 [DEMO] Error resolving DID: did:web:localhost%3A7083. HTTP Code was: 204
+[provider-manufacturing]WARNING 2025-07-29T10:43:21.502494364 [DEMO] Error resolving DID: did:web:localhost%3A7093. HTTP Code was: 204
+[provider-manufacturing]DEBUG 2025-07-29T10:43:21.502833191 [ExecutionManager] No WorkItems found, skipping execution
+[provider-manufacturing]DEBUG 2025-07-29T10:43:31.488022613 [ExecutionManager] Run pre-execution task
+[provider-manufacturing]WARNING 2025-07-29T10:43:31.496083177 [DEMO] Error resolving DID: did:web:localhost%3A7083. HTTP Code was: 204
+[provider-manufacturing]WARNING 2025-07-29T10:43:31.499854101 [DEMO] Error resolving DID: did:web:localhost%3A7093. HTTP Code was: 204
+[provider-manufacturing]DEBUG 2025-07-29T10:43:31.500059673 [ExecutionManager] No WorkItems found, skipping execution
+[provider-manufacturing]DEBUG 2025-07-29T10:43:41.487821786 [ExecutionManager] Run pre-execution task
+[provider-manufacturing]WARNING 2025-07-29T10:43:41.491037138 [DEMO] Error resolving DID: did:web:localhost%3A7083. HTTP Code was: 204
+[provider-manufacturing]WARNING 2025-07-29T10:43:41.493507193 [DEMO] Error resolving DID: did:web:localhost%3A7093. HTTP Code was: 204
+[provider-manufacturing]DEBUG 2025-07-29T10:43:41.493608823 [ExecutionManager] No WorkItems found, skipping execution
+[provider-manufacturing]DEBUG 2025-07-29T10:43:51.487736368 [ExecutionManager] Run pre-execution task
+[provider-manufacturing]WARNING 2025-07-29T10:43:51.491019139 [DEMO] Error resolving DID: did:web:localhost%3A7083. HTTP Code was: 204
+[provider-manufacturing]WARNING 2025-07-29T10:43:51.493252688 [DEMO] Error resolving DID: did:web:localhost%3A7093. HTTP Code was: 204
+[provider-manufacturing]DEBUG 2025-07-29T10:43:51.493334342 [ExecutionManager] No WorkItems found, skipping execution
+[provider-manufacturing]DEBUG 2025-07-29T10:44:01.487664788 [ExecutionManager] Run pre-execution task
+[provider-manufacturing]WARNING 2025-07-29T10:44:01.490359167 [DEMO] Error resolving DID: did:web:localhost%3A7083. HTTP Code was: 204
+[provider-manufacturing]WARNING 2025-07-29T10:44:01.49260776 [DEMO] Error resolving DID: did:web:localhost%3A7093. HTTP Code was: 204
+[provider-manufacturing]DEBUG 2025-07-29T10:44:01.492684203 [ExecutionManager] No WorkItems found, skipping execution
+[provider-manufacturing]DEBUG 2025-07-29T10:44:11.487739205 [ExecutionManager] Run pre-execution task
+[provider-manufacturing]WARNING 2025-07-29T10:44:11.490750468 [DEMO] Error resolving DID: did:web:localhost%3A7083. HTTP Code was: 204
+[provider-manufacturing]WARNING 2025-07-29T10:44:11.493029427 [DEMO] Error resolving DID: did:web:localhost%3A7093. HTTP Code was: 204
+[provider-manufacturing]DEBUG 2025-07-29T10:44:11.493126486 [ExecutionManager] No WorkItems found, skipping execution
+[provider-manufacturing]DEBUG 2025-07-29T10:44:17.601985085 [DataPlaneSelectorManagerImpl] DataPlaneInstance provider-manufacturing is now in state AVAILABLE
+[provider-manufacturing]DEBUG 2025-07-29T10:44:21.487985077 [ExecutionManager] Run pre-execution task
+[provider-manufacturing]WARNING 2025-07-29T10:44:21.492012478 [DEMO] Error resolving DID: did:web:localhost%3A7083. HTTP Code was: 204
+[provider-manufacturing]WARNING 2025-07-29T10:44:21.494199184 [DEMO] Error resolving DID: did:web:localhost%3A7093. HTTP Code was: 204
+[provider-manufacturing]DEBUG 2025-07-29T10:44:21.494305048 [ExecutionManager] No WorkItems found, skipping execution
+[provider-manufacturing]DEBUG 2025-07-29T10:44:31.487876552 [ExecutionManager] Run pre-execution task
+[provider-manufacturing]WARNING 2025-07-29T10:44:31.490995319 [DEMO] Error resolving DID: did:web:localhost%3A7083. HTTP Code was: 204
+[provider-manufacturing]WARNING 2025-07-29T10:44:31.493262423 [DEMO] Error resolving DID: did:web:localhost%3A7093. HTTP Code was: 204
+[provider-manufacturing]DEBUG 2025-07-29T10:44:31.493367532 [ExecutionManager] No WorkItems found, skipping execution
+[provider-manufacturing]DEBUG 2025-07-29T10:44:41.487680655 [ExecutionManager] Run pre-execution task
+[provider-manufacturing]WARNING 2025-07-29T10:44:41.490168477 [DEMO] Error resolving DID: did:web:localhost%3A7083. HTTP Code was: 204
+[provider-manufacturing]WARNING 2025-07-29T10:44:41.492222815 [DEMO] Error resolving DID: did:web:localhost%3A7093. HTTP Code was: 204
+[provider-manufacturing]DEBUG 2025-07-29T10:44:41.492302404 [ExecutionManager] No WorkItems found, skipping execution
+[provider-manufacturing]DEBUG 2025-07-29T10:44:51.487754729 [ExecutionManager] Run pre-execution task
+[provider-manufacturing]WARNING 2025-07-29T10:44:51.490864611 [DEMO] Error resolving DID: did:web:localhost%3A7083. HTTP Code was: 204
+[provider-manufacturing]WARNING 2025-07-29T10:44:51.492862075 [DEMO] Error resolving DID: did:web:localhost%3A7093. HTTP Code was: 204
+[provider-manufacturing]DEBUG 2025-07-29T10:44:51.492931345 [ExecutionManager] No WorkItems found, skipping execution
+[provider-manufacturing]DEBUG 2025-07-29T10:45:01.487733224 [ExecutionManager] Run pre-execution task
+[provider-manufacturing]WARNING 2025-07-29T10:45:01.490575119 [DEMO] Error resolving DID: did:web:localhost%3A7083. HTTP Code was: 204
+[provider-manufacturing]WARNING 2025-07-29T10:45:01.492655736 [DEMO] Error resolving DID: did:web:localhost%3A7093. HTTP Code was: 204
+[provider-manufacturing]DEBUG 2025-07-29T10:45:01.492729539 [ExecutionManager] No WorkItems found, skipping execution
+[provider-manufacturing]DEBUG 2025-07-29T10:45:11.487676693 [ExecutionManager] Run pre-execution task
+[provider-manufacturing]WARNING 2025-07-29T10:45:11.490403407 [DEMO] Error resolving DID: did:web:localhost%3A7083. HTTP Code was: 204
+[provider-manufacturing]WARNING 2025-07-29T10:45:11.492579474 [DEMO] Error resolving DID: did:web:localhost%3A7093. HTTP Code was: 204
+[provider-manufacturing]DEBUG 2025-07-29T10:45:11.492678067 [ExecutionManager] No WorkItems found, skipping execution
+[provider-manufacturing]DEBUG 2025-07-29T10:45:17.633410005 [DataPlaneSelectorManagerImpl] DataPlaneInstance provider-manufacturing is now in state AVAILABLE
+[provider-manufacturing]DEBUG 2025-07-29T10:45:21.487914316 [ExecutionManager] Run pre-execution task
+[provider-manufacturing]WARNING 2025-07-29T10:45:21.493364369 [DEMO] Error resolving DID: did:web:localhost%3A7083. HTTP Code was: 204
+[provider-manufacturing]WARNING 2025-07-29T10:45:21.495298566 [DEMO] Error resolving DID: did:web:localhost%3A7093. HTTP Code was: 204
+[provider-manufacturing]DEBUG 2025-07-29T10:45:21.495381432 [ExecutionManager] No WorkItems found, skipping execution
+[provider-manufacturing]DEBUG 2025-07-29T10:45:31.488043649 [ExecutionManager] Run pre-execution task
+[provider-manufacturing]WARNING 2025-07-29T10:45:31.494720147 [DEMO] Error resolving DID: did:web:localhost%3A7083. HTTP Code was: 204
+[provider-manufacturing]WARNING 2025-07-29T10:45:31.500489842 [DEMO] Error resolving DID: did:web:localhost%3A7093. HTTP Code was: 204
+[provider-manufacturing]DEBUG 2025-07-29T10:45:31.500763569 [ExecutionManager] No WorkItems found, skipping execution
+[provider-manufacturing]DEBUG 2025-07-29T10:45:41.487664763 [ExecutionManager] Run pre-execution task
+[provider-manufacturing]WARNING 2025-07-29T10:45:41.490149761 [DEMO] Error resolving DID: did:web:localhost%3A7083. HTTP Code was: 204
+[provider-manufacturing]WARNING 2025-07-29T10:45:41.492198692 [DEMO] Error resolving DID: did:web:localhost%3A7093. HTTP Code was: 204
+[provider-manufacturing]DEBUG 2025-07-29T10:45:41.492294356 [ExecutionManager] No WorkItems found, skipping execution
+[provider-manufacturing]DEBUG 2025-07-29T10:45:51.48789628 [ExecutionManager] Run pre-execution task
+[provider-manufacturing]WARNING 2025-07-29T10:45:51.493397575 [DEMO] Error resolving DID: did:web:localhost%3A7083. HTTP Code was: 204
+[provider-manufacturing]WARNING 2025-07-29T10:45:51.495608472 [DEMO] Error resolving DID: did:web:localhost%3A7093. HTTP Code was: 204
+[provider-manufacturing]DEBUG 2025-07-29T10:45:51.49568027 [ExecutionManager] No WorkItems found, skipping execution
+[provider-manufacturing]DEBUG 2025-07-29T10:46:01.488085019 [ExecutionManager] Run pre-execution task
+[provider-manufacturing]WARNING 2025-07-29T10:46:01.496056414 [DEMO] Error resolving DID: did:web:localhost%3A7083. HTTP Code was: 204
+[provider-manufacturing]WARNING 2025-07-29T10:46:01.501587701 [DEMO] Error resolving DID: did:web:localhost%3A7093. HTTP Code was: 204
+[provider-manufacturing]DEBUG 2025-07-29T10:46:01.501818886 [ExecutionManager] No WorkItems found, skipping execution
+[provider-manufacturing]DEBUG 2025-07-29T10:46:11.487896114 [ExecutionManager] Run pre-execution task
+[provider-manufacturing]WARNING 2025-07-29T10:46:11.492882178 [DEMO] Error resolving DID: did:web:localhost%3A7083. HTTP Code was: 204
+[provider-manufacturing]WARNING 2025-07-29T10:46:11.498063739 [DEMO] Error resolving DID: did:web:localhost%3A7093. HTTP Code was: 204
+[provider-manufacturing]DEBUG 2025-07-29T10:46:11.498138374 [ExecutionManager] No WorkItems found, skipping execution
+[provider-manufacturing]DEBUG 2025-07-29T10:46:17.672267356 [DataPlaneSelectorManagerImpl] DataPlaneInstance provider-manufacturing is now in state AVAILABLE
+[provider-manufacturing]DEBUG 2025-07-29T10:46:21.487847551 [ExecutionManager] Run pre-execution task
+[provider-manufacturing]WARNING 2025-07-29T10:46:21.494586525 [DEMO] Error resolving DID: did:web:localhost%3A7083. HTTP Code was: 204
+[provider-manufacturing]WARNING 2025-07-29T10:46:21.50014396 [DEMO] Error resolving DID: did:web:localhost%3A7093. HTTP Code was: 204
+[provider-manufacturing]DEBUG 2025-07-29T10:46:21.500444651 [ExecutionManager] No WorkItems found, skipping execution
+[provider-manufacturing]DEBUG 2025-07-29T10:46:31.48775308 [ExecutionManager] Run pre-execution task
+[provider-manufacturing]WARNING 2025-07-29T10:46:31.490354921 [DEMO] Error resolving DID: did:web:localhost%3A7083. HTTP Code was: 204
+[provider-manufacturing]WARNING 2025-07-29T10:46:31.492285109 [DEMO] Error resolving DID: did:web:localhost%3A7093. HTTP Code was: 204
+[provider-manufacturing]DEBUG 2025-07-29T10:46:31.492392799 [ExecutionManager] No WorkItems found, skipping execution
+[provider-manufacturing]DEBUG 2025-07-29T12:00:52.907424424 Config value: no setting found for 'edc.core.retry.retries.max', falling back to default value '5'
+[provider-manufacturing]DEBUG 2025-07-29T12:00:52.924305256 Config value: no setting found for 'edc.core.retry.backoff.min', falling back to default value '500'
+[provider-manufacturing]DEBUG 2025-07-29T12:00:52.924727259 Config value: no setting found for 'edc.core.retry.backoff.max', falling back to default value '10000'
+[provider-manufacturing]DEBUG 2025-07-29T12:00:52.925067181 Config value: no setting found for 'edc.core.retry.log.on.retry', falling back to default value 'false'
+[provider-manufacturing]DEBUG 2025-07-29T12:00:52.925432067 Config value: no setting found for 'edc.core.retry.log.on.retry.scheduled', falling back to default value 'false'
+[provider-manufacturing]DEBUG 2025-07-29T12:00:52.936728276 Config value: no setting found for 'edc.core.retry.log.on.retries.exceeded', falling back to default value 'false'
+[provider-manufacturing]DEBUG 2025-07-29T12:00:52.937403065 Config value: no setting found for 'edc.core.retry.log.on.failed.attempt', falling back to default value 'false'
+[provider-manufacturing]DEBUG 2025-07-29T12:00:52.937906158 Config value: no setting found for 'edc.core.retry.log.on.abort', falling back to default value 'false'
+[provider-manufacturing]DEBUG 2025-07-29T12:00:52.953924884 Config value: no setting found for 'edc.http.client.https.enforce', falling back to default value 'false'
+[provider-manufacturing]DEBUG 2025-07-29T12:00:52.960661948 Config value: no setting found for 'edc.http.client.timeout.connect', falling back to default value '30'
+[provider-manufacturing]DEBUG 2025-07-29T12:00:52.963953378 Config value: no setting found for 'edc.http.client.timeout.read', falling back to default value '30'
+[provider-manufacturing]DEBUG 2025-07-29T12:00:52.967253982 Config value: no setting found for 'edc.http.client.send.buffer.size', falling back to default value '0'
+[provider-manufacturing]DEBUG 2025-07-29T12:00:52.96766286 Config value: no setting found for 'edc.http.client.receive.buffer.size', falling back to default value '0'
+[provider-manufacturing]INFO 2025-07-29T12:00:53.093575817 HTTPS enforcement it not enabled, please enable it in a production environment
+[provider-manufacturing]INFO 2025-07-29T12:00:53.551580486 HTTPS enforcement it not enabled, please enable it in a production environment
+[provider-manufacturing]WARNING 2025-07-29T12:00:53.55590488 Config value: no setting found for 'edc.hostname', falling back to default value 'localhost'
+[provider-manufacturing]WARNING 2025-07-29T12:00:54.032122744 Using the InMemoryVault is not suitable for production scenarios and should be replaced with an actual Vault!
+[provider-manufacturing]DEBUG 2025-07-29T12:00:54.589929816 Storing secret did:web:localhost%3A7093-alias
+[provider-manufacturing]DEBUG 2025-07-29T12:00:54.595866993 Storing secret did:web:localhost%3A7093#key-1
+[provider-manufacturing]WARNING 2025-07-29T12:00:54.596454137 [DEMO] >>>>>> This extension hard-codes a keypair into the vault! <<<<<<
+[provider-manufacturing]WARNING 2025-07-29T12:00:54.598262934 A service of the type java.time.Clock was already registered and has now been replaced with a SystemClock instance.
+[provider-manufacturing]DEBUG 2025-07-29T12:00:54.606727218 Config value: no setting found for 'edc.iam.sts.token.expiration', falling back to default value '5'
+[provider-manufacturing]DEBUG 2025-07-29T12:00:54.707567728 Config value: no setting found for 'edc.jsonld.prefixes.check', falling back to default value 'true'
+[provider-manufacturing]DEBUG 2025-07-29T12:00:54.709572535 Config value: no setting found for 'edc.jsonld.vocab.disable', falling back to default value 'false'
+[provider-manufacturing]DEBUG 2025-07-29T12:00:54.71017639 Config value: no setting found for 'edc.jsonld.https.enabled', falling back to default value 'false'
+[provider-manufacturing]DEBUG 2025-07-29T12:00:54.71114488 Config value: no setting found for 'edc.jsonld.http.enabled', falling back to default value 'false'
+[provider-manufacturing]DEBUG 2025-07-29T12:00:55.04489286 Config value: no setting found for 'edc.did.resolver.cache.expiry', falling back to default value '300000'
+[provider-manufacturing]DEBUG 2025-07-29T12:00:55.065504013 Config value: no setting found for 'edc.dcp.v08.forced', falling back to default value 'false'
+[provider-manufacturing]DEBUG 2025-07-29T12:00:55.070974211 Config value: no setting found for 'edc.iam.credential.revocation.cache.validity', falling back to default value '900000'
+[provider-manufacturing]DEBUG 2025-07-29T12:00:55.076906548 Config value: no setting found for 'edc.sql.store.jti.cleanup.period', falling back to default value '60'
+[provider-manufacturing]WARNING 2025-07-29T12:00:55.135875505 The list of trusted issuers is empty
+[provider-manufacturing]DEBUG 2025-07-29T12:00:55.16182387 DataPlane Access Control: default implementation is used, will always return Result.success()
+[provider-manufacturing]DEBUG 2025-07-29T12:00:55.167607163 Config value: no setting found for 'edc.api.auth.dac.cache.validity', falling back to default value '300000'
+[provider-manufacturing]DEBUG 2025-07-29T12:00:55.170107629 Config value: no setting found for 'edc.api.auth.dac.validation.tolerance', falling back to default value '5000'
+[provider-manufacturing]WARNING 2025-07-29T12:00:55.174991212 [Delegated API Authentication] No audience configured for delegated authentication, defaulting to the participantId
+[provider-manufacturing]DEBUG 2025-07-29T12:00:55.18279144 Config value: no setting found for 'edc.dataplane.state-machine.iteration-wait-millis', falling back to default value '1000'
+[provider-manufacturing]DEBUG 2025-07-29T12:00:55.184718119 Config value: no setting found for 'edc.dataplane.state-machine.batch-size', falling back to default value '20'
+[provider-manufacturing]DEBUG 2025-07-29T12:00:55.188106062 Config value: no setting found for 'edc.dataplane.state-machine.flow.lease.time', falling back to default value '500'
+[provider-manufacturing]DEBUG 2025-07-29T12:00:55.188816349 Config value: no setting found for 'edc.dataplane.state-machine.flow.lease.factor', falling back to default value '5'
+[provider-manufacturing]DEBUG 2025-07-29T12:00:55.194950979 Config value: no setting found for 'edc.dataplane.send.retry.limit', falling back to default value '7'
+[provider-manufacturing]DEBUG 2025-07-29T12:00:55.211980833 Config value: no setting found for 'edc.dataplane.send.retry.base-delay.ms', falling back to default value '1000'
+[provider-manufacturing]DEBUG 2025-07-29T12:00:55.213532795 Config value: no setting found for 'edc.dataplane.transfer.threads', falling back to default value '20'
+[provider-manufacturing]DEBUG 2025-07-29T12:00:55.227619204 Config value: no setting found for 'edc.dataplane.http.sink.partition.size', falling back to default value '5'
+[provider-manufacturing]DEBUG 2025-07-29T12:00:55.264071653 Config value: no setting found for 'edc.web.https.keystore.password', falling back to default value 'password'
+[provider-manufacturing]DEBUG 2025-07-29T12:00:55.271310812 Config value: no setting found for 'edc.web.https.keymanager.password', falling back to default value 'password'
+[provider-manufacturing]DEBUG 2025-07-29T12:00:55.274236307 Config value: no setting found for 'web.http.default.port', falling back to default value '8181'
+[provider-manufacturing]DEBUG 2025-07-29T12:00:55.275630279 Config value: no setting found for 'web.http.default.path', falling back to default value '/api'
+[provider-manufacturing]DEBUG 2025-07-29T12:00:55.284755179 Config value: no setting found for 'edc.web.https.keystore.type', falling back to default value 'PKCS12'
+[provider-manufacturing]DEBUG 2025-07-29T12:00:55.436412458 Config value: no setting found for 'edc.negotiation.provider.state-machine.batch-size', falling back to default value '20'
+[provider-manufacturing]DEBUG 2025-07-29T12:00:55.445537955 Config value: no setting found for 'edc.negotiation.state-machine.iteration-wait-millis', falling back to default value '1000'
+[provider-manufacturing]DEBUG 2025-07-29T12:00:55.447099964 Config value: no setting found for 'edc.negotiation.consumer.send.retry.limit', falling back to default value '7'
+[provider-manufacturing]DEBUG 2025-07-29T12:00:55.448336557 Config value: no setting found for 'edc.negotiation.consumer.state-machine.batch-size', falling back to default value '20'
+[provider-manufacturing]DEBUG 2025-07-29T12:00:55.451667218 Config value: no setting found for 'edc.negotiation.provider.send.retry.limit', falling back to default value '7'
+[provider-manufacturing]DEBUG 2025-07-29T12:00:55.454917321 Config value: no setting found for 'edc.negotiation.consumer.send.retry.base-delay.ms', falling back to default value '1000'
+[provider-manufacturing]DEBUG 2025-07-29T12:00:55.457556878 Config value: no setting found for 'edc.negotiation.provider.send.retry.base-delay.ms', falling back to default value '1000'
+[provider-manufacturing]DEBUG 2025-07-29T12:00:55.490565 Config value: no setting found for 'edc.transfer.send.retry.base-delay.ms', falling back to default value '1000'
+[provider-manufacturing]DEBUG 2025-07-29T12:00:55.492693616 Config value: no setting found for 'edc.transfer.state-machine.batch-size', falling back to default value '20'
+[provider-manufacturing]DEBUG 2025-07-29T12:00:55.49798105 Config value: no setting found for 'edc.transfer.send.retry.limit', falling back to default value '7'
+[provider-manufacturing]DEBUG 2025-07-29T12:00:55.502327137 Config value: no setting found for 'edc.transfer.state-machine.iteration-wait-millis', falling back to default value '1000'
+[provider-manufacturing]DEBUG 2025-07-29T12:00:55.557984136 Config value: no setting found for 'edc.policy.validation.enabled', falling back to default value 'false'
+[provider-manufacturing]WARNING 2025-07-29T12:00:55.559388793 No TransactionContext registered, a no-op implementation will be used, not suitable for production environments
+[provider-manufacturing]DEBUG 2025-07-29T12:00:55.620842356 Config value: no setting found for 'edc.catalog.cache.partition.num.crawlers', falling back to default value '2'
+[provider-manufacturing]DEBUG 2025-07-29T12:00:55.62854552 Config value: no setting found for 'edc.catalog.cache.partition.num.crawlers', falling back to default value '2'
+[provider-manufacturing]DEBUG 2025-07-29T12:00:55.632082969 Config value: no setting found for 'edc.catalog.cache.execution.enabled', falling back to default value 'true'
+[provider-manufacturing]DEBUG 2025-07-29T12:00:55.692864738 Config value: no setting found for 'edc.dsp.well-known-path.enabled', falling back to default value 'false'
+[provider-manufacturing]WARNING 2025-07-29T12:00:55.703151413 No TokenDecorator was registered. The 'scope' field of outgoing protocol messages will be empty
+[provider-manufacturing]DEBUG 2025-07-29T12:00:55.743086129 Config value: no setting found for 'edc.dsp.well-known-path.enabled', falling back to default value 'false'
+[provider-manufacturing]DEBUG 2025-07-29T12:00:55.7765332 Using embedded Data Plane client.
+[provider-manufacturing]DEBUG 2025-07-29T12:00:55.777611834 Config value: no setting found for 'edc.data.plane.selector.state-machine.batch-size', falling back to default value '20'
+[provider-manufacturing]DEBUG 2025-07-29T12:00:55.78548476 Config value: no setting found for 'edc.data.plane.selector.state-machine.iteration-wait-millis', falling back to default value '1000'
+[provider-manufacturing]DEBUG 2025-07-29T12:00:55.787404264 Config value: no setting found for 'edc.data.plane.selector.state-machine.check.period', falling back to default value '60'
+[provider-manufacturing]DEBUG 2025-07-29T12:00:56.031365271 Config value: no setting found for 'edc.dataplane.client.selector.strategy', falling back to default value 'random'
+[provider-manufacturing]DEBUG 2025-07-29T12:00:56.510592082 Config value: no setting found for 'edc.policy.monitor.state-machine.iteration-wait-millis', falling back to default value '1000'
+[provider-manufacturing]DEBUG 2025-07-29T12:00:56.512811049 Config value: no setting found for 'edc.policy.monitor.state-machine.batch-size', falling back to default value '20'
+[provider-manufacturing]DEBUG 2025-07-29T12:00:56.542476879 Config value: no setting found for 'edc.edr.receiver.sync', falling back to default value 'false'
+[provider-manufacturing]WARNING 2025-07-29T12:00:56.557889032 The `data-plane-public-api-v2` has been deprecated, please provide analternative implementation for Http Proxy if needed
+[provider-manufacturing]WARNING 2025-07-29T12:00:56.568193207 The public API endpoint was not explicitly configured, the default 'http://localhost:12002/api/public' will be used.
+[provider-manufacturing]DEBUG 2025-07-29T12:00:56.585418176 Config value: no setting found for 'edc.data.plane.self.unregistration', falling back to default value 'false'
+[provider-manufacturing]DEBUG 2025-07-29T12:00:56.637773579 Configured tokenbased authentication for context management
+[provider-manufacturing]DEBUG 2025-07-29T12:00:56.640219651 Configured tokenbased authentication for context catalog
+[provider-manufacturing]DEBUG 2025-07-29T12:00:56.808383905 HTTP context 'default' listening on port 8290
+[provider-manufacturing]DEBUG 2025-07-29T12:00:56.823657462 HTTP context 'public' listening on port 12002
+[provider-manufacturing]DEBUG 2025-07-29T12:00:56.824240489 HTTP context 'management' listening on port 8291
+[provider-manufacturing]DEBUG 2025-07-29T12:00:56.824640094 HTTP context 'protocol' listening on port 8292
+[provider-manufacturing]DEBUG 2025-07-29T12:00:56.826772981 HTTP context 'control' listening on port 8293
+[provider-manufacturing]DEBUG 2025-07-29T12:00:56.827496157 HTTP context 'catalog' listening on port 8294
+[provider-manufacturing]DEBUG 2025-07-29T12:00:56.828074248 HTTP context 'version' listening on port 8295
+[provider-manufacturing]DEBUG 2025-07-29T12:00:57.078715561 Port mappings: PortMapping[name=default, port=8290, path=/api], PortMapping[name=public, port=12002, path=/api/public], PortMapping[name=management, port=8291, path=/api/management/], PortMapping[name=protocol, port=8292, path=/api/dsp], PortMapping[name=control, port=8293, path=/api/control], PortMapping[name=catalog, port=8294, path=/api/catalog], PortMapping[name=version, port=8295, path=/api/version]
+[provider-manufacturing]DEBUG 2025-07-29T12:00:58.085491718 Registered Web API context alias: default
+[provider-manufacturing]DEBUG 2025-07-29T12:00:58.432746799 Registered Web API context alias: protocol
+[provider-manufacturing]DEBUG 2025-07-29T12:00:58.558238749 Registered Web API context alias: public
+[provider-manufacturing]DEBUG 2025-07-29T12:00:58.710187267 Registered Web API context alias: management
+[provider-manufacturing]DEBUG 2025-07-29T12:00:58.782174119 Registered Web API context alias: catalog
+[provider-manufacturing]DEBUG 2025-07-29T12:00:58.88388084 Registered Web API context alias: control
+[provider-manufacturing]DEBUG 2025-07-29T12:00:59.048019999 Registered Web API context alias: version
+[provider-manufacturing]DEBUG 2025-07-29T12:00:59.114553063 [DataPlaneHealthCheck] Initiate data plane registration.
+[provider-manufacturing]DEBUG 2025-07-29T12:00:59.117224398 [DataPlaneHealthCheck] data plane registered to control plane
+[provider-manufacturing]DEBUG 2025-07-29T12:01:00.100131035 [DataPlaneSelectorManagerImpl] DataPlaneInstance provider-manufacturing is now in state AVAILABLE
+[provider-manufacturing]DEBUG 2025-07-29T12:01:04.077330203 [ExecutionManager] Run pre-execution task
+[provider-manufacturing]SEVERE 2025-07-29T12:01:19.679699726 Error resolving DID: did:web:localhost%3A7083
+java.net.ConnectException: Failed to connect to localhost/127.0.0.1:7083
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.kt:297)
+	at okhttp3.internal.connection.RealConnection.connect(RealConnection.kt:207)
+	at okhttp3.internal.connection.ExchangeFinder.findConnection(ExchangeFinder.kt:226)
+	at okhttp3.internal.connection.ExchangeFinder.findHealthyConnection(ExchangeFinder.kt:106)
+	at okhttp3.internal.connection.ExchangeFinder.find(ExchangeFinder.kt:74)
+	at okhttp3.internal.connection.RealCall.initExchange$okhttp(RealCall.kt:255)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.kt:32)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.kt:95)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.kt:83)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.kt:76)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.connection.RealCall.getResponseWithInterceptorChain$okhttp(RealCall.kt:201)
+	at okhttp3.internal.connection.RealCall.execute(RealCall.kt:154)
+	at dev.failsafe.okhttp.FailsafeCall.lambda$execute$0(FailsafeCall.java:117)
+	at dev.failsafe.Functions.lambda$get$0(Functions.java:46)
+	at dev.failsafe.internal.RetryPolicyExecutor.lambda$apply$0(RetryPolicyExecutor.java:74)
+	at dev.failsafe.SyncExecutionImpl.executeSync(SyncExecutionImpl.java:187)
+	at dev.failsafe.CallImpl.execute(CallImpl.java:33)
+	at dev.failsafe.okhttp.FailsafeCall.execute(FailsafeCall.java:121)
+	at org.eclipse.edc.http.client.EdcHttpClientImpl.execute(EdcHttpClientImpl.java:59)
+	at org.eclipse.edc.http.client.EdcHttpClientImpl.execute(EdcHttpClientImpl.java:51)
+	at org.eclipse.edc.iam.did.web.resolution.WebDidResolver.resolve(WebDidResolver.java:68)
+	at org.eclipse.edc.iam.did.resolution.DidResolverRegistryImpl.resolveCachedDocument(DidResolverRegistryImpl.java:114)
+	at org.eclipse.edc.iam.did.resolution.DidResolverRegistryImpl.resolve(DidResolverRegistryImpl.java:78)
+	at org.eclipse.edc.demo.participants.resolver.LazyLoadNodeDirectory.createNode(LazyLoadNodeDirectory.java:77)
+	at org.eclipse.edc.demo.participants.resolver.LazyLoadNodeDirectory.lambda$getAll$0(LazyLoadNodeDirectory.java:62)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:212)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1939)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:556)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:546)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:622)
+	at java.base/java.util.stream.AbstractPipeline.evaluateToArrayNode(AbstractPipeline.java:291)
+	at java.base/java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:631)
+	at java.base/java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:637)
+	at java.base/java.util.stream.ReferencePipeline.toList(ReferencePipeline.java:642)
+	at org.eclipse.edc.demo.participants.resolver.LazyLoadNodeDirectory.getAll(LazyLoadNodeDirectory.java:64)
+	at org.eclipse.edc.catalog.cache.ExecutionManager.fetchWorkItems(ExecutionManager.java:171)
+	at org.eclipse.edc.catalog.cache.ExecutionManager.doWork(ExecutionManager.java:81)
+	at org.eclipse.edc.catalog.cache.ExecutionManager.lambda$executePlan$1(ExecutionManager.java:73)
+	at org.eclipse.edc.crawler.spi.model.RecurringExecutionPlan.lambda$catchExceptions$0(RecurringExecutionPlan.java:52)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+Caused by: java.net.ConnectException: Conexión rehusada
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:592)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:752)
+	at okhttp3.internal.platform.Platform.connectSocket(Platform.kt:128)
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.kt:295)
+	... 49 more
+[provider-manufacturing]WARNING 2025-07-29T12:01:19.686664909 [DEMO] Error resolving DID: Failed to connect to localhost/127.0.0.1:7083
+[provider-manufacturing]SEVERE 2025-07-29T12:01:35.212034077 Error resolving DID: did:web:localhost%3A7093
+java.net.ConnectException: Failed to connect to localhost/127.0.0.1:7093
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.kt:297)
+	at okhttp3.internal.connection.RealConnection.connect(RealConnection.kt:207)
+	at okhttp3.internal.connection.ExchangeFinder.findConnection(ExchangeFinder.kt:226)
+	at okhttp3.internal.connection.ExchangeFinder.findHealthyConnection(ExchangeFinder.kt:106)
+	at okhttp3.internal.connection.ExchangeFinder.find(ExchangeFinder.kt:74)
+	at okhttp3.internal.connection.RealCall.initExchange$okhttp(RealCall.kt:255)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.kt:32)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.kt:95)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.kt:83)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.kt:76)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.connection.RealCall.getResponseWithInterceptorChain$okhttp(RealCall.kt:201)
+	at okhttp3.internal.connection.RealCall.execute(RealCall.kt:154)
+	at dev.failsafe.okhttp.FailsafeCall.lambda$execute$0(FailsafeCall.java:117)
+	at dev.failsafe.Functions.lambda$get$0(Functions.java:46)
+	at dev.failsafe.internal.RetryPolicyExecutor.lambda$apply$0(RetryPolicyExecutor.java:74)
+	at dev.failsafe.SyncExecutionImpl.executeSync(SyncExecutionImpl.java:187)
+	at dev.failsafe.CallImpl.execute(CallImpl.java:33)
+	at dev.failsafe.okhttp.FailsafeCall.execute(FailsafeCall.java:121)
+	at org.eclipse.edc.http.client.EdcHttpClientImpl.execute(EdcHttpClientImpl.java:59)
+	at org.eclipse.edc.http.client.EdcHttpClientImpl.execute(EdcHttpClientImpl.java:51)
+	at org.eclipse.edc.iam.did.web.resolution.WebDidResolver.resolve(WebDidResolver.java:68)
+	at org.eclipse.edc.iam.did.resolution.DidResolverRegistryImpl.resolveCachedDocument(DidResolverRegistryImpl.java:114)
+	at org.eclipse.edc.iam.did.resolution.DidResolverRegistryImpl.resolve(DidResolverRegistryImpl.java:78)
+	at org.eclipse.edc.demo.participants.resolver.LazyLoadNodeDirectory.createNode(LazyLoadNodeDirectory.java:77)
+	at org.eclipse.edc.demo.participants.resolver.LazyLoadNodeDirectory.lambda$getAll$0(LazyLoadNodeDirectory.java:62)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:212)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1939)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:556)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:546)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:622)
+	at java.base/java.util.stream.AbstractPipeline.evaluateToArrayNode(AbstractPipeline.java:291)
+	at java.base/java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:631)
+	at java.base/java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:637)
+	at java.base/java.util.stream.ReferencePipeline.toList(ReferencePipeline.java:642)
+	at org.eclipse.edc.demo.participants.resolver.LazyLoadNodeDirectory.getAll(LazyLoadNodeDirectory.java:64)
+	at org.eclipse.edc.catalog.cache.ExecutionManager.fetchWorkItems(ExecutionManager.java:171)
+	at org.eclipse.edc.catalog.cache.ExecutionManager.doWork(ExecutionManager.java:81)
+	at org.eclipse.edc.catalog.cache.ExecutionManager.lambda$executePlan$1(ExecutionManager.java:73)
+	at org.eclipse.edc.crawler.spi.model.RecurringExecutionPlan.lambda$catchExceptions$0(RecurringExecutionPlan.java:52)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+Caused by: java.net.ConnectException: Conexión rehusada
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:592)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:752)
+	at okhttp3.internal.platform.Platform.connectSocket(Platform.kt:128)
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.kt:295)
+	... 49 more
+[provider-manufacturing]WARNING 2025-07-29T12:01:35.216304006 [DEMO] Error resolving DID: Failed to connect to localhost/127.0.0.1:7093
+[provider-manufacturing]DEBUG 2025-07-29T12:01:35.217144868 [ExecutionManager] No WorkItems found, skipping execution
+[provider-manufacturing]DEBUG 2025-07-29T12:01:35.217355834 [ExecutionManager] Run pre-execution task
+[provider-manufacturing]WARNING 2025-07-29T12:01:50.741794314 [DEMO] Error resolving DID: did:web:localhost%3A7083. HTTP Code was: 204
+[provider-manufacturing]WARNING 2025-07-29T12:01:50.745810951 [DEMO] Error resolving DID: did:web:localhost%3A7093. HTTP Code was: 204
+[provider-manufacturing]DEBUG 2025-07-29T12:01:50.745949464 [ExecutionManager] No WorkItems found, skipping execution
+[provider-manufacturing]DEBUG 2025-07-29T12:01:50.746085542 [ExecutionManager] Run pre-execution task
+[provider-manufacturing]WARNING 2025-07-29T12:01:50.749872972 [DEMO] Error resolving DID: did:web:localhost%3A7083. HTTP Code was: 204
+[provider-manufacturing]WARNING 2025-07-29T12:01:50.753134927 [DEMO] Error resolving DID: did:web:localhost%3A7093. HTTP Code was: 204
+[provider-manufacturing]DEBUG 2025-07-29T12:01:50.753287663 [ExecutionManager] No WorkItems found, skipping execution
+[provider-manufacturing]DEBUG 2025-07-29T12:01:50.753405498 [ExecutionManager] Run pre-execution task
+[provider-manufacturing]WARNING 2025-07-29T12:01:50.756520292 [DEMO] Error resolving DID: did:web:localhost%3A7083. HTTP Code was: 204
+[provider-manufacturing]WARNING 2025-07-29T12:01:50.759379866 [DEMO] Error resolving DID: did:web:localhost%3A7093. HTTP Code was: 204
+[provider-manufacturing]DEBUG 2025-07-29T12:01:50.75947346 [ExecutionManager] No WorkItems found, skipping execution
+[provider-manufacturing]DEBUG 2025-07-29T12:01:50.759546232 [ExecutionManager] Run pre-execution task
+[provider-manufacturing]WARNING 2025-07-29T12:01:50.762743538 [DEMO] Error resolving DID: did:web:localhost%3A7083. HTTP Code was: 204
+[provider-manufacturing]WARNING 2025-07-29T12:01:50.765351396 [DEMO] Error resolving DID: did:web:localhost%3A7093. HTTP Code was: 204
+[provider-manufacturing]DEBUG 2025-07-29T12:01:50.765453822 [ExecutionManager] No WorkItems found, skipping execution
+[provider-manufacturing]DEBUG 2025-07-29T12:01:54.077306123 [ExecutionManager] Run pre-execution task
+[provider-manufacturing]WARNING 2025-07-29T12:01:54.080845843 [DEMO] Error resolving DID: did:web:localhost%3A7083. HTTP Code was: 204
+[provider-manufacturing]WARNING 2025-07-29T12:01:54.084099529 [DEMO] Error resolving DID: did:web:localhost%3A7093. HTTP Code was: 204
+[provider-manufacturing]DEBUG 2025-07-29T12:01:54.084226569 [ExecutionManager] No WorkItems found, skipping execution
+[provider-manufacturing]DEBUG 2025-07-29T12:02:00.209761347 [DataPlaneSelectorManagerImpl] DataPlaneInstance provider-manufacturing is now in state AVAILABLE
+[provider-manufacturing]DEBUG 2025-07-29T12:02:04.077254054 [ExecutionManager] Run pre-execution task
+[provider-manufacturing]WARNING 2025-07-29T12:02:04.080479286 [DEMO] Error resolving DID: did:web:localhost%3A7083. HTTP Code was: 204
+[provider-manufacturing]WARNING 2025-07-29T12:02:04.083211097 [DEMO] Error resolving DID: did:web:localhost%3A7093. HTTP Code was: 204
+[provider-manufacturing]DEBUG 2025-07-29T12:02:04.083320171 [ExecutionManager] No WorkItems found, skipping execution
+[provider-manufacturing]DEBUG 2025-07-29T12:02:14.077230089 [ExecutionManager] Run pre-execution task
+[provider-manufacturing]WARNING 2025-07-29T12:02:14.080059394 [DEMO] Error resolving DID: did:web:localhost%3A7083. HTTP Code was: 204
+[provider-manufacturing]WARNING 2025-07-29T12:02:14.082424445 [DEMO] Error resolving DID: did:web:localhost%3A7093. HTTP Code was: 204
+[provider-manufacturing]DEBUG 2025-07-29T12:02:14.082520454 [ExecutionManager] No WorkItems found, skipping execution
+[provider-manufacturing]DEBUG 2025-07-29T12:02:24.077263688 [ExecutionManager] Run pre-execution task
+[provider-manufacturing]WARNING 2025-07-29T12:02:24.080961115 [DEMO] Error resolving DID: did:web:localhost%3A7083. HTTP Code was: 204
+[provider-manufacturing]WARNING 2025-07-29T12:02:24.083982569 [DEMO] Error resolving DID: did:web:localhost%3A7093. HTTP Code was: 204
+[provider-manufacturing]DEBUG 2025-07-29T12:02:24.084106746 [ExecutionManager] No WorkItems found, skipping execution
+[provider-manufacturing]DEBUG 2025-07-29T12:02:34.077235655 [ExecutionManager] Run pre-execution task
+[provider-manufacturing]WARNING 2025-07-29T12:02:34.08100518 [DEMO] Error resolving DID: did:web:localhost%3A7083. HTTP Code was: 204
+[provider-manufacturing]WARNING 2025-07-29T12:02:34.084048506 [DEMO] Error resolving DID: did:web:localhost%3A7093. HTTP Code was: 204
+[provider-manufacturing]DEBUG 2025-07-29T12:02:34.084176328 [ExecutionManager] No WorkItems found, skipping execution
+[provider-manufacturing]DEBUG 2025-07-29T12:02:44.077253832 [ExecutionManager] Run pre-execution task
+[provider-manufacturing]WARNING 2025-07-29T12:02:44.083390492 [DEMO] Error resolving DID: did:web:localhost%3A7083. HTTP Code was: 204
+[provider-manufacturing]WARNING 2025-07-29T12:02:44.088472434 [DEMO] Error resolving DID: did:web:localhost%3A7093. HTTP Code was: 204
+[provider-manufacturing]DEBUG 2025-07-29T12:02:44.08865486 [ExecutionManager] No WorkItems found, skipping execution
+[provider-manufacturing]DEBUG 2025-07-29T12:02:54.078385367 [ExecutionManager] Run pre-execution task
+[provider-manufacturing]WARNING 2025-07-29T12:02:54.083475172 [DEMO] Error resolving DID: did:web:localhost%3A7083. HTTP Code was: 204
+[provider-manufacturing]WARNING 2025-07-29T12:02:54.086677277 [DEMO] Error resolving DID: did:web:localhost%3A7093. HTTP Code was: 204
+[provider-manufacturing]DEBUG 2025-07-29T12:02:54.086806951 [ExecutionManager] No WorkItems found, skipping execution
+[provider-manufacturing]DEBUG 2025-07-29T12:03:00.24927518 [DataPlaneSelectorManagerImpl] DataPlaneInstance provider-manufacturing is now in state AVAILABLE
+[provider-manufacturing]DEBUG 2025-07-29T12:03:04.07727146 [ExecutionManager] Run pre-execution task
+[provider-manufacturing]WARNING 2025-07-29T12:03:04.080252181 [DEMO] Error resolving DID: did:web:localhost%3A7083. HTTP Code was: 204
+[provider-manufacturing]WARNING 2025-07-29T12:03:04.082697471 [DEMO] Error resolving DID: did:web:localhost%3A7093. HTTP Code was: 204
+[provider-manufacturing]DEBUG 2025-07-29T12:03:04.082812357 [ExecutionManager] No WorkItems found, skipping execution
+[provider-manufacturing]DEBUG 2025-07-29T12:03:14.077228922 [ExecutionManager] Run pre-execution task
+[provider-manufacturing]WARNING 2025-07-29T12:03:14.080159249 [DEMO] Error resolving DID: did:web:localhost%3A7083. HTTP Code was: 204
+[provider-manufacturing]WARNING 2025-07-29T12:03:14.082250605 [DEMO] Error resolving DID: did:web:localhost%3A7093. HTTP Code was: 204
+[provider-manufacturing]DEBUG 2025-07-29T12:03:14.082334802 [ExecutionManager] No WorkItems found, skipping execution
+[provider-manufacturing]DEBUG 2025-07-29T12:03:24.07726157 [ExecutionManager] Run pre-execution task
+[provider-manufacturing]WARNING 2025-07-29T12:03:24.080262939 [DEMO] Error resolving DID: did:web:localhost%3A7083. HTTP Code was: 204
+[provider-manufacturing]WARNING 2025-07-29T12:03:24.08244206 [DEMO] Error resolving DID: did:web:localhost%3A7093. HTTP Code was: 204
+[provider-manufacturing]DEBUG 2025-07-29T12:03:24.082510167 [ExecutionManager] No WorkItems found, skipping execution
+[provider-manufacturing]DEBUG 2025-07-29T12:03:34.077364709 [ExecutionManager] Run pre-execution task
+[provider-manufacturing]WARNING 2025-07-29T12:03:34.088745 [DEMO] Error resolving DID: did:web:localhost%3A7083. HTTP Code was: 204
+[provider-manufacturing]WARNING 2025-07-29T12:03:34.090848331 [DEMO] Error resolving DID: did:web:localhost%3A7093. HTTP Code was: 204
+[provider-manufacturing]DEBUG 2025-07-29T12:03:34.090918717 [ExecutionManager] No WorkItems found, skipping execution
+[provider-manufacturing]DEBUG 2025-07-29T12:03:44.077261809 [ExecutionManager] Run pre-execution task
+[provider-manufacturing]WARNING 2025-07-29T12:03:44.080072035 [DEMO] Error resolving DID: did:web:localhost%3A7083. HTTP Code was: 204
+[provider-manufacturing]WARNING 2025-07-29T12:03:44.082425062 [DEMO] Error resolving DID: did:web:localhost%3A7093. HTTP Code was: 204
+[provider-manufacturing]DEBUG 2025-07-29T12:03:44.082490768 [ExecutionManager] No WorkItems found, skipping execution
+[provider-manufacturing]DEBUG 2025-07-29T12:03:54.077279645 [ExecutionManager] Run pre-execution task
+[provider-manufacturing]WARNING 2025-07-29T12:03:54.086596015 [DEMO] Error resolving DID: did:web:localhost%3A7083. HTTP Code was: 204
+[provider-manufacturing]WARNING 2025-07-29T12:03:54.088917517 [DEMO] Error resolving DID: did:web:localhost%3A7093. HTTP Code was: 204
+[provider-manufacturing]DEBUG 2025-07-29T12:03:54.088993492 [ExecutionManager] No WorkItems found, skipping execution
+[provider-manufacturing]DEBUG 2025-07-29T12:04:00.274746568 [DataPlaneSelectorManagerImpl] DataPlaneInstance provider-manufacturing is now in state AVAILABLE
+[provider-manufacturing]DEBUG 2025-07-29T12:04:04.077249036 [ExecutionManager] Run pre-execution task
+[provider-manufacturing]WARNING 2025-07-29T12:04:04.079893282 [DEMO] Error resolving DID: did:web:localhost%3A7083. HTTP Code was: 204
+[provider-manufacturing]WARNING 2025-07-29T12:04:04.082359176 [DEMO] Error resolving DID: did:web:localhost%3A7093. HTTP Code was: 204
+[provider-manufacturing]DEBUG 2025-07-29T12:04:04.082465952 [ExecutionManager] No WorkItems found, skipping execution
+[provider-manufacturing]DEBUG 2025-07-29T12:04:14.077332652 [ExecutionManager] Run pre-execution task
+[provider-manufacturing]WARNING 2025-07-29T12:04:14.080252546 [DEMO] Error resolving DID: did:web:localhost%3A7083. HTTP Code was: 204
+[provider-manufacturing]WARNING 2025-07-29T12:04:14.082305056 [DEMO] Error resolving DID: did:web:localhost%3A7093. HTTP Code was: 204
+[provider-manufacturing]DEBUG 2025-07-29T12:04:14.082370445 [ExecutionManager] No WorkItems found, skipping execution
+[provider-manufacturing]DEBUG 2025-07-29T12:04:24.077192402 [ExecutionManager] Run pre-execution task
+[provider-manufacturing]WARNING 2025-07-29T12:04:24.079990997 [DEMO] Error resolving DID: did:web:localhost%3A7083. HTTP Code was: 204
+[provider-manufacturing]WARNING 2025-07-29T12:04:24.082435232 [DEMO] Error resolving DID: did:web:localhost%3A7093. HTTP Code was: 204
+[provider-manufacturing]DEBUG 2025-07-29T12:04:24.082527775 [ExecutionManager] No WorkItems found, skipping execution
+[provider-manufacturing]DEBUG 2025-07-29T12:04:34.077277557 [ExecutionManager] Run pre-execution task
+[provider-manufacturing]WARNING 2025-07-29T12:04:34.08083494 [DEMO] Error resolving DID: did:web:localhost%3A7083. HTTP Code was: 204
+[provider-manufacturing]WARNING 2025-07-29T12:04:34.083090844 [DEMO] Error resolving DID: did:web:localhost%3A7093. HTTP Code was: 204
+[provider-manufacturing]DEBUG 2025-07-29T12:04:34.083187336 [ExecutionManager] No WorkItems found, skipping execution
+[provider-manufacturing]WARNING 2025-07-29T12:04:34.808656517 No source DataAddress validator has been registered for type HttpData, please register one as it is strongly recommended.
+[provider-manufacturing]WARNING 2025-07-29T12:04:34.889434577 No source DataAddress validator has been registered for type HttpData, please register one as it is strongly recommended.
+[provider-manufacturing]DEBUG 2025-07-29T12:04:34.943387306 Policy Definition created require-membership
+[provider-manufacturing]DEBUG 2025-07-29T12:04:34.986554002 Policy Definition created require-dataprocessor
+[provider-manufacturing]DEBUG 2025-07-29T12:04:35.029599732 Policy Definition created require-sensitive
+[provider-manufacturing]DEBUG 2025-07-29T12:04:36.838930696 Resolving secret did:web:localhost%3A7093-sts-client-secret
+[provider-manufacturing]DEBUG 2025-07-29T12:04:36.839183688 Storing secret did:web:localhost%3A7093-sts-client-secret
+[provider-manufacturing]DEBUG 2025-07-29T12:04:43.241018231 DSP: Incoming CatalogRequestMessage for class org.eclipse.edc.connector.controlplane.catalog.spi.Catalog process
+[provider-manufacturing]DEBUG 2025-07-29T12:04:43.684292055 Resolving secret did:web:localhost%3A7093-sts-client-secret
+[provider-manufacturing]DEBUG 2025-07-29T12:04:44.077206196 [ExecutionManager] Run pre-execution task
+[provider-manufacturing]DEBUG 2025-07-29T12:04:44.08226519 [DEMO] Node filter: skipping node 'did:web:localhost%3A7093' for participant 'did:web:localhost%3A7093'
+[provider-manufacturing]DEBUG 2025-07-29T12:04:44.082563391 [ExecutionManager] Loaded 1 work items from storage
+[provider-manufacturing]DEBUG 2025-07-29T12:04:44.084397529 [ExecutionManager] Crawler parallelism is 1, based on config and number of work items
+[provider-manufacturing]DEBUG 2025-07-29T12:04:44.086331989 [ExecutionManager] Crawler-cafe2be3-07e4-4c5b-aa66-ba515a15cbf6: WorkItem acquired
+[provider-manufacturing]DEBUG 2025-07-29T12:04:44.09231858 Resolving secret did:web:localhost%3A7093-sts-client-secret
+[provider-manufacturing]DEBUG 2025-07-29T12:04:44.16249513 [ExecutionManager] Crawler [Crawler-cafe2be3-07e4-4c5b-aa66-ba515a15cbf6] is done
+[provider-manufacturing]DEBUG 2025-07-29T12:04:52.005690659 DSP: Incoming CatalogRequestMessage for class org.eclipse.edc.connector.controlplane.catalog.spi.Catalog process
+[provider-manufacturing]DEBUG 2025-07-29T12:04:52.01013042 Resolving secret did:web:localhost%3A7093-sts-client-secret
+[provider-manufacturing]DEBUG 2025-07-29T12:04:54.077250878 [ExecutionManager] Run pre-execution task
+[provider-manufacturing]DEBUG 2025-07-29T12:04:54.077784878 [DEMO] Node filter: skipping node 'did:web:localhost%3A7093' for participant 'did:web:localhost%3A7093'
+[provider-manufacturing]DEBUG 2025-07-29T12:04:54.07783964 [ExecutionManager] Loaded 1 work items from storage
+[provider-manufacturing]DEBUG 2025-07-29T12:04:54.077902923 [ExecutionManager] Crawler parallelism is 1, based on config and number of work items
+[provider-manufacturing]DEBUG 2025-07-29T12:04:54.078020167 [ExecutionManager] Crawler-f84153a9-f531-42e9-8942-1410e11ca881: WorkItem acquired
+[provider-manufacturing]DEBUG 2025-07-29T12:04:54.079617501 Resolving secret did:web:localhost%3A7093-sts-client-secret
+[provider-manufacturing]DEBUG 2025-07-29T12:04:54.125051932 [ExecutionManager] Crawler [Crawler-f84153a9-f531-42e9-8942-1410e11ca881] is done
+[provider-manufacturing]DEBUG 2025-07-29T12:05:00.300874045 [DataPlaneSelectorManagerImpl] DataPlaneInstance provider-manufacturing is now in state AVAILABLE
+[provider-manufacturing]DEBUG 2025-07-29T12:05:01.988880737 DSP: Incoming CatalogRequestMessage for class org.eclipse.edc.connector.controlplane.catalog.spi.Catalog process
+[provider-manufacturing]DEBUG 2025-07-29T12:05:01.991164426 Resolving secret did:web:localhost%3A7093-sts-client-secret
+[provider-manufacturing]DEBUG 2025-07-29T12:05:04.0773897 [ExecutionManager] Run pre-execution task
+[provider-manufacturing]DEBUG 2025-07-29T12:05:04.078698933 [DEMO] Node filter: skipping node 'did:web:localhost%3A7093' for participant 'did:web:localhost%3A7093'
+[provider-manufacturing]DEBUG 2025-07-29T12:05:04.07878834 [ExecutionManager] Loaded 1 work items from storage
+[provider-manufacturing]DEBUG 2025-07-29T12:05:04.078873909 [ExecutionManager] Crawler parallelism is 1, based on config and number of work items
+[provider-manufacturing]DEBUG 2025-07-29T12:05:04.079027343 [ExecutionManager] Crawler-1a29e605-b5c2-4c87-980b-90cd870c7b41: WorkItem acquired
+[provider-manufacturing]DEBUG 2025-07-29T12:05:04.080473502 Resolving secret did:web:localhost%3A7093-sts-client-secret
+[provider-manufacturing]DEBUG 2025-07-29T12:05:04.126342746 [ExecutionManager] Crawler [Crawler-1a29e605-b5c2-4c87-980b-90cd870c7b41] is done
+[provider-manufacturing]DEBUG 2025-07-29T12:05:11.970331118 DSP: Incoming CatalogRequestMessage for class org.eclipse.edc.connector.controlplane.catalog.spi.Catalog process
+[provider-manufacturing]DEBUG 2025-07-29T12:05:11.972021714 Resolving secret did:web:localhost%3A7093-sts-client-secret
+[provider-manufacturing]DEBUG 2025-07-29T12:05:14.077292786 [ExecutionManager] Run pre-execution task
+[provider-manufacturing]DEBUG 2025-07-29T12:05:14.07800653 [DEMO] Node filter: skipping node 'did:web:localhost%3A7093' for participant 'did:web:localhost%3A7093'
+[provider-manufacturing]DEBUG 2025-07-29T12:05:14.078090098 [ExecutionManager] Loaded 1 work items from storage
+[provider-manufacturing]DEBUG 2025-07-29T12:05:14.078137695 [ExecutionManager] Crawler parallelism is 1, based on config and number of work items
+[provider-manufacturing]DEBUG 2025-07-29T12:05:14.078308036 [ExecutionManager] Crawler-bd3e165e-22d2-4ce4-8705-c1a8040e1be9: WorkItem acquired
+[provider-manufacturing]DEBUG 2025-07-29T12:05:14.079880947 Resolving secret did:web:localhost%3A7093-sts-client-secret
+[provider-manufacturing]DEBUG 2025-07-29T12:05:14.11249606 [ExecutionManager] Crawler [Crawler-bd3e165e-22d2-4ce4-8705-c1a8040e1be9] is done
+[provider-manufacturing]DEBUG 2025-07-29T12:05:21.981234997 DSP: Incoming CatalogRequestMessage for class org.eclipse.edc.connector.controlplane.catalog.spi.Catalog process
+[provider-manufacturing]DEBUG 2025-07-29T12:05:21.983103395 Resolving secret did:web:localhost%3A7093-sts-client-secret
+[provider-manufacturing]DEBUG 2025-07-29T12:05:24.077288381 [ExecutionManager] Run pre-execution task
+[provider-manufacturing]DEBUG 2025-07-29T12:05:24.077915543 [DEMO] Node filter: skipping node 'did:web:localhost%3A7093' for participant 'did:web:localhost%3A7093'
+[provider-manufacturing]DEBUG 2025-07-29T12:05:24.078010433 [ExecutionManager] Loaded 1 work items from storage
+[provider-manufacturing]DEBUG 2025-07-29T12:05:24.078097125 [ExecutionManager] Crawler parallelism is 1, based on config and number of work items
+[provider-manufacturing]DEBUG 2025-07-29T12:05:24.078310219 [ExecutionManager] Crawler-61380e11-afac-4380-8348-a81eb71a643e: WorkItem acquired
+[provider-manufacturing]DEBUG 2025-07-29T12:05:24.090424862 Resolving secret did:web:localhost%3A7093-sts-client-secret
+[provider-manufacturing]DEBUG 2025-07-29T12:05:24.122059233 [ExecutionManager] Crawler [Crawler-61380e11-afac-4380-8348-a81eb71a643e] is done
+[provider-manufacturing]DEBUG 2025-07-29T12:05:31.968167111 DSP: Incoming CatalogRequestMessage for class org.eclipse.edc.connector.controlplane.catalog.spi.Catalog process
+[provider-manufacturing]DEBUG 2025-07-29T12:05:31.970023893 Resolving secret did:web:localhost%3A7093-sts-client-secret
+[provider-manufacturing]DEBUG 2025-07-29T12:05:34.077184832 [ExecutionManager] Run pre-execution task
+[provider-manufacturing]DEBUG 2025-07-29T12:05:34.077722699 [DEMO] Node filter: skipping node 'did:web:localhost%3A7093' for participant 'did:web:localhost%3A7093'
+[provider-manufacturing]DEBUG 2025-07-29T12:05:34.077796071 [ExecutionManager] Loaded 1 work items from storage
+[provider-manufacturing]DEBUG 2025-07-29T12:05:34.077854519 [ExecutionManager] Crawler parallelism is 1, based on config and number of work items
+[provider-manufacturing]DEBUG 2025-07-29T12:05:34.078004854 [ExecutionManager] Crawler-ebaa023e-fd66-425e-a8c4-c41f5cb98a9b: WorkItem acquired
+[provider-manufacturing]DEBUG 2025-07-29T12:05:34.079678969 Resolving secret did:web:localhost%3A7093-sts-client-secret
+[provider-manufacturing]DEBUG 2025-07-29T12:05:34.109752593 [ExecutionManager] Crawler [Crawler-ebaa023e-fd66-425e-a8c4-c41f5cb98a9b] is done
+[provider-manufacturing]DEBUG 2025-07-29T12:05:41.967057487 DSP: Incoming CatalogRequestMessage for class org.eclipse.edc.connector.controlplane.catalog.spi.Catalog process
+[provider-manufacturing]DEBUG 2025-07-29T12:05:41.968771747 Resolving secret did:web:localhost%3A7093-sts-client-secret
+[provider-manufacturing]DEBUG 2025-07-29T12:05:44.077251014 [ExecutionManager] Run pre-execution task
+[provider-manufacturing]DEBUG 2025-07-29T12:05:44.077806879 [DEMO] Node filter: skipping node 'did:web:localhost%3A7093' for participant 'did:web:localhost%3A7093'
+[provider-manufacturing]DEBUG 2025-07-29T12:05:44.077890541 [ExecutionManager] Loaded 1 work items from storage
+[provider-manufacturing]DEBUG 2025-07-29T12:05:44.077974662 [ExecutionManager] Crawler parallelism is 1, based on config and number of work items
+[provider-manufacturing]DEBUG 2025-07-29T12:05:44.078128703 [ExecutionManager] Crawler-45ae9cb0-6283-4f47-a5b9-537f82dbe17a: WorkItem acquired
+[provider-manufacturing]DEBUG 2025-07-29T12:05:44.07944445 Resolving secret did:web:localhost%3A7093-sts-client-secret
+[provider-manufacturing]DEBUG 2025-07-29T12:05:44.106676426 [ExecutionManager] Crawler [Crawler-45ae9cb0-6283-4f47-a5b9-537f82dbe17a] is done
+[provider-manufacturing]DEBUG 2025-07-29T12:05:51.954641566 DSP: Incoming CatalogRequestMessage for class org.eclipse.edc.connector.controlplane.catalog.spi.Catalog process
+[provider-manufacturing]DEBUG 2025-07-29T12:05:51.956224243 Resolving secret did:web:localhost%3A7093-sts-client-secret
+[provider-manufacturing]DEBUG 2025-07-29T12:05:54.077256789 [ExecutionManager] Run pre-execution task
+[provider-manufacturing]DEBUG 2025-07-29T12:05:54.077966714 [DEMO] Node filter: skipping node 'did:web:localhost%3A7093' for participant 'did:web:localhost%3A7093'
+[provider-manufacturing]DEBUG 2025-07-29T12:05:54.078038993 [ExecutionManager] Loaded 1 work items from storage
+[provider-manufacturing]DEBUG 2025-07-29T12:05:54.078088539 [ExecutionManager] Crawler parallelism is 1, based on config and number of work items
+[provider-manufacturing]DEBUG 2025-07-29T12:05:54.078277093 [ExecutionManager] Crawler-05f50300-c287-4605-88d7-fdb118f7d413: WorkItem acquired
+[provider-manufacturing]DEBUG 2025-07-29T12:05:54.0798158 Resolving secret did:web:localhost%3A7093-sts-client-secret
+[provider-manufacturing]DEBUG 2025-07-29T12:05:54.118631963 [ExecutionManager] Crawler [Crawler-05f50300-c287-4605-88d7-fdb118f7d413] is done
+[provider-manufacturing]DEBUG 2025-07-29T12:06:00.322069292 [DataPlaneSelectorManagerImpl] DataPlaneInstance provider-manufacturing is now in state AVAILABLE
+[provider-manufacturing]DEBUG 2025-07-29T12:06:01.950629055 DSP: Incoming CatalogRequestMessage for class org.eclipse.edc.connector.controlplane.catalog.spi.Catalog process
+[provider-manufacturing]DEBUG 2025-07-29T12:06:01.952155786 Resolving secret did:web:localhost%3A7093-sts-client-secret
+[provider-manufacturing]DEBUG 2025-07-29T12:06:04.077243352 [ExecutionManager] Run pre-execution task
+[provider-manufacturing]DEBUG 2025-07-29T12:06:04.077732078 [DEMO] Node filter: skipping node 'did:web:localhost%3A7093' for participant 'did:web:localhost%3A7093'
+[provider-manufacturing]DEBUG 2025-07-29T12:06:04.07777553 [ExecutionManager] Loaded 1 work items from storage
+[provider-manufacturing]DEBUG 2025-07-29T12:06:04.077823254 [ExecutionManager] Crawler parallelism is 1, based on config and number of work items
+[provider-manufacturing]DEBUG 2025-07-29T12:06:04.077919496 [ExecutionManager] Crawler-2cfcdc8c-9c99-45f0-9fef-4267efcfad2a: WorkItem acquired
+[provider-manufacturing]DEBUG 2025-07-29T12:06:04.079061921 Resolving secret did:web:localhost%3A7093-sts-client-secret
+[provider-manufacturing]DEBUG 2025-07-29T12:06:04.10811492 [ExecutionManager] Crawler [Crawler-2cfcdc8c-9c99-45f0-9fef-4267efcfad2a] is done
+[provider-manufacturing]DEBUG 2025-07-29T12:06:11.955359293 DSP: Incoming CatalogRequestMessage for class org.eclipse.edc.connector.controlplane.catalog.spi.Catalog process
+[provider-manufacturing]DEBUG 2025-07-29T12:06:11.95689663 Resolving secret did:web:localhost%3A7093-sts-client-secret
+[provider-manufacturing]DEBUG 2025-07-29T12:06:14.077201393 [ExecutionManager] Run pre-execution task
+[provider-manufacturing]DEBUG 2025-07-29T12:06:14.077610329 [DEMO] Node filter: skipping node 'did:web:localhost%3A7093' for participant 'did:web:localhost%3A7093'
+[provider-manufacturing]DEBUG 2025-07-29T12:06:14.077657604 [ExecutionManager] Loaded 1 work items from storage
+[provider-manufacturing]DEBUG 2025-07-29T12:06:14.077698808 [ExecutionManager] Crawler parallelism is 1, based on config and number of work items
+[provider-manufacturing]DEBUG 2025-07-29T12:06:14.077831771 [ExecutionManager] Crawler-798b381e-66e0-4571-9a43-affb0fa6188f: WorkItem acquired
+[provider-manufacturing]DEBUG 2025-07-29T12:06:14.079082056 Resolving secret did:web:localhost%3A7093-sts-client-secret
+[provider-manufacturing]DEBUG 2025-07-29T12:06:14.108496545 [ExecutionManager] Crawler [Crawler-798b381e-66e0-4571-9a43-affb0fa6188f] is done
+[provider-manufacturing]DEBUG 2025-07-29T12:06:21.953588904 DSP: Incoming CatalogRequestMessage for class org.eclipse.edc.connector.controlplane.catalog.spi.Catalog process
+[provider-manufacturing]DEBUG 2025-07-29T12:06:21.955073009 Resolving secret did:web:localhost%3A7093-sts-client-secret
+[provider-manufacturing]DEBUG 2025-07-29T12:06:24.077175251 [ExecutionManager] Run pre-execution task
+[provider-manufacturing]DEBUG 2025-07-29T12:06:24.077580656 [DEMO] Node filter: skipping node 'did:web:localhost%3A7093' for participant 'did:web:localhost%3A7093'
+[provider-manufacturing]DEBUG 2025-07-29T12:06:24.077649274 [ExecutionManager] Loaded 1 work items from storage
+[provider-manufacturing]DEBUG 2025-07-29T12:06:24.077709347 [ExecutionManager] Crawler parallelism is 1, based on config and number of work items
+[provider-manufacturing]DEBUG 2025-07-29T12:06:24.077837004 [ExecutionManager] Crawler-8867bc33-a1d0-4e3d-a025-6f7095d0c960: WorkItem acquired
+[provider-manufacturing]DEBUG 2025-07-29T12:06:24.07919172 Resolving secret did:web:localhost%3A7093-sts-client-secret
+[provider-manufacturing]DEBUG 2025-07-29T12:06:24.107856113 [ExecutionManager] Crawler [Crawler-8867bc33-a1d0-4e3d-a025-6f7095d0c960] is done
+[provider-manufacturing]DEBUG 2025-07-29T12:06:31.963504274 DSP: Incoming CatalogRequestMessage for class org.eclipse.edc.connector.controlplane.catalog.spi.Catalog process
+[provider-manufacturing]DEBUG 2025-07-29T12:06:31.965226162 Resolving secret did:web:localhost%3A7093-sts-client-secret
+[provider-manufacturing]DEBUG 2025-07-29T12:06:34.077217793 [ExecutionManager] Run pre-execution task
+[provider-manufacturing]DEBUG 2025-07-29T12:06:34.077758728 [DEMO] Node filter: skipping node 'did:web:localhost%3A7093' for participant 'did:web:localhost%3A7093'
+[provider-manufacturing]DEBUG 2025-07-29T12:06:34.077825852 [ExecutionManager] Loaded 1 work items from storage
+[provider-manufacturing]DEBUG 2025-07-29T12:06:34.07787558 [ExecutionManager] Crawler parallelism is 1, based on config and number of work items
+[provider-manufacturing]DEBUG 2025-07-29T12:06:34.077975783 [ExecutionManager] Crawler-9f565360-5223-4ed8-8a4b-8e94ffc8daec: WorkItem acquired
+[provider-manufacturing]DEBUG 2025-07-29T12:06:34.07906247 Resolving secret did:web:localhost%3A7093-sts-client-secret
+[provider-manufacturing]DEBUG 2025-07-29T12:06:34.111295462 [ExecutionManager] Crawler [Crawler-9f565360-5223-4ed8-8a4b-8e94ffc8daec] is done
+[provider-manufacturing]DEBUG 2025-07-29T12:06:41.95649042 DSP: Incoming CatalogRequestMessage for class org.eclipse.edc.connector.controlplane.catalog.spi.Catalog process
+[provider-manufacturing]DEBUG 2025-07-29T12:06:41.958054183 Resolving secret did:web:localhost%3A7093-sts-client-secret

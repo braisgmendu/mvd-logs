@@ -1,0 +1,6 @@
+[issuerservice]DEBUG 2025-07-29T10:28:26.193428619 Config value: no setting found for 'web.http.did.port', falling back to default value '10100'
+[issuerservice]DEBUG 2025-07-29T10:28:26.212109593 Config value: no setting found for 'web.http.did.path', falling back to default value '/'
+[issuerservice]DEBUG 2025-07-29T10:42:51.445032696 Config value: no setting found for 'web.http.did.port', falling back to default value '10100'
+[issuerservice]DEBUG 2025-07-29T10:42:51.448854477 Config value: no setting found for 'web.http.did.path', falling back to default value '/'
+[issuerservice]DEBUG 2025-07-29T12:01:48.708728899 Config value: no setting found for 'web.http.did.port', falling back to default value '10100'
+[issuerservice]DEBUG 2025-07-29T12:01:48.710860746 Config value: no setting found for 'web.http.did.path', falling back to default value '/'

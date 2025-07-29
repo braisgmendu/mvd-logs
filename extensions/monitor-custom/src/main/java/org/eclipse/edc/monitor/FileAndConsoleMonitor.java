@@ -15,10 +15,7 @@
 
 package org.eclipse.edc.monitor;
 
-import org.eclipse.edc.spi.monitor.ConsoleMonitor;
-import org.eclipse.edc.spi.monitor.ConsoleMonitor.Level;
 import org.eclipse.edc.spi.monitor.Monitor;
-import org.jetbrains.annotations.Nullable;
 
 import java.io.FileWriter;
 import java.io.IOException;
@@ -33,86 +30,70 @@ import java.util.function.Supplier;
  */
 public class FileAndConsoleMonitor implements Monitor, AutoCloseable {
 
-    private final ConsoleMonitor consoleMonitor;
+    private final Monitor consoleMonitor;
     private final PrintWriter fileWriter;
     private final String prefix;
 
 
-    public FileAndConsoleMonitor(@Nullable String runtimeName, Level level, boolean useColor) {
+    public FileAndConsoleMonitor(String runtimeId, Monitor originalMonitor) {
         // 1. Instanciamos ConsoleMonitor para reutilizar su lógica de consola
-        this.consoleMonitor = new ConsoleMonitor(runtimeName, level, useColor);
-        this.prefix = runtimeName == null ? "" : "[%s] ".formatted(runtimeName);
+        this.consoleMonitor = originalMonitor;
+        this.prefix = "[%s]".formatted(runtimeId);
 
-        // 2. Preparamos el escritor para el fichero
         try {
-            // 1. Crear un objeto File para el directorio
-            java.io.File logDir = new java.io.File("logs");
-
-            // 2. Si el directorio no existe, crearlo
-            if (!logDir.exists()) {
-                logDir.mkdirs(); // mkdirs() crea también los directorios padres si es necesario
-            }
-
-            // CAMBIO CLAVE: El nombre del fichero ahora es dinámico
-            String logFileName = runtimeName == null ? "edc-default" : runtimeName;
-            FileWriter fw = new FileWriter(String.format("logs/%s.log", logFileName), true);
-
+            new java.io.File("logs").mkdirs();
+            String logFileName = runtimeId.isEmpty() ? "edc-default" : runtimeId;
+            FileWriter fw = new FileWriter(String.format("logs/%s.logs", logFileName), true);
             this.fileWriter = new PrintWriter(fw, true);
-
         } catch (IOException e) {
-            consoleMonitor.severe(() -> "Error al inicializar FileAndConsoleMonitor: no se pudo abrir el fichero de log.", e);
+            originalMonitor.severe(() -> "Error al inicializar FileAndConsoleMonitor: no se pudo abrir el fichero de log.", e);
             throw new RuntimeException("No se pudo inicializar el fichero de log", e);
         }
-        // 3. Añadimos un hook para cerrar el fichero al apagar la JVM
-        Runtime.getRuntime().addShutdownHook(new Thread(this::close));
-    }
 
-    // Constructor por defecto que se usará si EDC lo instancia automáticamente
-    public FileAndConsoleMonitor() {
-        this(null, Level.getDefaultLevel(), true);
+        //Runtime.getRuntime().addShutdownHook(new Thread(this::close));
     }
 
     // Los métodos de la interfaz simplemente delegan al método 'output'
     @Override
     public void severe(Supplier<String> supplier, Throwable... errors) {
-        output("SEVERE", supplier, errors);
+        consoleMonitor.severe(supplier, errors);
+        writeToFile("SEVERE", supplier, errors);
     }
 
     @Override
     public void warning(Supplier<String> supplier, Throwable... errors) {
-        output("WARNING", supplier, errors);
+        consoleMonitor.warning(supplier, errors);
+        writeToFile("WARNING", supplier, errors);
     }
 
     @Override
     public void info(Supplier<String> supplier, Throwable... errors) {
-        output("INFO", supplier, errors);
+        consoleMonitor.info(supplier, errors);
+        writeToFile("INFO", supplier, errors);
     }
 
     @Override
     public void debug(Supplier<String> supplier, Throwable... errors) {
-        output("DEBUG", supplier, errors);
+        consoleMonitor.debug(supplier, errors);
+        writeToFile("DEBUG", supplier, errors);
     }
 
-    private synchronized void output(String level, Supplier<String> supplier, Throwable... errors) {
-        // Escribimos en la consola usando la implementación original
-        switch (level) {
-            case "SEVERE" -> consoleMonitor.severe(supplier, errors);
-            case "WARNING" -> consoleMonitor.warning(supplier, errors);
-            case "INFO" -> consoleMonitor.info(supplier, errors);
-            case "DEBUG" -> consoleMonitor.debug(supplier, errors);
-            default -> consoleMonitor.info(supplier, errors);
-        }
-
-        // Y ahora, escribimos en el fichero
-        var time = ZonedDateTime.now().format(DateTimeFormatter.ISO_LOCAL_DATE_TIME);
-        fileWriter.println(prefix + level + " " + time + " " + sanitizeMessage(supplier));
-        if (errors != null) {
-            for (var error : errors) {
-                if (error != null) {
-                    error.printStackTrace(fileWriter);
+    private synchronized void writeToFile(String level, Supplier<String> supplier, Throwable... errors) {
+        try {
+            var time = ZonedDateTime.now().format(DateTimeFormatter.ISO_LOCAL_DATE_TIME);
+            fileWriter.println(prefix + level + " " + time + " " + sanitizeMessage(supplier));
+            if (errors != null) {
+                for (var error : errors) {
+                    if (error != null) {
+                        error.printStackTrace(fileWriter);
+                    }
                 }
             }
+            fileWriter.flush();
+        } catch (Exception e) {
+            consoleMonitor.severe("FALLO AL ESCRIBIR EN EL FICHERO DE LOG", e);
         }
+
     }
 
     @Override
@@ -121,4 +102,5 @@ public class FileAndConsoleMonitor implements Monitor, AutoCloseable {
             fileWriter.close();
         }
     }
+
 }

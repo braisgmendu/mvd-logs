@@ -1,0 +1,615 @@
+[consumer]DEBUG 2025-07-29T10:28:25.906225332 DataPlane Access Control: default implementation is used, will always return Result.success()
+[consumer]WARNING 2025-07-29T10:28:25.916683525 The `data-plane-public-api-v2` has been deprecated, please provide analternative implementation for Http Proxy if needed
+[consumer]WARNING 2025-07-29T10:28:25.93147299 The public API endpoint was not explicitly configured, the default 'http://localhost:11001/api/public' will be used.
+[consumer]WARNING 2025-07-29T10:28:25.99014295 The list of trusted issuers is empty
+[consumer]DEBUG 2025-07-29T10:28:26.0131589 Config value: no setting found for 'edc.api.auth.dac.cache.validity', falling back to default value '300000'
+[consumer]DEBUG 2025-07-29T10:28:26.015499302 Config value: no setting found for 'edc.api.auth.dac.validation.tolerance', falling back to default value '5000'
+[consumer]WARNING 2025-07-29T10:28:26.016212318 [Delegated API Authentication] No audience configured for delegated authentication, defaulting to the participantId
+[consumer]DEBUG 2025-07-29T10:28:26.027636644 Config value: no setting found for 'edc.dataplane.state-machine.iteration-wait-millis', falling back to default value '1000'
+[consumer]DEBUG 2025-07-29T10:28:26.031331361 Config value: no setting found for 'edc.dataplane.state-machine.batch-size', falling back to default value '20'
+[consumer]DEBUG 2025-07-29T10:28:26.032169138 Config value: no setting found for 'edc.dataplane.state-machine.flow.lease.time', falling back to default value '500'
+[consumer]DEBUG 2025-07-29T10:28:26.033449348 Config value: no setting found for 'edc.dataplane.state-machine.flow.lease.factor', falling back to default value '5'
+[consumer]DEBUG 2025-07-29T10:28:26.041370185 Config value: no setting found for 'edc.dataplane.send.retry.limit', falling back to default value '7'
+[consumer]DEBUG 2025-07-29T10:28:26.050316382 Config value: no setting found for 'edc.dataplane.send.retry.base-delay.ms', falling back to default value '1000'
+[consumer]DEBUG 2025-07-29T10:28:26.053268243 Config value: no setting found for 'edc.dataplane.transfer.threads', falling back to default value '20'
+[consumer]DEBUG 2025-07-29T10:28:26.062349171 Config value: no setting found for 'edc.dataplane.http.sink.partition.size', falling back to default value '5'
+[consumer]DEBUG 2025-07-29T10:28:26.100102257 Config value: no setting found for 'edc.catalog.cache.partition.num.crawlers', falling back to default value '2'
+[consumer]DEBUG 2025-07-29T10:28:26.112996874 Config value: no setting found for 'edc.catalog.cache.partition.num.crawlers', falling back to default value '2'
+[consumer]DEBUG 2025-07-29T10:28:26.116589242 Config value: no setting found for 'edc.catalog.cache.execution.enabled', falling back to default value 'true'
+[consumer]DEBUG 2025-07-29T10:28:26.22364865 Config value: no setting found for 'edc.dsp.well-known-path.enabled', falling back to default value 'false'
+[consumer]WARNING 2025-07-29T10:28:26.228151626 No TokenDecorator was registered. The 'scope' field of outgoing protocol messages will be empty
+[consumer]DEBUG 2025-07-29T10:28:26.277199337 Config value: no setting found for 'edc.dsp.well-known-path.enabled', falling back to default value 'false'
+[consumer]DEBUG 2025-07-29T10:28:26.310967682 Using embedded Data Plane client.
+[consumer]DEBUG 2025-07-29T10:28:26.311877131 Config value: no setting found for 'edc.data.plane.selector.state-machine.batch-size', falling back to default value '20'
+[consumer]DEBUG 2025-07-29T10:28:26.328977784 Config value: no setting found for 'edc.data.plane.selector.state-machine.iteration-wait-millis', falling back to default value '1000'
+[consumer]DEBUG 2025-07-29T10:28:26.334231382 Config value: no setting found for 'edc.data.plane.selector.state-machine.check.period', falling back to default value '60'
+[consumer]DEBUG 2025-07-29T10:28:26.584610298 Config value: no setting found for 'edc.dataplane.client.selector.strategy', falling back to default value 'random'
+[consumer]DEBUG 2025-07-29T10:28:26.930002229 Config value: no setting found for 'edc.policy.monitor.state-machine.batch-size', falling back to default value '20'
+[consumer]DEBUG 2025-07-29T10:28:26.930857631 Config value: no setting found for 'edc.policy.monitor.state-machine.iteration-wait-millis', falling back to default value '1000'
+[consumer]DEBUG 2025-07-29T10:28:26.953906525 Config value: no setting found for 'edc.edr.receiver.sync', falling back to default value 'false'
+[consumer]DEBUG 2025-07-29T10:28:26.962323711 Config value: no setting found for 'edc.data.plane.self.unregistration', falling back to default value 'false'
+[consumer]DEBUG 2025-07-29T10:28:27.014129191 Configured tokenbased authentication for context management
+[consumer]DEBUG 2025-07-29T10:28:27.014396999 Configured tokenbased authentication for context catalog
+[consumer]DEBUG 2025-07-29T10:28:28.307749852 [DataPlaneHealthCheck] Initiate data plane registration.
+[consumer]DEBUG 2025-07-29T10:28:28.309463977 [DataPlaneHealthCheck] data plane registered to control plane
+[consumer]DEBUG 2025-07-29T10:28:29.306453031 [DataPlaneSelectorManagerImpl] DataPlaneInstance consumer is now in state AVAILABLE
+[consumer]DEBUG 2025-07-29T10:28:33.298750085 [ExecutionManager] Run pre-execution task
+[consumer]DEBUG 2025-07-29T10:28:33.359634491 [ExecutionManager] No WorkItems found, skipping execution
+[consumer]DEBUG 2025-07-29T10:28:43.298732451 [ExecutionManager] Run pre-execution task
+[consumer]DEBUG 2025-07-29T10:28:43.30555229 [ExecutionManager] No WorkItems found, skipping execution
+[consumer]DEBUG 2025-07-29T10:28:53.298647412 [ExecutionManager] Run pre-execution task
+[consumer]DEBUG 2025-07-29T10:28:53.304162147 [ExecutionManager] No WorkItems found, skipping execution
+[consumer]DEBUG 2025-07-29T10:29:03.298768768 [ExecutionManager] Run pre-execution task
+[consumer]DEBUG 2025-07-29T10:29:03.304318825 [ExecutionManager] No WorkItems found, skipping execution
+[consumer]DEBUG 2025-07-29T10:29:13.29870565 [ExecutionManager] Run pre-execution task
+[consumer]DEBUG 2025-07-29T10:29:13.304324921 [ExecutionManager] No WorkItems found, skipping execution
+[consumer]DEBUG 2025-07-29T10:29:23.298771613 [ExecutionManager] Run pre-execution task
+[consumer]DEBUG 2025-07-29T10:29:23.304284732 [ExecutionManager] No WorkItems found, skipping execution
+[consumer]DEBUG 2025-07-29T10:29:29.345151871 [DataPlaneSelectorManagerImpl] DataPlaneInstance consumer is now in state AVAILABLE
+[consumer]DEBUG 2025-07-29T10:29:33.298741695 [ExecutionManager] Run pre-execution task
+[consumer]DEBUG 2025-07-29T10:29:33.304441612 [ExecutionManager] No WorkItems found, skipping execution
+[consumer]DEBUG 2025-07-29T10:29:43.29951868 [ExecutionManager] Run pre-execution task
+[consumer]DEBUG 2025-07-29T10:29:43.313957654 [ExecutionManager] No WorkItems found, skipping execution
+[consumer]DEBUG 2025-07-29T10:29:53.298724838 [ExecutionManager] Run pre-execution task
+[consumer]DEBUG 2025-07-29T10:29:53.304066438 [ExecutionManager] No WorkItems found, skipping execution
+[consumer]DEBUG 2025-07-29T10:30:03.298681977 [ExecutionManager] Run pre-execution task
+[consumer]DEBUG 2025-07-29T10:30:03.30388063 [ExecutionManager] No WorkItems found, skipping execution
+[consumer]DEBUG 2025-07-29T10:30:13.298726507 [ExecutionManager] Run pre-execution task
+[consumer]DEBUG 2025-07-29T10:30:13.303847062 [ExecutionManager] No WorkItems found, skipping execution
+[consumer]DEBUG 2025-07-29T10:30:23.298760928 [ExecutionManager] Run pre-execution task
+[consumer]DEBUG 2025-07-29T10:30:23.304708969 [ExecutionManager] No WorkItems found, skipping execution
+[consumer]DEBUG 2025-07-29T10:30:29.378329423 [DataPlaneSelectorManagerImpl] DataPlaneInstance consumer is now in state AVAILABLE
+[consumer]DEBUG 2025-07-29T10:30:33.298737151 [ExecutionManager] Run pre-execution task
+[consumer]DEBUG 2025-07-29T10:30:33.303807502 [ExecutionManager] No WorkItems found, skipping execution
+[consumer]DEBUG 2025-07-29T10:30:43.298716516 [ExecutionManager] Run pre-execution task
+[consumer]DEBUG 2025-07-29T10:30:43.304426063 [ExecutionManager] No WorkItems found, skipping execution
+[consumer]DEBUG 2025-07-29T10:30:53.298639876 [ExecutionManager] Run pre-execution task
+[consumer]DEBUG 2025-07-29T10:30:53.303277441 [ExecutionManager] No WorkItems found, skipping execution
+[consumer]DEBUG 2025-07-29T10:31:03.298605481 [ExecutionManager] Run pre-execution task
+[consumer]DEBUG 2025-07-29T10:31:03.303782205 [ExecutionManager] No WorkItems found, skipping execution
+[consumer]DEBUG 2025-07-29T10:42:36.734987464 Config value: no setting found for 'edc.core.retry.retries.max', falling back to default value '5'
+[consumer]DEBUG 2025-07-29T10:42:36.738717208 Config value: no setting found for 'edc.core.retry.backoff.min', falling back to default value '500'
+[consumer]DEBUG 2025-07-29T10:42:36.739179326 Config value: no setting found for 'edc.core.retry.backoff.max', falling back to default value '10000'
+[consumer]DEBUG 2025-07-29T10:42:36.739627008 Config value: no setting found for 'edc.core.retry.log.on.retry', falling back to default value 'false'
+[consumer]DEBUG 2025-07-29T10:42:36.7400977 Config value: no setting found for 'edc.core.retry.log.on.retry.scheduled', falling back to default value 'false'
+[consumer]DEBUG 2025-07-29T10:42:36.74058547 Config value: no setting found for 'edc.core.retry.log.on.retries.exceeded', falling back to default value 'false'
+[consumer]DEBUG 2025-07-29T10:42:36.741042656 Config value: no setting found for 'edc.core.retry.log.on.failed.attempt', falling back to default value 'false'
+[consumer]DEBUG 2025-07-29T10:42:36.741469569 Config value: no setting found for 'edc.core.retry.log.on.abort', falling back to default value 'false'
+[consumer]DEBUG 2025-07-29T10:42:36.748313604 Config value: no setting found for 'edc.http.client.https.enforce', falling back to default value 'false'
+[consumer]DEBUG 2025-07-29T10:42:36.748786482 Config value: no setting found for 'edc.http.client.timeout.connect', falling back to default value '30'
+[consumer]DEBUG 2025-07-29T10:42:36.749209262 Config value: no setting found for 'edc.http.client.timeout.read', falling back to default value '30'
+[consumer]DEBUG 2025-07-29T10:42:36.74963967 Config value: no setting found for 'edc.http.client.send.buffer.size', falling back to default value '0'
+[consumer]DEBUG 2025-07-29T10:42:36.750068331 Config value: no setting found for 'edc.http.client.receive.buffer.size', falling back to default value '0'
+[consumer]INFO 2025-07-29T10:42:36.815818116 HTTPS enforcement it not enabled, please enable it in a production environment
+[consumer]INFO 2025-07-29T10:42:36.965092665 HTTPS enforcement it not enabled, please enable it in a production environment
+[consumer]WARNING 2025-07-29T10:42:36.967444337 Config value: no setting found for 'edc.hostname', falling back to default value 'localhost'
+[consumer]WARNING 2025-07-29T10:42:37.152804061 Using the InMemoryVault is not suitable for production scenarios and should be replaced with an actual Vault!
+[consumer]DEBUG 2025-07-29T10:42:37.474944173 Storing secret did:web:localhost%3A7083-alias
+[consumer]DEBUG 2025-07-29T10:42:37.478018363 Storing secret did:web:localhost%3A7083#key-1
+[consumer]WARNING 2025-07-29T10:42:37.478365217 [DEMO] >>>>>> This extension hard-codes a keypair into the vault! <<<<<<
+[consumer]WARNING 2025-07-29T10:42:37.480681666 A service of the type java.time.Clock was already registered and has now been replaced with a SystemClock instance.
+[consumer]DEBUG 2025-07-29T10:42:37.483022201 Config value: no setting found for 'edc.iam.sts.token.expiration', falling back to default value '5'
+[consumer]DEBUG 2025-07-29T10:42:37.557249723 Config value: no setting found for 'edc.jsonld.prefixes.check', falling back to default value 'true'
+[consumer]DEBUG 2025-07-29T10:42:37.560302113 Config value: no setting found for 'edc.jsonld.vocab.disable', falling back to default value 'false'
+[consumer]DEBUG 2025-07-29T10:42:37.564240212 Config value: no setting found for 'edc.jsonld.https.enabled', falling back to default value 'false'
+[consumer]DEBUG 2025-07-29T10:42:37.565199787 Config value: no setting found for 'edc.jsonld.http.enabled', falling back to default value 'false'
+[consumer]DEBUG 2025-07-29T10:42:37.720626518 Config value: no setting found for 'edc.did.resolver.cache.expiry', falling back to default value '300000'
+[consumer]DEBUG 2025-07-29T10:42:37.732240451 Config value: no setting found for 'edc.dcp.v08.forced', falling back to default value 'false'
+[consumer]DEBUG 2025-07-29T10:42:37.733078064 Config value: no setting found for 'edc.iam.credential.revocation.cache.validity', falling back to default value '900000'
+[consumer]DEBUG 2025-07-29T10:42:37.738692493 Config value: no setting found for 'edc.sql.store.jti.cleanup.period', falling back to default value '60'
+[consumer]WARNING 2025-07-29T10:42:37.795196418 The list of trusted issuers is empty
+[consumer]DEBUG 2025-07-29T10:42:37.82150023 DataPlane Access Control: default implementation is used, will always return Result.success()
+[consumer]DEBUG 2025-07-29T10:42:37.829587845 Config value: no setting found for 'edc.api.auth.dac.cache.validity', falling back to default value '300000'
+[consumer]DEBUG 2025-07-29T10:42:37.832027789 Config value: no setting found for 'edc.api.auth.dac.validation.tolerance', falling back to default value '5000'
+[consumer]WARNING 2025-07-29T10:42:37.832774902 [Delegated API Authentication] No audience configured for delegated authentication, defaulting to the participantId
+[consumer]DEBUG 2025-07-29T10:42:37.844420672 Config value: no setting found for 'edc.dataplane.state-machine.iteration-wait-millis', falling back to default value '1000'
+[consumer]DEBUG 2025-07-29T10:42:37.845030236 Config value: no setting found for 'edc.dataplane.state-machine.batch-size', falling back to default value '20'
+[consumer]DEBUG 2025-07-29T10:42:37.849847941 Config value: no setting found for 'edc.dataplane.state-machine.flow.lease.time', falling back to default value '500'
+[consumer]DEBUG 2025-07-29T10:42:37.851069235 Config value: no setting found for 'edc.dataplane.state-machine.flow.lease.factor', falling back to default value '5'
+[consumer]DEBUG 2025-07-29T10:42:37.861615725 Config value: no setting found for 'edc.dataplane.send.retry.limit', falling back to default value '7'
+[consumer]DEBUG 2025-07-29T10:42:37.870727934 Config value: no setting found for 'edc.dataplane.send.retry.base-delay.ms', falling back to default value '1000'
+[consumer]DEBUG 2025-07-29T10:42:37.872284994 Config value: no setting found for 'edc.dataplane.transfer.threads', falling back to default value '20'
+[consumer]DEBUG 2025-07-29T10:42:37.878685358 Config value: no setting found for 'edc.dataplane.http.sink.partition.size', falling back to default value '5'
+[consumer]DEBUG 2025-07-29T10:42:37.89037923 Config value: no setting found for 'edc.web.https.keystore.password', falling back to default value 'password'
+[consumer]DEBUG 2025-07-29T10:42:37.890939838 Config value: no setting found for 'edc.web.https.keymanager.password', falling back to default value 'password'
+[consumer]DEBUG 2025-07-29T10:42:37.892416597 Config value: no setting found for 'web.http.default.port', falling back to default value '8181'
+[consumer]DEBUG 2025-07-29T10:42:37.893077192 Config value: no setting found for 'web.http.default.path', falling back to default value '/api'
+[consumer]DEBUG 2025-07-29T10:42:37.895883812 Config value: no setting found for 'edc.web.https.keystore.type', falling back to default value 'PKCS12'
+[consumer]DEBUG 2025-07-29T10:42:37.959112313 Config value: no setting found for 'edc.negotiation.provider.state-machine.batch-size', falling back to default value '20'
+[consumer]DEBUG 2025-07-29T10:42:37.959681503 Config value: no setting found for 'edc.negotiation.state-machine.iteration-wait-millis', falling back to default value '1000'
+[consumer]DEBUG 2025-07-29T10:42:37.960200105 Config value: no setting found for 'edc.negotiation.consumer.send.retry.limit', falling back to default value '7'
+[consumer]DEBUG 2025-07-29T10:42:37.960672018 Config value: no setting found for 'edc.negotiation.consumer.state-machine.batch-size', falling back to default value '20'
+[consumer]DEBUG 2025-07-29T10:42:37.961624783 Config value: no setting found for 'edc.negotiation.provider.send.retry.limit', falling back to default value '7'
+[consumer]DEBUG 2025-07-29T10:42:37.962448619 Config value: no setting found for 'edc.negotiation.consumer.send.retry.base-delay.ms', falling back to default value '1000'
+[consumer]DEBUG 2025-07-29T10:42:37.962777036 Config value: no setting found for 'edc.negotiation.provider.send.retry.base-delay.ms', falling back to default value '1000'
+[consumer]DEBUG 2025-07-29T10:42:37.975207845 Config value: no setting found for 'edc.transfer.send.retry.base-delay.ms', falling back to default value '1000'
+[consumer]DEBUG 2025-07-29T10:42:37.975701415 Config value: no setting found for 'edc.transfer.state-machine.batch-size', falling back to default value '20'
+[consumer]DEBUG 2025-07-29T10:42:37.976342476 Config value: no setting found for 'edc.transfer.send.retry.limit', falling back to default value '7'
+[consumer]DEBUG 2025-07-29T10:42:37.977417258 Config value: no setting found for 'edc.transfer.state-machine.iteration-wait-millis', falling back to default value '1000'
+[consumer]DEBUG 2025-07-29T10:42:37.991714377 Config value: no setting found for 'edc.policy.validation.enabled', falling back to default value 'false'
+[consumer]WARNING 2025-07-29T10:42:37.992392034 No TransactionContext registered, a no-op implementation will be used, not suitable for production environments
+[consumer]DEBUG 2025-07-29T10:42:38.020779698 Config value: no setting found for 'edc.catalog.cache.partition.num.crawlers', falling back to default value '2'
+[consumer]DEBUG 2025-07-29T10:42:38.023827284 Config value: no setting found for 'edc.catalog.cache.partition.num.crawlers', falling back to default value '2'
+[consumer]DEBUG 2025-07-29T10:42:38.024495155 Config value: no setting found for 'edc.catalog.cache.execution.enabled', falling back to default value 'true'
+[consumer]DEBUG 2025-07-29T10:42:38.049466278 Config value: no setting found for 'edc.dsp.well-known-path.enabled', falling back to default value 'false'
+[consumer]WARNING 2025-07-29T10:42:38.052513629 No TokenDecorator was registered. The 'scope' field of outgoing protocol messages will be empty
+[consumer]DEBUG 2025-07-29T10:42:38.073148008 Config value: no setting found for 'edc.dsp.well-known-path.enabled', falling back to default value 'false'
+[consumer]DEBUG 2025-07-29T10:42:38.089108219 Using embedded Data Plane client.
+[consumer]DEBUG 2025-07-29T10:42:38.09204578 Config value: no setting found for 'edc.data.plane.selector.state-machine.batch-size', falling back to default value '20'
+[consumer]DEBUG 2025-07-29T10:42:38.09426634 Config value: no setting found for 'edc.data.plane.selector.state-machine.iteration-wait-millis', falling back to default value '1000'
+[consumer]DEBUG 2025-07-29T10:42:38.094698196 Config value: no setting found for 'edc.data.plane.selector.state-machine.check.period', falling back to default value '60'
+[consumer]DEBUG 2025-07-29T10:42:38.194682207 Config value: no setting found for 'edc.dataplane.client.selector.strategy', falling back to default value 'random'
+[consumer]DEBUG 2025-07-29T10:42:38.349217405 Config value: no setting found for 'edc.policy.monitor.state-machine.iteration-wait-millis', falling back to default value '1000'
+[consumer]DEBUG 2025-07-29T10:42:38.350797797 Config value: no setting found for 'edc.policy.monitor.state-machine.batch-size', falling back to default value '20'
+[consumer]DEBUG 2025-07-29T10:42:38.36077793 Config value: no setting found for 'edc.edr.receiver.sync', falling back to default value 'false'
+[consumer]WARNING 2025-07-29T10:42:38.364530548 The `data-plane-public-api-v2` has been deprecated, please provide analternative implementation for Http Proxy if needed
+[consumer]WARNING 2025-07-29T10:42:38.368717329 The public API endpoint was not explicitly configured, the default 'http://localhost:11001/api/public' will be used.
+[consumer]DEBUG 2025-07-29T10:42:38.373349776 Config value: no setting found for 'edc.data.plane.self.unregistration', falling back to default value 'false'
+[consumer]DEBUG 2025-07-29T10:42:38.386254731 Configured tokenbased authentication for context management
+[consumer]DEBUG 2025-07-29T10:42:38.386432536 Configured tokenbased authentication for context catalog
+[consumer]DEBUG 2025-07-29T10:42:38.452625181 HTTP context 'default' listening on port 8080
+[consumer]DEBUG 2025-07-29T10:42:38.459074413 HTTP context 'management' listening on port 8081
+[consumer]DEBUG 2025-07-29T10:42:38.459854435 HTTP context 'protocol' listening on port 8082
+[consumer]DEBUG 2025-07-29T10:42:38.460289355 HTTP context 'control' listening on port 8083
+[consumer]DEBUG 2025-07-29T10:42:38.460641424 HTTP context 'catalog' listening on port 8084
+[consumer]DEBUG 2025-07-29T10:42:38.460988462 HTTP context 'version' listening on port 8085
+[consumer]DEBUG 2025-07-29T10:42:38.461329068 HTTP context 'public' listening on port 11001
+[consumer]DEBUG 2025-07-29T10:42:38.531786716 Port mappings: PortMapping[name=default, port=8080, path=/api], PortMapping[name=management, port=8081, path=/api/management/], PortMapping[name=protocol, port=8082, path=/api/dsp], PortMapping[name=control, port=8083, path=/api/control], PortMapping[name=catalog, port=8084, path=/api/catalog], PortMapping[name=version, port=8085, path=/api/version], PortMapping[name=public, port=11001, path=/api/public]
+[consumer]DEBUG 2025-07-29T10:42:38.892238556 Registered Web API context alias: default
+[consumer]DEBUG 2025-07-29T10:42:39.034488031 Registered Web API context alias: protocol
+[consumer]DEBUG 2025-07-29T10:42:39.088905396 Registered Web API context alias: public
+[consumer]DEBUG 2025-07-29T10:42:39.20822236 Registered Web API context alias: management
+[consumer]DEBUG 2025-07-29T10:42:39.257714295 Registered Web API context alias: catalog
+[consumer]DEBUG 2025-07-29T10:42:39.306666704 Registered Web API context alias: control
+[consumer]DEBUG 2025-07-29T10:42:39.357495441 Registered Web API context alias: version
+[consumer]DEBUG 2025-07-29T10:42:39.388962821 [DataPlaneHealthCheck] Initiate data plane registration.
+[consumer]DEBUG 2025-07-29T10:42:39.390746725 [DataPlaneHealthCheck] data plane registered to control plane
+[consumer]DEBUG 2025-07-29T10:42:40.397841924 [DataPlaneSelectorManagerImpl] DataPlaneInstance consumer is now in state AVAILABLE
+[consumer]DEBUG 2025-07-29T10:42:44.379331588 [ExecutionManager] Run pre-execution task
+[consumer]WARNING 2025-07-29T10:42:45.196798459 [DEMO] Error resolving DID: did:web:localhost%3A7083. HTTP Code was: 404
+[consumer]WARNING 2025-07-29T10:42:52.708232115 [DEMO] Error resolving DID: did:web:localhost%3A7093. HTTP Code was: 204
+[consumer]DEBUG 2025-07-29T10:42:52.709181539 [ExecutionManager] No WorkItems found, skipping execution
+[consumer]DEBUG 2025-07-29T10:42:54.377927319 [ExecutionManager] Run pre-execution task
+[consumer]WARNING 2025-07-29T10:42:54.381308632 [DEMO] Error resolving DID: did:web:localhost%3A7083. HTTP Code was: 204
+[consumer]WARNING 2025-07-29T10:42:54.384488617 [DEMO] Error resolving DID: did:web:localhost%3A7093. HTTP Code was: 204
+[consumer]DEBUG 2025-07-29T10:42:54.384611639 [ExecutionManager] No WorkItems found, skipping execution
+[consumer]DEBUG 2025-07-29T10:43:04.378244974 [ExecutionManager] Run pre-execution task
+[consumer]WARNING 2025-07-29T10:43:04.383816762 [DEMO] Error resolving DID: did:web:localhost%3A7083. HTTP Code was: 204
+[consumer]WARNING 2025-07-29T10:43:04.386014527 [DEMO] Error resolving DID: did:web:localhost%3A7093. HTTP Code was: 204
+[consumer]DEBUG 2025-07-29T10:43:04.386202169 [ExecutionManager] No WorkItems found, skipping execution
+[consumer]DEBUG 2025-07-29T10:43:14.378689657 [ExecutionManager] Run pre-execution task
+[consumer]WARNING 2025-07-29T10:43:14.386427951 [DEMO] Error resolving DID: did:web:localhost%3A7083. HTTP Code was: 204
+[consumer]WARNING 2025-07-29T10:43:14.392861014 [DEMO] Error resolving DID: did:web:localhost%3A7093. HTTP Code was: 204
+[consumer]DEBUG 2025-07-29T10:43:14.393303328 [ExecutionManager] No WorkItems found, skipping execution
+[consumer]DEBUG 2025-07-29T10:43:24.378460732 [ExecutionManager] Run pre-execution task
+[consumer]WARNING 2025-07-29T10:43:24.386466821 [DEMO] Error resolving DID: did:web:localhost%3A7083. HTTP Code was: 204
+[consumer]WARNING 2025-07-29T10:43:24.391269015 [DEMO] Error resolving DID: did:web:localhost%3A7093. HTTP Code was: 204
+[consumer]DEBUG 2025-07-29T10:43:24.391371864 [ExecutionManager] No WorkItems found, skipping execution
+[consumer]DEBUG 2025-07-29T10:43:34.378023145 [ExecutionManager] Run pre-execution task
+[consumer]WARNING 2025-07-29T10:43:34.384220343 [DEMO] Error resolving DID: did:web:localhost%3A7083. HTTP Code was: 204
+[consumer]WARNING 2025-07-29T10:43:34.386482508 [DEMO] Error resolving DID: did:web:localhost%3A7093. HTTP Code was: 204
+[consumer]DEBUG 2025-07-29T10:43:34.386600185 [ExecutionManager] No WorkItems found, skipping execution
+[consumer]DEBUG 2025-07-29T10:43:40.470466936 [DataPlaneSelectorManagerImpl] DataPlaneInstance consumer is now in state AVAILABLE
+[consumer]DEBUG 2025-07-29T10:43:44.377824842 [ExecutionManager] Run pre-execution task
+[consumer]WARNING 2025-07-29T10:43:44.380752841 [DEMO] Error resolving DID: did:web:localhost%3A7083. HTTP Code was: 204
+[consumer]WARNING 2025-07-29T10:43:44.383751271 [DEMO] Error resolving DID: did:web:localhost%3A7093. HTTP Code was: 204
+[consumer]DEBUG 2025-07-29T10:43:44.383918685 [ExecutionManager] No WorkItems found, skipping execution
+[consumer]DEBUG 2025-07-29T10:43:54.377813232 [ExecutionManager] Run pre-execution task
+[consumer]WARNING 2025-07-29T10:43:54.380719931 [DEMO] Error resolving DID: did:web:localhost%3A7083. HTTP Code was: 204
+[consumer]WARNING 2025-07-29T10:43:54.383004608 [DEMO] Error resolving DID: did:web:localhost%3A7093. HTTP Code was: 204
+[consumer]DEBUG 2025-07-29T10:43:54.383097316 [ExecutionManager] No WorkItems found, skipping execution
+[consumer]DEBUG 2025-07-29T10:44:04.3779426 [ExecutionManager] Run pre-execution task
+[consumer]WARNING 2025-07-29T10:44:04.380767082 [DEMO] Error resolving DID: did:web:localhost%3A7083. HTTP Code was: 204
+[consumer]WARNING 2025-07-29T10:44:04.382962653 [DEMO] Error resolving DID: did:web:localhost%3A7093. HTTP Code was: 204
+[consumer]DEBUG 2025-07-29T10:44:04.383031397 [ExecutionManager] No WorkItems found, skipping execution
+[consumer]DEBUG 2025-07-29T10:44:14.377989194 [ExecutionManager] Run pre-execution task
+[consumer]WARNING 2025-07-29T10:44:14.380881447 [DEMO] Error resolving DID: did:web:localhost%3A7083. HTTP Code was: 204
+[consumer]WARNING 2025-07-29T10:44:14.383070757 [DEMO] Error resolving DID: did:web:localhost%3A7093. HTTP Code was: 204
+[consumer]DEBUG 2025-07-29T10:44:14.38315509 [ExecutionManager] No WorkItems found, skipping execution
+[consumer]DEBUG 2025-07-29T10:44:24.378195023 [ExecutionManager] Run pre-execution task
+[consumer]WARNING 2025-07-29T10:44:24.385251251 [DEMO] Error resolving DID: did:web:localhost%3A7083. HTTP Code was: 204
+[consumer]WARNING 2025-07-29T10:44:24.391350684 [DEMO] Error resolving DID: did:web:localhost%3A7093. HTTP Code was: 204
+[consumer]DEBUG 2025-07-29T10:44:24.391616997 [ExecutionManager] No WorkItems found, skipping execution
+[consumer]DEBUG 2025-07-29T10:44:34.378343164 [ExecutionManager] Run pre-execution task
+[consumer]WARNING 2025-07-29T10:44:34.385706895 [DEMO] Error resolving DID: did:web:localhost%3A7083. HTTP Code was: 204
+[consumer]WARNING 2025-07-29T10:44:34.392068783 [DEMO] Error resolving DID: did:web:localhost%3A7093. HTTP Code was: 204
+[consumer]DEBUG 2025-07-29T10:44:34.392471019 [ExecutionManager] No WorkItems found, skipping execution
+[consumer]DEBUG 2025-07-29T10:44:40.507243866 [DataPlaneSelectorManagerImpl] DataPlaneInstance consumer is now in state AVAILABLE
+[consumer]DEBUG 2025-07-29T10:44:44.377892477 [ExecutionManager] Run pre-execution task
+[consumer]WARNING 2025-07-29T10:44:44.380629453 [DEMO] Error resolving DID: did:web:localhost%3A7083. HTTP Code was: 204
+[consumer]WARNING 2025-07-29T10:44:44.382738472 [DEMO] Error resolving DID: did:web:localhost%3A7093. HTTP Code was: 204
+[consumer]DEBUG 2025-07-29T10:44:44.382825165 [ExecutionManager] No WorkItems found, skipping execution
+[consumer]DEBUG 2025-07-29T10:44:54.377842405 [ExecutionManager] Run pre-execution task
+[consumer]WARNING 2025-07-29T10:44:54.380824631 [DEMO] Error resolving DID: did:web:localhost%3A7083. HTTP Code was: 204
+[consumer]WARNING 2025-07-29T10:44:54.383311184 [DEMO] Error resolving DID: did:web:localhost%3A7093. HTTP Code was: 204
+[consumer]DEBUG 2025-07-29T10:44:54.383394439 [ExecutionManager] No WorkItems found, skipping execution
+[consumer]DEBUG 2025-07-29T10:45:04.3779148 [ExecutionManager] Run pre-execution task
+[consumer]WARNING 2025-07-29T10:45:04.381146261 [DEMO] Error resolving DID: did:web:localhost%3A7083. HTTP Code was: 204
+[consumer]WARNING 2025-07-29T10:45:04.383256761 [DEMO] Error resolving DID: did:web:localhost%3A7093. HTTP Code was: 204
+[consumer]DEBUG 2025-07-29T10:45:04.383356469 [ExecutionManager] No WorkItems found, skipping execution
+[consumer]DEBUG 2025-07-29T10:45:14.377886171 [ExecutionManager] Run pre-execution task
+[consumer]WARNING 2025-07-29T10:45:14.381009254 [DEMO] Error resolving DID: did:web:localhost%3A7083. HTTP Code was: 204
+[consumer]WARNING 2025-07-29T10:45:14.383484665 [DEMO] Error resolving DID: did:web:localhost%3A7093. HTTP Code was: 204
+[consumer]DEBUG 2025-07-29T10:45:14.383592342 [ExecutionManager] No WorkItems found, skipping execution
+[consumer]DEBUG 2025-07-29T10:45:24.378074739 [ExecutionManager] Run pre-execution task
+[consumer]WARNING 2025-07-29T10:45:24.381684307 [DEMO] Error resolving DID: did:web:localhost%3A7083. HTTP Code was: 204
+[consumer]WARNING 2025-07-29T10:45:24.388455475 [DEMO] Error resolving DID: did:web:localhost%3A7093. HTTP Code was: 204
+[consumer]DEBUG 2025-07-29T10:45:24.388533843 [ExecutionManager] No WorkItems found, skipping execution
+[consumer]DEBUG 2025-07-29T10:45:34.37788241 [ExecutionManager] Run pre-execution task
+[consumer]WARNING 2025-07-29T10:45:34.380697081 [DEMO] Error resolving DID: did:web:localhost%3A7083. HTTP Code was: 204
+[consumer]WARNING 2025-07-29T10:45:34.382614832 [DEMO] Error resolving DID: did:web:localhost%3A7093. HTTP Code was: 204
+[consumer]DEBUG 2025-07-29T10:45:34.382679532 [ExecutionManager] No WorkItems found, skipping execution
+[consumer]DEBUG 2025-07-29T10:45:40.539762162 [DataPlaneSelectorManagerImpl] DataPlaneInstance consumer is now in state AVAILABLE
+[consumer]DEBUG 2025-07-29T10:45:44.378210191 [ExecutionManager] Run pre-execution task
+[consumer]WARNING 2025-07-29T10:45:44.385677503 [DEMO] Error resolving DID: did:web:localhost%3A7083. HTTP Code was: 204
+[consumer]WARNING 2025-07-29T10:45:44.391406534 [DEMO] Error resolving DID: did:web:localhost%3A7093. HTTP Code was: 204
+[consumer]DEBUG 2025-07-29T10:45:44.391614358 [ExecutionManager] No WorkItems found, skipping execution
+[consumer]DEBUG 2025-07-29T10:45:54.377870175 [ExecutionManager] Run pre-execution task
+[consumer]WARNING 2025-07-29T10:45:54.380694756 [DEMO] Error resolving DID: did:web:localhost%3A7083. HTTP Code was: 204
+[consumer]WARNING 2025-07-29T10:45:54.382786675 [DEMO] Error resolving DID: did:web:localhost%3A7093. HTTP Code was: 204
+[consumer]DEBUG 2025-07-29T10:45:54.38286715 [ExecutionManager] No WorkItems found, skipping execution
+[consumer]DEBUG 2025-07-29T10:46:04.378077942 [ExecutionManager] Run pre-execution task
+[consumer]WARNING 2025-07-29T10:46:04.382991899 [DEMO] Error resolving DID: did:web:localhost%3A7083. HTTP Code was: 204
+[consumer]WARNING 2025-07-29T10:46:04.385199909 [DEMO] Error resolving DID: did:web:localhost%3A7093. HTTP Code was: 204
+[consumer]DEBUG 2025-07-29T10:46:04.385305339 [ExecutionManager] No WorkItems found, skipping execution
+[consumer]DEBUG 2025-07-29T10:46:14.378112831 [ExecutionManager] Run pre-execution task
+[consumer]WARNING 2025-07-29T10:46:14.382877538 [DEMO] Error resolving DID: did:web:localhost%3A7083. HTTP Code was: 204
+[consumer]WARNING 2025-07-29T10:46:14.385019377 [DEMO] Error resolving DID: did:web:localhost%3A7093. HTTP Code was: 204
+[consumer]DEBUG 2025-07-29T10:46:14.385081606 [ExecutionManager] No WorkItems found, skipping execution
+[consumer]DEBUG 2025-07-29T10:46:24.37786562 [ExecutionManager] Run pre-execution task
+[consumer]WARNING 2025-07-29T10:46:24.380516297 [DEMO] Error resolving DID: did:web:localhost%3A7083. HTTP Code was: 204
+[consumer]WARNING 2025-07-29T10:46:24.382436937 [DEMO] Error resolving DID: did:web:localhost%3A7093. HTTP Code was: 204
+[consumer]DEBUG 2025-07-29T10:46:24.382514932 [ExecutionManager] No WorkItems found, skipping execution
+[consumer]DEBUG 2025-07-29T12:01:43.327052077 Config value: no setting found for 'edc.core.retry.retries.max', falling back to default value '5'
+[consumer]DEBUG 2025-07-29T12:01:43.332624692 Config value: no setting found for 'edc.core.retry.backoff.min', falling back to default value '500'
+[consumer]DEBUG 2025-07-29T12:01:43.333116334 Config value: no setting found for 'edc.core.retry.backoff.max', falling back to default value '10000'
+[consumer]DEBUG 2025-07-29T12:01:43.333539304 Config value: no setting found for 'edc.core.retry.log.on.retry', falling back to default value 'false'
+[consumer]DEBUG 2025-07-29T12:01:43.334021696 Config value: no setting found for 'edc.core.retry.log.on.retry.scheduled', falling back to default value 'false'
+[consumer]DEBUG 2025-07-29T12:01:43.334372141 Config value: no setting found for 'edc.core.retry.log.on.retries.exceeded', falling back to default value 'false'
+[consumer]DEBUG 2025-07-29T12:01:43.334813783 Config value: no setting found for 'edc.core.retry.log.on.failed.attempt', falling back to default value 'false'
+[consumer]DEBUG 2025-07-29T12:01:43.335253037 Config value: no setting found for 'edc.core.retry.log.on.abort', falling back to default value 'false'
+[consumer]DEBUG 2025-07-29T12:01:43.341045001 Config value: no setting found for 'edc.http.client.https.enforce', falling back to default value 'false'
+[consumer]DEBUG 2025-07-29T12:01:43.341767681 Config value: no setting found for 'edc.http.client.timeout.connect', falling back to default value '30'
+[consumer]DEBUG 2025-07-29T12:01:43.342392042 Config value: no setting found for 'edc.http.client.timeout.read', falling back to default value '30'
+[consumer]DEBUG 2025-07-29T12:01:43.342863535 Config value: no setting found for 'edc.http.client.send.buffer.size', falling back to default value '0'
+[consumer]DEBUG 2025-07-29T12:01:43.343491105 Config value: no setting found for 'edc.http.client.receive.buffer.size', falling back to default value '0'
+[consumer]INFO 2025-07-29T12:01:43.443960371 HTTPS enforcement it not enabled, please enable it in a production environment
+[consumer]INFO 2025-07-29T12:01:43.859269284 HTTPS enforcement it not enabled, please enable it in a production environment
+[consumer]WARNING 2025-07-29T12:01:43.86212197 Config value: no setting found for 'edc.hostname', falling back to default value 'localhost'
+[consumer]WARNING 2025-07-29T12:01:44.263165997 Using the InMemoryVault is not suitable for production scenarios and should be replaced with an actual Vault!
+[consumer]DEBUG 2025-07-29T12:01:44.507236043 Storing secret did:web:localhost%3A7083-alias
+[consumer]DEBUG 2025-07-29T12:01:44.507671226 Storing secret did:web:localhost%3A7083#key-1
+[consumer]WARNING 2025-07-29T12:01:44.507969384 [DEMO] >>>>>> This extension hard-codes a keypair into the vault! <<<<<<
+[consumer]WARNING 2025-07-29T12:01:44.508466433 A service of the type java.time.Clock was already registered and has now been replaced with a SystemClock instance.
+[consumer]DEBUG 2025-07-29T12:01:44.509883 Config value: no setting found for 'edc.iam.sts.token.expiration', falling back to default value '5'
+[consumer]DEBUG 2025-07-29T12:01:44.534136433 Config value: no setting found for 'edc.jsonld.prefixes.check', falling back to default value 'true'
+[consumer]DEBUG 2025-07-29T12:01:44.535491375 Config value: no setting found for 'edc.jsonld.vocab.disable', falling back to default value 'false'
+[consumer]DEBUG 2025-07-29T12:01:44.536196898 Config value: no setting found for 'edc.jsonld.https.enabled', falling back to default value 'false'
+[consumer]DEBUG 2025-07-29T12:01:44.537618664 Config value: no setting found for 'edc.jsonld.http.enabled', falling back to default value 'false'
+[consumer]DEBUG 2025-07-29T12:01:44.66935839 Config value: no setting found for 'edc.did.resolver.cache.expiry', falling back to default value '300000'
+[consumer]DEBUG 2025-07-29T12:01:44.762633861 Config value: no setting found for 'edc.dcp.v08.forced', falling back to default value 'false'
+[consumer]DEBUG 2025-07-29T12:01:44.764398259 Config value: no setting found for 'edc.iam.credential.revocation.cache.validity', falling back to default value '900000'
+[consumer]DEBUG 2025-07-29T12:01:44.766202503 Config value: no setting found for 'edc.sql.store.jti.cleanup.period', falling back to default value '60'
+[consumer]WARNING 2025-07-29T12:01:44.8032525 The list of trusted issuers is empty
+[consumer]DEBUG 2025-07-29T12:01:44.876896673 DataPlane Access Control: default implementation is used, will always return Result.success()
+[consumer]DEBUG 2025-07-29T12:01:44.881006357 Config value: no setting found for 'edc.api.auth.dac.cache.validity', falling back to default value '300000'
+[consumer]DEBUG 2025-07-29T12:01:44.881975966 Config value: no setting found for 'edc.api.auth.dac.validation.tolerance', falling back to default value '5000'
+[consumer]WARNING 2025-07-29T12:01:44.882675697 [Delegated API Authentication] No audience configured for delegated authentication, defaulting to the participantId
+[consumer]DEBUG 2025-07-29T12:01:44.891839146 Config value: no setting found for 'edc.dataplane.state-machine.iteration-wait-millis', falling back to default value '1000'
+[consumer]DEBUG 2025-07-29T12:01:44.892902456 Config value: no setting found for 'edc.dataplane.state-machine.batch-size', falling back to default value '20'
+[consumer]DEBUG 2025-07-29T12:01:44.894649767 Config value: no setting found for 'edc.dataplane.state-machine.flow.lease.time', falling back to default value '500'
+[consumer]DEBUG 2025-07-29T12:01:44.895050027 Config value: no setting found for 'edc.dataplane.state-machine.flow.lease.factor', falling back to default value '5'
+[consumer]DEBUG 2025-07-29T12:01:44.900510495 Config value: no setting found for 'edc.dataplane.send.retry.limit', falling back to default value '7'
+[consumer]DEBUG 2025-07-29T12:01:44.911989594 Config value: no setting found for 'edc.dataplane.send.retry.base-delay.ms', falling back to default value '1000'
+[consumer]DEBUG 2025-07-29T12:01:44.912732014 Config value: no setting found for 'edc.dataplane.transfer.threads', falling back to default value '20'
+[consumer]DEBUG 2025-07-29T12:01:44.918326598 Config value: no setting found for 'edc.dataplane.http.sink.partition.size', falling back to default value '5'
+[consumer]DEBUG 2025-07-29T12:01:44.949929143 Config value: no setting found for 'edc.web.https.keystore.password', falling back to default value 'password'
+[consumer]DEBUG 2025-07-29T12:01:44.950384757 Config value: no setting found for 'edc.web.https.keymanager.password', falling back to default value 'password'
+[consumer]DEBUG 2025-07-29T12:01:44.9516306 Config value: no setting found for 'web.http.default.port', falling back to default value '8181'
+[consumer]DEBUG 2025-07-29T12:01:44.953127984 Config value: no setting found for 'web.http.default.path', falling back to default value '/api'
+[consumer]DEBUG 2025-07-29T12:01:44.955606883 Config value: no setting found for 'edc.web.https.keystore.type', falling back to default value 'PKCS12'
+[consumer]DEBUG 2025-07-29T12:01:45.070265789 Config value: no setting found for 'edc.negotiation.provider.state-machine.batch-size', falling back to default value '20'
+[consumer]DEBUG 2025-07-29T12:01:45.159365052 Config value: no setting found for 'edc.negotiation.state-machine.iteration-wait-millis', falling back to default value '1000'
+[consumer]DEBUG 2025-07-29T12:01:45.16102569 Config value: no setting found for 'edc.negotiation.consumer.send.retry.limit', falling back to default value '7'
+[consumer]DEBUG 2025-07-29T12:01:45.161901318 Config value: no setting found for 'edc.negotiation.consumer.state-machine.batch-size', falling back to default value '20'
+[consumer]DEBUG 2025-07-29T12:01:45.162942256 Config value: no setting found for 'edc.negotiation.provider.send.retry.limit', falling back to default value '7'
+[consumer]DEBUG 2025-07-29T12:01:45.165165696 Config value: no setting found for 'edc.negotiation.consumer.send.retry.base-delay.ms', falling back to default value '1000'
+[consumer]DEBUG 2025-07-29T12:01:45.168714181 Config value: no setting found for 'edc.negotiation.provider.send.retry.base-delay.ms', falling back to default value '1000'
+[consumer]DEBUG 2025-07-29T12:01:45.187227562 Config value: no setting found for 'edc.transfer.send.retry.base-delay.ms', falling back to default value '1000'
+[consumer]DEBUG 2025-07-29T12:01:45.187813654 Config value: no setting found for 'edc.transfer.state-machine.batch-size', falling back to default value '20'
+[consumer]DEBUG 2025-07-29T12:01:45.188486738 Config value: no setting found for 'edc.transfer.send.retry.limit', falling back to default value '7'
+[consumer]DEBUG 2025-07-29T12:01:45.18958561 Config value: no setting found for 'edc.transfer.state-machine.iteration-wait-millis', falling back to default value '1000'
+[consumer]DEBUG 2025-07-29T12:01:45.202834556 Config value: no setting found for 'edc.policy.validation.enabled', falling back to default value 'false'
+[consumer]WARNING 2025-07-29T12:01:45.203665387 No TransactionContext registered, a no-op implementation will be used, not suitable for production environments
+[consumer]DEBUG 2025-07-29T12:01:45.231391534 Config value: no setting found for 'edc.catalog.cache.partition.num.crawlers', falling back to default value '2'
+[consumer]DEBUG 2025-07-29T12:01:45.237385646 Config value: no setting found for 'edc.catalog.cache.partition.num.crawlers', falling back to default value '2'
+[consumer]DEBUG 2025-07-29T12:01:45.237939946 Config value: no setting found for 'edc.catalog.cache.execution.enabled', falling back to default value 'true'
+[consumer]DEBUG 2025-07-29T12:01:45.265417011 Config value: no setting found for 'edc.dsp.well-known-path.enabled', falling back to default value 'false'
+[consumer]WARNING 2025-07-29T12:01:45.267993237 No TokenDecorator was registered. The 'scope' field of outgoing protocol messages will be empty
+[consumer]DEBUG 2025-07-29T12:01:45.333140324 Config value: no setting found for 'edc.dsp.well-known-path.enabled', falling back to default value 'false'
+[consumer]DEBUG 2025-07-29T12:01:45.348618464 Using embedded Data Plane client.
+[consumer]DEBUG 2025-07-29T12:01:45.40915341 Config value: no setting found for 'edc.data.plane.selector.state-machine.batch-size', falling back to default value '20'
+[consumer]DEBUG 2025-07-29T12:01:45.411272193 Config value: no setting found for 'edc.data.plane.selector.state-machine.iteration-wait-millis', falling back to default value '1000'
+[consumer]DEBUG 2025-07-29T12:01:45.442511669 Config value: no setting found for 'edc.data.plane.selector.state-machine.check.period', falling back to default value '60'
+[consumer]DEBUG 2025-07-29T12:01:45.566203879 Config value: no setting found for 'edc.dataplane.client.selector.strategy', falling back to default value 'random'
+[consumer]DEBUG 2025-07-29T12:01:45.70441258 Config value: no setting found for 'edc.policy.monitor.state-machine.iteration-wait-millis', falling back to default value '1000'
+[consumer]DEBUG 2025-07-29T12:01:45.706178592 Config value: no setting found for 'edc.policy.monitor.state-machine.batch-size', falling back to default value '20'
+[consumer]DEBUG 2025-07-29T12:01:45.719930513 Config value: no setting found for 'edc.edr.receiver.sync', falling back to default value 'false'
+[consumer]WARNING 2025-07-29T12:01:45.726353915 The `data-plane-public-api-v2` has been deprecated, please provide analternative implementation for Http Proxy if needed
+[consumer]WARNING 2025-07-29T12:01:45.729682892 The public API endpoint was not explicitly configured, the default 'http://localhost:11001/api/public' will be used.
+[consumer]DEBUG 2025-07-29T12:01:45.734264186 Config value: no setting found for 'edc.data.plane.self.unregistration', falling back to default value 'false'
+[consumer]DEBUG 2025-07-29T12:01:45.749792629 Configured tokenbased authentication for context management
+[consumer]DEBUG 2025-07-29T12:01:45.750072366 Configured tokenbased authentication for context catalog
+[consumer]DEBUG 2025-07-29T12:01:45.842865782 HTTP context 'default' listening on port 8080
+[consumer]DEBUG 2025-07-29T12:01:45.850749288 HTTP context 'management' listening on port 8081
+[consumer]DEBUG 2025-07-29T12:01:45.851590217 HTTP context 'protocol' listening on port 8082
+[consumer]DEBUG 2025-07-29T12:01:45.852242411 HTTP context 'control' listening on port 8083
+[consumer]DEBUG 2025-07-29T12:01:45.853278422 HTTP context 'catalog' listening on port 8084
+[consumer]DEBUG 2025-07-29T12:01:45.854119464 HTTP context 'version' listening on port 8085
+[consumer]DEBUG 2025-07-29T12:01:45.854526307 HTTP context 'public' listening on port 11001
+[consumer]DEBUG 2025-07-29T12:01:45.948852964 Port mappings: PortMapping[name=default, port=8080, path=/api], PortMapping[name=management, port=8081, path=/api/management/], PortMapping[name=protocol, port=8082, path=/api/dsp], PortMapping[name=control, port=8083, path=/api/control], PortMapping[name=catalog, port=8084, path=/api/catalog], PortMapping[name=version, port=8085, path=/api/version], PortMapping[name=public, port=11001, path=/api/public]
+[consumer]DEBUG 2025-07-29T12:01:46.449515841 Registered Web API context alias: default
+[consumer]DEBUG 2025-07-29T12:01:46.594773443 Registered Web API context alias: protocol
+[consumer]DEBUG 2025-07-29T12:01:46.698454751 Registered Web API context alias: public
+[consumer]DEBUG 2025-07-29T12:01:46.772453285 Registered Web API context alias: management
+[consumer]DEBUG 2025-07-29T12:01:46.80442465 Registered Web API context alias: catalog
+[consumer]DEBUG 2025-07-29T12:01:46.838052793 Registered Web API context alias: control
+[consumer]DEBUG 2025-07-29T12:01:46.870541703 Registered Web API context alias: version
+[consumer]DEBUG 2025-07-29T12:01:46.88575093 [DataPlaneHealthCheck] Initiate data plane registration.
+[consumer]DEBUG 2025-07-29T12:01:46.887290785 [DataPlaneHealthCheck] data plane registered to control plane
+[consumer]DEBUG 2025-07-29T12:01:47.887363562 [DataPlaneSelectorManagerImpl] DataPlaneInstance consumer is now in state AVAILABLE
+[consumer]DEBUG 2025-07-29T12:01:51.876802862 [ExecutionManager] Run pre-execution task
+[consumer]WARNING 2025-07-29T12:01:51.93706881 [DEMO] Error resolving DID: did:web:localhost%3A7083. HTTP Code was: 204
+[consumer]WARNING 2025-07-29T12:01:51.941768726 [DEMO] Error resolving DID: did:web:localhost%3A7093. HTTP Code was: 204
+[consumer]DEBUG 2025-07-29T12:01:51.94267267 [ExecutionManager] No WorkItems found, skipping execution
+[consumer]DEBUG 2025-07-29T12:02:01.876721337 [ExecutionManager] Run pre-execution task
+[consumer]WARNING 2025-07-29T12:02:01.879803893 [DEMO] Error resolving DID: did:web:localhost%3A7083. HTTP Code was: 204
+[consumer]WARNING 2025-07-29T12:02:01.882431601 [DEMO] Error resolving DID: did:web:localhost%3A7093. HTTP Code was: 204
+[consumer]DEBUG 2025-07-29T12:02:01.882531586 [ExecutionManager] No WorkItems found, skipping execution
+[consumer]DEBUG 2025-07-29T12:02:11.876648171 [ExecutionManager] Run pre-execution task
+[consumer]WARNING 2025-07-29T12:02:11.8795776 [DEMO] Error resolving DID: did:web:localhost%3A7083. HTTP Code was: 204
+[consumer]WARNING 2025-07-29T12:02:11.881971805 [DEMO] Error resolving DID: did:web:localhost%3A7093. HTTP Code was: 204
+[consumer]DEBUG 2025-07-29T12:02:11.882126672 [ExecutionManager] No WorkItems found, skipping execution
+[consumer]DEBUG 2025-07-29T12:02:21.876729132 [ExecutionManager] Run pre-execution task
+[consumer]WARNING 2025-07-29T12:02:21.880050416 [DEMO] Error resolving DID: did:web:localhost%3A7083. HTTP Code was: 204
+[consumer]WARNING 2025-07-29T12:02:21.882448488 [DEMO] Error resolving DID: did:web:localhost%3A7093. HTTP Code was: 204
+[consumer]DEBUG 2025-07-29T12:02:21.882562318 [ExecutionManager] No WorkItems found, skipping execution
+[consumer]DEBUG 2025-07-29T12:02:31.876707969 [ExecutionManager] Run pre-execution task
+[consumer]WARNING 2025-07-29T12:02:31.880311465 [DEMO] Error resolving DID: did:web:localhost%3A7083. HTTP Code was: 204
+[consumer]WARNING 2025-07-29T12:02:31.883211692 [DEMO] Error resolving DID: did:web:localhost%3A7093. HTTP Code was: 204
+[consumer]DEBUG 2025-07-29T12:02:31.883383612 [ExecutionManager] No WorkItems found, skipping execution
+[consumer]DEBUG 2025-07-29T12:02:41.876724619 [ExecutionManager] Run pre-execution task
+[consumer]WARNING 2025-07-29T12:02:41.88735583 [DEMO] Error resolving DID: did:web:localhost%3A7083. HTTP Code was: 204
+[consumer]WARNING 2025-07-29T12:02:41.893626801 [DEMO] Error resolving DID: did:web:localhost%3A7093. HTTP Code was: 204
+[consumer]DEBUG 2025-07-29T12:02:41.893989908 [ExecutionManager] No WorkItems found, skipping execution
+[consumer]DEBUG 2025-07-29T12:02:47.928532114 [DataPlaneSelectorManagerImpl] DataPlaneInstance consumer is now in state AVAILABLE
+[consumer]DEBUG 2025-07-29T12:02:51.876640497 [ExecutionManager] Run pre-execution task
+[consumer]WARNING 2025-07-29T12:02:51.895843248 [DEMO] Error resolving DID: did:web:localhost%3A7083. HTTP Code was: 204
+[consumer]WARNING 2025-07-29T12:02:51.899508762 [DEMO] Error resolving DID: did:web:localhost%3A7093. HTTP Code was: 204
+[consumer]DEBUG 2025-07-29T12:02:51.899686744 [ExecutionManager] No WorkItems found, skipping execution
+[consumer]DEBUG 2025-07-29T12:03:01.876657392 [ExecutionManager] Run pre-execution task
+[consumer]WARNING 2025-07-29T12:03:01.879903725 [DEMO] Error resolving DID: did:web:localhost%3A7083. HTTP Code was: 204
+[consumer]WARNING 2025-07-29T12:03:01.882177518 [DEMO] Error resolving DID: did:web:localhost%3A7093. HTTP Code was: 204
+[consumer]DEBUG 2025-07-29T12:03:01.882273314 [ExecutionManager] No WorkItems found, skipping execution
+[consumer]DEBUG 2025-07-29T12:03:11.876686642 [ExecutionManager] Run pre-execution task
+[consumer]WARNING 2025-07-29T12:03:11.879905538 [DEMO] Error resolving DID: did:web:localhost%3A7083. HTTP Code was: 204
+[consumer]WARNING 2025-07-29T12:03:11.882190932 [DEMO] Error resolving DID: did:web:localhost%3A7093. HTTP Code was: 204
+[consumer]DEBUG 2025-07-29T12:03:11.882292345 [ExecutionManager] No WorkItems found, skipping execution
+[consumer]DEBUG 2025-07-29T12:03:21.876585366 [ExecutionManager] Run pre-execution task
+[consumer]WARNING 2025-07-29T12:03:21.87967739 [DEMO] Error resolving DID: did:web:localhost%3A7083. HTTP Code was: 204
+[consumer]WARNING 2025-07-29T12:03:21.882162963 [DEMO] Error resolving DID: did:web:localhost%3A7093. HTTP Code was: 204
+[consumer]DEBUG 2025-07-29T12:03:21.882267919 [ExecutionManager] No WorkItems found, skipping execution
+[consumer]DEBUG 2025-07-29T12:03:31.876604 [ExecutionManager] Run pre-execution task
+[consumer]WARNING 2025-07-29T12:03:31.879733853 [DEMO] Error resolving DID: did:web:localhost%3A7083. HTTP Code was: 204
+[consumer]WARNING 2025-07-29T12:03:31.882398165 [DEMO] Error resolving DID: did:web:localhost%3A7093. HTTP Code was: 204
+[consumer]DEBUG 2025-07-29T12:03:31.882530996 [ExecutionManager] No WorkItems found, skipping execution
+[consumer]DEBUG 2025-07-29T12:03:41.876602047 [ExecutionManager] Run pre-execution task
+[consumer]WARNING 2025-07-29T12:03:41.879686231 [DEMO] Error resolving DID: did:web:localhost%3A7083. HTTP Code was: 204
+[consumer]WARNING 2025-07-29T12:03:41.882162637 [DEMO] Error resolving DID: did:web:localhost%3A7093. HTTP Code was: 204
+[consumer]DEBUG 2025-07-29T12:03:41.882273778 [ExecutionManager] No WorkItems found, skipping execution
+[consumer]DEBUG 2025-07-29T12:03:47.966113185 [DataPlaneSelectorManagerImpl] DataPlaneInstance consumer is now in state AVAILABLE
+[consumer]DEBUG 2025-07-29T12:03:51.876625447 [ExecutionManager] Run pre-execution task
+[consumer]WARNING 2025-07-29T12:03:51.879466787 [DEMO] Error resolving DID: did:web:localhost%3A7083. HTTP Code was: 204
+[consumer]WARNING 2025-07-29T12:03:51.881634414 [DEMO] Error resolving DID: did:web:localhost%3A7093. HTTP Code was: 204
+[consumer]DEBUG 2025-07-29T12:03:51.881790738 [ExecutionManager] No WorkItems found, skipping execution
+[consumer]DEBUG 2025-07-29T12:04:01.876614183 [ExecutionManager] Run pre-execution task
+[consumer]WARNING 2025-07-29T12:04:01.879209415 [DEMO] Error resolving DID: did:web:localhost%3A7083. HTTP Code was: 204
+[consumer]WARNING 2025-07-29T12:04:01.881324668 [DEMO] Error resolving DID: did:web:localhost%3A7093. HTTP Code was: 204
+[consumer]DEBUG 2025-07-29T12:04:01.881544548 [ExecutionManager] No WorkItems found, skipping execution
+[consumer]DEBUG 2025-07-29T12:04:11.876632021 [ExecutionManager] Run pre-execution task
+[consumer]WARNING 2025-07-29T12:04:11.8793007 [DEMO] Error resolving DID: did:web:localhost%3A7083. HTTP Code was: 204
+[consumer]WARNING 2025-07-29T12:04:11.881461727 [DEMO] Error resolving DID: did:web:localhost%3A7093. HTTP Code was: 204
+[consumer]DEBUG 2025-07-29T12:04:11.881567611 [ExecutionManager] No WorkItems found, skipping execution
+[consumer]DEBUG 2025-07-29T12:04:21.876652201 [ExecutionManager] Run pre-execution task
+[consumer]WARNING 2025-07-29T12:04:21.879696085 [DEMO] Error resolving DID: did:web:localhost%3A7083. HTTP Code was: 204
+[consumer]WARNING 2025-07-29T12:04:21.8820926 [DEMO] Error resolving DID: did:web:localhost%3A7093. HTTP Code was: 204
+[consumer]DEBUG 2025-07-29T12:04:21.882198664 [ExecutionManager] No WorkItems found, skipping execution
+[consumer]DEBUG 2025-07-29T12:04:31.876575646 [ExecutionManager] Run pre-execution task
+[consumer]WARNING 2025-07-29T12:04:31.879032011 [DEMO] Error resolving DID: did:web:localhost%3A7083. HTTP Code was: 204
+[consumer]WARNING 2025-07-29T12:04:31.881107798 [DEMO] Error resolving DID: did:web:localhost%3A7093. HTTP Code was: 204
+[consumer]DEBUG 2025-07-29T12:04:31.88120187 [ExecutionManager] No WorkItems found, skipping execution
+[consumer]DEBUG 2025-07-29T12:04:36.63870628 Resolving secret did:web:localhost%3A7083-sts-client-secret
+[consumer]DEBUG 2025-07-29T12:04:36.639015625 Storing secret did:web:localhost%3A7083-sts-client-secret
+[consumer]DEBUG 2025-07-29T12:04:38.021917625 DSP: Incoming CatalogRequestMessage for class org.eclipse.edc.connector.controlplane.catalog.spi.Catalog process
+[consumer]DEBUG 2025-07-29T12:04:38.463732154 Resolving secret did:web:localhost%3A7083-sts-client-secret
+[consumer]DEBUG 2025-07-29T12:04:41.876637038 [ExecutionManager] Run pre-execution task
+[consumer]DEBUG 2025-07-29T12:04:41.880721856 [DEMO] Node filter: skipping node 'did:web:localhost%3A7083' for participant 'did:web:localhost%3A7083'
+[consumer]DEBUG 2025-07-29T12:04:41.881058215 [ExecutionManager] Loaded 1 work items from storage
+[consumer]DEBUG 2025-07-29T12:04:41.882501439 [ExecutionManager] Crawler parallelism is 1, based on config and number of work items
+[consumer]DEBUG 2025-07-29T12:04:41.88350879 [ExecutionManager] Crawler-2bc42e68-9560-424b-9b9d-3d692bbe26fe: WorkItem acquired
+[consumer]DEBUG 2025-07-29T12:04:41.887492373 Resolving secret did:web:localhost%3A7083-sts-client-secret
+[consumer]DEBUG 2025-07-29T12:04:42.641062019 Resolving secret did:web:localhost%3A7083-sts-client-secret
+[consumer]DEBUG 2025-07-29T12:04:43.208755373 Resolving secret did:web:localhost%3A7083-sts-client-secret
+[consumer]DEBUG 2025-07-29T12:04:44.029863721 [ExecutionManager] Crawler [Crawler-2bc42e68-9560-424b-9b9d-3d692bbe26fe] is done
+[consumer]DEBUG 2025-07-29T12:04:44.114228696 DSP: Incoming CatalogRequestMessage for class org.eclipse.edc.connector.controlplane.catalog.spi.Catalog process
+[consumer]DEBUG 2025-07-29T12:04:44.118070978 Resolving secret did:web:localhost%3A7083-sts-client-secret
+[consumer]DEBUG 2025-07-29T12:04:47.697597198 DSP: Incoming CatalogRequestMessage for class org.eclipse.edc.connector.controlplane.catalog.spi.Catalog process
+[consumer]DEBUG 2025-07-29T12:04:47.699672567 Resolving secret did:web:localhost%3A7083-sts-client-secret
+[consumer]DEBUG 2025-07-29T12:04:47.991736955 [DataPlaneSelectorManagerImpl] DataPlaneInstance consumer is now in state AVAILABLE
+[consumer]DEBUG 2025-07-29T12:04:51.876578039 [ExecutionManager] Run pre-execution task
+[consumer]DEBUG 2025-07-29T12:04:51.877104852 [DEMO] Node filter: skipping node 'did:web:localhost%3A7083' for participant 'did:web:localhost%3A7083'
+[consumer]DEBUG 2025-07-29T12:04:51.877181232 [ExecutionManager] Loaded 1 work items from storage
+[consumer]DEBUG 2025-07-29T12:04:51.877240382 [ExecutionManager] Crawler parallelism is 1, based on config and number of work items
+[consumer]DEBUG 2025-07-29T12:04:51.877539438 [ExecutionManager] Crawler-ae94f0cd-860f-43d1-9345-d8cc78d56327: WorkItem acquired
+[consumer]DEBUG 2025-07-29T12:04:51.879223169 Resolving secret did:web:localhost%3A7083-sts-client-secret
+[consumer]DEBUG 2025-07-29T12:04:51.933753859 Resolving secret did:web:localhost%3A7083-sts-client-secret
+[consumer]DEBUG 2025-07-29T12:04:51.994210616 Resolving secret did:web:localhost%3A7083-sts-client-secret
+[consumer]DEBUG 2025-07-29T12:04:52.043748601 [ExecutionManager] Crawler [Crawler-ae94f0cd-860f-43d1-9345-d8cc78d56327] is done
+[consumer]DEBUG 2025-07-29T12:04:54.090925589 DSP: Incoming CatalogRequestMessage for class org.eclipse.edc.connector.controlplane.catalog.spi.Catalog process
+[consumer]DEBUG 2025-07-29T12:04:54.093788499 Resolving secret did:web:localhost%3A7083-sts-client-secret
+[consumer]DEBUG 2025-07-29T12:04:57.696585875 DSP: Incoming CatalogRequestMessage for class org.eclipse.edc.connector.controlplane.catalog.spi.Catalog process
+[consumer]DEBUG 2025-07-29T12:04:57.698439873 Resolving secret did:web:localhost%3A7083-sts-client-secret
+[consumer]DEBUG 2025-07-29T12:05:01.876600659 [ExecutionManager] Run pre-execution task
+[consumer]DEBUG 2025-07-29T12:05:01.877243897 [DEMO] Node filter: skipping node 'did:web:localhost%3A7083' for participant 'did:web:localhost%3A7083'
+[consumer]DEBUG 2025-07-29T12:05:01.877355451 [ExecutionManager] Loaded 1 work items from storage
+[consumer]DEBUG 2025-07-29T12:05:01.877435131 [ExecutionManager] Crawler parallelism is 1, based on config and number of work items
+[consumer]DEBUG 2025-07-29T12:05:01.87759175 [ExecutionManager] Crawler-eaee50c0-07bc-4bb6-a3fa-e649a45173a5: WorkItem acquired
+[consumer]DEBUG 2025-07-29T12:05:01.887701442 Resolving secret did:web:localhost%3A7083-sts-client-secret
+[consumer]DEBUG 2025-07-29T12:05:01.936848821 Resolving secret did:web:localhost%3A7083-sts-client-secret
+[consumer]DEBUG 2025-07-29T12:05:01.977864161 Resolving secret did:web:localhost%3A7083-sts-client-secret
+[consumer]DEBUG 2025-07-29T12:05:02.027992416 [ExecutionManager] Crawler [Crawler-eaee50c0-07bc-4bb6-a3fa-e649a45173a5] is done
+[consumer]DEBUG 2025-07-29T12:05:04.089619618 DSP: Incoming CatalogRequestMessage for class org.eclipse.edc.connector.controlplane.catalog.spi.Catalog process
+[consumer]DEBUG 2025-07-29T12:05:04.091176489 Resolving secret did:web:localhost%3A7083-sts-client-secret
+[consumer]DEBUG 2025-07-29T12:05:06.188225538 [ConsumerContractNegotiationManagerImpl] ContractNegotiation b7a2117c-f79a-4332-b3db-2bf02135b6c1 is now in state INITIAL
+[consumer]DEBUG 2025-07-29T12:05:06.918782177 [ConsumerContractNegotiationManagerImpl] ContractNegotiation b7a2117c-f79a-4332-b3db-2bf02135b6c1 is now in state REQUESTING
+[consumer]DEBUG 2025-07-29T12:05:06.934085929 Resolving secret did:web:localhost%3A7083-sts-client-secret
+[consumer]SEVERE 2025-07-29T12:05:06.976177664 ContractNegotiation: ID b7a2117c-f79a-4332-b3db-2bf02135b6c1. Attempt #1 failed to [Consumer] send request. Fatal error occurred. Cause: {"@type":"dspace:ContractNegotiationError","dspace:code":"404","dspace:reason":"Not found","@context":{"dcat":"http://www.w3.org/ns/dcat#","dct":"http://purl.org/dc/terms/","odrl":"http://www.w3.org/ns/odrl/2/","dspace":"https://w3id.org/dspace/v0.8/","@vocab":"https://w3id.org/edc/v0.0.1/ns/","edc":"https://w3id.org/edc/v0.0.1/ns/"}}
+[consumer]DEBUG 2025-07-29T12:05:06.976510622 [ConsumerContractNegotiationManagerImpl] ContractNegotiation b7a2117c-f79a-4332-b3db-2bf02135b6c1 is now in state TERMINATING
+[consumer]DEBUG 2025-07-29T12:05:07.69634491 DSP: Incoming CatalogRequestMessage for class org.eclipse.edc.connector.controlplane.catalog.spi.Catalog process
+[consumer]DEBUG 2025-07-29T12:05:07.69868083 Resolving secret did:web:localhost%3A7083-sts-client-secret
+[consumer]SEVERE 2025-07-29T12:05:07.946588582 ContractNegotiation: ID b7a2117c-f79a-4332-b3db-2bf02135b6c1. Attempt #1 failed to [CONSUMER] send termination. Fatal error occurred. Cause: Value in JsonObjects name/value pair cannot be null
+[consumer]DEBUG 2025-07-29T12:05:07.946905996 [ConsumerContractNegotiationManagerImpl] ContractNegotiation b7a2117c-f79a-4332-b3db-2bf02135b6c1 is now in state TERMINATED
+[consumer]DEBUG 2025-07-29T12:05:11.876636835 [ExecutionManager] Run pre-execution task
+[consumer]DEBUG 2025-07-29T12:05:11.877107124 [DEMO] Node filter: skipping node 'did:web:localhost%3A7083' for participant 'did:web:localhost%3A7083'
+[consumer]DEBUG 2025-07-29T12:05:11.877195787 [ExecutionManager] Loaded 1 work items from storage
+[consumer]DEBUG 2025-07-29T12:05:11.8772523 [ExecutionManager] Crawler parallelism is 1, based on config and number of work items
+[consumer]DEBUG 2025-07-29T12:05:11.877384569 [ExecutionManager] Crawler-97d9d625-bc64-40c9-b3e4-40967a6f13e4: WorkItem acquired
+[consumer]DEBUG 2025-07-29T12:05:11.878993451 Resolving secret did:web:localhost%3A7083-sts-client-secret
+[consumer]DEBUG 2025-07-29T12:05:11.920698837 Resolving secret did:web:localhost%3A7083-sts-client-secret
+[consumer]DEBUG 2025-07-29T12:05:11.960368708 Resolving secret did:web:localhost%3A7083-sts-client-secret
+[consumer]DEBUG 2025-07-29T12:05:11.999756949 [ExecutionManager] Crawler [Crawler-97d9d625-bc64-40c9-b3e4-40967a6f13e4] is done
+[consumer]DEBUG 2025-07-29T12:05:14.088734379 DSP: Incoming CatalogRequestMessage for class org.eclipse.edc.connector.controlplane.catalog.spi.Catalog process
+[consumer]DEBUG 2025-07-29T12:05:14.090464924 Resolving secret did:web:localhost%3A7083-sts-client-secret
+[consumer]DEBUG 2025-07-29T12:05:17.69552296 DSP: Incoming CatalogRequestMessage for class org.eclipse.edc.connector.controlplane.catalog.spi.Catalog process
+[consumer]DEBUG 2025-07-29T12:05:17.697196137 Resolving secret did:web:localhost%3A7083-sts-client-secret
+[consumer]DEBUG 2025-07-29T12:05:21.876631323 [ExecutionManager] Run pre-execution task
+[consumer]DEBUG 2025-07-29T12:05:21.877184571 [DEMO] Node filter: skipping node 'did:web:localhost%3A7083' for participant 'did:web:localhost%3A7083'
+[consumer]DEBUG 2025-07-29T12:05:21.877273293 [ExecutionManager] Loaded 1 work items from storage
+[consumer]DEBUG 2025-07-29T12:05:21.877340027 [ExecutionManager] Crawler parallelism is 1, based on config and number of work items
+[consumer]DEBUG 2025-07-29T12:05:21.877499304 [ExecutionManager] Crawler-5068e14b-c9c6-4aae-9763-4a095223349c: WorkItem acquired
+[consumer]DEBUG 2025-07-29T12:05:21.888191775 Resolving secret did:web:localhost%3A7083-sts-client-secret
+[consumer]DEBUG 2025-07-29T12:05:21.935390954 Resolving secret did:web:localhost%3A7083-sts-client-secret
+[consumer]DEBUG 2025-07-29T12:05:21.97272321 Resolving secret did:web:localhost%3A7083-sts-client-secret
+[consumer]DEBUG 2025-07-29T12:05:22.0108295 [ExecutionManager] Crawler [Crawler-5068e14b-c9c6-4aae-9763-4a095223349c] is done
+[consumer]DEBUG 2025-07-29T12:05:24.098572158 DSP: Incoming CatalogRequestMessage for class org.eclipse.edc.connector.controlplane.catalog.spi.Catalog process
+[consumer]DEBUG 2025-07-29T12:05:24.100085575 Resolving secret did:web:localhost%3A7083-sts-client-secret
+[consumer]DEBUG 2025-07-29T12:05:24.486543708 [ConsumerContractNegotiationManagerImpl] ContractNegotiation 0c6de968-90f6-42e6-93c7-23fcdaf04526 is now in state INITIAL
+[consumer]DEBUG 2025-07-29T12:05:24.956028842 [ConsumerContractNegotiationManagerImpl] ContractNegotiation 0c6de968-90f6-42e6-93c7-23fcdaf04526 is now in state REQUESTING
+[consumer]DEBUG 2025-07-29T12:05:24.958491236 Resolving secret did:web:localhost%3A7083-sts-client-secret
+[consumer]SEVERE 2025-07-29T12:05:24.969081795 ContractNegotiation: ID 0c6de968-90f6-42e6-93c7-23fcdaf04526. Attempt #1 failed to [Consumer] send request. Fatal error occurred. Cause: {"@type":"dspace:ContractNegotiationError","dspace:code":"404","dspace:reason":"Not found","@context":{"dcat":"http://www.w3.org/ns/dcat#","dct":"http://purl.org/dc/terms/","odrl":"http://www.w3.org/ns/odrl/2/","dspace":"https://w3id.org/dspace/v0.8/","@vocab":"https://w3id.org/edc/v0.0.1/ns/","edc":"https://w3id.org/edc/v0.0.1/ns/"}}
+[consumer]DEBUG 2025-07-29T12:05:24.969218263 [ConsumerContractNegotiationManagerImpl] ContractNegotiation 0c6de968-90f6-42e6-93c7-23fcdaf04526 is now in state TERMINATING
+[consumer]SEVERE 2025-07-29T12:05:25.964689387 ContractNegotiation: ID 0c6de968-90f6-42e6-93c7-23fcdaf04526. Attempt #1 failed to [CONSUMER] send termination. Fatal error occurred. Cause: Value in JsonObjects name/value pair cannot be null
+[consumer]DEBUG 2025-07-29T12:05:25.964814892 [ConsumerContractNegotiationManagerImpl] ContractNegotiation 0c6de968-90f6-42e6-93c7-23fcdaf04526 is now in state TERMINATED
+[consumer]DEBUG 2025-07-29T12:05:27.698387994 DSP: Incoming CatalogRequestMessage for class org.eclipse.edc.connector.controlplane.catalog.spi.Catalog process
+[consumer]DEBUG 2025-07-29T12:05:27.700991441 Resolving secret did:web:localhost%3A7083-sts-client-secret
+[consumer]DEBUG 2025-07-29T12:05:31.876540326 [ExecutionManager] Run pre-execution task
+[consumer]DEBUG 2025-07-29T12:05:31.877008566 [DEMO] Node filter: skipping node 'did:web:localhost%3A7083' for participant 'did:web:localhost%3A7083'
+[consumer]DEBUG 2025-07-29T12:05:31.877072319 [ExecutionManager] Loaded 1 work items from storage
+[consumer]DEBUG 2025-07-29T12:05:31.877122091 [ExecutionManager] Crawler parallelism is 1, based on config and number of work items
+[consumer]DEBUG 2025-07-29T12:05:31.877262142 [ExecutionManager] Crawler-e56a713b-9533-423e-8f7b-221d13d78926: WorkItem acquired
+[consumer]DEBUG 2025-07-29T12:05:31.878973777 Resolving secret did:web:localhost%3A7083-sts-client-secret
+[consumer]DEBUG 2025-07-29T12:05:31.916564915 Resolving secret did:web:localhost%3A7083-sts-client-secret
+[consumer]DEBUG 2025-07-29T12:05:31.960345509 Resolving secret did:web:localhost%3A7083-sts-client-secret
+[consumer]DEBUG 2025-07-29T12:05:31.994672333 [ExecutionManager] Crawler [Crawler-e56a713b-9533-423e-8f7b-221d13d78926] is done
+[consumer]DEBUG 2025-07-29T12:05:34.087528144 DSP: Incoming CatalogRequestMessage for class org.eclipse.edc.connector.controlplane.catalog.spi.Catalog process
+[consumer]DEBUG 2025-07-29T12:05:34.088950442 Resolving secret did:web:localhost%3A7083-sts-client-secret
+[consumer]DEBUG 2025-07-29T12:05:37.695244101 DSP: Incoming CatalogRequestMessage for class org.eclipse.edc.connector.controlplane.catalog.spi.Catalog process
+[consumer]DEBUG 2025-07-29T12:05:37.696670768 Resolving secret did:web:localhost%3A7083-sts-client-secret
+[consumer]DEBUG 2025-07-29T12:05:41.876616005 [ExecutionManager] Run pre-execution task
+[consumer]DEBUG 2025-07-29T12:05:41.877175949 [DEMO] Node filter: skipping node 'did:web:localhost%3A7083' for participant 'did:web:localhost%3A7083'
+[consumer]DEBUG 2025-07-29T12:05:41.877255931 [ExecutionManager] Loaded 1 work items from storage
+[consumer]DEBUG 2025-07-29T12:05:41.877335683 [ExecutionManager] Crawler parallelism is 1, based on config and number of work items
+[consumer]DEBUG 2025-07-29T12:05:41.877457686 [ExecutionManager] Crawler-000325d9-8ab9-4070-b2b8-95685f43647f: WorkItem acquired
+[consumer]DEBUG 2025-07-29T12:05:41.87878651 Resolving secret did:web:localhost%3A7083-sts-client-secret
+[consumer]DEBUG 2025-07-29T12:05:41.912718516 Resolving secret did:web:localhost%3A7083-sts-client-secret
+[consumer]DEBUG 2025-07-29T12:05:41.958089074 Resolving secret did:web:localhost%3A7083-sts-client-secret
+[consumer]DEBUG 2025-07-29T12:05:41.991830681 [ExecutionManager] Crawler [Crawler-000325d9-8ab9-4070-b2b8-95685f43647f] is done
+[consumer]DEBUG 2025-07-29T12:05:44.086927382 DSP: Incoming CatalogRequestMessage for class org.eclipse.edc.connector.controlplane.catalog.spi.Catalog process
+[consumer]DEBUG 2025-07-29T12:05:44.088235276 Resolving secret did:web:localhost%3A7083-sts-client-secret
+[consumer]DEBUG 2025-07-29T12:05:47.694454457 DSP: Incoming CatalogRequestMessage for class org.eclipse.edc.connector.controlplane.catalog.spi.Catalog process
+[consumer]DEBUG 2025-07-29T12:05:47.695796576 Resolving secret did:web:localhost%3A7083-sts-client-secret
+[consumer]DEBUG 2025-07-29T12:05:48.015803203 [DataPlaneSelectorManagerImpl] DataPlaneInstance consumer is now in state AVAILABLE
+[consumer]DEBUG 2025-07-29T12:05:51.87656568 [ExecutionManager] Run pre-execution task
+[consumer]DEBUG 2025-07-29T12:05:51.877144633 [DEMO] Node filter: skipping node 'did:web:localhost%3A7083' for participant 'did:web:localhost%3A7083'
+[consumer]DEBUG 2025-07-29T12:05:51.877230146 [ExecutionManager] Loaded 1 work items from storage
+[consumer]DEBUG 2025-07-29T12:05:51.877289211 [ExecutionManager] Crawler parallelism is 1, based on config and number of work items
+[consumer]DEBUG 2025-07-29T12:05:51.87745863 [ExecutionManager] Crawler-3837893c-f4c0-4bc8-b120-eeb58757cced: WorkItem acquired
+[consumer]DEBUG 2025-07-29T12:05:51.878783782 Resolving secret did:web:localhost%3A7083-sts-client-secret
+[consumer]DEBUG 2025-07-29T12:05:51.913154992 Resolving secret did:web:localhost%3A7083-sts-client-secret
+[consumer]DEBUG 2025-07-29T12:05:51.946226232 Resolving secret did:web:localhost%3A7083-sts-client-secret
+[consumer]DEBUG 2025-07-29T12:05:51.980951073 [ExecutionManager] Crawler [Crawler-3837893c-f4c0-4bc8-b120-eeb58757cced] is done
+[consumer]DEBUG 2025-07-29T12:05:54.097380247 DSP: Incoming CatalogRequestMessage for class org.eclipse.edc.connector.controlplane.catalog.spi.Catalog process
+[consumer]DEBUG 2025-07-29T12:05:54.098993566 Resolving secret did:web:localhost%3A7083-sts-client-secret
+[consumer]DEBUG 2025-07-29T12:05:57.695262962 DSP: Incoming CatalogRequestMessage for class org.eclipse.edc.connector.controlplane.catalog.spi.Catalog process
+[consumer]DEBUG 2025-07-29T12:05:57.699192894 Resolving secret did:web:localhost%3A7083-sts-client-secret
+[consumer]DEBUG 2025-07-29T12:06:01.876582099 [ExecutionManager] Run pre-execution task
+[consumer]DEBUG 2025-07-29T12:06:01.877074922 [DEMO] Node filter: skipping node 'did:web:localhost%3A7083' for participant 'did:web:localhost%3A7083'
+[consumer]DEBUG 2025-07-29T12:06:01.877155695 [ExecutionManager] Loaded 1 work items from storage
+[consumer]DEBUG 2025-07-29T12:06:01.877216146 [ExecutionManager] Crawler parallelism is 1, based on config and number of work items
+[consumer]DEBUG 2025-07-29T12:06:01.877355109 [ExecutionManager] Crawler-adc318c1-11aa-4e64-9b33-61e53a5b89fa: WorkItem acquired
+[consumer]DEBUG 2025-07-29T12:06:01.878465082 Resolving secret did:web:localhost%3A7083-sts-client-secret
+[consumer]DEBUG 2025-07-29T12:06:01.911270456 Resolving secret did:web:localhost%3A7083-sts-client-secret
+[consumer]DEBUG 2025-07-29T12:06:01.942829854 Resolving secret did:web:localhost%3A7083-sts-client-secret
+[consumer]DEBUG 2025-07-29T12:06:01.976602385 [ExecutionManager] Crawler [Crawler-adc318c1-11aa-4e64-9b33-61e53a5b89fa] is done
+[consumer]DEBUG 2025-07-29T12:06:04.086895473 DSP: Incoming CatalogRequestMessage for class org.eclipse.edc.connector.controlplane.catalog.spi.Catalog process
+[consumer]DEBUG 2025-07-29T12:06:04.088207507 Resolving secret did:web:localhost%3A7083-sts-client-secret
+[consumer]DEBUG 2025-07-29T12:06:07.693882781 DSP: Incoming CatalogRequestMessage for class org.eclipse.edc.connector.controlplane.catalog.spi.Catalog process
+[consumer]DEBUG 2025-07-29T12:06:07.695177969 Resolving secret did:web:localhost%3A7083-sts-client-secret
+[consumer]DEBUG 2025-07-29T12:06:11.876620553 [ExecutionManager] Run pre-execution task
+[consumer]DEBUG 2025-07-29T12:06:11.877175627 [DEMO] Node filter: skipping node 'did:web:localhost%3A7083' for participant 'did:web:localhost%3A7083'
+[consumer]DEBUG 2025-07-29T12:06:11.87726133 [ExecutionManager] Loaded 1 work items from storage
+[consumer]DEBUG 2025-07-29T12:06:11.87730103 [ExecutionManager] Crawler parallelism is 1, based on config and number of work items
+[consumer]DEBUG 2025-07-29T12:06:11.877434992 [ExecutionManager] Crawler-0f116dc4-0201-41ed-9a8d-d15e2267b307: WorkItem acquired
+[consumer]DEBUG 2025-07-29T12:06:11.878526947 Resolving secret did:web:localhost%3A7083-sts-client-secret
+[consumer]DEBUG 2025-07-29T12:06:11.912425885 Resolving secret did:web:localhost%3A7083-sts-client-secret
+[consumer]DEBUG 2025-07-29T12:06:11.946689616 Resolving secret did:web:localhost%3A7083-sts-client-secret
+[consumer]DEBUG 2025-07-29T12:06:11.981205956 [ExecutionManager] Crawler [Crawler-0f116dc4-0201-41ed-9a8d-d15e2267b307] is done
+[consumer]DEBUG 2025-07-29T12:06:14.086468091 DSP: Incoming CatalogRequestMessage for class org.eclipse.edc.connector.controlplane.catalog.spi.Catalog process
+[consumer]DEBUG 2025-07-29T12:06:14.087775034 Resolving secret did:web:localhost%3A7083-sts-client-secret
+[consumer]DEBUG 2025-07-29T12:06:17.694302819 DSP: Incoming CatalogRequestMessage for class org.eclipse.edc.connector.controlplane.catalog.spi.Catalog process
+[consumer]DEBUG 2025-07-29T12:06:17.695608203 Resolving secret did:web:localhost%3A7083-sts-client-secret
+[consumer]DEBUG 2025-07-29T12:06:21.876601998 [ExecutionManager] Run pre-execution task
+[consumer]DEBUG 2025-07-29T12:06:21.877103476 [DEMO] Node filter: skipping node 'did:web:localhost%3A7083' for participant 'did:web:localhost%3A7083'
+[consumer]DEBUG 2025-07-29T12:06:21.877198101 [ExecutionManager] Loaded 1 work items from storage
+[consumer]DEBUG 2025-07-29T12:06:21.877249099 [ExecutionManager] Crawler parallelism is 1, based on config and number of work items
+[consumer]DEBUG 2025-07-29T12:06:21.877356672 [ExecutionManager] Crawler-04625864-7810-4086-9526-4548047e19ab: WorkItem acquired
+[consumer]DEBUG 2025-07-29T12:06:21.878515241 Resolving secret did:web:localhost%3A7083-sts-client-secret
+[consumer]DEBUG 2025-07-29T12:06:21.913914794 Resolving secret did:web:localhost%3A7083-sts-client-secret
+[consumer]DEBUG 2025-07-29T12:06:21.944464672 Resolving secret did:web:localhost%3A7083-sts-client-secret
+[consumer]DEBUG 2025-07-29T12:06:21.976535798 [ExecutionManager] Crawler [Crawler-04625864-7810-4086-9526-4548047e19ab] is done
+[consumer]DEBUG 2025-07-29T12:06:24.08716981 DSP: Incoming CatalogRequestMessage for class org.eclipse.edc.connector.controlplane.catalog.spi.Catalog process
+[consumer]DEBUG 2025-07-29T12:06:24.08860353 Resolving secret did:web:localhost%3A7083-sts-client-secret
+[consumer]DEBUG 2025-07-29T12:06:27.693079184 DSP: Incoming CatalogRequestMessage for class org.eclipse.edc.connector.controlplane.catalog.spi.Catalog process
+[consumer]DEBUG 2025-07-29T12:06:27.694577439 Resolving secret did:web:localhost%3A7083-sts-client-secret
+[consumer]DEBUG 2025-07-29T12:06:31.876874315 [ExecutionManager] Run pre-execution task
+[consumer]DEBUG 2025-07-29T12:06:31.87841949 [DEMO] Node filter: skipping node 'did:web:localhost%3A7083' for participant 'did:web:localhost%3A7083'
+[consumer]DEBUG 2025-07-29T12:06:31.885227334 [ExecutionManager] Loaded 1 work items from storage
+[consumer]DEBUG 2025-07-29T12:06:31.885373598 [ExecutionManager] Crawler parallelism is 1, based on config and number of work items
+[consumer]DEBUG 2025-07-29T12:06:31.885694237 [ExecutionManager] Crawler-8454f7b9-d4c7-430f-b427-1a77e21e47cc: WorkItem acquired
+[consumer]DEBUG 2025-07-29T12:06:31.88845477 Resolving secret did:web:localhost%3A7083-sts-client-secret
+[consumer]DEBUG 2025-07-29T12:06:31.925307691 Resolving secret did:web:localhost%3A7083-sts-client-secret
+[consumer]DEBUG 2025-07-29T12:06:31.956109908 Resolving secret did:web:localhost%3A7083-sts-client-secret
+[consumer]DEBUG 2025-07-29T12:06:31.985402698 [ExecutionManager] Crawler [Crawler-8454f7b9-d4c7-430f-b427-1a77e21e47cc] is done
+[consumer]DEBUG 2025-07-29T12:06:34.088077589 DSP: Incoming CatalogRequestMessage for class org.eclipse.edc.connector.controlplane.catalog.spi.Catalog process
+[consumer]DEBUG 2025-07-29T12:06:34.090087859 Resolving secret did:web:localhost%3A7083-sts-client-secret
+[consumer]DEBUG 2025-07-29T12:06:37.696335622 DSP: Incoming CatalogRequestMessage for class org.eclipse.edc.connector.controlplane.catalog.spi.Catalog process
+[consumer]DEBUG 2025-07-29T12:06:37.698007561 Resolving secret did:web:localhost%3A7083-sts-client-secret
+[consumer]DEBUG 2025-07-29T12:06:41.876575165 [ExecutionManager] Run pre-execution task
+[consumer]DEBUG 2025-07-29T12:06:41.877229866 [DEMO] Node filter: skipping node 'did:web:localhost%3A7083' for participant 'did:web:localhost%3A7083'
+[consumer]DEBUG 2025-07-29T12:06:41.877299063 [ExecutionManager] Loaded 1 work items from storage
+[consumer]DEBUG 2025-07-29T12:06:41.877336857 [ExecutionManager] Crawler parallelism is 1, based on config and number of work items
+[consumer]DEBUG 2025-07-29T12:06:41.877485636 [ExecutionManager] Crawler-ab3302d9-5fc7-4e72-bb05-7061fff942c0: WorkItem acquired
+[consumer]DEBUG 2025-07-29T12:06:41.878605534 Resolving secret did:web:localhost%3A7083-sts-client-secret
+[consumer]DEBUG 2025-07-29T12:06:41.91268438 Resolving secret did:web:localhost%3A7083-sts-client-secret
+[consumer]DEBUG 2025-07-29T12:06:41.948111706 Resolving secret did:web:localhost%3A7083-sts-client-secret
+[consumer]DEBUG 2025-07-29T12:06:41.980020512 [ExecutionManager] Crawler [Crawler-ab3302d9-5fc7-4e72-bb05-7061fff942c0] is done
