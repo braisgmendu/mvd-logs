@@ -1,0 +1,406 @@
+[provider-qna] INFO 2025-07-30T11:49:35.600531698 Booting EDC runtime
+[provider-qna] WARNING 2025-07-30T11:49:35.641591385 Configuration file does not exist: dataspaceconnector-configuration.properties. Ignoring.
+[provider-qna] DEBUG 2025-07-30T11:49:35.645700988 ConfigurationExtension Initialized: FS Configuration
+[provider-qna] WARNING 2025-07-30T11:49:35.66548481 A configuration value for 'edc.runtime.id' was found. Explicitly configuring this is not supported anymore and may get removed in the future. A random value will be assigned.
+[provider-qna] DEBUG 2025-07-30T11:49:36.36232932 Initialized Boot Services
+[provider-qna] WARNING 2025-07-30T11:49:36.457482082 Using the InMemoryVault is not suitable for production scenarios and should be replaced with an actual Vault!
+[provider-qna] DEBUG 2025-07-30T11:49:36.461128616 Storing secret did:web:localhost%3A7093-alias
+[provider-qna] DEBUG 2025-07-30T11:49:36.46211903 Storing secret did:web:localhost%3A7093#key-1
+[provider-qna] WARNING 2025-07-30T11:49:36.46297 [DEMO] >>>>>> This extension hard-codes a keypair into the vault! <<<<<<
+[provider-qna] DEBUG 2025-07-30T11:49:36.463278724 Initialized org.eclipse.edc.iam.identitytrust.core.SecretsExtension
+[provider-qna] WARNING 2025-07-30T11:49:36.46596115 A service of the type java.time.Clock was already registered and has now been replaced with a SystemClock instance.
+[provider-qna] DEBUG 2025-07-30T11:49:36.46970253 Config value: no setting found for 'edc.http.client.https.enforce', falling back to default value 'false'
+[provider-qna] DEBUG 2025-07-30T11:49:36.471981758 Config value: no setting found for 'edc.http.client.timeout.connect', falling back to default value '30'
+[provider-qna] DEBUG 2025-07-30T11:49:36.472454674 Config value: no setting found for 'edc.http.client.timeout.read', falling back to default value '30'
+[provider-qna] DEBUG 2025-07-30T11:49:36.474988827 Config value: no setting found for 'edc.http.client.send.buffer.size', falling back to default value '0'
+[provider-qna] DEBUG 2025-07-30T11:49:36.476091647 Config value: no setting found for 'edc.http.client.receive.buffer.size', falling back to default value '0'
+[provider-qna] DEBUG 2025-07-30T11:49:36.482025161 Config value: no setting found for 'edc.core.retry.retries.max', falling back to default value '5'
+[provider-qna] DEBUG 2025-07-30T11:49:36.482964151 Config value: no setting found for 'edc.core.retry.backoff.min', falling back to default value '500'
+[provider-qna] DEBUG 2025-07-30T11:49:36.484714382 Config value: no setting found for 'edc.core.retry.backoff.max', falling back to default value '10000'
+[provider-qna] DEBUG 2025-07-30T11:49:36.485619225 Config value: no setting found for 'edc.core.retry.log.on.retry', falling back to default value 'false'
+[provider-qna] DEBUG 2025-07-30T11:49:36.488520131 Config value: no setting found for 'edc.core.retry.log.on.retry.scheduled', falling back to default value 'false'
+[provider-qna] DEBUG 2025-07-30T11:49:36.49285131 Config value: no setting found for 'edc.core.retry.log.on.retries.exceeded', falling back to default value 'false'
+[provider-qna] DEBUG 2025-07-30T11:49:36.493424717 Config value: no setting found for 'edc.core.retry.log.on.failed.attempt', falling back to default value 'false'
+[provider-qna] DEBUG 2025-07-30T11:49:36.494146246 Config value: no setting found for 'edc.core.retry.log.on.abort', falling back to default value 'false'
+[provider-qna] DEBUG 2025-07-30T11:49:36.495591487 Initialized Core Default Services
+[provider-qna] INFO 2025-07-30T11:49:37.308090906 HTTPS enforcement it not enabled, please enable it in a production environment
+[provider-qna] INFO 2025-07-30T11:49:38.067005093 HTTPS enforcement it not enabled, please enable it in a production environment
+[provider-qna] WARNING 2025-07-30T11:49:38.071003488 Config value: no setting found for 'edc.hostname', falling back to default value 'localhost'
+[provider-qna] DEBUG 2025-07-30T11:49:38.078768591 Initialized Core Services
+[provider-qna] DEBUG 2025-07-30T11:49:38.625724368 Initialized org.eclipse.edc.connector.core.SecurityDefaultServicesExtension
+[provider-qna] DEBUG 2025-07-30T11:49:39.230599708 Initialized org.eclipse.edc.token.TokenServicesExtension
+[provider-qna] DEBUG 2025-07-30T11:49:39.237672801 Config value: no setting found for 'edc.iam.sts.token.expiration', falling back to default value '5'
+[provider-qna] DEBUG 2025-07-30T11:49:39.250993539 Initialized org.eclipse.edc.iam.identitytrust.core.DcpDefaultServicesExtension
+[provider-qna] DEBUG 2025-07-30T11:49:39.292721049 Initialized org.eclipse.edc.demo.dcp.core.DcpPatchExtension
+[provider-qna] DEBUG 2025-07-30T11:49:39.303542374 Initialized org.eclipse.edc.demo.dcp.policy.PolicyEvaluationExtension
+[provider-qna] DEBUG 2025-07-30T11:49:39.313800622 Config value: no setting found for 'edc.did.resolver.cache.expiry', falling back to default value '300000'
+[provider-qna] DEBUG 2025-07-30T11:49:39.335197832 Initialized Identity Did Core
+[provider-qna] DEBUG 2025-07-30T11:49:39.342661824 Initialized MVD Participant Resolver Extension
+[provider-qna] DEBUG 2025-07-30T11:49:39.376333196 Config value: no setting found for 'web.http.default.port', falling back to default value '8181'
+[provider-qna] DEBUG 2025-07-30T11:49:39.377521278 Config value: no setting found for 'web.http.default.path', falling back to default value '/api'
+[provider-qna] DEBUG 2025-07-30T11:49:39.386880504 Config value: no setting found for 'edc.web.https.keystore.password', falling back to default value 'password'
+[provider-qna] DEBUG 2025-07-30T11:49:39.387542516 Config value: no setting found for 'edc.web.https.keymanager.password', falling back to default value 'password'
+[provider-qna] DEBUG 2025-07-30T11:49:39.388998809 Config value: no setting found for 'edc.web.https.keystore.type', falling back to default value 'PKCS12'
+[provider-qna] DEBUG 2025-07-30T11:49:39.768552897 Initialized Jetty Service
+[provider-qna] DEBUG 2025-07-30T11:49:39.777907627 Initialized Jersey Web Service
+[provider-qna] DEBUG 2025-07-30T11:49:39.783653859 Initialized Sts remote client configuration extension
+[provider-qna] DEBUG 2025-07-30T11:49:39.784427367 Initialized OAuth2 Client
+[provider-qna] DEBUG 2025-07-30T11:49:39.786582634 Initialized Sts remote client configuration extension
+[provider-qna] DEBUG 2025-07-30T11:49:39.787994748 Config value: no setting found for 'edc.jsonld.vocab.disable', falling back to default value 'false'
+[provider-qna] DEBUG 2025-07-30T11:49:39.788930314 Config value: no setting found for 'edc.jsonld.http.enabled', falling back to default value 'false'
+[provider-qna] DEBUG 2025-07-30T11:49:39.789638237 Config value: no setting found for 'edc.jsonld.prefixes.check', falling back to default value 'true'
+[provider-qna] DEBUG 2025-07-30T11:49:39.790336551 Config value: no setting found for 'edc.jsonld.https.enabled', falling back to default value 'false'
+[provider-qna] DEBUG 2025-07-30T11:49:39.819741511 Initialized JSON-LD Extension
+[provider-qna] DEBUG 2025-07-30T11:49:40.072615896 Initialized Revocation Service Extension
+[provider-qna] DEBUG 2025-07-30T11:49:40.076728977 Config value: no setting found for 'edc.sql.store.jti.cleanup.period', falling back to default value '60'
+[provider-qna] DEBUG 2025-07-30T11:49:40.083946598 Config value: no setting found for 'edc.dcp.v08.forced', falling back to default value 'false'
+[provider-qna] DEBUG 2025-07-30T11:49:40.085390191 Config value: no setting found for 'edc.iam.credential.revocation.cache.validity', falling back to default value '900000'
+[provider-qna] DEBUG 2025-07-30T11:49:40.100699285 Initialized org.eclipse.edc.iam.identitytrust.core.IdentityAndTrustExtension
+[provider-qna] DEBUG 2025-07-30T11:49:40.114823171 Initialized Control Plane Default Services
+[provider-qna] DEBUG 2025-07-30T11:49:40.125520497 Initialized org.eclipse.edc.connector.controlplane.contract.ContractNegotiationDefaultServicesExtension
+[provider-qna] DEBUG 2025-07-30T11:49:40.132300926 Config value: no setting found for 'edc.negotiation.provider.state-machine.batch-size', falling back to default value '20'
+[provider-qna] DEBUG 2025-07-30T11:49:40.133082488 Config value: no setting found for 'edc.negotiation.state-machine.iteration-wait-millis', falling back to default value '1000'
+[provider-qna] DEBUG 2025-07-30T11:49:40.134598454 Config value: no setting found for 'edc.negotiation.provider.send.retry.limit', falling back to default value '7'
+[provider-qna] DEBUG 2025-07-30T11:49:40.136698492 Config value: no setting found for 'edc.negotiation.provider.send.retry.base-delay.ms', falling back to default value '1000'
+[provider-qna] DEBUG 2025-07-30T11:49:40.137272207 Config value: no setting found for 'edc.negotiation.consumer.state-machine.batch-size', falling back to default value '20'
+[provider-qna] DEBUG 2025-07-30T11:49:40.137672186 Config value: no setting found for 'edc.negotiation.consumer.send.retry.limit', falling back to default value '7'
+[provider-qna] DEBUG 2025-07-30T11:49:40.138709208 Config value: no setting found for 'edc.negotiation.consumer.send.retry.base-delay.ms', falling back to default value '1000'
+[provider-qna] DEBUG 2025-07-30T11:49:40.187120766 Initialized Contract Core
+[provider-qna] DEBUG 2025-07-30T11:49:40.196132511 Initialized Transfer Process Default Services
+[provider-qna] DEBUG 2025-07-30T11:49:40.214314496 Config value: no setting found for 'edc.transfer.send.retry.base-delay.ms', falling back to default value '1000'
+[provider-qna] DEBUG 2025-07-30T11:49:40.214919749 Config value: no setting found for 'edc.transfer.state-machine.batch-size', falling back to default value '20'
+[provider-qna] DEBUG 2025-07-30T11:49:40.215307865 Config value: no setting found for 'edc.transfer.send.retry.limit', falling back to default value '7'
+[provider-qna] DEBUG 2025-07-30T11:49:40.215873315 Config value: no setting found for 'edc.transfer.state-machine.iteration-wait-millis', falling back to default value '1000'
+[provider-qna] DEBUG 2025-07-30T11:49:40.240575908 Initialized Transfer Core
+[provider-qna] DEBUG 2025-07-30T11:49:40.243532396 Initialized Catalog Default Services
+[provider-qna] DEBUG 2025-07-30T11:49:40.250746732 Initialized Catalog Core
+[provider-qna] DEBUG 2025-07-30T11:49:40.262943789 Config value: no setting found for 'edc.policy.validation.enabled', falling back to default value 'false'
+[provider-qna] WARNING 2025-07-30T11:49:40.265572276 No TransactionContext registered, a no-op implementation will be used, not suitable for production environments
+[provider-qna] DEBUG 2025-07-30T11:49:40.267085273 Initialized Control Plane Services
+[provider-qna] DEBUG 2025-07-30T11:49:40.320836145 Initialized Management API: Secret
+[provider-qna] DEBUG 2025-07-30T11:49:40.322597947 Initialized org.eclipse.edc.connector.core.LocalPublicKeyDefaultExtension
+[provider-qna] DEBUG 2025-07-30T11:49:40.323107473 Initialized Data Plane Framework Default Services
+[provider-qna] DEBUG 2025-07-30T11:49:40.327705183 Initialized Data Plane Default IAM Services
+[provider-qna] DEBUG 2025-07-30T11:49:40.331982474 DataPlane Access Control: default implementation is used, will always return Result.success()
+[provider-qna] DEBUG 2025-07-30T11:49:40.337839 Initialized Data Plane IAM
+[provider-qna] WARNING 2025-07-30T11:49:40.343920067 The `data-plane-public-api-v2` has been deprecated, please provide analternative implementation for Http Proxy if needed
+[provider-qna] WARNING 2025-07-30T11:49:40.349215177 The public API endpoint was not explicitly configured, the default 'http://localhost:12001/api/public' will be used.
+[provider-qna] DEBUG 2025-07-30T11:49:40.351743307 Initialized Data Plane Public API
+[provider-qna] DEBUG 2025-07-30T11:49:40.357519304 Initialized DCP scope extractor extension
+[provider-qna] DEBUG 2025-07-30T11:49:40.384498054 Initialized org.eclipse.edc.iam.identitytrust.core.IdentityTrustTransformExtension
+[provider-qna] WARNING 2025-07-30T11:49:40.38552769 The list of trusted issuers is empty
+[provider-qna] DEBUG 2025-07-30T11:49:40.386188339 Initialized org.eclipse.edc.iam.identitytrust.issuer.configuration.TrustedIssuerConfigurationExtension
+[provider-qna] DEBUG 2025-07-30T11:49:40.386385322 Initialized Api Core Default Services
+[provider-qna] DEBUG 2025-07-30T11:49:40.396497536 Config value: no setting found for 'edc.api.auth.dac.validation.tolerance', falling back to default value '5000'
+[provider-qna] DEBUG 2025-07-30T11:49:40.397387876 Config value: no setting found for 'edc.api.auth.dac.cache.validity', falling back to default value '300000'
+[provider-qna] WARNING 2025-07-30T11:49:40.397736821 [Delegated API Authentication] No audience configured for delegated authentication, defaulting to the participantId
+[provider-qna] DEBUG 2025-07-30T11:49:40.404069653 Initialized Delegating Authentication Service Extension
+[provider-qna] DEBUG 2025-07-30T11:49:40.40451968 Initialized Control Plane HTTP API client
+[provider-qna] DEBUG 2025-07-30T11:49:40.41189319 Config value: no setting found for 'edc.dataplane.state-machine.flow.lease.time', falling back to default value '500'
+[provider-qna] DEBUG 2025-07-30T11:49:40.414824173 Config value: no setting found for 'edc.dataplane.state-machine.flow.lease.factor', falling back to default value '5'
+[provider-qna] DEBUG 2025-07-30T11:49:40.422436684 Config value: no setting found for 'edc.dataplane.send.retry.limit', falling back to default value '7'
+[provider-qna] DEBUG 2025-07-30T11:49:40.423140979 Config value: no setting found for 'edc.dataplane.transfer.threads', falling back to default value '20'
+[provider-qna] DEBUG 2025-07-30T11:49:40.423549491 Config value: no setting found for 'edc.dataplane.state-machine.iteration-wait-millis', falling back to default value '1000'
+[provider-qna] DEBUG 2025-07-30T11:49:40.423913371 Config value: no setting found for 'edc.dataplane.state-machine.batch-size', falling back to default value '20'
+[provider-qna] DEBUG 2025-07-30T11:49:40.439494948 Config value: no setting found for 'edc.dataplane.send.retry.base-delay.ms', falling back to default value '1000'
+[provider-qna] DEBUG 2025-07-30T11:49:40.44572735 Initialized Data Plane Framework
+[provider-qna] DEBUG 2025-07-30T11:49:40.446663317 Config value: no setting found for 'edc.dataplane.http.sink.partition.size', falling back to default value '5'
+[provider-qna] DEBUG 2025-07-30T11:49:40.458507641 Initialized Data Plane HTTP
+[provider-qna] DEBUG 2025-07-30T11:49:40.480639086 Initialized Data Plane HTTP OAuth2
+[provider-qna] DEBUG 2025-07-30T11:49:40.483369781 Config value: no setting found for 'edc.catalog.cache.partition.num.crawlers', falling back to default value '2'
+[provider-qna] DEBUG 2025-07-30T11:49:40.488123886 Initialized Federated Catalog Default Services
+[provider-qna] DEBUG 2025-07-30T11:49:40.496405491 Config value: no setting found for 'edc.catalog.cache.partition.num.crawlers', falling back to default value '2'
+[provider-qna] DEBUG 2025-07-30T11:49:40.496850386 Config value: no setting found for 'edc.catalog.cache.execution.enabled', falling back to default value 'true'
+[provider-qna] DEBUG 2025-07-30T11:49:40.517857909 Initialized Federated Catalog Cache
+[provider-qna] DEBUG 2025-07-30T11:49:40.545676352 Initialized API Core
+[provider-qna] DEBUG 2025-07-30T11:49:40.556735978 Initialized DataPlane Signaling API extension
+[provider-qna] DEBUG 2025-07-30T11:49:40.559294776 Config value: no setting found for 'edc.dsp.well-known-path.enabled', falling back to default value 'false'
+[provider-qna] DEBUG 2025-07-30T11:49:40.562390855 Initialized Dataspace Protocol Core Extension
+[provider-qna] WARNING 2025-07-30T11:49:40.570903614 No TokenDecorator was registered. The 'scope' field of outgoing protocol messages will be empty
+[provider-qna] DEBUG 2025-07-30T11:49:40.596496104 Initialized Dataspace Protocol Catalog HTTP Dispatcher Extension
+[provider-qna] DEBUG 2025-07-30T11:49:40.61164927 Initialized Dataspace Protocol Catalog Transform Extension
+[provider-qna] DEBUG 2025-07-30T11:49:40.622525193 Config value: no setting found for 'edc.dsp.well-known-path.enabled', falling back to default value 'false'
+[provider-qna] DEBUG 2025-07-30T11:49:40.653436354 Initialized Dataspace Protocol API Configuration Extension
+[provider-qna] DEBUG 2025-07-30T11:49:40.658431724 Initialized Data Plane Signaling Client
+[provider-qna] DEBUG 2025-07-30T11:49:40.659364376 Using embedded Data Plane client.
+[provider-qna] DEBUG 2025-07-30T11:49:40.665682834 Initialized Data Plane Selector Default Services
+[provider-qna] DEBUG 2025-07-30T11:49:40.682016612 Config value: no setting found for 'edc.data.plane.selector.state-machine.batch-size', falling back to default value '20'
+[provider-qna] DEBUG 2025-07-30T11:49:40.686472084 Config value: no setting found for 'edc.data.plane.selector.state-machine.check.period', falling back to default value '60'
+[provider-qna] DEBUG 2025-07-30T11:49:40.689190603 Config value: no setting found for 'edc.data.plane.selector.state-machine.iteration-wait-millis', falling back to default value '1000'
+[provider-qna] DEBUG 2025-07-30T11:49:40.693175702 Initialized Data Plane Selector core
+[provider-qna] DEBUG 2025-07-30T11:49:40.708096393 Initialized org.eclipse.edc.connector.dataplane.selector.DataPlaneSelectorApiExtension
+[provider-qna] DEBUG 2025-07-30T11:49:40.725681727 Initialized Dataplane Selector Control API
+[provider-qna] DEBUG 2025-07-30T11:49:41.317048566 Initialized Control API configuration
+[provider-qna] DEBUG 2025-07-30T11:49:41.317648666 Config value: no setting found for 'edc.dataplane.client.selector.strategy', falling back to default value 'random'
+[provider-qna] DEBUG 2025-07-30T11:49:41.319354756 Initialized org.eclipse.edc.connector.controlplane.transfer.dataplane.TransferDataPlaneSignalingExtension
+[provider-qna] DEBUG 2025-07-30T11:49:41.321499106 Initialized Data Plane Signaling transform Client
+[provider-qna] DEBUG 2025-07-30T11:49:41.326826587 Initialized Management API configuration
+[provider-qna] DEBUG 2025-07-30T11:49:41.331882777 Initialized Dataspace Protocol Negotiation HTTP Dispatcher Extension
+[provider-qna] DEBUG 2025-07-30T11:49:41.352800321 Initialized Dataspace Protocol Negotiation Transform Extension
+[provider-qna] DEBUG 2025-07-30T11:49:41.450869865 Initialized Dataspace Protocol Transfer HTTP Dispatcher Extension
+[provider-qna] DEBUG 2025-07-30T11:49:41.462525866 Initialized Dataspace Protocol Transfer Process Transform Extension
+[provider-qna] DEBUG 2025-07-30T11:49:41.466961316 Initialized Cache Query API Extension
+[provider-qna] DEBUG 2025-07-30T11:49:41.471966309 Initialized Management API: Asset
+[provider-qna] DEBUG 2025-07-30T11:49:41.488647667 Initialized Management API: Catalog
+[provider-qna] DEBUG 2025-07-30T11:49:41.496154095 Initialized Management API: Contract Agreement
+[provider-qna] DEBUG 2025-07-30T11:49:41.509901956 Initialized Management API: Contract Definition
+[provider-qna] DEBUG 2025-07-30T11:49:41.528236053 Initialized Management API: Contract Negotiation
+[provider-qna] DEBUG 2025-07-30T11:49:41.528763429 Initialized Endpoint Data Reference Core Default Services Extension
+[provider-qna] DEBUG 2025-07-30T11:49:41.532860858 Initialized org.eclipse.edc.edr.store.EndpointDataReferenceStoreExtension
+[provider-qna] DEBUG 2025-07-30T11:49:41.53615142 Initialized Management API: EDR cache
+[provider-qna] DEBUG 2025-07-30T11:49:41.62941507 Initialized Management API: Policy Definition
+[provider-qna] DEBUG 2025-07-30T11:49:41.648870673 Initialized Management API: Transfer Process
+[provider-qna] DEBUG 2025-07-30T11:49:41.649620985 Initialized Dataspace Protocol Version HTTP Dispatcher Extension
+[provider-qna] DEBUG 2025-07-30T11:49:41.654419128 Initialized Dataspace Protocol Catalog Extension
+[provider-qna] DEBUG 2025-07-30T11:49:41.664108238 Initialized Dataspace Protocol Negotiation Api
+[provider-qna] DEBUG 2025-07-30T11:49:41.671034462 Initialized org.eclipse.edc.protocol.dsp.transferprocess.http.api.DspTransferProcessApiExtension
+[provider-qna] DEBUG 2025-07-30T11:49:41.674275473 Initialized Dataspace Protocol Version Api
+[provider-qna] DEBUG 2025-07-30T11:49:41.67741529 Initialized Management API: Protocol Version
+[provider-qna] DEBUG 2025-07-30T11:49:41.678890005 Initialized PolicyMonitor Default Services
+[provider-qna] DEBUG 2025-07-30T11:49:41.681299311 Config value: no setting found for 'edc.policy.monitor.state-machine.iteration-wait-millis', falling back to default value '1000'
+[provider-qna] DEBUG 2025-07-30T11:49:41.681784913 Config value: no setting found for 'edc.policy.monitor.state-machine.batch-size', falling back to default value '20'
+[provider-qna] DEBUG 2025-07-30T11:49:41.686136842 Initialized org.eclipse.edc.connector.policy.monitor.PolicyMonitorExtension
+[provider-qna] DEBUG 2025-07-30T11:49:41.690311562 Initialized Management API: Version Information
+[provider-qna] DEBUG 2025-07-30T11:49:41.690967883 Initialized Contract Negotiation command handlers
+[provider-qna] DEBUG 2025-07-30T11:49:41.691923087 Initialized org.eclipse.edc.connector.controlplane.transfer.TransferProcessCommandExtension
+[provider-qna] DEBUG 2025-07-30T11:49:41.692820463 Initialized Control Plane API
+[provider-qna] DEBUG 2025-07-30T11:49:41.69404786 Initialized Callback dispatcher extension
+[provider-qna] DEBUG 2025-07-30T11:49:41.695557708 Initialized Callback dispatcher http extension
+[provider-qna] DEBUG 2025-07-30T11:49:41.696286169 Config value: no setting found for 'edc.edr.receiver.sync', falling back to default value 'false'
+[provider-qna] DEBUG 2025-07-30T11:49:41.697999633 Initialized Endpoint Data Reference Store Receiver Extension
+[provider-qna] DEBUG 2025-07-30T11:49:41.699184558 Initialized Web DID
+[provider-qna] DEBUG 2025-07-30T11:49:41.703806004 Initialized Observability API
+[provider-qna] DEBUG 2025-07-30T11:49:41.705132264 Config value: no setting found for 'edc.data.plane.self.unregistration', falling back to default value 'false'
+[provider-qna] DEBUG 2025-07-30T11:49:41.706085232 Initialized Dataplane Self Registration
+[provider-qna] DEBUG 2025-07-30T11:49:41.708718643 Initialized Static token API Authentication
+[provider-qna] DEBUG 2025-07-30T11:49:41.71144924 Initialized Api Authentication Configuration Extension
+[provider-qna] DEBUG 2025-07-30T11:49:41.712054228 Prepared Boot Services
+[provider-qna] DEBUG 2025-07-30T11:49:41.713248847 Prepared org.eclipse.edc.iam.identitytrust.core.SecretsExtension
+[provider-qna] DEBUG 2025-07-30T11:49:41.714358076 Prepared Core Default Services
+[provider-qna] DEBUG 2025-07-30T11:49:41.717117725 Prepared Core Services
+[provider-qna] DEBUG 2025-07-30T11:49:41.717790989 Prepared org.eclipse.edc.connector.core.SecurityDefaultServicesExtension
+[provider-qna] DEBUG 2025-07-30T11:49:41.718294447 Prepared org.eclipse.edc.token.TokenServicesExtension
+[provider-qna] DEBUG 2025-07-30T11:49:41.718496644 Prepared org.eclipse.edc.iam.identitytrust.core.DcpDefaultServicesExtension
+[provider-qna] DEBUG 2025-07-30T11:49:41.718947667 Prepared org.eclipse.edc.demo.dcp.core.DcpPatchExtension
+[provider-qna] DEBUG 2025-07-30T11:49:41.719503993 Prepared org.eclipse.edc.demo.dcp.policy.PolicyEvaluationExtension
+[provider-qna] DEBUG 2025-07-30T11:49:41.719614542 Prepared Identity Did Core
+[provider-qna] DEBUG 2025-07-30T11:49:41.719722167 Prepared MVD Participant Resolver Extension
+[provider-qna] DEBUG 2025-07-30T11:49:41.719818951 Prepared Jetty Service
+[provider-qna] DEBUG 2025-07-30T11:49:41.719921838 Prepared Jersey Web Service
+[provider-qna] DEBUG 2025-07-30T11:49:41.720010182 Prepared Sts remote client configuration extension
+[provider-qna] DEBUG 2025-07-30T11:49:41.720115102 Prepared OAuth2 Client
+[provider-qna] DEBUG 2025-07-30T11:49:41.72021404 Prepared Sts remote client configuration extension
+[provider-qna] DEBUG 2025-07-30T11:49:41.720320445 Prepared JSON-LD Extension
+[provider-qna] DEBUG 2025-07-30T11:49:41.720428532 Prepared Revocation Service Extension
+[provider-qna] DEBUG 2025-07-30T11:49:41.720570503 Prepared org.eclipse.edc.iam.identitytrust.core.IdentityAndTrustExtension
+[provider-qna] DEBUG 2025-07-30T11:49:41.720661875 Prepared Control Plane Default Services
+[provider-qna] DEBUG 2025-07-30T11:49:41.720749073 Prepared org.eclipse.edc.connector.controlplane.contract.ContractNegotiationDefaultServicesExtension
+[provider-qna] DEBUG 2025-07-30T11:49:41.720831454 Prepared Contract Core
+[provider-qna] DEBUG 2025-07-30T11:49:41.720913044 Prepared Transfer Process Default Services
+[provider-qna] DEBUG 2025-07-30T11:49:41.720995899 Prepared Transfer Core
+[provider-qna] DEBUG 2025-07-30T11:49:41.721085139 Prepared Catalog Default Services
+[provider-qna] DEBUG 2025-07-30T11:49:41.721184177 Prepared Catalog Core
+[provider-qna] DEBUG 2025-07-30T11:49:41.721272978 Prepared Control Plane Services
+[provider-qna] DEBUG 2025-07-30T11:49:41.721358067 Prepared Management API: Secret
+[provider-qna] DEBUG 2025-07-30T11:49:41.722887164 Prepared org.eclipse.edc.connector.core.LocalPublicKeyDefaultExtension
+[provider-qna] DEBUG 2025-07-30T11:49:41.723031143 Prepared Data Plane Framework Default Services
+[provider-qna] DEBUG 2025-07-30T11:49:41.723126644 Prepared Data Plane Default IAM Services
+[provider-qna] DEBUG 2025-07-30T11:49:41.723218305 Prepared Data Plane IAM
+[provider-qna] DEBUG 2025-07-30T11:49:41.723308674 Prepared Data Plane Public API
+[provider-qna] DEBUG 2025-07-30T11:49:41.723397971 Prepared DCP scope extractor extension
+[provider-qna] DEBUG 2025-07-30T11:49:41.723491322 Prepared org.eclipse.edc.iam.identitytrust.core.IdentityTrustTransformExtension
+[provider-qna] DEBUG 2025-07-30T11:49:41.723579081 Prepared org.eclipse.edc.iam.identitytrust.issuer.configuration.TrustedIssuerConfigurationExtension
+[provider-qna] DEBUG 2025-07-30T11:49:41.723669165 Prepared Api Core Default Services
+[provider-qna] DEBUG 2025-07-30T11:49:41.723758461 Prepared Delegating Authentication Service Extension
+[provider-qna] DEBUG 2025-07-30T11:49:41.723859282 Prepared Control Plane HTTP API client
+[provider-qna] DEBUG 2025-07-30T11:49:41.723952422 Prepared Data Plane Framework
+[provider-qna] DEBUG 2025-07-30T11:49:41.724045633 Prepared Data Plane HTTP
+[provider-qna] DEBUG 2025-07-30T11:49:41.724513418 Prepared Data Plane HTTP OAuth2
+[provider-qna] DEBUG 2025-07-30T11:49:41.724906039 Prepared Federated Catalog Default Services
+[provider-qna] DEBUG 2025-07-30T11:49:41.725005222 Prepared Federated Catalog Cache
+[provider-qna] DEBUG 2025-07-30T11:49:41.725095972 Prepared API Core
+[provider-qna] DEBUG 2025-07-30T11:49:41.725181394 Prepared DataPlane Signaling API extension
+[provider-qna] DEBUG 2025-07-30T11:49:41.725269883 Prepared Dataspace Protocol Core Extension
+[provider-qna] DEBUG 2025-07-30T11:49:41.725353548 Prepared Dataspace Protocol Catalog HTTP Dispatcher Extension
+[provider-qna] DEBUG 2025-07-30T11:49:41.725439254 Prepared Dataspace Protocol Catalog Transform Extension
+[provider-qna] DEBUG 2025-07-30T11:49:41.72560191 Prepared Dataspace Protocol API Configuration Extension
+[provider-qna] DEBUG 2025-07-30T11:49:41.725692213 Prepared Data Plane Signaling Client
+[provider-qna] DEBUG 2025-07-30T11:49:41.725776098 Prepared Data Plane Selector Default Services
+[provider-qna] DEBUG 2025-07-30T11:49:41.725859025 Prepared Data Plane Selector core
+[provider-qna] DEBUG 2025-07-30T11:49:41.726050566 Prepared org.eclipse.edc.connector.dataplane.selector.DataPlaneSelectorApiExtension
+[provider-qna] DEBUG 2025-07-30T11:49:41.726150791 Prepared Dataplane Selector Control API
+[provider-qna] DEBUG 2025-07-30T11:49:41.726236929 Prepared Control API configuration
+[provider-qna] DEBUG 2025-07-30T11:49:41.726328327 Prepared org.eclipse.edc.connector.controlplane.transfer.dataplane.TransferDataPlaneSignalingExtension
+[provider-qna] DEBUG 2025-07-30T11:49:41.726422504 Prepared Data Plane Signaling transform Client
+[provider-qna] DEBUG 2025-07-30T11:49:41.726526537 Prepared Management API configuration
+[provider-qna] DEBUG 2025-07-30T11:49:41.726742749 Prepared Dataspace Protocol Negotiation HTTP Dispatcher Extension
+[provider-qna] DEBUG 2025-07-30T11:49:41.726840998 Prepared Dataspace Protocol Negotiation Transform Extension
+[provider-qna] DEBUG 2025-07-30T11:49:41.726932824 Prepared Dataspace Protocol Transfer HTTP Dispatcher Extension
+[provider-qna] DEBUG 2025-07-30T11:49:41.727016668 Prepared Dataspace Protocol Transfer Process Transform Extension
+[provider-qna] DEBUG 2025-07-30T11:49:41.727193973 Prepared Cache Query API Extension
+[provider-qna] DEBUG 2025-07-30T11:49:41.72728931 Prepared Management API: Asset
+[provider-qna] DEBUG 2025-07-30T11:49:41.727381425 Prepared Management API: Catalog
+[provider-qna] DEBUG 2025-07-30T11:49:41.727672084 Prepared Management API: Contract Agreement
+[provider-qna] DEBUG 2025-07-30T11:49:41.727966824 Prepared Management API: Contract Definition
+[provider-qna] DEBUG 2025-07-30T11:49:41.728197032 Prepared Management API: Contract Negotiation
+[provider-qna] DEBUG 2025-07-30T11:49:41.728283284 Prepared Endpoint Data Reference Core Default Services Extension
+[provider-qna] DEBUG 2025-07-30T11:49:41.728380851 Prepared org.eclipse.edc.edr.store.EndpointDataReferenceStoreExtension
+[provider-qna] DEBUG 2025-07-30T11:49:41.728619762 Prepared Management API: EDR cache
+[provider-qna] DEBUG 2025-07-30T11:49:41.728849176 Prepared Management API: Policy Definition
+[provider-qna] DEBUG 2025-07-30T11:49:41.729049837 Prepared Management API: Transfer Process
+[provider-qna] DEBUG 2025-07-30T11:49:41.729407866 Prepared Dataspace Protocol Version HTTP Dispatcher Extension
+[provider-qna] DEBUG 2025-07-30T11:49:41.731539267 Prepared Dataspace Protocol Catalog Extension
+[provider-qna] DEBUG 2025-07-30T11:49:41.731717886 Prepared Dataspace Protocol Negotiation Api
+[provider-qna] DEBUG 2025-07-30T11:49:41.731833836 Prepared org.eclipse.edc.protocol.dsp.transferprocess.http.api.DspTransferProcessApiExtension
+[provider-qna] DEBUG 2025-07-30T11:49:41.732009637 Prepared Dataspace Protocol Version Api
+[provider-qna] DEBUG 2025-07-30T11:49:41.73240123 Prepared Management API: Protocol Version
+[provider-qna] DEBUG 2025-07-30T11:49:41.732835206 Prepared PolicyMonitor Default Services
+[provider-qna] DEBUG 2025-07-30T11:49:41.732933251 Prepared org.eclipse.edc.connector.policy.monitor.PolicyMonitorExtension
+[provider-qna] DEBUG 2025-07-30T11:49:41.733022018 Prepared Management API: Version Information
+[provider-qna] DEBUG 2025-07-30T11:49:41.733115516 Prepared Contract Negotiation command handlers
+[provider-qna] DEBUG 2025-07-30T11:49:41.733280241 Prepared org.eclipse.edc.connector.controlplane.transfer.TransferProcessCommandExtension
+[provider-qna] DEBUG 2025-07-30T11:49:41.733466841 Prepared Control Plane API
+[provider-qna] DEBUG 2025-07-30T11:49:41.733888064 Prepared Callback dispatcher extension
+[provider-qna] DEBUG 2025-07-30T11:49:41.734069562 Prepared Callback dispatcher http extension
+[provider-qna] DEBUG 2025-07-30T11:49:41.734279212 Prepared Endpoint Data Reference Store Receiver Extension
+[provider-qna] DEBUG 2025-07-30T11:49:41.734459907 Prepared Web DID
+[provider-qna] DEBUG 2025-07-30T11:49:41.734860462 Prepared Observability API
+[provider-qna] DEBUG 2025-07-30T11:49:41.73496697 Prepared Dataplane Self Registration
+[provider-qna] DEBUG 2025-07-30T11:49:41.735065533 Prepared Static token API Authentication
+[provider-qna] DEBUG 2025-07-30T11:49:41.737626445 Configured tokenbased authentication for context management
+[provider-qna] DEBUG 2025-07-30T11:49:41.737842198 Configured tokenbased authentication for context catalog
+[provider-qna] DEBUG 2025-07-30T11:49:41.737942208 Prepared Api Authentication Configuration Extension
+[provider-qna] DEBUG 2025-07-30T11:49:41.738126866 Started Boot Services
+[provider-qna] DEBUG 2025-07-30T11:49:41.738405524 Started org.eclipse.edc.iam.identitytrust.core.SecretsExtension
+[provider-qna] DEBUG 2025-07-30T11:49:41.738514321 Started Core Default Services
+[provider-qna] DEBUG 2025-07-30T11:49:41.738595804 Started Core Services
+[provider-qna] DEBUG 2025-07-30T11:49:41.738694553 Started org.eclipse.edc.connector.core.SecurityDefaultServicesExtension
+[provider-qna] DEBUG 2025-07-30T11:49:41.738810253 Started org.eclipse.edc.token.TokenServicesExtension
+[provider-qna] DEBUG 2025-07-30T11:49:41.738889891 Started org.eclipse.edc.iam.identitytrust.core.DcpDefaultServicesExtension
+[provider-qna] DEBUG 2025-07-30T11:49:41.738968344 Started org.eclipse.edc.demo.dcp.core.DcpPatchExtension
+[provider-qna] DEBUG 2025-07-30T11:49:41.739044604 Started org.eclipse.edc.demo.dcp.policy.PolicyEvaluationExtension
+[provider-qna] DEBUG 2025-07-30T11:49:41.739124165 Started Identity Did Core
+[provider-qna] DEBUG 2025-07-30T11:49:41.739207672 Started MVD Participant Resolver Extension
+[provider-qna] DEBUG 2025-07-30T11:49:41.800974535 HTTP context 'protocol' listening on port 8192
+[provider-qna] DEBUG 2025-07-30T11:49:41.807287119 HTTP context 'public' listening on port 12001
+[provider-qna] DEBUG 2025-07-30T11:49:41.808087356 HTTP context 'control' listening on port 8193
+[provider-qna] DEBUG 2025-07-30T11:49:41.808696681 HTTP context 'catalog' listening on port 8194
+[provider-qna] DEBUG 2025-07-30T11:49:41.809203265 HTTP context 'version' listening on port 8195
+[provider-qna] DEBUG 2025-07-30T11:49:41.809773563 HTTP context 'default' listening on port 8190
+[provider-qna] DEBUG 2025-07-30T11:49:41.810272917 HTTP context 'management' listening on port 8191
+[provider-qna] DEBUG 2025-07-30T11:49:42.054353683 Port mappings: PortMapping[name=protocol, port=8192, path=/api/dsp], PortMapping[name=public, port=12001, path=/api/public], PortMapping[name=control, port=8193, path=/api/control], PortMapping[name=catalog, port=8194, path=/api/catalog], PortMapping[name=version, port=8195, path=/api/version], PortMapping[name=default, port=8190, path=/api], PortMapping[name=management, port=8191, path=/api/management/]
+[provider-qna] DEBUG 2025-07-30T11:49:42.056770423 Started Jetty Service
+[provider-qna] DEBUG 2025-07-30T11:49:43.378661604 Registered Web API context alias: default
+[provider-qna] DEBUG 2025-07-30T11:49:43.845268794 Registered Web API context alias: protocol
+[provider-qna] DEBUG 2025-07-30T11:49:43.973978028 Registered Web API context alias: public
+[provider-qna] DEBUG 2025-07-30T11:49:44.29527121 Registered Web API context alias: management
+[provider-qna] DEBUG 2025-07-30T11:49:44.416265488 Registered Web API context alias: catalog
+[provider-qna] DEBUG 2025-07-30T11:49:44.546281164 Registered Web API context alias: control
+[provider-qna] DEBUG 2025-07-30T11:49:44.942731841 Registered Web API context alias: version
+[provider-qna] DEBUG 2025-07-30T11:49:44.954652334 Started Jersey Web Service
+[provider-qna] DEBUG 2025-07-30T11:49:44.954927736 Started Sts remote client configuration extension
+[provider-qna] DEBUG 2025-07-30T11:49:44.955042016 Started OAuth2 Client
+[provider-qna] DEBUG 2025-07-30T11:49:44.955115176 Started Sts remote client configuration extension
+[provider-qna] DEBUG 2025-07-30T11:49:44.95518085 Started JSON-LD Extension
+[provider-qna] DEBUG 2025-07-30T11:49:44.955241593 Started Revocation Service Extension
+[provider-qna] DEBUG 2025-07-30T11:49:44.972723522 Started org.eclipse.edc.iam.identitytrust.core.IdentityAndTrustExtension
+[provider-qna] DEBUG 2025-07-30T11:49:44.972850483 Started Control Plane Default Services
+[provider-qna] DEBUG 2025-07-30T11:49:44.972926815 Started org.eclipse.edc.connector.controlplane.contract.ContractNegotiationDefaultServicesExtension
+[provider-qna] DEBUG 2025-07-30T11:49:44.994066714 Started Contract Core
+[provider-qna] DEBUG 2025-07-30T11:49:44.994184537 Started Transfer Process Default Services
+[provider-qna] DEBUG 2025-07-30T11:49:45.036642454 Started Transfer Core
+[provider-qna] DEBUG 2025-07-30T11:49:45.036786874 Started Catalog Default Services
+[provider-qna] DEBUG 2025-07-30T11:49:45.0368723 Started Catalog Core
+[provider-qna] DEBUG 2025-07-30T11:49:45.037520444 Started Control Plane Services
+[provider-qna] DEBUG 2025-07-30T11:49:45.037636919 Started Management API: Secret
+[provider-qna] DEBUG 2025-07-30T11:49:45.039148355 Started org.eclipse.edc.connector.core.LocalPublicKeyDefaultExtension
+[provider-qna] DEBUG 2025-07-30T11:49:45.039240864 Started Data Plane Framework Default Services
+[provider-qna] DEBUG 2025-07-30T11:49:45.039338936 Started Data Plane Default IAM Services
+[provider-qna] DEBUG 2025-07-30T11:49:45.039430071 Started Data Plane IAM
+[provider-qna] DEBUG 2025-07-30T11:49:45.039730245 Started Data Plane Public API
+[provider-qna] DEBUG 2025-07-30T11:49:45.039828818 Started DCP scope extractor extension
+[provider-qna] DEBUG 2025-07-30T11:49:45.040499369 Started org.eclipse.edc.iam.identitytrust.core.IdentityTrustTransformExtension
+[provider-qna] DEBUG 2025-07-30T11:49:45.041605229 Started org.eclipse.edc.iam.identitytrust.issuer.configuration.TrustedIssuerConfigurationExtension
+[provider-qna] DEBUG 2025-07-30T11:49:45.042509124 Started Api Core Default Services
+[provider-qna] DEBUG 2025-07-30T11:49:45.042619428 Started Delegating Authentication Service Extension
+[provider-qna] DEBUG 2025-07-30T11:49:45.042773646 Started Control Plane HTTP API client
+[provider-qna] DEBUG 2025-07-30T11:49:45.055710456 Started Data Plane Framework
+[provider-qna] DEBUG 2025-07-30T11:49:45.057611253 Started Data Plane HTTP
+[provider-qna] DEBUG 2025-07-30T11:49:45.057717778 Started Data Plane HTTP OAuth2
+[provider-qna] DEBUG 2025-07-30T11:49:45.057778794 Started Federated Catalog Default Services
+[provider-qna] DEBUG 2025-07-30T11:49:45.060977442 Started Federated Catalog Cache
+[provider-qna] DEBUG 2025-07-30T11:49:45.061093457 Started API Core
+[provider-qna] DEBUG 2025-07-30T11:49:45.061151142 Started DataPlane Signaling API extension
+[provider-qna] DEBUG 2025-07-30T11:49:45.061200342 Started Dataspace Protocol Core Extension
+[provider-qna] DEBUG 2025-07-30T11:49:45.061261503 Started Dataspace Protocol Catalog HTTP Dispatcher Extension
+[provider-qna] DEBUG 2025-07-30T11:49:45.061319352 Started Dataspace Protocol Catalog Transform Extension
+[provider-qna] DEBUG 2025-07-30T11:49:45.061374987 Started Dataspace Protocol API Configuration Extension
+[provider-qna] DEBUG 2025-07-30T11:49:45.061965136 Started Data Plane Signaling Client
+[provider-qna] DEBUG 2025-07-30T11:49:45.062075241 Started Data Plane Selector Default Services
+[provider-qna] DEBUG 2025-07-30T11:49:45.068904179 Started Data Plane Selector core
+[provider-qna] DEBUG 2025-07-30T11:49:45.069011798 Started org.eclipse.edc.connector.dataplane.selector.DataPlaneSelectorApiExtension
+[provider-qna] DEBUG 2025-07-30T11:49:45.069080271 Started Dataplane Selector Control API
+[provider-qna] DEBUG 2025-07-30T11:49:45.069141618 Started Control API configuration
+[provider-qna] DEBUG 2025-07-30T11:49:45.069199043 Started org.eclipse.edc.connector.controlplane.transfer.dataplane.TransferDataPlaneSignalingExtension
+[provider-qna] DEBUG 2025-07-30T11:49:45.069256682 Started Data Plane Signaling transform Client
+[provider-qna] DEBUG 2025-07-30T11:49:45.069388826 Started Management API configuration
+[provider-qna] DEBUG 2025-07-30T11:49:45.074552634 Started Dataspace Protocol Negotiation HTTP Dispatcher Extension
+[provider-qna] DEBUG 2025-07-30T11:49:45.075165605 Started Dataspace Protocol Negotiation Transform Extension
+[provider-qna] DEBUG 2025-07-30T11:49:45.078921842 Started Dataspace Protocol Transfer HTTP Dispatcher Extension
+[provider-qna] DEBUG 2025-07-30T11:49:45.079263257 Started Dataspace Protocol Transfer Process Transform Extension
+[provider-qna] DEBUG 2025-07-30T11:49:45.079449115 Started Cache Query API Extension
+[provider-qna] DEBUG 2025-07-30T11:49:45.079614503 Started Management API: Asset
+[provider-qna] DEBUG 2025-07-30T11:49:45.079774215 Started Management API: Catalog
+[provider-qna] DEBUG 2025-07-30T11:49:45.079998394 Started Management API: Contract Agreement
+[provider-qna] DEBUG 2025-07-30T11:49:45.080065947 Started Management API: Contract Definition
+[provider-qna] DEBUG 2025-07-30T11:49:45.080120969 Started Management API: Contract Negotiation
+[provider-qna] DEBUG 2025-07-30T11:49:45.080174754 Started Endpoint Data Reference Core Default Services Extension
+[provider-qna] DEBUG 2025-07-30T11:49:45.080225899 Started org.eclipse.edc.edr.store.EndpointDataReferenceStoreExtension
+[provider-qna] DEBUG 2025-07-30T11:49:45.080278945 Started Management API: EDR cache
+[provider-qna] DEBUG 2025-07-30T11:49:45.081827728 Started Management API: Policy Definition
+[provider-qna] DEBUG 2025-07-30T11:49:45.087648976 Started Management API: Transfer Process
+[provider-qna] DEBUG 2025-07-30T11:49:45.087952478 Started Dataspace Protocol Version HTTP Dispatcher Extension
+[provider-qna] DEBUG 2025-07-30T11:49:45.088109973 Started Dataspace Protocol Catalog Extension
+[provider-qna] DEBUG 2025-07-30T11:49:45.088246368 Started Dataspace Protocol Negotiation Api
+[provider-qna] DEBUG 2025-07-30T11:49:45.08838437 Started org.eclipse.edc.protocol.dsp.transferprocess.http.api.DspTransferProcessApiExtension
+[provider-qna] DEBUG 2025-07-30T11:49:45.088534297 Started Dataspace Protocol Version Api
+[provider-qna] DEBUG 2025-07-30T11:49:45.088700361 Started Management API: Protocol Version
+[provider-qna] DEBUG 2025-07-30T11:49:45.088899302 Started PolicyMonitor Default Services
+[provider-qna] DEBUG 2025-07-30T11:49:45.098695313 Started org.eclipse.edc.connector.policy.monitor.PolicyMonitorExtension
+[provider-qna] DEBUG 2025-07-30T11:49:45.099755563 Started Management API: Version Information
+[provider-qna] DEBUG 2025-07-30T11:49:45.099940458 Started Contract Negotiation command handlers
+[provider-qna] DEBUG 2025-07-30T11:49:45.100429888 Started org.eclipse.edc.connector.controlplane.transfer.TransferProcessCommandExtension
+[provider-qna] DEBUG 2025-07-30T11:49:45.100633496 Started Control Plane API
+[provider-qna] DEBUG 2025-07-30T11:49:45.1007901 Started Callback dispatcher extension
+[provider-qna] DEBUG 2025-07-30T11:49:45.100928325 Started Callback dispatcher http extension
+[provider-qna] DEBUG 2025-07-30T11:49:45.101058606 Started Endpoint Data Reference Store Receiver Extension
+[provider-qna] DEBUG 2025-07-30T11:49:45.101199568 Started Web DID
+[provider-qna] DEBUG 2025-07-30T11:49:45.101338076 Started Observability API
+[provider-qna] DEBUG 2025-07-30T11:49:45.123908231 [DataPlaneHealthCheck] Initiate data plane registration.
+[provider-qna] DEBUG 2025-07-30T11:49:45.131898877 [DataPlaneHealthCheck] data plane registered to control plane
+[provider-qna] DEBUG 2025-07-30T11:49:45.132556957 Started Dataplane Self Registration
+[provider-qna] DEBUG 2025-07-30T11:49:45.132642586 Started Static token API Authentication
+[provider-qna] DEBUG 2025-07-30T11:49:45.132700663 Started Api Authentication Configuration Extension
+[provider-qna] INFO 2025-07-30T11:49:45.13427859 94 service extensions started
+[provider-qna] INFO 2025-07-30T11:49:45.1353354 Runtime provider-qna-embedded-runtime ready
+[provider-qna] DEBUG 2025-07-30T11:49:46.254207786 [DataPlaneSelectorManagerImpl] DataPlaneInstance provider-qna-embedded-runtime is now in state AVAILABLE
+[provider-qna] DEBUG 2025-07-30T11:49:50.058623549 [ExecutionManager] Run pre-execution task
+[provider-qna] WARNING 2025-07-30T11:49:50.13276204 [DEMO] Error resolving DID: did:web:localhost%3A7083. HTTP Code was: 204
+[provider-qna] WARNING 2025-07-30T11:49:50.243988752 [DEMO] Error resolving DID: did:web:localhost%3A7093. HTTP Code was: 204
+[provider-qna] DEBUG 2025-07-30T11:49:50.244888141 [ExecutionManager] No WorkItems found, skipping execution
+[provider-qna] DEBUG 2025-07-30T11:50:00.058577674 [ExecutionManager] Run pre-execution task
+[provider-qna] WARNING 2025-07-30T11:50:00.062173517 [DEMO] Error resolving DID: did:web:localhost%3A7083. HTTP Code was: 204
+[provider-qna] WARNING 2025-07-30T11:50:00.065283506 [DEMO] Error resolving DID: did:web:localhost%3A7093. HTTP Code was: 204
+[provider-qna] DEBUG 2025-07-30T11:50:00.065411929 [ExecutionManager] No WorkItems found, skipping execution
+[provider-qna] DEBUG 2025-07-30T11:50:10.058587338 [ExecutionManager] Run pre-execution task
+[provider-qna] WARNING 2025-07-30T11:50:10.061858493 [DEMO] Error resolving DID: did:web:localhost%3A7083. HTTP Code was: 204
+[provider-qna] WARNING 2025-07-30T11:50:10.064734215 [DEMO] Error resolving DID: did:web:localhost%3A7093. HTTP Code was: 204
+[provider-qna] DEBUG 2025-07-30T11:50:10.064844571 [ExecutionManager] No WorkItems found, skipping execution
+[provider-qna] DEBUG 2025-07-30T11:50:20.05864261 [ExecutionManager] Run pre-execution task
+[provider-qna] WARNING 2025-07-30T11:50:20.061764422 [DEMO] Error resolving DID: did:web:localhost%3A7083. HTTP Code was: 204
+[provider-qna] WARNING 2025-07-30T11:50:20.064235859 [DEMO] Error resolving DID: did:web:localhost%3A7093. HTTP Code was: 204
+[provider-qna] DEBUG 2025-07-30T11:50:20.06431386 [ExecutionManager] No WorkItems found, skipping execution
+[provider-qna] DEBUG 2025-07-30T11:50:30.058671357 [ExecutionManager] Run pre-execution task
+[provider-qna] WARNING 2025-07-30T11:50:30.061739606 [DEMO] Error resolving DID: did:web:localhost%3A7083. HTTP Code was: 204
+[provider-qna] WARNING 2025-07-30T11:50:30.064171237 [DEMO] Error resolving DID: did:web:localhost%3A7093. HTTP Code was: 204
+[provider-qna] DEBUG 2025-07-30T11:50:30.064255029 [ExecutionManager] No WorkItems found, skipping execution

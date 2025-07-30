@@ -1,0 +1,224 @@
+[issuerservice] INFO 2025-07-30T11:49:36.654005223 Booting EDC runtime
+[issuerservice] WARNING 2025-07-30T11:49:36.672669746 Configuration file does not exist: dataspaceconnector-configuration.properties. Ignoring.
+[issuerservice] DEBUG 2025-07-30T11:49:36.673870486 ConfigurationExtension Initialized: FS Configuration
+[issuerservice] WARNING 2025-07-30T11:49:36.683388534 The runtime is configured as an anonymous participant. DO NOT DO THIS IN PRODUCTION.
+[issuerservice] DEBUG 2025-07-30T11:49:37.253717532 Config value: no setting found for 'edc.http.client.https.enforce', falling back to default value 'false'
+[issuerservice] DEBUG 2025-07-30T11:49:37.254270885 Config value: no setting found for 'edc.http.client.timeout.connect', falling back to default value '30'
+[issuerservice] DEBUG 2025-07-30T11:49:37.254697119 Config value: no setting found for 'edc.http.client.timeout.read', falling back to default value '30'
+[issuerservice] DEBUG 2025-07-30T11:49:37.255038254 Config value: no setting found for 'edc.http.client.send.buffer.size', falling back to default value '0'
+[issuerservice] DEBUG 2025-07-30T11:49:37.255370925 Config value: no setting found for 'edc.http.client.receive.buffer.size', falling back to default value '0'
+[issuerservice] DEBUG 2025-07-30T11:49:37.263319023 Config value: no setting found for 'edc.core.retry.retries.max', falling back to default value '5'
+[issuerservice] DEBUG 2025-07-30T11:49:37.263963864 Config value: no setting found for 'edc.core.retry.backoff.min', falling back to default value '500'
+[issuerservice] DEBUG 2025-07-30T11:49:37.264413428 Config value: no setting found for 'edc.core.retry.backoff.max', falling back to default value '10000'
+[issuerservice] DEBUG 2025-07-30T11:49:37.264903538 Config value: no setting found for 'edc.core.retry.log.on.retry', falling back to default value 'false'
+[issuerservice] DEBUG 2025-07-30T11:49:37.265916014 Config value: no setting found for 'edc.core.retry.log.on.retry.scheduled', falling back to default value 'false'
+[issuerservice] DEBUG 2025-07-30T11:49:37.266401963 Config value: no setting found for 'edc.core.retry.log.on.retries.exceeded', falling back to default value 'false'
+[issuerservice] DEBUG 2025-07-30T11:49:37.266830645 Config value: no setting found for 'edc.core.retry.log.on.failed.attempt', falling back to default value 'false'
+[issuerservice] DEBUG 2025-07-30T11:49:37.267186431 Config value: no setting found for 'edc.core.retry.log.on.abort', falling back to default value 'false'
+[issuerservice] DEBUG 2025-07-30T11:49:37.268440769 Initialized Core Default Services
+[issuerservice] INFO 2025-07-30T11:49:37.52007219 HTTPS enforcement it not enabled, please enable it in a production environment
+[issuerservice] INFO 2025-07-30T11:49:38.091279825 HTTPS enforcement it not enabled, please enable it in a production environment
+[issuerservice] WARNING 2025-07-30T11:49:38.101125293 Config value: no setting found for 'edc.hostname', falling back to default value 'localhost'
+[issuerservice] DEBUG 2025-07-30T11:49:38.109034849 Initialized Core Services
+[issuerservice] DEBUG 2025-07-30T11:49:38.665236664 Initialized Boot Services
+[issuerservice] DEBUG 2025-07-30T11:49:38.684928419 Initialized org.eclipse.edc.issuerservice.defaults.DefaultServiceExtension
+[issuerservice] WARNING 2025-07-30T11:49:38.693496398 Using the InMemoryVault is not suitable for production scenarios and should be replaced with an actual Vault!
+[issuerservice] DEBUG 2025-07-30T11:49:38.70084672 Initialized org.eclipse.edc.connector.core.SecurityDefaultServicesExtension
+[issuerservice] DEBUG 2025-07-30T11:49:39.524278904 Config value: no setting found for 'edc.jsonld.http.enabled', falling back to default value 'false'
+[issuerservice] DEBUG 2025-07-30T11:49:39.526724698 Config value: no setting found for 'edc.jsonld.vocab.disable', falling back to default value 'false'
+[issuerservice] DEBUG 2025-07-30T11:49:39.528868532 Config value: no setting found for 'edc.jsonld.https.enabled', falling back to default value 'false'
+[issuerservice] DEBUG 2025-07-30T11:49:39.529978309 Config value: no setting found for 'edc.jsonld.prefixes.check', falling back to default value 'true'
+[issuerservice] DEBUG 2025-07-30T11:49:39.561648614 Initialized JSON-LD Extension
+[issuerservice] DEBUG 2025-07-30T11:49:39.921029429 Initialized org.eclipse.edc.token.TokenServicesExtension
+[issuerservice] DEBUG 2025-07-30T11:49:39.939496305 Config value: no setting found for 'edc.iam.accesstoken.jti.validation', falling back to default value 'false'
+[issuerservice] DEBUG 2025-07-30T11:49:39.943254483 Config value: no setting found for 'edc.iam.credential.revocation.cache.validity', falling back to default value '900000'
+[issuerservice] WARNING 2025-07-30T11:49:39.950413168 JWT Token ID ("jti" claim) Validation is not active. Please consider setting 'edc.iam.accesstoken.jti.validation=true' for protection against replay attacks
+[issuerservice] DEBUG 2025-07-30T11:49:39.958105792 Initialized IdentityHub Default Services Extension
+[issuerservice] WARNING 2025-07-30T11:49:39.963422588 No TransactionContext registered, a no-op implementation will be used, not suitable for production environments
+[issuerservice] DEBUG 2025-07-30T11:49:39.972391889 Initialized KeyPair Service Extension
+[issuerservice] DEBUG 2025-07-30T11:49:39.982894636 Initialized DID Default Services Extension
+[issuerservice] DEBUG 2025-07-30T11:49:39.985518118 Initialized Secure Token Service Default Services
+[issuerservice] DEBUG 2025-07-30T11:49:39.989943042 Initialized Local (embedded) STS Account Service Extension
+[issuerservice] INFO 2025-07-30T11:49:39.992748303 [STS-Account] This IdentityHub runtime contains an embedded SecureTokenService (STS) instance. That means ParticipantContexts and STS Accounts will be synchronized automatically.
+[issuerservice] DEBUG 2025-07-30T11:49:39.99690437 Initialized STS Account Provisioner Extension
+[issuerservice] DEBUG 2025-07-30T11:49:39.998904689 Initialized ParticipantContext Extension
+[issuerservice] DEBUG 2025-07-30T11:49:40.005086164 Initialized org.eclipse.edc.issuerservice.holder.HolderServiceExtension
+[issuerservice] DEBUG 2025-07-30T11:49:40.009250193 Initialized org.eclipse.edc.issuerservice.issuance.IssuanceServicesExtension
+[issuerservice] DEBUG 2025-07-30T11:49:40.027272593 Initialized Demo Attestations Extension
+[issuerservice] DEBUG 2025-07-30T11:49:40.028299575 Config value: no setting found for 'edc.iam.sts.token.expiration', falling back to default value '5'
+[issuerservice] DEBUG 2025-07-30T11:49:40.028757113 Initialized Local (embedded) STS Account Service Extension
+[issuerservice] DEBUG 2025-07-30T11:49:40.031730078 Initialized org.eclipse.edc.identityhub.protocols.dcp.DcpCoreExtension
+[issuerservice] DEBUG 2025-07-30T11:49:40.034351027 Config value: no setting found for 'edc.did.resolver.cache.expiry', falling back to default value '300000'
+[issuerservice] DEBUG 2025-07-30T11:49:40.041118886 Initialized Identity Did Core
+[issuerservice] DEBUG 2025-07-30T11:49:40.057232943 Initialized org.eclipse.edc.identityhub.protocols.dcp.issuer.DcpIssuerCoreExtension
+[issuerservice] DEBUG 2025-07-30T11:49:40.096261044 Config value: no setting found for 'edc.web.https.keystore.type', falling back to default value 'PKCS12'
+[issuerservice] DEBUG 2025-07-30T11:49:40.099370415 Config value: no setting found for 'edc.web.https.keystore.password', falling back to default value 'password'
+[issuerservice] DEBUG 2025-07-30T11:49:40.100481896 Config value: no setting found for 'edc.web.https.keymanager.password', falling back to default value 'password'
+[issuerservice] DEBUG 2025-07-30T11:49:40.103637355 Config value: no setting found for 'web.http.default.port', falling back to default value '8181'
+[issuerservice] DEBUG 2025-07-30T11:49:40.104018411 Config value: no setting found for 'web.http.default.path', falling back to default value '/api'
+[issuerservice] DEBUG 2025-07-30T11:49:40.185744561 Initialized Jetty Service
+[issuerservice] DEBUG 2025-07-30T11:49:40.190590087 Initialized Jersey Web Service
+[issuerservice] DEBUG 2025-07-30T11:49:40.199274677 Config value: no setting found for 'web.http.statuslist.port', falling back to default value '9999'
+[issuerservice] DEBUG 2025-07-30T11:49:40.200171802 Config value: no setting found for 'web.http.statuslist.path', falling back to default value '/statuslist'
+[issuerservice] DEBUG 2025-07-30T11:49:40.206724538 Initialized IssuerService Default Services Extension
+[issuerservice] DEBUG 2025-07-30T11:49:40.213040706 Initialized org.eclipse.edc.issuerservice.credentials.CredentialServiceExtension
+[issuerservice] DEBUG 2025-07-30T11:49:40.232488806 Config value: no setting found for 'edc.issuer.issuance.state-machine.batch-size', falling back to default value '20'
+[issuerservice] DEBUG 2025-07-30T11:49:40.238380672 Config value: no setting found for 'edc.issuer.issuance.send.retry.base-delay.ms', falling back to default value '1000'
+[issuerservice] DEBUG 2025-07-30T11:49:40.245216481 Config value: no setting found for 'edc.issuer.issuance.send.retry.limit', falling back to default value '7'
+[issuerservice] DEBUG 2025-07-30T11:49:40.245870241 Config value: no setting found for 'edc.issuer.issuance.state-machine.iteration-wait-millis', falling back to default value '1000'
+[issuerservice] DEBUG 2025-07-30T11:49:40.246762197 Initialized org.eclipse.edc.issuerservice.issuance.IssuanceCoreExtension
+[issuerservice] DEBUG 2025-07-30T11:49:40.500255795 Initialized org.eclipse.edc.identityhub.protocols.dcp.issuer.IssuerApiExtension
+[issuerservice] DEBUG 2025-07-30T11:49:40.502313926 Initialized org.eclipse.edc.issuerservice.issuance.attestations.PresentationAttestationExtension
+[issuerservice] DEBUG 2025-07-30T11:49:40.503480506 Initialized org.eclipse.edc.issuerservice.issuance.rules.IssuanceRulesExtension
+[issuerservice] DEBUG 2025-07-30T11:49:40.516265569 Initialized Identity API Extension
+[issuerservice] DEBUG 2025-07-30T11:49:40.51659109 Initialized Identity API Authorization Extension
+[issuerservice] DEBUG 2025-07-30T11:49:40.525480686 Initialized Issuer Admin API Configuration Extension
+[issuerservice] DEBUG 2025-07-30T11:49:40.537268076 Initialized Issuer Service Credentials Admin API Extension
+[issuerservice] DEBUG 2025-07-30T11:49:40.539165559 Initialized Issuer Service Credential Definition Admin API Extension
+[issuerservice] DEBUG 2025-07-30T11:49:40.551049938 Initialized Issuer Service Issuance Process Admin API Extension
+[issuerservice] DEBUG 2025-07-30T11:49:40.551762237 Initialized MVD ParticipantContext Seed Extension
+[issuerservice] DEBUG 2025-07-30T11:49:40.552190385 Initialized DID Service Extension
+[issuerservice] DEBUG 2025-07-30T11:49:40.571694576 Initialized DID management Identity API Extension
+[issuerservice] DEBUG 2025-07-30T11:49:40.574372519 Initialized ParticipantContext management Identity API Extension
+[issuerservice] DEBUG 2025-07-30T11:49:40.575049078 Config value: no setting found for 'web.http.did.port', falling back to default value '10100'
+[issuerservice] DEBUG 2025-07-30T11:49:40.575363648 Config value: no setting found for 'web.http.did.path', falling back to default value '/'
+[issuerservice] DEBUG 2025-07-30T11:49:40.587200982 Initialized Local DID publisher extension
+[issuerservice] DEBUG 2025-07-30T11:49:40.593551449 Initialized Issuer Admin API Authentication Extension
+[issuerservice] DEBUG 2025-07-30T11:49:40.601717161 Initialized Issuer Service Credentials Admin API Extension
+[issuerservice] DEBUG 2025-07-30T11:49:40.603744365 Initialized Issuer Service Participant Admin API Extension
+[issuerservice] DEBUG 2025-07-30T11:49:40.612684874 Initialized Secure Token Service API configuration
+[issuerservice] DEBUG 2025-07-30T11:49:40.6373714 Initialized Secure Token Service API
+[issuerservice] DEBUG 2025-07-30T11:49:40.65479921 Initialized Management API: Version Information
+[issuerservice] DEBUG 2025-07-30T11:49:40.666780097 Initialized Observability API
+[issuerservice] DEBUG 2025-07-30T11:49:40.674856213 Initialized org.eclipse.edc.connector.core.LocalPublicKeyDefaultExtension
+[issuerservice] DEBUG 2025-07-30T11:49:40.67786817 Initialized ParticipantContext Coordinator Extension
+[issuerservice] DEBUG 2025-07-30T11:49:40.684907255 Initialized Web DID
+[issuerservice] DEBUG 2025-07-30T11:49:40.687489285 Initialized Revocation Service Extension
+[issuerservice] DEBUG 2025-07-30T11:49:40.68872446 Prepared Core Default Services
+[issuerservice] DEBUG 2025-07-30T11:49:40.701540678 Prepared Core Services
+[issuerservice] DEBUG 2025-07-30T11:49:40.703567969 Prepared Boot Services
+[issuerservice] DEBUG 2025-07-30T11:49:40.704636293 Prepared org.eclipse.edc.issuerservice.defaults.DefaultServiceExtension
+[issuerservice] DEBUG 2025-07-30T11:49:40.705245602 Prepared org.eclipse.edc.connector.core.SecurityDefaultServicesExtension
+[issuerservice] DEBUG 2025-07-30T11:49:40.705395792 Prepared JSON-LD Extension
+[issuerservice] DEBUG 2025-07-30T11:49:40.705527729 Prepared org.eclipse.edc.token.TokenServicesExtension
+[issuerservice] DEBUG 2025-07-30T11:49:40.705678477 Prepared IdentityHub Default Services Extension
+[issuerservice] DEBUG 2025-07-30T11:49:40.705817075 Prepared KeyPair Service Extension
+[issuerservice] DEBUG 2025-07-30T11:49:40.714882466 Prepared DID Default Services Extension
+[issuerservice] DEBUG 2025-07-30T11:49:40.715177836 Prepared Secure Token Service Default Services
+[issuerservice] DEBUG 2025-07-30T11:49:40.715314192 Prepared Local (embedded) STS Account Service Extension
+[issuerservice] DEBUG 2025-07-30T11:49:40.721107657 Prepared STS Account Provisioner Extension
+[issuerservice] DEBUG 2025-07-30T11:49:40.721867709 Prepared ParticipantContext Extension
+[issuerservice] DEBUG 2025-07-30T11:49:40.72209483 Prepared org.eclipse.edc.issuerservice.holder.HolderServiceExtension
+[issuerservice] DEBUG 2025-07-30T11:49:40.724864968 Prepared org.eclipse.edc.issuerservice.issuance.IssuanceServicesExtension
+[issuerservice] DEBUG 2025-07-30T11:49:40.725063875 Prepared Demo Attestations Extension
+[issuerservice] DEBUG 2025-07-30T11:49:40.725215392 Prepared Local (embedded) STS Account Service Extension
+[issuerservice] DEBUG 2025-07-30T11:49:40.725373821 Prepared org.eclipse.edc.identityhub.protocols.dcp.DcpCoreExtension
+[issuerservice] DEBUG 2025-07-30T11:49:40.725538302 Prepared Identity Did Core
+[issuerservice] DEBUG 2025-07-30T11:49:40.729045139 Prepared org.eclipse.edc.identityhub.protocols.dcp.issuer.DcpIssuerCoreExtension
+[issuerservice] DEBUG 2025-07-30T11:49:40.729324111 Prepared Jetty Service
+[issuerservice] DEBUG 2025-07-30T11:49:40.729508114 Prepared Jersey Web Service
+[issuerservice] DEBUG 2025-07-30T11:49:40.729675706 Prepared IssuerService Default Services Extension
+[issuerservice] DEBUG 2025-07-30T11:49:40.734492084 Prepared org.eclipse.edc.issuerservice.credentials.CredentialServiceExtension
+[issuerservice] DEBUG 2025-07-30T11:49:40.73492488 Prepared org.eclipse.edc.issuerservice.issuance.IssuanceCoreExtension
+[issuerservice] DEBUG 2025-07-30T11:49:40.735093252 Prepared org.eclipse.edc.identityhub.protocols.dcp.issuer.IssuerApiExtension
+[issuerservice] DEBUG 2025-07-30T11:49:40.735242791 Prepared org.eclipse.edc.issuerservice.issuance.attestations.PresentationAttestationExtension
+[issuerservice] DEBUG 2025-07-30T11:49:40.735406346 Prepared org.eclipse.edc.issuerservice.issuance.rules.IssuanceRulesExtension
+[issuerservice] DEBUG 2025-07-30T11:49:40.735555465 Prepared Identity API Extension
+[issuerservice] DEBUG 2025-07-30T11:49:40.735699471 Prepared Identity API Authorization Extension
+[issuerservice] DEBUG 2025-07-30T11:49:40.735854335 Prepared Issuer Admin API Configuration Extension
+[issuerservice] DEBUG 2025-07-30T11:49:40.736044511 Prepared Issuer Service Credentials Admin API Extension
+[issuerservice] DEBUG 2025-07-30T11:49:40.740887241 Prepared Issuer Service Credential Definition Admin API Extension
+[issuerservice] DEBUG 2025-07-30T11:49:40.741226485 Prepared Issuer Service Issuance Process Admin API Extension
+[issuerservice] DEBUG 2025-07-30T11:49:40.741370987 Prepared MVD ParticipantContext Seed Extension
+[issuerservice] DEBUG 2025-07-30T11:49:40.74172555 Prepared DID Service Extension
+[issuerservice] DEBUG 2025-07-30T11:49:40.741926038 Prepared DID management Identity API Extension
+[issuerservice] DEBUG 2025-07-30T11:49:40.74206744 Prepared ParticipantContext management Identity API Extension
+[issuerservice] DEBUG 2025-07-30T11:49:40.744807268 Prepared Local DID publisher extension
+[issuerservice] DEBUG 2025-07-30T11:49:40.744968008 Prepared Issuer Admin API Authentication Extension
+[issuerservice] DEBUG 2025-07-30T11:49:40.745107379 Prepared Issuer Service Credentials Admin API Extension
+[issuerservice] DEBUG 2025-07-30T11:49:40.745314467 Prepared Issuer Service Participant Admin API Extension
+[issuerservice] DEBUG 2025-07-30T11:49:40.745462739 Prepared Secure Token Service API configuration
+[issuerservice] DEBUG 2025-07-30T11:49:40.745591035 Prepared Secure Token Service API
+[issuerservice] DEBUG 2025-07-30T11:49:40.745715375 Prepared Management API: Version Information
+[issuerservice] DEBUG 2025-07-30T11:49:40.745853931 Prepared Observability API
+[issuerservice] DEBUG 2025-07-30T11:49:40.753441272 Prepared org.eclipse.edc.connector.core.LocalPublicKeyDefaultExtension
+[issuerservice] DEBUG 2025-07-30T11:49:40.754360101 Prepared ParticipantContext Coordinator Extension
+[issuerservice] DEBUG 2025-07-30T11:49:40.754521662 Prepared Web DID
+[issuerservice] DEBUG 2025-07-30T11:49:40.75661776 Prepared Revocation Service Extension
+[issuerservice] DEBUG 2025-07-30T11:49:40.756924656 Started Core Default Services
+[issuerservice] DEBUG 2025-07-30T11:49:40.757067716 Started Core Services
+[issuerservice] DEBUG 2025-07-30T11:49:40.757202081 Started Boot Services
+[issuerservice] DEBUG 2025-07-30T11:49:40.757343068 Started org.eclipse.edc.issuerservice.defaults.DefaultServiceExtension
+[issuerservice] DEBUG 2025-07-30T11:49:40.757480358 Started org.eclipse.edc.connector.core.SecurityDefaultServicesExtension
+[issuerservice] DEBUG 2025-07-30T11:49:40.75760117 Started JSON-LD Extension
+[issuerservice] DEBUG 2025-07-30T11:49:40.757741841 Started org.eclipse.edc.token.TokenServicesExtension
+[issuerservice] DEBUG 2025-07-30T11:49:40.757868473 Started IdentityHub Default Services Extension
+[issuerservice] DEBUG 2025-07-30T11:49:40.758002678 Started KeyPair Service Extension
+[issuerservice] DEBUG 2025-07-30T11:49:40.758135116 Started DID Default Services Extension
+[issuerservice] DEBUG 2025-07-30T11:49:40.758269153 Started Secure Token Service Default Services
+[issuerservice] DEBUG 2025-07-30T11:49:40.758404924 Started Local (embedded) STS Account Service Extension
+[issuerservice] DEBUG 2025-07-30T11:49:40.75853787 Started STS Account Provisioner Extension
+[issuerservice] DEBUG 2025-07-30T11:49:40.76441448 Started ParticipantContext Extension
+[issuerservice] DEBUG 2025-07-30T11:49:40.770753654 Started org.eclipse.edc.issuerservice.holder.HolderServiceExtension
+[issuerservice] DEBUG 2025-07-30T11:49:40.770899002 Started org.eclipse.edc.issuerservice.issuance.IssuanceServicesExtension
+[issuerservice] DEBUG 2025-07-30T11:49:40.771021512 Started Demo Attestations Extension
+[issuerservice] DEBUG 2025-07-30T11:49:40.771168479 Started Local (embedded) STS Account Service Extension
+[issuerservice] DEBUG 2025-07-30T11:49:40.771784402 Started org.eclipse.edc.identityhub.protocols.dcp.DcpCoreExtension
+[issuerservice] DEBUG 2025-07-30T11:49:40.877063333 Started Identity Did Core
+[issuerservice] DEBUG 2025-07-30T11:49:40.877858346 Started org.eclipse.edc.identityhub.protocols.dcp.issuer.DcpIssuerCoreExtension
+[issuerservice] DEBUG 2025-07-30T11:49:41.752559127 HTTP context 'did' listening on port 10100
+[issuerservice] DEBUG 2025-07-30T11:49:41.768016378 HTTP context 'default' listening on port 10010
+[issuerservice] DEBUG 2025-07-30T11:49:41.768661541 HTTP context 'sts' listening on port 10011
+[issuerservice] DEBUG 2025-07-30T11:49:41.769102066 HTTP context 'issuance' listening on port 10012
+[issuerservice] DEBUG 2025-07-30T11:49:41.770767683 HTTP context 'issueradmin' listening on port 10013
+[issuerservice] DEBUG 2025-07-30T11:49:41.771605039 HTTP context 'version' listening on port 10014
+[issuerservice] DEBUG 2025-07-30T11:49:41.772270747 HTTP context 'statuslist' listening on port 9999
+[issuerservice] DEBUG 2025-07-30T11:49:41.772855606 HTTP context 'identity' listening on port 10015
+[issuerservice] DEBUG 2025-07-30T11:49:42.100204806 Port mappings: PortMapping[name=did, port=10100, path=/], PortMapping[name=default, port=10010, path=/api], PortMapping[name=sts, port=10011, path=/api/sts], PortMapping[name=issuance, port=10012, path=/api/issuance], PortMapping[name=issueradmin, port=10013, path=/api/admin], PortMapping[name=version, port=10014, path=/.well-known/api], PortMapping[name=statuslist, port=9999, path=/statuslist], PortMapping[name=identity, port=10015, path=/api/identity]
+[issuerservice] DEBUG 2025-07-30T11:49:42.100419872 Started Jetty Service
+[issuerservice] DEBUG 2025-07-30T11:49:43.605308313 Registered Web API context alias: issueradmin
+[issuerservice] DEBUG 2025-07-30T11:49:43.840983252 Registered Web API context alias: default
+[issuerservice] DEBUG 2025-07-30T11:49:44.286012048 Registered Web API context alias: sts
+[issuerservice] DEBUG 2025-07-30T11:49:44.520440003 Registered Web API context alias: statuslist
+[issuerservice] DEBUG 2025-07-30T11:49:44.733837213 Registered Web API context alias: identity
+[issuerservice] DEBUG 2025-07-30T11:49:44.937123671 Registered Web API context alias: issuance
+[issuerservice] DEBUG 2025-07-30T11:49:45.116535625 Registered Web API context alias: version
+[issuerservice] DEBUG 2025-07-30T11:49:45.173036099 Registered Web API context alias: did
+[issuerservice] DEBUG 2025-07-30T11:49:45.173184739 Started Jersey Web Service
+[issuerservice] DEBUG 2025-07-30T11:49:45.173587432 Started IssuerService Default Services Extension
+[issuerservice] DEBUG 2025-07-30T11:49:45.173710963 Started org.eclipse.edc.issuerservice.credentials.CredentialServiceExtension
+[issuerservice] DEBUG 2025-07-30T11:49:45.181771322 Started org.eclipse.edc.issuerservice.issuance.IssuanceCoreExtension
+[issuerservice] DEBUG 2025-07-30T11:49:45.182384374 Started org.eclipse.edc.identityhub.protocols.dcp.issuer.IssuerApiExtension
+[issuerservice] DEBUG 2025-07-30T11:49:45.182871172 Started org.eclipse.edc.issuerservice.issuance.attestations.PresentationAttestationExtension
+[issuerservice] DEBUG 2025-07-30T11:49:45.183230419 Started org.eclipse.edc.issuerservice.issuance.rules.IssuanceRulesExtension
+[issuerservice] DEBUG 2025-07-30T11:49:45.187034615 Started Identity API Extension
+[issuerservice] DEBUG 2025-07-30T11:49:45.188078386 Started Identity API Authorization Extension
+[issuerservice] DEBUG 2025-07-30T11:49:45.18867824 Started Issuer Admin API Configuration Extension
+[issuerservice] DEBUG 2025-07-30T11:49:45.188984168 Started Issuer Service Credentials Admin API Extension
+[issuerservice] DEBUG 2025-07-30T11:49:45.189088426 Started Issuer Service Credential Definition Admin API Extension
+[issuerservice] DEBUG 2025-07-30T11:49:45.189176936 Started Issuer Service Issuance Process Admin API Extension
+[issuerservice] DEBUG 2025-07-30T11:49:45.251076 Storing secret super-user-apikey
+[issuerservice] DEBUG 2025-07-30T11:49:45.256418181 Storing secret super-user-sts-client-secret
+[issuerservice] DEBUG 2025-07-30T11:49:45.35750212 Storing secret super-user-alias
+[issuerservice] WARNING 2025-07-30T11:49:45.399850822 [DidDocumentService] Updating DID documents after activating a KeyPair failed: Cannot publish DID 'did:web:super-user' for participant 'super-user' because the ParticipantContext state is not 'ACTIVATED', but 'CREATED'.
+[issuerservice] DEBUG 2025-07-30T11:49:45.402713546 Storing secret super-user-apikey
+[issuerservice] DEBUG 2025-07-30T11:49:45.403059932 Super-user key override successful
+[issuerservice] INFO 2025-07-30T11:49:45.403484656 Created user 'super-user'. Please take note of the API Key: c3VwZXItdXNlcg==.c3VwZXItc2VjcmV0LWtleQo=
+[issuerservice] DEBUG 2025-07-30T11:49:45.403697502 Started MVD ParticipantContext Seed Extension
+[issuerservice] DEBUG 2025-07-30T11:49:45.403765833 Started DID Service Extension
+[issuerservice] DEBUG 2025-07-30T11:49:45.403832087 Started DID management Identity API Extension
+[issuerservice] DEBUG 2025-07-30T11:49:45.403890037 Started ParticipantContext management Identity API Extension
+[issuerservice] DEBUG 2025-07-30T11:49:45.403942275 Started Local DID publisher extension
+[issuerservice] DEBUG 2025-07-30T11:49:45.403999373 Started Issuer Admin API Authentication Extension
+[issuerservice] DEBUG 2025-07-30T11:49:45.404087282 Started Issuer Service Credentials Admin API Extension
+[issuerservice] DEBUG 2025-07-30T11:49:45.404173003 Started Issuer Service Participant Admin API Extension
+[issuerservice] DEBUG 2025-07-30T11:49:45.404235579 Started Secure Token Service API configuration
+[issuerservice] DEBUG 2025-07-30T11:49:45.404293638 Started Secure Token Service API
+[issuerservice] DEBUG 2025-07-30T11:49:45.404365878 Started Management API: Version Information
+[issuerservice] DEBUG 2025-07-30T11:49:45.404433903 Started Observability API
+[issuerservice] DEBUG 2025-07-30T11:49:45.404522441 Started org.eclipse.edc.connector.core.LocalPublicKeyDefaultExtension
+[issuerservice] DEBUG 2025-07-30T11:49:45.404590601 Started ParticipantContext Coordinator Extension
+[issuerservice] DEBUG 2025-07-30T11:49:45.40466886 Started Web DID
+[issuerservice] DEBUG 2025-07-30T11:49:45.404745709 Started Revocation Service Extension
+[issuerservice] INFO 2025-07-30T11:49:45.4050181 51 service extensions started
+[issuerservice] INFO 2025-07-30T11:49:45.405929956 Runtime d60c5218-c03f-4049-922e-dc2ac6c02b26 ready

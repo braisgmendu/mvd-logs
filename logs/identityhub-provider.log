@@ -1,0 +1,215 @@
+[identityhub-provider] INFO 2025-07-30T11:49:35.61394944 Booting EDC runtime
+[identityhub-provider] WARNING 2025-07-30T11:49:35.659699998 Configuration file does not exist: dataspaceconnector-configuration.properties. Ignoring.
+[identityhub-provider] DEBUG 2025-07-30T11:49:35.661728265 ConfigurationExtension Initialized: FS Configuration
+[identityhub-provider] WARNING 2025-07-30T11:49:35.676332391 The runtime is configured as an anonymous participant. DO NOT DO THIS IN PRODUCTION.
+[identityhub-provider] DEBUG 2025-07-30T11:49:36.462994797 Initialized Boot Services
+[identityhub-provider] WARNING 2025-07-30T11:49:36.487427085 Using the InMemoryVault is not suitable for production scenarios and should be replaced with an actual Vault!
+[identityhub-provider] DEBUG 2025-07-30T11:49:36.495747177 Storing secret key-1
+[identityhub-provider] DEBUG 2025-07-30T11:49:36.497707994 Storing secret did:web:localhost%3A7093#key-1
+[identityhub-provider] WARNING 2025-07-30T11:49:36.499321277 [DEMO] >>>>>> This extension hard-codes a keypair into the vault! <<<<<<
+[identityhub-provider] DEBUG 2025-07-30T11:49:36.500075182 Initialized org.eclipse.edc.iam.identitytrust.core.SecretsExtension
+[identityhub-provider] WARNING 2025-07-30T11:49:36.502643656 A service of the type java.time.Clock was already registered and has now been replaced with a SystemClock instance.
+[identityhub-provider] DEBUG 2025-07-30T11:49:36.505568556 Config value: no setting found for 'edc.http.client.https.enforce', falling back to default value 'false'
+[identityhub-provider] DEBUG 2025-07-30T11:49:36.506196042 Config value: no setting found for 'edc.http.client.timeout.connect', falling back to default value '30'
+[identityhub-provider] DEBUG 2025-07-30T11:49:36.50666237 Config value: no setting found for 'edc.http.client.timeout.read', falling back to default value '30'
+[identityhub-provider] DEBUG 2025-07-30T11:49:36.507086684 Config value: no setting found for 'edc.http.client.send.buffer.size', falling back to default value '0'
+[identityhub-provider] DEBUG 2025-07-30T11:49:36.50872354 Config value: no setting found for 'edc.http.client.receive.buffer.size', falling back to default value '0'
+[identityhub-provider] DEBUG 2025-07-30T11:49:36.518851439 Config value: no setting found for 'edc.core.retry.retries.max', falling back to default value '5'
+[identityhub-provider] DEBUG 2025-07-30T11:49:36.52086286 Config value: no setting found for 'edc.core.retry.backoff.min', falling back to default value '500'
+[identityhub-provider] DEBUG 2025-07-30T11:49:36.521779581 Config value: no setting found for 'edc.core.retry.backoff.max', falling back to default value '10000'
+[identityhub-provider] DEBUG 2025-07-30T11:49:36.522348247 Config value: no setting found for 'edc.core.retry.log.on.retry', falling back to default value 'false'
+[identityhub-provider] DEBUG 2025-07-30T11:49:36.522793521 Config value: no setting found for 'edc.core.retry.log.on.retry.scheduled', falling back to default value 'false'
+[identityhub-provider] DEBUG 2025-07-30T11:49:36.523262738 Config value: no setting found for 'edc.core.retry.log.on.retries.exceeded', falling back to default value 'false'
+[identityhub-provider] DEBUG 2025-07-30T11:49:36.524316793 Config value: no setting found for 'edc.core.retry.log.on.failed.attempt', falling back to default value 'false'
+[identityhub-provider] DEBUG 2025-07-30T11:49:36.524988178 Config value: no setting found for 'edc.core.retry.log.on.abort', falling back to default value 'false'
+[identityhub-provider] DEBUG 2025-07-30T11:49:36.531571804 Initialized Core Default Services
+[identityhub-provider] INFO 2025-07-30T11:49:37.309457772 HTTPS enforcement it not enabled, please enable it in a production environment
+[identityhub-provider] INFO 2025-07-30T11:49:38.065683649 HTTPS enforcement it not enabled, please enable it in a production environment
+[identityhub-provider] WARNING 2025-07-30T11:49:38.072657846 Config value: no setting found for 'edc.hostname', falling back to default value 'localhost'
+[identityhub-provider] DEBUG 2025-07-30T11:49:38.07966477 Initialized Core Services
+[identityhub-provider] DEBUG 2025-07-30T11:49:38.654661805 Initialized org.eclipse.edc.connector.core.SecurityDefaultServicesExtension
+[identityhub-provider] DEBUG 2025-07-30T11:49:39.428061801 Initialized org.eclipse.edc.token.TokenServicesExtension
+[identityhub-provider] DEBUG 2025-07-30T11:49:39.432317961 Config value: no setting found for 'edc.jsonld.prefixes.check', falling back to default value 'true'
+[identityhub-provider] DEBUG 2025-07-30T11:49:39.433335758 Config value: no setting found for 'edc.jsonld.vocab.disable', falling back to default value 'false'
+[identityhub-provider] DEBUG 2025-07-30T11:49:39.433833255 Config value: no setting found for 'edc.jsonld.https.enabled', falling back to default value 'false'
+[identityhub-provider] DEBUG 2025-07-30T11:49:39.434278132 Config value: no setting found for 'edc.jsonld.http.enabled', falling back to default value 'false'
+[identityhub-provider] DEBUG 2025-07-30T11:49:39.45892737 Initialized JSON-LD Extension
+[identityhub-provider] DEBUG 2025-07-30T11:49:39.930083232 Config value: no setting found for 'edc.iam.credential.revocation.cache.validity', falling back to default value '900000'
+[identityhub-provider] DEBUG 2025-07-30T11:49:39.942387384 Config value: no setting found for 'edc.iam.accesstoken.jti.validation', falling back to default value 'false'
+[identityhub-provider] WARNING 2025-07-30T11:49:39.948843144 JWT Token ID ("jti" claim) Validation is not active. Please consider setting 'edc.iam.accesstoken.jti.validation=true' for protection against replay attacks
+[identityhub-provider] DEBUG 2025-07-30T11:49:39.96537815 Initialized IdentityHub Default Services Extension
+[identityhub-provider] DEBUG 2025-07-30T11:49:39.978374003 Initialized org.eclipse.edc.demo.dcp.ih.IdentityHubExtension
+[identityhub-provider] DEBUG 2025-07-30T11:49:39.978959777 Initialized DID Default Services Extension
+[identityhub-provider] DEBUG 2025-07-30T11:49:39.980638126 Initialized Secure Token Service Default Services
+[identityhub-provider] DEBUG 2025-07-30T11:49:39.985702621 Initialized Local Transaction
+[identityhub-provider] DEBUG 2025-07-30T11:49:39.987359316 Initialized Local (embedded) STS Account Service Extension
+[identityhub-provider] INFO 2025-07-30T11:49:39.994171072 [STS-Account] This IdentityHub runtime contains an embedded SecureTokenService (STS) instance. That means ParticipantContexts and STS Accounts will be synchronized automatically.
+[identityhub-provider] DEBUG 2025-07-30T11:49:40.005776591 Initialized STS Account Provisioner Extension
+[identityhub-provider] DEBUG 2025-07-30T11:49:40.012809829 Initialized ParticipantContext Extension
+[identityhub-provider] DEBUG 2025-07-30T11:49:40.02437808 Initialized MVD ParticipantContext Seed Extension
+[identityhub-provider] DEBUG 2025-07-30T11:49:40.027500127 Config value: no setting found for 'edc.iam.sts.token.expiration', falling back to default value '5'
+[identityhub-provider] DEBUG 2025-07-30T11:49:40.027942403 Initialized Local (embedded) STS Account Service Extension
+[identityhub-provider] DEBUG 2025-07-30T11:49:40.053873742 Initialized KeyPair Service Extension
+[identityhub-provider] DEBUG 2025-07-30T11:49:40.057225635 Initialized org.eclipse.edc.connector.core.LocalPublicKeyDefaultExtension
+[identityhub-provider] DEBUG 2025-07-30T11:49:40.068943603 Config value: no setting found for 'edc.did.resolver.cache.expiry', falling back to default value '300000'
+[identityhub-provider] DEBUG 2025-07-30T11:49:40.073519159 Initialized Identity Did Core
+[identityhub-provider] DEBUG 2025-07-30T11:49:40.077507099 Initialized Revocation Service Extension
+[identityhub-provider] WARNING 2025-07-30T11:49:40.093264281 Using the default EdcScopeToCriterionTransformer. This is not intended for production use and should be replaced with a specialized implementation for your dataspace
+[identityhub-provider] DEBUG 2025-07-30T11:49:40.115715355 Initialized IdentityHub Core Services Extension
+[identityhub-provider] DEBUG 2025-07-30T11:49:40.156055465 Config value: no setting found for 'edc.web.https.keystore.type', falling back to default value 'PKCS12'
+[identityhub-provider] DEBUG 2025-07-30T11:49:40.167546427 Config value: no setting found for 'edc.web.https.keystore.password', falling back to default value 'password'
+[identityhub-provider] DEBUG 2025-07-30T11:49:40.168558458 Config value: no setting found for 'edc.web.https.keymanager.password', falling back to default value 'password'
+[identityhub-provider] DEBUG 2025-07-30T11:49:40.170462736 Config value: no setting found for 'web.http.default.port', falling back to default value '8181'
+[identityhub-provider] DEBUG 2025-07-30T11:49:40.170909994 Config value: no setting found for 'web.http.default.path', falling back to default value '/api'
+[identityhub-provider] DEBUG 2025-07-30T11:49:40.262292757 Initialized Jetty Service
+[identityhub-provider] DEBUG 2025-07-30T11:49:40.272821724 Initialized Jersey Web Service
+[identityhub-provider] DEBUG 2025-07-30T11:49:40.275756173 Initialized DID Service Extension
+[identityhub-provider] DEBUG 2025-07-30T11:49:40.289077752 Initialized Local DID publisher extension
+[identityhub-provider] DEBUG 2025-07-30T11:49:40.318020442 Initialized Presentation API Extension
+[identityhub-provider] DEBUG 2025-07-30T11:49:40.321449379 Initialized org.eclipse.edc.identityhub.protocols.dcp.issuer.DcpHolderCoreExtension
+[identityhub-provider] DEBUG 2025-07-30T11:49:40.331594674 Initialized Storage API Extension
+[identityhub-provider] DEBUG 2025-07-30T11:49:40.553709183 Initialized Identity API Extension
+[identityhub-provider] DEBUG 2025-07-30T11:49:40.554159902 Initialized Identity API Authorization Extension
+[identityhub-provider] DEBUG 2025-07-30T11:49:40.557158925 Initialized DID management Identity API Extension
+[identityhub-provider] DEBUG 2025-07-30T11:49:40.570833763 Initialized ParticipantContext management Identity API Extension
+[identityhub-provider] DEBUG 2025-07-30T11:49:40.578311674 Initialized KeyPairResource management Identity API Extension
+[identityhub-provider] DEBUG 2025-07-30T11:49:40.5910423 Initialized VerifiableCredentials API Extension
+[identityhub-provider] DEBUG 2025-07-30T11:49:40.605368755 Initialized Identity API Authentication Extension
+[identityhub-provider] DEBUG 2025-07-30T11:49:40.612564142 Initialized Storage API Extension
+[identityhub-provider] DEBUG 2025-07-30T11:49:40.617490847 Config value: no setting found for 'edc.iam.credential.status.check.period', falling back to default value '60'
+[identityhub-provider] DEBUG 2025-07-30T11:49:40.630488148 [CredentialWatchdog] Credential watchdog will run with a delay of 2 seconds, at an interval of 60 seconds
+[identityhub-provider] DEBUG 2025-07-30T11:49:40.635678961 Initialized VerifiableCredential Watchdog Extension
+[identityhub-provider] DEBUG 2025-07-30T11:49:40.636092292 Initialized org.eclipse.edc.identityhub.protocols.dcp.DcpCoreExtension
+[identityhub-provider] DEBUG 2025-07-30T11:49:40.646508001 Initialized Secure Token Service API configuration
+[identityhub-provider] DEBUG 2025-07-30T11:49:40.658125772 Initialized Secure Token Service API
+[identityhub-provider] DEBUG 2025-07-30T11:49:40.66427263 Initialized Management API: Version Information
+[identityhub-provider] DEBUG 2025-07-30T11:49:40.676985584 Initialized Observability API
+[identityhub-provider] DEBUG 2025-07-30T11:49:40.721574192 Initialized API Core
+[identityhub-provider] DEBUG 2025-07-30T11:49:40.72687583 Initialized Api Core Default Services
+[identityhub-provider] DEBUG 2025-07-30T11:49:40.747752754 Initialized ParticipantContext Coordinator Extension
+[identityhub-provider] DEBUG 2025-07-30T11:49:40.749612232 Initialized Web DID
+[identityhub-provider] DEBUG 2025-07-30T11:49:40.749898372 Prepared Boot Services
+[identityhub-provider] DEBUG 2025-07-30T11:49:40.750037485 Prepared org.eclipse.edc.iam.identitytrust.core.SecretsExtension
+[identityhub-provider] DEBUG 2025-07-30T11:49:40.761908268 Prepared Core Default Services
+[identityhub-provider] DEBUG 2025-07-30T11:49:40.783412169 Prepared Core Services
+[identityhub-provider] DEBUG 2025-07-30T11:49:40.784188635 Prepared org.eclipse.edc.connector.core.SecurityDefaultServicesExtension
+[identityhub-provider] DEBUG 2025-07-30T11:49:40.784703136 Prepared org.eclipse.edc.token.TokenServicesExtension
+[identityhub-provider] DEBUG 2025-07-30T11:49:40.78506486 Prepared JSON-LD Extension
+[identityhub-provider] DEBUG 2025-07-30T11:49:40.785366673 Prepared IdentityHub Default Services Extension
+[identityhub-provider] DEBUG 2025-07-30T11:49:40.787824743 Prepared org.eclipse.edc.demo.dcp.ih.IdentityHubExtension
+[identityhub-provider] DEBUG 2025-07-30T11:49:40.789222145 Prepared DID Default Services Extension
+[identityhub-provider] DEBUG 2025-07-30T11:49:40.791717881 Prepared Secure Token Service Default Services
+[identityhub-provider] DEBUG 2025-07-30T11:49:40.793285941 Prepared Local Transaction
+[identityhub-provider] DEBUG 2025-07-30T11:49:40.795751695 Prepared Local (embedded) STS Account Service Extension
+[identityhub-provider] DEBUG 2025-07-30T11:49:40.797163389 Prepared STS Account Provisioner Extension
+[identityhub-provider] DEBUG 2025-07-30T11:49:40.799367666 Prepared ParticipantContext Extension
+[identityhub-provider] DEBUG 2025-07-30T11:49:40.801860056 Prepared MVD ParticipantContext Seed Extension
+[identityhub-provider] DEBUG 2025-07-30T11:49:40.802626345 Prepared Local (embedded) STS Account Service Extension
+[identityhub-provider] DEBUG 2025-07-30T11:49:40.803144658 Prepared KeyPair Service Extension
+[identityhub-provider] DEBUG 2025-07-30T11:49:40.807811899 Prepared org.eclipse.edc.connector.core.LocalPublicKeyDefaultExtension
+[identityhub-provider] DEBUG 2025-07-30T11:49:40.809113289 Prepared Identity Did Core
+[identityhub-provider] DEBUG 2025-07-30T11:49:40.809785813 Prepared Revocation Service Extension
+[identityhub-provider] DEBUG 2025-07-30T11:49:40.810622791 Prepared IdentityHub Core Services Extension
+[identityhub-provider] DEBUG 2025-07-30T11:49:40.811040894 Prepared Jetty Service
+[identityhub-provider] DEBUG 2025-07-30T11:49:40.81151864 Prepared Jersey Web Service
+[identityhub-provider] DEBUG 2025-07-30T11:49:40.81284111 Prepared DID Service Extension
+[identityhub-provider] DEBUG 2025-07-30T11:49:40.813041493 Prepared Local DID publisher extension
+[identityhub-provider] DEBUG 2025-07-30T11:49:40.813198683 Prepared Presentation API Extension
+[identityhub-provider] DEBUG 2025-07-30T11:49:40.813331953 Prepared org.eclipse.edc.identityhub.protocols.dcp.issuer.DcpHolderCoreExtension
+[identityhub-provider] DEBUG 2025-07-30T11:49:40.813808416 Prepared Storage API Extension
+[identityhub-provider] DEBUG 2025-07-30T11:49:40.814160575 Prepared Identity API Extension
+[identityhub-provider] DEBUG 2025-07-30T11:49:40.81467124 Prepared Identity API Authorization Extension
+[identityhub-provider] DEBUG 2025-07-30T11:49:40.814877071 Prepared DID management Identity API Extension
+[identityhub-provider] DEBUG 2025-07-30T11:49:40.815006321 Prepared ParticipantContext management Identity API Extension
+[identityhub-provider] DEBUG 2025-07-30T11:49:40.815144739 Prepared KeyPairResource management Identity API Extension
+[identityhub-provider] DEBUG 2025-07-30T11:49:40.815286322 Prepared VerifiableCredentials API Extension
+[identityhub-provider] DEBUG 2025-07-30T11:49:40.817972696 Prepared Identity API Authentication Extension
+[identityhub-provider] DEBUG 2025-07-30T11:49:40.818610269 Prepared Storage API Extension
+[identityhub-provider] DEBUG 2025-07-30T11:49:40.819527042 Prepared VerifiableCredential Watchdog Extension
+[identityhub-provider] DEBUG 2025-07-30T11:49:40.820440189 Prepared org.eclipse.edc.identityhub.protocols.dcp.DcpCoreExtension
+[identityhub-provider] DEBUG 2025-07-30T11:49:40.821021109 Prepared Secure Token Service API configuration
+[identityhub-provider] DEBUG 2025-07-30T11:49:40.821580187 Prepared Secure Token Service API
+[identityhub-provider] DEBUG 2025-07-30T11:49:40.821741907 Prepared Management API: Version Information
+[identityhub-provider] DEBUG 2025-07-30T11:49:40.821854525 Prepared Observability API
+[identityhub-provider] DEBUG 2025-07-30T11:49:40.821956533 Prepared API Core
+[identityhub-provider] DEBUG 2025-07-30T11:49:40.822234933 Prepared Api Core Default Services
+[identityhub-provider] DEBUG 2025-07-30T11:49:40.822362232 Prepared ParticipantContext Coordinator Extension
+[identityhub-provider] DEBUG 2025-07-30T11:49:40.822494821 Prepared Web DID
+[identityhub-provider] DEBUG 2025-07-30T11:49:40.822761713 Started Boot Services
+[identityhub-provider] DEBUG 2025-07-30T11:49:40.822881951 Started org.eclipse.edc.iam.identitytrust.core.SecretsExtension
+[identityhub-provider] DEBUG 2025-07-30T11:49:40.822997298 Started Core Default Services
+[identityhub-provider] DEBUG 2025-07-30T11:49:40.823114647 Started Core Services
+[identityhub-provider] DEBUG 2025-07-30T11:49:40.823222418 Started org.eclipse.edc.connector.core.SecurityDefaultServicesExtension
+[identityhub-provider] DEBUG 2025-07-30T11:49:40.823325052 Started org.eclipse.edc.token.TokenServicesExtension
+[identityhub-provider] DEBUG 2025-07-30T11:49:40.823430421 Started JSON-LD Extension
+[identityhub-provider] DEBUG 2025-07-30T11:49:40.823560664 Started IdentityHub Default Services Extension
+[identityhub-provider] DEBUG 2025-07-30T11:49:41.341215361 [DEMO] Stored VC from file '/home/bgonzalez/Projects/mvd-logs/mvd-logs/deployment/assets/credentials/local/provider/dataprocessor-credential.json'
+[identityhub-provider] DEBUG 2025-07-30T11:49:41.348360696 [DEMO] Stored VC from file '/home/bgonzalez/Projects/mvd-logs/mvd-logs/deployment/assets/credentials/local/provider/membership-credential.json'
+[identityhub-provider] DEBUG 2025-07-30T11:49:41.350327935 Started org.eclipse.edc.demo.dcp.ih.IdentityHubExtension
+[identityhub-provider] DEBUG 2025-07-30T11:49:41.350866454 Started DID Default Services Extension
+[identityhub-provider] DEBUG 2025-07-30T11:49:41.35139324 Started Secure Token Service Default Services
+[identityhub-provider] DEBUG 2025-07-30T11:49:41.353389265 Started Local Transaction
+[identityhub-provider] DEBUG 2025-07-30T11:49:41.35356543 Started Local (embedded) STS Account Service Extension
+[identityhub-provider] DEBUG 2025-07-30T11:49:41.358651677 Started STS Account Provisioner Extension
+[identityhub-provider] DEBUG 2025-07-30T11:49:41.409633337 Started ParticipantContext Extension
+[identityhub-provider] DEBUG 2025-07-30T11:49:41.420229913 Storing secret super-user-apikey
+[identityhub-provider] DEBUG 2025-07-30T11:49:41.508089092 Storing secret super-user-sts-client-secret
+[identityhub-provider] DEBUG 2025-07-30T11:49:41.950905049 Storing secret super-user-alias
+[identityhub-provider] WARNING 2025-07-30T11:49:42.151156483 [DidDocumentService] Updating DID documents after activating a KeyPair failed: Cannot publish DID 'did:web:super-user' for participant 'super-user' because the ParticipantContext state is not 'ACTIVATED', but 'CREATED'.
+[identityhub-provider] DEBUG 2025-07-30T11:49:42.164190016 Storing secret super-user-apikey
+[identityhub-provider] DEBUG 2025-07-30T11:49:42.168162658 Super-user key override successful
+[identityhub-provider] INFO 2025-07-30T11:49:42.171726146 Created user 'super-user'. Please take note of the API Key: c3VwZXItdXNlcg==.c3VwZXItc2VjcmV0LWtleQo=
+[identityhub-provider] DEBUG 2025-07-30T11:49:42.173337393 Started MVD ParticipantContext Seed Extension
+[identityhub-provider] DEBUG 2025-07-30T11:49:42.177366729 Started Local (embedded) STS Account Service Extension
+[identityhub-provider] DEBUG 2025-07-30T11:49:42.177944047 Started KeyPair Service Extension
+[identityhub-provider] DEBUG 2025-07-30T11:49:42.178196777 Started org.eclipse.edc.connector.core.LocalPublicKeyDefaultExtension
+[identityhub-provider] DEBUG 2025-07-30T11:49:42.178399991 Started Identity Did Core
+[identityhub-provider] DEBUG 2025-07-30T11:49:42.178602025 Started Revocation Service Extension
+[identityhub-provider] DEBUG 2025-07-30T11:49:42.194032642 Started IdentityHub Core Services Extension
+[identityhub-provider] DEBUG 2025-07-30T11:49:42.288326819 HTTP context 'default' listening on port 7090
+[identityhub-provider] DEBUG 2025-07-30T11:49:42.309683415 HTTP context 'credentials' listening on port 7091
+[identityhub-provider] DEBUG 2025-07-30T11:49:42.315495429 HTTP context 'identity' listening on port 7092
+[identityhub-provider] DEBUG 2025-07-30T11:49:42.316466517 HTTP context 'did' listening on port 7093
+[identityhub-provider] DEBUG 2025-07-30T11:49:42.317110466 HTTP context 'version' listening on port 7095
+[identityhub-provider] DEBUG 2025-07-30T11:49:42.319243471 HTTP context 'sts' listening on port 7096
+[identityhub-provider] DEBUG 2025-07-30T11:49:42.603120122 Port mappings: PortMapping[name=default, port=7090, path=/api], PortMapping[name=credentials, port=7091, path=/api/credentials/], PortMapping[name=identity, port=7092, path=/api/identity], PortMapping[name=did, port=7093, path=/], PortMapping[name=version, port=7095, path=/api/version], PortMapping[name=sts, port=7096, path=/api/sts]
+[identityhub-provider] DEBUG 2025-07-30T11:49:42.603326274 Started Jetty Service
+[identityhub-provider] DEBUG 2025-07-30T11:49:44.052999429 Registered Web API context alias: default
+[identityhub-provider] DEBUG 2025-07-30T11:49:44.364741791 Registered Web API context alias: sts
+[identityhub-provider] DEBUG 2025-07-30T11:49:44.6904396 Registered Web API context alias: credentials
+[identityhub-provider] DEBUG 2025-07-30T11:49:44.859674083 Registered Web API context alias: identity
+[identityhub-provider] DEBUG 2025-07-30T11:49:44.921617041 Registered Web API context alias: version
+[identityhub-provider] DEBUG 2025-07-30T11:49:44.992205288 Registered Web API context alias: did
+[identityhub-provider] DEBUG 2025-07-30T11:49:44.993678587 Started Jersey Web Service
+[identityhub-provider] DEBUG 2025-07-30T11:49:44.99382946 Started DID Service Extension
+[identityhub-provider] DEBUG 2025-07-30T11:49:44.996004108 Started Local DID publisher extension
+[identityhub-provider] DEBUG 2025-07-30T11:49:44.996544904 Started Presentation API Extension
+[identityhub-provider] DEBUG 2025-07-30T11:49:44.996908289 Started org.eclipse.edc.identityhub.protocols.dcp.issuer.DcpHolderCoreExtension
+[identityhub-provider] DEBUG 2025-07-30T11:49:44.99713146 Started Storage API Extension
+[identityhub-provider] DEBUG 2025-07-30T11:49:44.997346734 Started Identity API Extension
+[identityhub-provider] DEBUG 2025-07-30T11:49:45.003708858 Started Identity API Authorization Extension
+[identityhub-provider] DEBUG 2025-07-30T11:49:45.019081404 Started DID management Identity API Extension
+[identityhub-provider] DEBUG 2025-07-30T11:49:45.019506325 Started ParticipantContext management Identity API Extension
+[identityhub-provider] DEBUG 2025-07-30T11:49:45.019653459 Started KeyPairResource management Identity API Extension
+[identityhub-provider] DEBUG 2025-07-30T11:49:45.019753817 Started VerifiableCredentials API Extension
+[identityhub-provider] DEBUG 2025-07-30T11:49:45.019867387 Started Identity API Authentication Extension
+[identityhub-provider] DEBUG 2025-07-30T11:49:45.019975712 Started Storage API Extension
+[identityhub-provider] DEBUG 2025-07-30T11:49:45.032581778 [CredentialWatchdog] Starting credential watchdog in 2 seconds, every 60 seconds
+[identityhub-provider] DEBUG 2025-07-30T11:49:45.039992034 Started VerifiableCredential Watchdog Extension
+[identityhub-provider] DEBUG 2025-07-30T11:49:45.040110016 Started org.eclipse.edc.identityhub.protocols.dcp.DcpCoreExtension
+[identityhub-provider] DEBUG 2025-07-30T11:49:45.040192006 Started Secure Token Service API configuration
+[identityhub-provider] DEBUG 2025-07-30T11:49:45.040265943 Started Secure Token Service API
+[identityhub-provider] DEBUG 2025-07-30T11:49:45.04033782 Started Management API: Version Information
+[identityhub-provider] DEBUG 2025-07-30T11:49:45.040407861 Started Observability API
+[identityhub-provider] DEBUG 2025-07-30T11:49:45.040512312 Started API Core
+[identityhub-provider] DEBUG 2025-07-30T11:49:45.040621272 Started Api Core Default Services
+[identityhub-provider] DEBUG 2025-07-30T11:49:45.046642063 Started ParticipantContext Coordinator Extension
+[identityhub-provider] DEBUG 2025-07-30T11:49:45.046844952 Started Web DID
+[identityhub-provider] INFO 2025-07-30T11:49:45.047255841 47 service extensions started
+[identityhub-provider] INFO 2025-07-30T11:49:45.048666891 Runtime f0ff182d-7547-4423-a230-b63d38b8edc7 ready
+[identityhub-provider] DEBUG 2025-07-30T11:49:47.036831736 [CredentialWatchdog] checking 2 credentials
+[identityhub-provider] DEBUG 2025-07-30T11:50:35.847486647 Shutdown Web DID
+[identityhub-provider] DEBUG 2025-07-30T11:50:35.847782298 Shutdown ParticipantContext Coordinator Extension
+[identityhub-provider] DEBUG 2025-07-30T11:50:35.848526419 Shutdown Api Core Default Services
+[identityhub-provider] DEBUG 2025-07-30T11:50:35.848633335 Shutdown API Core
+[identityhub-provider] DEBUG 2025-07-30T11:50:35.848834433 Shutdown Observability API

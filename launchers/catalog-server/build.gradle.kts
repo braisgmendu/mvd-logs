@@ -47,9 +47,7 @@ dependencies {
 application {
     mainClass.set("org.eclipse.edc.monitor.runtime.CustomBaseRuntime")
 }
-tasks.named<JavaExec>("run") {
-    args("--runtime-id=catalog-server") // Cambia "control-plane" por el ID que corresponda
-}
+
 tasks.withType<com.github.jengelman.gradle.plugins.shadow.tasks.ShadowJar> {
     exclude("**/pom.properties", "**/pom.xml")
     mergeServiceFiles()
