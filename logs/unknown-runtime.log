@@ -222,3 +222,23 @@
 [unknown-runtime] DEBUG 2025-07-29T17:23:30.486312003 Started Revocation Service Extension
 [unknown-runtime] INFO 2025-07-29T17:23:30.486656925 51 service extensions started
 [unknown-runtime] INFO 2025-07-29T17:23:30.488462993 Runtime 0d6a3b5b-e19a-4590-a0cd-32e0484b05d0 ready
+[unknown-runtime] DEBUG 2025-07-29T17:26:44.766304789 Shutdown Revocation Service Extension
+[unknown-runtime] DEBUG 2025-07-29T17:26:44.766437723 Shutdown Web DID
+[unknown-runtime] DEBUG 2025-07-29T17:26:44.766513491 Shutdown ParticipantContext Coordinator Extension
+[unknown-runtime] DEBUG 2025-07-29T17:26:44.766575523 Shutdown org.eclipse.edc.connector.core.LocalPublicKeyDefaultExtension
+[unknown-runtime] DEBUG 2025-07-29T17:26:44.766665948 Shutdown Observability API
+[unknown-runtime] DEBUG 2025-07-29T17:26:44.766722074 Shutdown Management API: Version Information
+[unknown-runtime] DEBUG 2025-07-29T17:26:44.76677486 Shutdown Secure Token Service API
+[unknown-runtime] DEBUG 2025-07-29T17:26:44.766839696 Shutdown Secure Token Service API configuration
+[unknown-runtime] DEBUG 2025-07-29T17:26:44.766893714 Shutdown Issuer Service Participant Admin API Extension
+[unknown-runtime] DEBUG 2025-07-29T17:26:44.766948299 Shutdown Issuer Service Credentials Admin API Extension
+[unknown-runtime] DEBUG 2025-07-29T17:26:44.76699697 Shutdown Issuer Admin API Authentication Extension
+[unknown-runtime] DEBUG 2025-07-29T17:26:44.767043212 Shutdown Local DID publisher extension
+[unknown-runtime] DEBUG 2025-07-29T17:26:44.767094688 Shutdown ParticipantContext management Identity API Extension
+[unknown-runtime] DEBUG 2025-07-29T17:26:44.767146169 Shutdown DID management Identity API Extension
+[unknown-runtime] DEBUG 2025-07-29T17:26:44.767194791 Shutdown DID Service Extension
+[unknown-runtime] DEBUG 2025-07-29T17:26:44.767251881 Shutdown MVD ParticipantContext Seed Extension
+[unknown-runtime] DEBUG 2025-07-29T17:26:44.767319902 Shutdown Issuer Service Issuance Process Admin API Extension
+[unknown-runtime] DEBUG 2025-07-29T17:26:44.767374931 Shutdown Issuer Service Credential Definition Admin API Extension
+[unknown-runtime] DEBUG 2025-07-29T17:26:44.767432168 Shutdown Issuer Service Credentials Admin API Extension
+[unknown-runtime] DEBUG 2025-07-29T17:26:44.767491507 Shutdown Issuer Admin API Configuration Extension
