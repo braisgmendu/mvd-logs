@@ -75,33 +75,29 @@ public class FileAndConsoleMonitor implements Monitor, AutoCloseable {
     // Los métodos de la interfaz simplemente delegan al método 'output'
     @Override
     public void severe(Supplier<String> supplier, Throwable... errors) {
+        consoleMonitor.severe(supplier, errors);
         output("SEVERE", supplier, errors);
     }
 
     @Override
     public void warning(Supplier<String> supplier, Throwable... errors) {
+        consoleMonitor.warning(supplier, errors);
         output("WARNING", supplier, errors);
     }
 
     @Override
     public void info(Supplier<String> supplier, Throwable... errors) {
+        consoleMonitor.info(supplier, errors);
         output("INFO", supplier, errors);
     }
 
     @Override
     public void debug(Supplier<String> supplier, Throwable... errors) {
+        consoleMonitor.debug(supplier, errors);
         output("DEBUG", supplier, errors);
     }
 
     private synchronized void output(String level, Supplier<String> supplier, Throwable... errors) {
-        // Escribimos en la consola usando la implementación original
-        switch (level) {
-            case "SEVERE" -> consoleMonitor.severe(supplier, errors);
-            case "WARNING" -> consoleMonitor.warning(supplier, errors);
-            case "INFO" -> consoleMonitor.info(supplier, errors);
-            case "DEBUG" -> consoleMonitor.debug(supplier, errors);
-            default -> consoleMonitor.info(supplier, errors);
-        }
 
         // Y ahora, escribimos en el fichero
         var time = ZonedDateTime.now().format(DateTimeFormatter.ISO_LOCAL_DATE_TIME);
