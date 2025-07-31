@@ -1,0 +1,244 @@
+[catalogserver] INFO 2025-07-30T11:49:35.592640212 Booting EDC runtime
+[catalogserver] DEBUG 2025-07-30T11:49:36.363641658 Initialized Boot Services
+[catalogserver] WARNING 2025-07-30T11:49:36.462717284 Using the InMemoryVault is not suitable for production scenarios and should be replaced with an actual Vault!
+[catalogserver] DEBUG 2025-07-30T11:49:36.475263202 Storing secret did:web:localhost%3A7093-alias
+[catalogserver] DEBUG 2025-07-30T11:49:36.475773292 Storing secret did:web:localhost%3A7093#key-1
+[catalogserver] WARNING 2025-07-30T11:49:36.4766408 [DEMO] >>>>>> This extension hard-codes a keypair into the vault! <<<<<<
+[catalogserver] DEBUG 2025-07-30T11:49:36.486980864 Initialized org.eclipse.edc.iam.identitytrust.core.SecretsExtension
+[catalogserver] WARNING 2025-07-30T11:49:36.494428994 A service of the type java.time.Clock was already registered and has now been replaced with a SystemClock instance.
+[catalogserver] DEBUG 2025-07-30T11:49:36.509889415 Config value: no setting found for 'edc.core.retry.retries.max', falling back to default value '5'
+[catalogserver] DEBUG 2025-07-30T11:49:36.512718354 Config value: no setting found for 'edc.core.retry.backoff.min', falling back to default value '500'
+[catalogserver] DEBUG 2025-07-30T11:49:36.515981604 Config value: no setting found for 'edc.core.retry.backoff.max', falling back to default value '10000'
+[catalogserver] DEBUG 2025-07-30T11:49:36.522100395 Config value: no setting found for 'edc.core.retry.log.on.retry', falling back to default value 'false'
+[catalogserver] DEBUG 2025-07-30T11:49:36.523790156 Config value: no setting found for 'edc.core.retry.log.on.retry.scheduled', falling back to default value 'false'
+[catalogserver] DEBUG 2025-07-30T11:49:36.524302147 Config value: no setting found for 'edc.core.retry.log.on.retries.exceeded', falling back to default value 'false'
+[catalogserver] DEBUG 2025-07-30T11:49:36.532970112 Config value: no setting found for 'edc.core.retry.log.on.failed.attempt', falling back to default value 'false'
+[catalogserver] DEBUG 2025-07-30T11:49:36.533495785 Config value: no setting found for 'edc.core.retry.log.on.abort', falling back to default value 'false'
+[catalogserver] DEBUG 2025-07-30T11:49:36.554966416 Config value: no setting found for 'edc.http.client.https.enforce', falling back to default value 'false'
+[catalogserver] DEBUG 2025-07-30T11:49:36.555869202 Config value: no setting found for 'edc.http.client.timeout.connect', falling back to default value '30'
+[catalogserver] DEBUG 2025-07-30T11:49:36.55698015 Config value: no setting found for 'edc.http.client.timeout.read', falling back to default value '30'
+[catalogserver] DEBUG 2025-07-30T11:49:36.558970556 Config value: no setting found for 'edc.http.client.send.buffer.size', falling back to default value '0'
+[catalogserver] DEBUG 2025-07-30T11:49:36.559429148 Config value: no setting found for 'edc.http.client.receive.buffer.size', falling back to default value '0'
+[catalogserver] DEBUG 2025-07-30T11:49:36.566024379 Initialized Core Default Services
+[catalogserver] INFO 2025-07-30T11:49:37.307503731 HTTPS enforcement it not enabled, please enable it in a production environment
+[catalogserver] INFO 2025-07-30T11:49:38.072268867 HTTPS enforcement it not enabled, please enable it in a production environment
+[catalogserver] WARNING 2025-07-30T11:49:38.076923225 Config value: no setting found for 'edc.hostname', falling back to default value 'localhost'
+[catalogserver] DEBUG 2025-07-30T11:49:38.084179508 Initialized Core Services
+[catalogserver] DEBUG 2025-07-30T11:49:38.622550877 Initialized org.eclipse.edc.connector.core.SecurityDefaultServicesExtension
+[catalogserver] DEBUG 2025-07-30T11:49:39.195685745 Initialized org.eclipse.edc.token.TokenServicesExtension
+[catalogserver] DEBUG 2025-07-30T11:49:39.210197817 Config value: no setting found for 'edc.iam.sts.token.expiration', falling back to default value '5'
+[catalogserver] DEBUG 2025-07-30T11:49:39.223825727 Initialized org.eclipse.edc.iam.identitytrust.core.DcpDefaultServicesExtension
+[catalogserver] DEBUG 2025-07-30T11:49:39.274581176 Initialized org.eclipse.edc.demo.dcp.core.DcpPatchExtension
+[catalogserver] DEBUG 2025-07-30T11:49:39.280078043 Initialized org.eclipse.edc.demo.dcp.policy.PolicyEvaluationExtension
+[catalogserver] DEBUG 2025-07-30T11:49:39.286486985 Initialized Control Plane Default Services
+[catalogserver] DEBUG 2025-07-30T11:49:39.288533987 Config value: no setting found for 'edc.jsonld.http.enabled', falling back to default value 'false'
+[catalogserver] DEBUG 2025-07-30T11:49:39.289927977 Config value: no setting found for 'edc.jsonld.https.enabled', falling back to default value 'false'
+[catalogserver] DEBUG 2025-07-30T11:49:39.293900475 Config value: no setting found for 'edc.jsonld.prefixes.check', falling back to default value 'true'
+[catalogserver] DEBUG 2025-07-30T11:49:39.294364844 Config value: no setting found for 'edc.jsonld.vocab.disable', falling back to default value 'false'
+[catalogserver] DEBUG 2025-07-30T11:49:39.323805081 Initialized JSON-LD Extension
+[catalogserver] DEBUG 2025-07-30T11:49:39.920613126 Config value: no setting found for 'edc.did.resolver.cache.expiry', falling back to default value '300000'
+[catalogserver] DEBUG 2025-07-30T11:49:39.927981706 Initialized Identity Did Core
+[catalogserver] DEBUG 2025-07-30T11:49:39.929099159 Initialized OAuth2 Client
+[catalogserver] DEBUG 2025-07-30T11:49:39.946767285 Initialized Sts remote client configuration extension
+[catalogserver] DEBUG 2025-07-30T11:49:39.947548303 Initialized Sts remote client configuration extension
+[catalogserver] DEBUG 2025-07-30T11:49:39.948434489 Initialized Revocation Service Extension
+[catalogserver] DEBUG 2025-07-30T11:49:39.970583071 Config value: no setting found for 'edc.dcp.v08.forced', falling back to default value 'false'
+[catalogserver] DEBUG 2025-07-30T11:49:39.972017354 Config value: no setting found for 'edc.iam.credential.revocation.cache.validity', falling back to default value '900000'
+[catalogserver] DEBUG 2025-07-30T11:49:39.977718155 Config value: no setting found for 'edc.sql.store.jti.cleanup.period', falling back to default value '60'
+[catalogserver] DEBUG 2025-07-30T11:49:40.002261577 Initialized org.eclipse.edc.iam.identitytrust.core.IdentityAndTrustExtension
+[catalogserver] DEBUG 2025-07-30T11:49:40.073434459 Initialized org.eclipse.edc.connector.controlplane.contract.ContractNegotiationDefaultServicesExtension
+[catalogserver] DEBUG 2025-07-30T11:49:40.083346036 Config value: no setting found for 'edc.negotiation.consumer.send.retry.limit', falling back to default value '7'
+[catalogserver] DEBUG 2025-07-30T11:49:40.086827656 Config value: no setting found for 'edc.negotiation.provider.state-machine.batch-size', falling back to default value '20'
+[catalogserver] DEBUG 2025-07-30T11:49:40.088476024 Config value: no setting found for 'edc.negotiation.consumer.send.retry.base-delay.ms', falling back to default value '1000'
+[catalogserver] DEBUG 2025-07-30T11:49:40.094970974 Config value: no setting found for 'edc.negotiation.provider.send.retry.base-delay.ms', falling back to default value '1000'
+[catalogserver] DEBUG 2025-07-30T11:49:40.10190115 Config value: no setting found for 'edc.negotiation.consumer.state-machine.batch-size', falling back to default value '20'
+[catalogserver] DEBUG 2025-07-30T11:49:40.102786841 Config value: no setting found for 'edc.negotiation.provider.send.retry.limit', falling back to default value '7'
+[catalogserver] DEBUG 2025-07-30T11:49:40.103359453 Config value: no setting found for 'edc.negotiation.state-machine.iteration-wait-millis', falling back to default value '1000'
+[catalogserver] DEBUG 2025-07-30T11:49:40.142629502 Initialized Contract Core
+[catalogserver] DEBUG 2025-07-30T11:49:40.143681704 Initialized Transfer Process Default Services
+[catalogserver] DEBUG 2025-07-30T11:49:40.156548097 Config value: no setting found for 'edc.transfer.state-machine.batch-size', falling back to default value '20'
+[catalogserver] DEBUG 2025-07-30T11:49:40.161493062 Config value: no setting found for 'edc.transfer.send.retry.limit', falling back to default value '7'
+[catalogserver] DEBUG 2025-07-30T11:49:40.187300633 Config value: no setting found for 'edc.transfer.state-machine.iteration-wait-millis', falling back to default value '1000'
+[catalogserver] DEBUG 2025-07-30T11:49:40.189360994 Config value: no setting found for 'edc.transfer.send.retry.base-delay.ms', falling back to default value '1000'
+[catalogserver] DEBUG 2025-07-30T11:49:40.202098146 Initialized Transfer Core
+[catalogserver] DEBUG 2025-07-30T11:49:40.203786581 Initialized Catalog Default Services
+[catalogserver] DEBUG 2025-07-30T11:49:40.209568202 Initialized Catalog Core
+[catalogserver] DEBUG 2025-07-30T11:49:40.218911153 Config value: no setting found for 'edc.policy.validation.enabled', falling back to default value 'false'
+[catalogserver] WARNING 2025-07-30T11:49:40.220504697 No TransactionContext registered, a no-op implementation will be used, not suitable for production environments
+[catalogserver] DEBUG 2025-07-30T11:49:40.228283761 Initialized Control Plane Services
+[catalogserver] DEBUG 2025-07-30T11:49:40.300977124 Config value: no setting found for 'edc.web.https.keystore.password', falling back to default value 'password'
+[catalogserver] DEBUG 2025-07-30T11:49:40.301388402 Config value: no setting found for 'edc.web.https.keymanager.password', falling back to default value 'password'
+[catalogserver] DEBUG 2025-07-30T11:49:40.306898242 Config value: no setting found for 'edc.web.https.keystore.type', falling back to default value 'PKCS12'
+[catalogserver] DEBUG 2025-07-30T11:49:40.327854864 Config value: no setting found for 'web.http.default.port', falling back to default value '8181'
+[catalogserver] DEBUG 2025-07-30T11:49:40.328483848 Config value: no setting found for 'web.http.default.path', falling back to default value '/api'
+[catalogserver] DEBUG 2025-07-30T11:49:40.475517761 Initialized Jetty Service
+[catalogserver] DEBUG 2025-07-30T11:49:40.488318744 Initialized Jersey Web Service
+[catalogserver] DEBUG 2025-07-30T11:49:40.519047684 Initialized Management API: Secret
+[catalogserver] DEBUG 2025-07-30T11:49:40.523101147 Initialized org.eclipse.edc.connector.core.LocalPublicKeyDefaultExtension
+[catalogserver] DEBUG 2025-07-30T11:49:40.548724322 Initialized API Core
+[catalogserver] DEBUG 2025-07-30T11:49:40.548950813 Initialized Api Core Default Services
+[catalogserver] DEBUG 2025-07-30T11:49:40.767335402 Initialized Observability API
+[catalogserver] DEBUG 2025-07-30T11:49:40.821277412 Initialized DCP scope extractor extension
+[catalogserver] DEBUG 2025-07-30T11:49:40.853523022 Initialized org.eclipse.edc.iam.identitytrust.core.IdentityTrustTransformExtension
+[catalogserver] DEBUG 2025-07-30T11:49:40.860282103 Config value: no setting found for 'edc.dsp.well-known-path.enabled', falling back to default value 'false'
+[catalogserver] DEBUG 2025-07-30T11:49:40.860831354 Initialized Dataspace Protocol Core Extension
+[catalogserver] WARNING 2025-07-30T11:49:40.861811016 No TokenDecorator was registered. The 'scope' field of outgoing protocol messages will be empty
+[catalogserver] DEBUG 2025-07-30T11:49:40.91573484 Initialized Dataspace Protocol Catalog HTTP Dispatcher Extension
+[catalogserver] DEBUG 2025-07-30T11:49:40.919119721 Initialized Dataspace Protocol Negotiation HTTP Dispatcher Extension
+[catalogserver] DEBUG 2025-07-30T11:49:41.012566976 Initialized Dataspace Protocol Transfer HTTP Dispatcher Extension
+[catalogserver] DEBUG 2025-07-30T11:49:41.014357273 Initialized Dataspace Protocol Version HTTP Dispatcher Extension
+[catalogserver] DEBUG 2025-07-30T11:49:41.016340769 Config value: no setting found for 'edc.dsp.well-known-path.enabled', falling back to default value 'false'
+[catalogserver] DEBUG 2025-07-30T11:49:41.033789787 Initialized Dataspace Protocol API Configuration Extension
+[catalogserver] DEBUG 2025-07-30T11:49:41.054593811 Initialized Dataspace Protocol Catalog Extension
+[catalogserver] DEBUG 2025-07-30T11:49:41.065803856 Initialized Dataspace Protocol Negotiation Api
+[catalogserver] DEBUG 2025-07-30T11:49:41.072631381 Initialized org.eclipse.edc.protocol.dsp.transferprocess.http.api.DspTransferProcessApiExtension
+[catalogserver] DEBUG 2025-07-30T11:49:41.081510666 Initialized Dataspace Protocol Transfer Process Transform Extension
+[catalogserver] DEBUG 2025-07-30T11:49:41.088548538 Initialized Dataspace Protocol Version Api
+[catalogserver] DEBUG 2025-07-30T11:49:41.09442829 Initialized Dataspace Protocol Catalog Transform Extension
+[catalogserver] DEBUG 2025-07-30T11:49:41.100889671 Initialized Dataspace Protocol Negotiation Transform Extension
+[catalogserver] DEBUG 2025-07-30T11:49:41.104937494 Initialized Management API configuration
+[catalogserver] DEBUG 2025-07-30T11:49:41.105323951 Initialized Endpoint Data Reference Core Default Services Extension
+[catalogserver] DEBUG 2025-07-30T11:49:41.202538659 Initialized org.eclipse.edc.edr.store.EndpointDataReferenceStoreExtension
+[catalogserver] DEBUG 2025-07-30T11:49:41.225029155 Initialized Web DID
+[catalogserver] DEBUG 2025-07-30T11:49:41.233169658 Initialized Management API: Asset
+[catalogserver] DEBUG 2025-07-30T11:49:41.246919493 Initialized Management API: Catalog
+[catalogserver] DEBUG 2025-07-30T11:49:41.250502599 Initialized Management API: Contract Agreement
+[catalogserver] DEBUG 2025-07-30T11:49:41.277554952 Initialized Management API: Contract Definition
+[catalogserver] DEBUG 2025-07-30T11:49:41.285013866 Initialized Management API: Contract Negotiation
+[catalogserver] DEBUG 2025-07-30T11:49:41.2892421 Initialized Management API: EDR cache
+[catalogserver] DEBUG 2025-07-30T11:49:41.31648451 Initialized Management API: Policy Definition
+[catalogserver] DEBUG 2025-07-30T11:49:41.322569864 Initialized Management API: Transfer Process
+[catalogserver] DEBUG 2025-07-30T11:49:41.325103055 Initialized Management API: Protocol Version
+[catalogserver] DEBUG 2025-07-30T11:49:41.325690029 Initialized Contract Negotiation command handlers
+[catalogserver] DEBUG 2025-07-30T11:49:41.326498255 Initialized org.eclipse.edc.connector.controlplane.transfer.TransferProcessCommandExtension
+[catalogserver] DEBUG 2025-07-30T11:49:41.326747126 Prepared Boot Services
+[catalogserver] DEBUG 2025-07-30T11:49:41.326880983 Prepared org.eclipse.edc.iam.identitytrust.core.SecretsExtension
+[catalogserver] DEBUG 2025-07-30T11:49:41.326994399 Prepared Core Default Services
+[catalogserver] DEBUG 2025-07-30T11:49:41.327965569 Prepared Core Services
+[catalogserver] DEBUG 2025-07-30T11:49:41.328110618 Prepared org.eclipse.edc.connector.core.SecurityDefaultServicesExtension
+[catalogserver] DEBUG 2025-07-30T11:49:41.328243657 Prepared org.eclipse.edc.token.TokenServicesExtension
+[catalogserver] DEBUG 2025-07-30T11:49:41.328359409 Prepared org.eclipse.edc.iam.identitytrust.core.DcpDefaultServicesExtension
+[catalogserver] DEBUG 2025-07-30T11:49:41.328494646 Prepared org.eclipse.edc.demo.dcp.core.DcpPatchExtension
+[catalogserver] DEBUG 2025-07-30T11:49:41.32863071 Prepared org.eclipse.edc.demo.dcp.policy.PolicyEvaluationExtension
+[catalogserver] DEBUG 2025-07-30T11:49:41.328934427 Prepared Control Plane Default Services
+[catalogserver] DEBUG 2025-07-30T11:49:41.329563878 Prepared JSON-LD Extension
+[catalogserver] DEBUG 2025-07-30T11:49:41.330974716 Prepared Identity Did Core
+[catalogserver] DEBUG 2025-07-30T11:49:41.331142872 Prepared OAuth2 Client
+[catalogserver] DEBUG 2025-07-30T11:49:41.331276158 Prepared Sts remote client configuration extension
+[catalogserver] DEBUG 2025-07-30T11:49:41.331423793 Prepared Sts remote client configuration extension
+[catalogserver] DEBUG 2025-07-30T11:49:41.333937519 Prepared Revocation Service Extension
+[catalogserver] DEBUG 2025-07-30T11:49:41.334400907 Prepared org.eclipse.edc.iam.identitytrust.core.IdentityAndTrustExtension
+[catalogserver] DEBUG 2025-07-30T11:49:41.334561682 Prepared org.eclipse.edc.connector.controlplane.contract.ContractNegotiationDefaultServicesExtension
+[catalogserver] DEBUG 2025-07-30T11:49:41.334746539 Prepared Contract Core
+[catalogserver] DEBUG 2025-07-30T11:49:41.334870881 Prepared Transfer Process Default Services
+[catalogserver] DEBUG 2025-07-30T11:49:41.334987097 Prepared Transfer Core
+[catalogserver] DEBUG 2025-07-30T11:49:41.335105134 Prepared Catalog Default Services
+[catalogserver] DEBUG 2025-07-30T11:49:41.335222842 Prepared Catalog Core
+[catalogserver] DEBUG 2025-07-30T11:49:41.335329323 Prepared Control Plane Services
+[catalogserver] DEBUG 2025-07-30T11:49:41.335438014 Prepared Jetty Service
+[catalogserver] DEBUG 2025-07-30T11:49:41.335556121 Prepared Jersey Web Service
+[catalogserver] DEBUG 2025-07-30T11:49:41.3356721 Prepared Management API: Secret
+[catalogserver] DEBUG 2025-07-30T11:49:41.340109608 Prepared org.eclipse.edc.connector.core.LocalPublicKeyDefaultExtension
+[catalogserver] DEBUG 2025-07-30T11:49:41.340607629 Prepared API Core
+[catalogserver] DEBUG 2025-07-30T11:49:41.340922771 Prepared Api Core Default Services
+[catalogserver] DEBUG 2025-07-30T11:49:41.341078136 Prepared Observability API
+[catalogserver] DEBUG 2025-07-30T11:49:41.341521629 Prepared DCP scope extractor extension
+[catalogserver] DEBUG 2025-07-30T11:49:41.341781611 Prepared org.eclipse.edc.iam.identitytrust.core.IdentityTrustTransformExtension
+[catalogserver] DEBUG 2025-07-30T11:49:41.342046982 Prepared Dataspace Protocol Core Extension
+[catalogserver] DEBUG 2025-07-30T11:49:41.342304353 Prepared Dataspace Protocol Catalog HTTP Dispatcher Extension
+[catalogserver] DEBUG 2025-07-30T11:49:41.342570326 Prepared Dataspace Protocol Negotiation HTTP Dispatcher Extension
+[catalogserver] DEBUG 2025-07-30T11:49:41.343491533 Prepared Dataspace Protocol Transfer HTTP Dispatcher Extension
+[catalogserver] DEBUG 2025-07-30T11:49:41.343944597 Prepared Dataspace Protocol Version HTTP Dispatcher Extension
+[catalogserver] DEBUG 2025-07-30T11:49:41.344475473 Prepared Dataspace Protocol API Configuration Extension
+[catalogserver] DEBUG 2025-07-30T11:49:41.345843708 Prepared Dataspace Protocol Catalog Extension
+[catalogserver] DEBUG 2025-07-30T11:49:41.346052268 Prepared Dataspace Protocol Negotiation Api
+[catalogserver] DEBUG 2025-07-30T11:49:41.346187704 Prepared org.eclipse.edc.protocol.dsp.transferprocess.http.api.DspTransferProcessApiExtension
+[catalogserver] DEBUG 2025-07-30T11:49:41.346605411 Prepared Dataspace Protocol Transfer Process Transform Extension
+[catalogserver] DEBUG 2025-07-30T11:49:41.346913197 Prepared Dataspace Protocol Version Api
+[catalogserver] DEBUG 2025-07-30T11:49:41.347087023 Prepared Dataspace Protocol Catalog Transform Extension
+[catalogserver] DEBUG 2025-07-30T11:49:41.347222996 Prepared Dataspace Protocol Negotiation Transform Extension
+[catalogserver] DEBUG 2025-07-30T11:49:41.347747925 Prepared Management API configuration
+[catalogserver] DEBUG 2025-07-30T11:49:41.347912827 Prepared Endpoint Data Reference Core Default Services Extension
+[catalogserver] DEBUG 2025-07-30T11:49:41.348020349 Prepared org.eclipse.edc.edr.store.EndpointDataReferenceStoreExtension
+[catalogserver] DEBUG 2025-07-30T11:49:41.348118273 Prepared Web DID
+[catalogserver] DEBUG 2025-07-30T11:49:41.34822137 Prepared Management API: Asset
+[catalogserver] DEBUG 2025-07-30T11:49:41.348323309 Prepared Management API: Catalog
+[catalogserver] DEBUG 2025-07-30T11:49:41.348434434 Prepared Management API: Contract Agreement
+[catalogserver] DEBUG 2025-07-30T11:49:41.348550345 Prepared Management API: Contract Definition
+[catalogserver] DEBUG 2025-07-30T11:49:41.348658384 Prepared Management API: Contract Negotiation
+[catalogserver] DEBUG 2025-07-30T11:49:41.348766469 Prepared Management API: EDR cache
+[catalogserver] DEBUG 2025-07-30T11:49:41.349253712 Prepared Management API: Policy Definition
+[catalogserver] DEBUG 2025-07-30T11:49:41.349407836 Prepared Management API: Transfer Process
+[catalogserver] DEBUG 2025-07-30T11:49:41.351701285 Prepared Management API: Protocol Version
+[catalogserver] DEBUG 2025-07-30T11:49:41.351850654 Prepared Contract Negotiation command handlers
+[catalogserver] DEBUG 2025-07-30T11:49:41.351952418 Prepared org.eclipse.edc.connector.controlplane.transfer.TransferProcessCommandExtension
+[catalogserver] DEBUG 2025-07-30T11:49:41.352157307 Started Boot Services
+[catalogserver] DEBUG 2025-07-30T11:49:41.352262622 Started org.eclipse.edc.iam.identitytrust.core.SecretsExtension
+[catalogserver] DEBUG 2025-07-30T11:49:41.352370613 Started Core Default Services
+[catalogserver] DEBUG 2025-07-30T11:49:41.352478591 Started Core Services
+[catalogserver] DEBUG 2025-07-30T11:49:41.352578433 Started org.eclipse.edc.connector.core.SecurityDefaultServicesExtension
+[catalogserver] DEBUG 2025-07-30T11:49:41.352677771 Started org.eclipse.edc.token.TokenServicesExtension
+[catalogserver] DEBUG 2025-07-30T11:49:41.352783953 Started org.eclipse.edc.iam.identitytrust.core.DcpDefaultServicesExtension
+[catalogserver] DEBUG 2025-07-30T11:49:41.35287973 Started org.eclipse.edc.demo.dcp.core.DcpPatchExtension
+[catalogserver] DEBUG 2025-07-30T11:49:41.352979937 Started org.eclipse.edc.demo.dcp.policy.PolicyEvaluationExtension
+[catalogserver] DEBUG 2025-07-30T11:49:41.353427334 Started Control Plane Default Services
+[catalogserver] DEBUG 2025-07-30T11:49:41.353544897 Started JSON-LD Extension
+[catalogserver] DEBUG 2025-07-30T11:49:41.353642047 Started Identity Did Core
+[catalogserver] DEBUG 2025-07-30T11:49:41.353741677 Started OAuth2 Client
+[catalogserver] DEBUG 2025-07-30T11:49:41.353852706 Started Sts remote client configuration extension
+[catalogserver] DEBUG 2025-07-30T11:49:41.353954197 Started Sts remote client configuration extension
+[catalogserver] DEBUG 2025-07-30T11:49:41.354054302 Started Revocation Service Extension
+[catalogserver] DEBUG 2025-07-30T11:49:41.431932705 Started org.eclipse.edc.iam.identitytrust.core.IdentityAndTrustExtension
+[catalogserver] DEBUG 2025-07-30T11:49:41.44291532 Started org.eclipse.edc.connector.controlplane.contract.ContractNegotiationDefaultServicesExtension
+[catalogserver] DEBUG 2025-07-30T11:49:41.453896516 Started Contract Core
+[catalogserver] DEBUG 2025-07-30T11:49:41.454253406 Started Transfer Process Default Services
+[catalogserver] DEBUG 2025-07-30T11:49:41.458337922 Started Transfer Core
+[catalogserver] DEBUG 2025-07-30T11:49:41.458478321 Started Catalog Default Services
+[catalogserver] DEBUG 2025-07-30T11:49:41.459006069 Started Catalog Core
+[catalogserver] DEBUG 2025-07-30T11:49:41.459562061 Started Control Plane Services
+[catalogserver] DEBUG 2025-07-30T11:49:41.731552765 HTTP context 'default' listening on port 8090
+[catalogserver] DEBUG 2025-07-30T11:49:41.751510683 HTTP context 'management' listening on port 8091
+[catalogserver] DEBUG 2025-07-30T11:49:41.752126013 HTTP context 'protocol' listening on port 8092
+[catalogserver] DEBUG 2025-07-30T11:49:42.068865561 Port mappings: PortMapping[name=default, port=8090, path=/Api], PortMapping[name=management, port=8091, path=/api/management/], PortMapping[name=protocol, port=8092, path=/api/dsp]
+[catalogserver] DEBUG 2025-07-30T11:49:42.07088737 Started Jetty Service
+[catalogserver] DEBUG 2025-07-30T11:49:43.87638416 Registered Web API context alias: protocol
+[catalogserver] DEBUG 2025-07-30T11:49:44.055046918 Registered Web API context alias: default
+[catalogserver] DEBUG 2025-07-30T11:49:44.27772051 Registered Web API context alias: management
+[catalogserver] DEBUG 2025-07-30T11:49:44.27929387 Started Jersey Web Service
+[catalogserver] DEBUG 2025-07-30T11:49:44.279415489 Started Management API: Secret
+[catalogserver] DEBUG 2025-07-30T11:49:44.27996819 Started org.eclipse.edc.connector.core.LocalPublicKeyDefaultExtension
+[catalogserver] DEBUG 2025-07-30T11:49:44.280205581 Started API Core
+[catalogserver] DEBUG 2025-07-30T11:49:44.280304395 Started Api Core Default Services
+[catalogserver] DEBUG 2025-07-30T11:49:44.2835144 Started Observability API
+[catalogserver] DEBUG 2025-07-30T11:49:44.283770876 Started DCP scope extractor extension
+[catalogserver] DEBUG 2025-07-30T11:49:44.28489715 Started org.eclipse.edc.iam.identitytrust.core.IdentityTrustTransformExtension
+[catalogserver] DEBUG 2025-07-30T11:49:44.285091337 Started Dataspace Protocol Core Extension
+[catalogserver] DEBUG 2025-07-30T11:49:44.285194978 Started Dataspace Protocol Catalog HTTP Dispatcher Extension
+[catalogserver] DEBUG 2025-07-30T11:49:44.285376393 Started Dataspace Protocol Negotiation HTTP Dispatcher Extension
+[catalogserver] DEBUG 2025-07-30T11:49:44.285809106 Started Dataspace Protocol Transfer HTTP Dispatcher Extension
+[catalogserver] DEBUG 2025-07-30T11:49:44.286037595 Started Dataspace Protocol Version HTTP Dispatcher Extension
+[catalogserver] DEBUG 2025-07-30T11:49:44.287522884 Started Dataspace Protocol API Configuration Extension
+[catalogserver] DEBUG 2025-07-30T11:49:44.287692611 Started Dataspace Protocol Catalog Extension
+[catalogserver] DEBUG 2025-07-30T11:49:44.287899892 Started Dataspace Protocol Negotiation Api
+[catalogserver] DEBUG 2025-07-30T11:49:44.288001707 Started org.eclipse.edc.protocol.dsp.transferprocess.http.api.DspTransferProcessApiExtension
+[catalogserver] DEBUG 2025-07-30T11:49:44.288088111 Started Dataspace Protocol Transfer Process Transform Extension
+[catalogserver] DEBUG 2025-07-30T11:49:44.288167863 Started Dataspace Protocol Version Api
+[catalogserver] DEBUG 2025-07-30T11:49:44.288245825 Started Dataspace Protocol Catalog Transform Extension
+[catalogserver] DEBUG 2025-07-30T11:49:44.288322938 Started Dataspace Protocol Negotiation Transform Extension
+[catalogserver] DEBUG 2025-07-30T11:49:44.288400084 Started Management API configuration
+[catalogserver] DEBUG 2025-07-30T11:49:44.28848373 Started Endpoint Data Reference Core Default Services Extension
+[catalogserver] DEBUG 2025-07-30T11:49:44.288574942 Started org.eclipse.edc.edr.store.EndpointDataReferenceStoreExtension
+[catalogserver] DEBUG 2025-07-30T11:49:44.289272514 Started Web DID
+[catalogserver] DEBUG 2025-07-30T11:49:44.289368847 Started Management API: Asset
+[catalogserver] DEBUG 2025-07-30T11:49:44.289929686 Started Management API: Catalog
+[catalogserver] DEBUG 2025-07-30T11:49:44.290023688 Started Management API: Contract Agreement
+[catalogserver] DEBUG 2025-07-30T11:49:44.290126545 Started Management API: Contract Definition
+[catalogserver] DEBUG 2025-07-30T11:49:44.290371596 Started Management API: Contract Negotiation
+[catalogserver] DEBUG 2025-07-30T11:49:44.290488184 Started Management API: EDR cache
+[catalogserver] DEBUG 2025-07-30T11:49:44.290581859 Started Management API: Policy Definition
+[catalogserver] DEBUG 2025-07-30T11:49:44.290749965 Started Management API: Transfer Process
+[catalogserver] DEBUG 2025-07-30T11:49:44.290996753 Started Management API: Protocol Version
+[catalogserver] DEBUG 2025-07-30T11:49:44.291233321 Started Contract Negotiation command handlers
+[catalogserver] DEBUG 2025-07-30T11:49:44.29139271 Started org.eclipse.edc.connector.controlplane.transfer.TransferProcessCommandExtension
+[catalogserver] INFO 2025-07-30T11:49:44.292056432 61 service extensions started
+[catalogserver] INFO 2025-07-30T11:49:44.293578137 Runtime d532a329-8c31-48e9-999d-07de5df178c2 ready
