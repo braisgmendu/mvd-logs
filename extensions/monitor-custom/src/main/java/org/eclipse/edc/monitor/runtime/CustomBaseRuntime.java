@@ -33,7 +33,7 @@ public class CustomBaseRuntime extends BaseRuntime {
     @NotNull
     @Override
     protected Monitor createMonitor() {
-        var consoleMonitor = new ConsoleMonitor();
+        var consoleMonitor = new ConsoleMonitor(ConsoleMonitor.Level.DEBUG, true);
         var serviceLocator = new org.eclipse.edc.boot.system.ServiceLocatorImpl();
         var configLoader = new ConfigurationLoader(serviceLocator, EnvironmentVariables.ofDefault(), SystemProperties.ofDefault());
         var config = configLoader.loadConfiguration(consoleMonitor);
