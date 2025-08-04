@@ -40,7 +40,7 @@ dependencies {
 }
 
 application {
-    mainClass.set("org.eclipse.edc.monitor.runtime.CustomBaseRuntime")
+    mainClass.set("org.eclipse.edc.boot.system.runtime.BaseRuntime")
 }
 tasks.named<JavaExec>("run") {
     args("--runtime-id=identity-hub") // Cambia "control-plane" por el ID que corresponda

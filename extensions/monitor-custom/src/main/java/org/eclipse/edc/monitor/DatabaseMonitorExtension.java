@@ -1,8 +1,7 @@
 package org.eclipse.edc.monitor;
 
-
 import org.eclipse.edc.spi.monitor.Monitor;
-import org.eclipse.edc.spi.system.ServiceExtension;
+import org.eclipse.edc.spi.system.MonitorExtension;
 import org.eclipse.edc.spi.system.ServiceExtensionContext;
 
 import java.sql.Connection;
@@ -12,7 +11,7 @@ import java.sql.SQLException;
 /**
  * Esta clase extiende la funcionalidad del sistema de monitoreo utilizando una base de datos.
  */
-public class DatabaseMonitorExtension implements ServiceExtension {
+public class DatabaseMonitorExtension implements MonitorExtension {
     private DatabaseMonitor newMonitor;
 
     @Override
@@ -20,7 +19,7 @@ public class DatabaseMonitorExtension implements ServiceExtension {
         return "Database Monitor";
     }
 
-    @Override
+
     public void initialize(ServiceExtensionContext context) {
         var originalMonitor = context.getMonitor();
         var config = context.getConfig("edc.datasource.log");
@@ -36,9 +35,7 @@ public class DatabaseMonitorExtension implements ServiceExtension {
             var runtimeId = context.getRuntimeId();
 
             this.newMonitor = new DatabaseMonitor(runtimeId, originalMonitor, connection);
-            context.registerService(Monitor.class, newMonitor);
-            originalMonitor.info("Database Monitor registered for runtime: " + runtimeId);
-
+            originalMonitor.info("<<<<DatabaseMonitor Creado>>>>");
         } catch (SQLException e) {
             originalMonitor.severe("NO SE PUDO CONECTAR CON LA DATABASE", e);
             throw new RuntimeException(e);
@@ -48,9 +45,8 @@ public class DatabaseMonitorExtension implements ServiceExtension {
     }
 
     @Override
-    public void shutdown() {
-        if (newMonitor != null) {
-            newMonitor.close();
-        }
+    public Monitor getMonitor() {
+
+        return this.newMonitor;
     }
 }
