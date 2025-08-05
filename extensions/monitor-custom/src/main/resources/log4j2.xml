@@ -6,12 +6,15 @@
         </Console>
 
         <Jdbc name="DBAppender" tableName="logs">
+            <Filters>
+                <ThresholdFilter level="INFO" onMatch="ACCEPT" onMismatch="DENY"/>
+            </Filters>
+
             <PoolingDriver connectionString="${sys:edc.datasource.log.url}"
                            userName="${sys:edc.datasource.log.user}"
                            password="${sys:edc.datasource.log.password}" />
 
             <Column name="log_timestamp" isEventTimestamp="true" />
-            <!-- AÑADE isUnicode="false" A ESTAS COLUMNAS -->
             <Column name="runtime_id" pattern="%X{runtimeId}" isUnicode="false" />
             <Column name="log_level"  pattern="%level" isUnicode="false" />
             <Column name="message"  pattern="%message" isUnicode="false" />
