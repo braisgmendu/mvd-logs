@@ -15,97 +15,38 @@
 
 package org.eclipse.edc.monitor;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.ThreadContext;
 import org.eclipse.edc.spi.monitor.Monitor;
 
-import java.io.PrintWriter;
-import java.io.StringWriter;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
-import java.sql.Timestamp;
-import java.time.Instant;
 import java.util.function.Supplier;
 
-/**
- * Un Monitor que escribe tanto a la consola (usando ConsoleMonitor)
- * como a un fichero de log.
- */
-public class DatabaseMonitor implements Monitor, AutoCloseable {
+public class DatabaseMonitor implements Monitor {
 
-    private final Monitor consoleMonitor;
-    private final Connection connection;
-    private final String runtimeId;
-    private final String insertSql = "INSERT INTO logs (log_timestamp, runtime_id, log_level, message, exception) VALUES (?, ?, ?, ?, ?)";
+    private static final Logger LOGGER = LogManager.getRootLogger();
 
-
-    /**
-     * Crea una nueva instancia de DatabasMonitor con los parámetros dados.
-     *
-     * @param runtimeId         el identificador del entorno de ejecución
-     * @param originalMonitor   el monitor original que se va a envolver o extender
-     * @param connection        la conexión a la base de datos para registrar los eventos
-     */
-    public DatabaseMonitor(String runtimeId, Monitor originalMonitor, Connection connection) {
-        this.runtimeId = runtimeId;
-        this.consoleMonitor = originalMonitor;
-        this.connection = connection;
+    public DatabaseMonitor(String runtimeId) {
+        ThreadContext.put("runtimeId", runtimeId);
     }
 
-    // Los métodos de la interfaz simplemente delegan al método 'output'
     @Override
     public void severe(Supplier<String> supplier, Throwable... errors) {
-        consoleMonitor.severe(supplier, errors);
-        writeToDatabase("SEVERE", supplier, errors);
+        LOGGER.fatal(supplier.get(), errors.length > 0 ? errors[0] : null);
     }
 
     @Override
     public void warning(Supplier<String> supplier, Throwable... errors) {
-        consoleMonitor.warning(supplier, errors);
-        writeToDatabase("WARNING", supplier, errors);
+        LOGGER.warn(supplier.get(), errors.length > 0 ? errors[0] : null);
     }
 
     @Override
     public void info(Supplier<String> supplier, Throwable... errors) {
-        consoleMonitor.info(supplier, errors);
-        writeToDatabase("INFO", supplier, errors);
+        LOGGER.info(supplier.get(), errors.length > 0 ? errors[0] : null);
     }
 
     @Override
     public void debug(Supplier<String> supplier, Throwable... errors) {
-        consoleMonitor.debug(supplier, errors);
-        writeToDatabase("DEBUG", supplier, errors);
+        LOGGER.debug(supplier.get(), errors.length > 0 ? errors[0] : null);
     }
-
-    private synchronized void writeToDatabase(String level, Supplier<String> supplier, Throwable... errors) {
-        try (PreparedStatement statement = connection.prepareStatement(insertSql)) {
-            statement.setTimestamp(1, Timestamp.from(Instant.now()));
-            statement.setString(2, this.runtimeId);
-            statement.setString(3, level);
-            statement.setString(4, sanitizeMessage(supplier));
-
-            if (errors != null && errors.length > 0 && errors[0] != null) {
-                StringWriter sw = new StringWriter();
-                errors[0].printStackTrace(new PrintWriter(sw));
-                statement.setString(5, sw.toString());
-            } else {
-                statement.setNull(5, java.sql.Types.VARCHAR);
-            }
-            statement.executeUpdate();
-        } catch (SQLException e) {
-            consoleMonitor.severe("FALLO AL ESCRIBIR LOGS EN DATABASE", e);
-        }
-
-    }
-
-    @Override
-    public void close() {
-        try {
-            if (connection != null && !connection.isClosed()) {
-                connection.close();
-            }
-        } catch (SQLException e) {
-            consoleMonitor.severe("ERROR A CERRAR LA CONEXION A LA DB");
-        }
-    }
-
 }

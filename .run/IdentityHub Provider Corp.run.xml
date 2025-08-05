@@ -7,7 +7,8 @@
     </option>
     <option name="MAIN_CLASS_NAME" value="org.eclipse.edc.boot.system.runtime.BaseRuntime" />
     <module name="mvd.launchers.identity-hub.main" />
-    <option name="PROGRAM_PARAMETERS" value="--log-level=DEBUG" />
+    <option name="PROGRAM_PARAMETERS" value="--log-level=DEBUG -Dedc.runtime.id=identityhub-provider" />
+    <option name="VM_PARAMETERS" value="-Dlog4j2.isThreadContextMapInheritable=true -Dedc.runtime.id=identityhub-provider -Dedc.datasource.log.url=jdbc:postgresql://localhost:5432/edc_logs -Dedc.datasource.log.user=edc -Dedc.datasource.log.password=edc123" />
     <extension name="net.ashald.envfile">
       <option name="IS_ENABLED" value="false" />
       <option name="IS_SUBST" value="false" />

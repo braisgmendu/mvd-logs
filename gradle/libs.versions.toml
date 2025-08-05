@@ -9,6 +9,7 @@ jakarta-json = "2.1.3"
 parsson = "1.1.6"
 postgres = "42.7.3"
 restAssured = "5.5.1"
+log4j = "2.23.1"
 
 [libraries]
 # upstream EDC dependencies
@@ -105,6 +106,11 @@ edc-bom-identityhub = { module = "org.eclipse.edc:identityhub-bom", version.ref 
 edc-bom-identityhub-sql = { module = "org.eclipse.edc:identityhub-feature-sql-bom", version.ref = "edc" }
 edc-bom-issuerservice = { module = "org.eclipse.edc:issuerservice-bom", version.ref = "edc" }
 edc-bom-issuerservice-sql = { module = "org.eclipse.edc:issuerservice-feature-sql-bom", version.ref = "edc" }
+
+# Librerias de Log4j2
+log4j-api = { module = "org.apache.logging.log4j:log4j-api", version.ref = "log4j" }
+log4j-core = { module = "org.apache.logging.log4j:log4j-core", version.ref = "log4j" }
+log4j-jdbc = { module = "org.apache.logging.log4j:log4j-jdbc-dbcp2", version.ref = "log4j" }
 
 [bundles]
 connector = ["edc-boot", "edc-core-connector", "edc-core-api", "edc-ext-http", "edc-api-observability", "edc-ext-jsonld", "edc-core-token"]

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="INFO" xmlns="http://logging.apache.org/log4j/2.0/config">
+    <Appenders>
+        <Console name="ConsoleAppender" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %highlight{%-5level}{STYLE=Logback} %cyan{%c{1.}} [%X{runtimeId}] - %msg%n%throwable"/>
+        </Console>
+
+        <Jdbc name="DBAppender" tableName="logs">
+            <PoolingDriver connectionString="${sys:edc.datasource.log.url}"
+                           userName="${sys:edc.datasource.log.user}"
+                           password="${sys:edc.datasource.log.password}" />
+
+            <Column name="log_timestamp" isEventTimestamp="true" />
+            <!-- AÑADE isUnicode="false" A ESTAS COLUMNAS -->
+            <Column name="runtime_id" pattern="%X{runtimeId}" isUnicode="false" />
+            <Column name="log_level"  pattern="%level" isUnicode="false" />
+            <Column name="message"  pattern="%message" isUnicode="false" />
+            <Column name="exception" pattern="%ex{full}" isUnicode="false" />
+        </Jdbc>
+    </Appenders>
+
+    <Loggers>
+        <Root level="DEBUG">
+            <AppenderRef ref="ConsoleAppender" />
+            <AppenderRef ref="DBAppender" />
+        </Root>
+    </Loggers>
+</Configuration>

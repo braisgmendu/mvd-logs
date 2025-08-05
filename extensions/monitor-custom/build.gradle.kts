@@ -15,6 +15,11 @@ dependencies {
     // Necesitas esta dependencia para poder implementar la interfaz "Monitor"
     implementation(libs.edc.spi.core)
     implementation(libs.edc.boot)
+    // Dependencias para Log4j
+
+    implementation(libs.log4j.api)
+    runtimeOnly(libs.log4j.core)
+    implementation(libs.log4j.jdbc)
     runtimeOnly(libs.postgres)
 
 }
